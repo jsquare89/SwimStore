@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "76mWDU8R7lkYYrVmidjyycBT1+crq1dkQUTLQfjSADjOfa9d7LVtGaCmg5zsQ1WWvCDJz5daxBDEYYC1hSkYew==",
+  "success": true,
+  "projectFilePath": "C:\\CODE\\Personal Projects\\SwimStore\\SwimStoreData\\SwimStoreData.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jarred\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\Jarred\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Jarred\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Jarred\\.nuget\\packages\\npgsql\\6.0.6\\npgsql.6.0.6.nupkg.sha512",
+    "C:\\Users\\Jarred\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
