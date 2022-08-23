@@ -1,0 +1,12 @@
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\bin\Debug\net6.0\SwimStoreData.deps.json
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\bin\Debug\net6.0\SwimStoreData.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\bin\Debug\net6.0\SwimStoreData.pdb
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\obj\Debug\net6.0\SwimStoreData.csproj.AssemblyReference.cache
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\obj\Debug\net6.0\SwimStoreData.GeneratedMSBuildEditorConfig.editorconfig
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\obj\Debug\net6.0\SwimStoreData.AssemblyInfoInputs.cache
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\obj\Debug\net6.0\SwimStoreData.AssemblyInfo.cs
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\obj\Debug\net6.0\SwimStoreData.csproj.CoreCompileInputs.cache
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\obj\Debug\net6.0\SwimStoreData.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\obj\Debug\net6.0\refint\SwimStoreData.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\obj\Debug\net6.0\SwimStoreData.pdb
+C:\CODE\Personal Projects\SwimStore\SwimStoreData\obj\Debug\net6.0\ref\SwimStoreData.dll

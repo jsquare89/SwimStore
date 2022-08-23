@@ -24,7 +24,7 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         U parameters,
         string connectionId = "SwimStorePostgresDb")
     {
-        using IDbConnection connection = new NpgsqlConnection(connectionId);
+        using IDbConnection connection = new NpgsqlConnection(_config.GetConnectionString(connectionId));
 
         return await connection.QueryAsync<T>(storedProcedure, parameters, commandType: CommandType.StoredProcedure);
     }

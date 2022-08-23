@@ -5,7 +5,12 @@ VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwimStoreApi", "SwimStoreApi\SwimStoreApi.csproj", "{1ABB327C-20CA-470C-8B47-EA5C2BC57AB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwimStoreData", "SwimStoreData\SwimStoreData.csproj", "{40EF220F-56B0-4FED-919B-2CBBF39980E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwimStoreData", "SwimStoreData\SwimStoreData.csproj", "{40EF220F-56B0-4FED-919B-2CBBF39980E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E5A16F35-0CFA-4E98-BF20-8ADF49EC7A0C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

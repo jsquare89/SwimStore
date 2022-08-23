@@ -104,6 +104,27 @@
           "build/HotChocolate.AspNetCore.targets": {}
         }
       },
+      "HotChocolate.Data/12.12.1": {
+        "type": "package",
+        "dependencies": {
+          "HotChocolate.Execution": "12.12.1",
+          "HotChocolate.Types.CursorPagination": "12.12.1"
+        },
+        "compile": {
+          "lib/net6.0/HotChocolate.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/HotChocolate.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/HotChocolate.Data.props": {},
+          "build/HotChocolate.Data.targets": {}
+        }
+      },
       "HotChocolate.Execution/12.12.1": {
         "type": "package",
         "dependencies": {
@@ -772,6 +793,31 @@
         "lib/net6.0/HotChocolate.AspNetCore.xml",
         "lib/netcoreapp3.1/HotChocolate.AspNetCore.dll",
         "lib/netcoreapp3.1/HotChocolate.AspNetCore.xml",
+        "strawberryshake-signet.png"
+      ]
+    },
+    "HotChocolate.Data/12.12.1": {
+      "sha512": "xRnMjhsbdG0loDzR7U+zWglU+u1vmhR5xmP2BkGEmzQku+LZ45B3MfeaYv+S7Zk9w246t2lhRHFlkWBSLec88w==",
+      "type": "package",
+      "path": "hotchocolate.data/12.12.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/HotChocolate.Data.props",
+        "build/HotChocolate.Data.targets",
+        "greendonut-signet.png",
+        "hotchocolate-signet.png",
+        "hotchocolate.data.12.12.1.nupkg.sha512",
+        "hotchocolate.data.nuspec",
+        "lib/net5.0/HotChocolate.Data.dll",
+        "lib/net5.0/HotChocolate.Data.xml",
+        "lib/net6.0/HotChocolate.Data.dll",
+        "lib/net6.0/HotChocolate.Data.xml",
+        "lib/netcoreapp3.1/HotChocolate.Data.dll",
+        "lib/netcoreapp3.1/HotChocolate.Data.xml",
+        "lib/netstandard2.0/HotChocolate.Data.dll",
+        "lib/netstandard2.0/HotChocolate.Data.xml",
         "strawberryshake-signet.png"
       ]
     },
@@ -1622,6 +1668,7 @@
     "net6.0": [
       "GraphQL.Server.Ui.Voyager >= 7.0.0",
       "HotChocolate.AspNetCore >= 12.12.1",
+      "HotChocolate.Data >= 12.12.1",
       "SwimStoreData >= 1.0.0"
     ]
   },
@@ -1679,6 +1726,10 @@
             "version": "[7.0.0, )"
           },
           "HotChocolate.AspNetCore": {
+            "target": "Package",
+            "version": "[12.12.1, )"
+          },
+          "HotChocolate.Data": {
             "target": "Package",
             "version": "[12.12.1, )"
           }

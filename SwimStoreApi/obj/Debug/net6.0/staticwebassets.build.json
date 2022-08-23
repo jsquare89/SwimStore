@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "wXo1zd2VODcnf8PVsYGNVsURLuHP8hIKzFnXn+EflGw=",
-  "Source": "SwimStore",
-  "BasePath": "_content/SwimStore",
+  "Hash": "GxyYcoDEKlIXwu7hYoKDcYjQtkqr7PlkAyk9MnlR9go=",
+  "Source": "SwimStoreApi",
+  "BasePath": "_content/SwimStoreApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
