@@ -1,0 +1,6 @@
+ G Application Starting Up!
+ G HTTP "GET" "/" responded 200 in 22.1047 ms
+08/24/2022 07:41:20 Application Starting Up!
+08/24/2022 07:41:21 HTTP "GET" "/" responded 200 in 19.0800 ms
+08/24/2022 07:43:53 Application Starting Up!
+08/24/2022 07:43:54 HTTP "GET" "/" responded 200 in 20.5696 ms

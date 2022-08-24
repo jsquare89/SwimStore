@@ -27,9 +27,7 @@ DapperTypeMapper.Initialize("SwimStoreData.Models");
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
-
 app.MapGraphQL("/graphql");
-
 app.UseSerilogRequestLogging();
 
 try
