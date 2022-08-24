@@ -19,4 +19,11 @@ public class ProductData : IProductData
 
 	public Task<IEnumerable<ProductModel>> GetProducts() =>
 		_db.LoadData<ProductModel, dynamic>("sf_product_get_all", new { });
+
+	public async Task<ProductModel> GetProductById(int id)
+	{
+		var products = await _db.LoadData<ProductModel, dynamic>("sf_product_get_by_id", new { id });
+		return products.FirstOrDefault();
+	}
+
 }

@@ -1,4 +1,5 @@
-﻿// Thanks to Cornelis for the mapper
+﻿// Thanks to Kaleb Pederson/Cornelis for the mapper
+// https://stackoverflow.com/questions/8902674/manually-map-column-names-with-class-properties/34856158#34856158
 // https://stackoverflow.com/questions/20951531/dapper-with-attributes-mapping/20969521#20969521
 
 using Dapper;

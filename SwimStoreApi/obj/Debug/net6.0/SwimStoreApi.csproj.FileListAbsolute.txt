@@ -10,6 +10,7 @@ C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\GraphQL.Server
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\GreenDonut.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.Abstractions.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.AspNetCore.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.Data.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.Execution.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.Fetching.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.Language.dll
@@ -27,9 +28,22 @@ C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.U
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.Utilities.Introspection.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.Validation.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Microsoft.Extensions.DiagnosticAdapter.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Npgsql.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Enrichers.Environment.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Enrichers.Process.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Enrichers.Thread.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Sinks.File.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreData.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreData.pdb
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.csproj.AssemblyReference.cache
@@ -47,4 +61,3 @@ C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\refint\SwimSto
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.pdb
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.genruntimeconfig.cache
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\ref\SwimStoreApi.dll
-C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.Data.dll

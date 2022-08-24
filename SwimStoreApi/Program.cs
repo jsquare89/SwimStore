@@ -1,4 +1,5 @@
 using Dapper;
+using Serilog;
 using SwimStoreApi;
 using SwimStoreApi.DapperAttributeMapper;
 using SwimStoreApi.GraphQL;
@@ -19,6 +20,7 @@ builder.Services
     .AddQueryType<Query>()
     .AddFiltering();
 
+ConfigureSerilog(builder);
 
 DapperTypeMapper.Initialize("SwimStoreData.Models");
 
@@ -28,6 +30,26 @@ app.MapGet("/", () => "Hello World!");
 
 app.MapGraphQL("/graphql");
 
-app.Run();
+app.UseSerilogRequestLogging();
 
+try
+{
+    Log.Information("Application Starting Up!");
+    app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "The application failed to start correctly.");
+}
+finally
+{
+    Log.CloseAndFlush();
+}
 
+static void ConfigureSerilog(WebApplicationBuilder builder)
+{
+    Log.Logger = new LoggerConfiguration()
+        .ReadFrom.Configuration(builder.Configuration)
+        .CreateLogger();
+    builder.Host.UseSerilog();
+}
