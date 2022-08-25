@@ -4,3 +4,261 @@
 08/24/2022 07:41:21 HTTP "GET" "/" responded 200 in 19.0800 ms
 08/24/2022 07:43:53 Application Starting Up!
 08/24/2022 07:43:54 HTTP "GET" "/" responded 200 in 20.5696 ms
+08/24/2022 08:37:24 Application Starting Up!
+08/24/2022 08:37:24 HTTP "GET" "/" responded 200 in 19.6300 ms
+08/24/2022 09:31:09 Application Starting Up!
+08/24/2022 09:31:09 HTTP "GET" "/" responded 200 in 19.0850 ms
+08/24/2022 09:31:44 HTTP "POST" "/graphql" responded 200 in 599.9970 ms
+08/24/2022 09:32:41 Application Starting Up!
+08/24/2022 09:32:42 HTTP "GET" "/" responded 200 in 18.3406 ms
+08/24/2022 09:33:02 Application Starting Up!
+08/24/2022 09:33:03 HTTP "GET" "/" responded 200 in 22.1983 ms
+08/24/2022 10:01:43 Application Starting Up!
+08/24/2022 10:01:43 The application failed to start correctly.
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Microsoft.AspNetCore.Builder.WebApplication.Run(String url)
+   at Program.<Main>$(String[] args) in C:\CODE\Personal Projects\SwimStore\SwimStoreApi\Program.cs:line 38
+08/24/2022 10:01:53 Application Starting Up!
+08/24/2022 10:01:53 The application failed to start correctly.
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Microsoft.AspNetCore.Builder.WebApplication.Run(String url)
+   at Program.<Main>$(String[] args) in C:\CODE\Personal Projects\SwimStore\SwimStoreApi\Program.cs:line 38
+08/24/2022 10:02:04 Application Starting Up!
+08/24/2022 10:02:04 HTTP "GET" "/" responded 200 in 20.1238 ms
+08/24/2022 10:03:08 Application Starting Up!
+08/24/2022 10:03:09 HTTP "GET" "/" responded 200 in 21.3624 ms
+08/24/2022 10:04:05 Application Starting Up!
+08/24/2022 10:04:06 HTTP "GET" "/" responded 200 in 21.1222 ms
+08/24/2022 10:07:49 Application Starting Up!
+08/24/2022 10:07:49 HTTP "GET" "/" responded 200 in 20.5878 ms
+08/24/2022 10:08:10 HTTP "POST" "/graphql" responded 500 in 5351.4754 ms
+08/24/2022 10:09:10 Microsoft.AspNetCore.WebApplicationServiceCollection
+08/24/2022 10:09:10 Application Starting Up!
+08/24/2022 10:09:11 HTTP "GET" "/" responded 200 in 18.2176 ms
+08/24/2022 10:09:38 System.Collections.Generic.List`1[Microsoft.Extensions.DependencyInjection.ServiceDescriptor]
+08/24/2022 10:09:38 Application Starting Up!
+08/24/2022 10:09:39 HTTP "GET" "/" responded 200 in 19.0370 ms
+08/24/2022 10:16:03 Application Starting Up!
+08/24/2022 10:16:04 HTTP "GET" "/" responded 200 in 21.3468 ms
+08/24/2022 10:16:07 sf_product_get_all
+08/24/2022 10:16:12 HTTP "POST" "/graphql" responded 500 in 5060.4435 ms
+08/24/2022 10:16:51 Application Starting Up!
+08/24/2022 10:16:51 HTTP "GET" "/" responded 200 in 23.2194 ms
+08/24/2022 10:17:16 Application Starting Up!
+08/24/2022 10:17:18 HTTP "GET" "/" responded 200 in 17.7439 ms
+08/24/2022 10:17:22 Getting Product - In Query()
+08/24/2022 10:17:22 sf_product_get_all
+08/24/2022 10:17:27 HTTP "POST" "/graphql" responded 500 in 4861.2603 ms
+08/24/2022 10:25:41 Application Starting Up!
+08/24/2022 10:25:42 HTTP "GET" "/" responded 200 in 19.3244 ms
+08/24/2022 10:25:48 sf_product_get_all
+08/24/2022 10:25:53 HTTP "POST" "/graphql" responded 500 in 4840.5834 ms
+08/24/2022 10:29:44 Application Starting Up!
+08/24/2022 10:29:44 Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+08/24/2022 10:29:44 The application failed to start correctly.
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Microsoft.AspNetCore.Builder.WebApplication.Run(String url)
+   at Program.<Main>$(String[] args) in C:\CODE\Personal Projects\SwimStore\SwimStoreApi\Program.cs:line 38
+08/24/2022 10:29:52 Application Starting Up!
+08/24/2022 10:29:53 HTTP "GET" "/" responded 200 in 18.7213 ms
+08/24/2022 10:31:27 HTTP "GET" "/" responded 200 in 18.4056 ms
+08/24/2022 10:32:17 HTTP "GET" "/" responded 200 in 19.5416 ms
+08/24/2022 10:32:22 sf_product_get_all
+08/24/2022 10:32:26 HTTP "POST" "/graphql" responded 500 in 4843.7617 ms
+08/24/2022 10:33:07 sf_product_get_all
+08/24/2022 10:35:41 HTTP "GET" "/" responded 200 in 24.3228 ms
+08/24/2022 10:35:51 sf_product_get_all
+08/24/2022 10:43:08 HTTP "GET" "/" responded 200 in 25.2169 ms
+08/24/2022 10:43:13 sf_product_get_all
+08/24/2022 10:43:14 HTTP "POST" "/graphql" responded 200 in 1338.3783 ms
+08/24/2022 10:44:39 HTTP "GET" "/" responded 200 in 19.8797 ms
+08/24/2022 10:44:42 SELECT *FROM product
+08/24/2022 10:44:43 HTTP "POST" "/graphql" responded 500 in 1011.5210 ms
+08/24/2022 10:45:00 HTTP "GET" "/" responded 200 in 19.6857 ms
+08/24/2022 10:45:05 SELECT * FROM product
+08/24/2022 10:45:05 HTTP "POST" "/graphql" responded 500 in 993.2995 ms
+08/24/2022 10:45:19 SELECT * FROM product
+08/24/2022 10:45:19 HTTP "POST" "/graphql" responded 500 in 33.7598 ms
+08/24/2022 10:45:28 SELECT * FROM product;
+08/24/2022 10:45:28 HTTP "POST" "/graphql" responded 500 in 36.2530 ms
+08/24/2022 10:56:33 HTTP "GET" "/" responded 200 in 23.6356 ms
+08/24/2022 10:56:39 SELECT * FROM product
+08/24/2022 10:56:40 HTTP "POST" "/graphql" responded 200 in 962.3569 ms
+08/24/2022 10:57:08 HTTP "GET" "/" responded 200 in 18.1487 ms
+08/24/2022 10:57:11 SELECT * FROM product
+08/24/2022 10:57:11 HTTP "POST" "/graphql" responded 500 in 1065.5438 ms
+08/24/2022 10:57:12 SELECT * FROM product
+08/24/2022 10:57:12 HTTP "POST" "/graphql" responded 500 in 34.1831 ms
+08/24/2022 10:59:54 HTTP "GET" "/" responded 200 in 31.4799 ms
+08/24/2022 10:59:57 SELECT * 
+					        FROM product
+08/24/2022 10:59:58 HTTP "POST" "/graphql" responded 500 in 953.1066 ms
+08/24/2022 11:01:17 HTTP "GET" "/" responded 200 in 20.4297 ms
+08/24/2022 11:01:30 SELECT * 
+					        FROM product
+08/24/2022 11:01:31 HTTP "POST" "/graphql" responded 500 in 933.5284 ms
+08/24/2022 11:02:00 HTTP "GET" "/" responded 200 in 22.1025 ms
+08/24/2022 11:02:07 
+08/24/2022 11:02:08 HTTP "POST" "/graphql" responded 500 in 923.3443 ms
+08/24/2022 11:02:14 
+08/24/2022 11:02:14 HTTP "POST" "/graphql" responded 500 in 65.2945 ms
+08/24/2022 11:02:31 product
+08/24/2022 11:02:31 HTTP "POST" "/graphql" responded 500 in 68.2036 ms
+08/24/2022 11:07:37 HTTP "GET" "/" responded 200 in 19.3088 ms
+08/24/2022 11:07:41 product
+08/24/2022 11:07:41 HTTP "POST" "/graphql" responded 500 in 967.2119 ms
+08/24/2022 11:07:42 product
+08/24/2022 11:07:42 HTTP "POST" "/graphql" responded 500 in 33.5694 ms
+08/24/2022 11:07:44 product
+08/24/2022 11:07:44 HTTP "POST" "/graphql" responded 500 in 38.2334 ms
+08/24/2022 11:08:03 SELECT * 
+							FROM product
+08/24/2022 11:08:03 HTTP "POST" "/graphql" responded 200 in 60.0180 ms
+08/24/2022 11:19:59 HTTP "GET" "/" responded 200 in 19.5742 ms
+08/24/2022 11:20:02 "SELECT * 
+							FROM product"
+08/24/2022 11:20:03 HTTP "POST" "/graphql" responded 500 in 971.3828 ms
+08/24/2022 11:22:24 HTTP "GET" "/" responded 200 in 19.2989 ms
+08/24/2022 11:22:29 "SELECT * FROM product"
+08/24/2022 11:22:29 HTTP "POST" "/graphql" responded 500 in 961.9201 ms
+08/24/2022 11:22:43 "SELECT * 
+FROM product"
+08/24/2022 11:22:43 HTTP "POST" "/graphql" responded 500 in 33.4582 ms
+08/24/2022 11:25:21 HTTP "GET" "/" responded 200 in 23.6300 ms
+08/24/2022 11:25:25 "
+SELECT *
+                            FROM product"
+08/24/2022 11:25:25 HTTP "POST" "/graphql" responded 500 in 978.3579 ms
+08/24/2022 11:29:39 SQL: 
+ "SELECT * 
+FROM product"
+08/24/2022 11:29:40 HTTP "POST" "/graphql" responded 500 in 40.5551 ms
+08/24/2022 11:29:52 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 11:29:53 HTTP "POST" "/graphql" responded 500 in 44.0350 ms
+08/24/2022 11:30:21 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 11:30:21 HTTP "POST" "/graphql" responded 500 in 30.0045 ms
+08/24/2022 11:30:22 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 11:30:22 HTTP "POST" "/graphql" responded 500 in 41.6641 ms
+08/24/2022 11:30:32 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 11:30:32 HTTP "POST" "/graphql" responded 200 in 91.6591 ms
+08/24/2022 12:28:28 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 12:28:28 HTTP "POST" "/graphql" responded 200 in 39.3037 ms
+08/24/2022 12:28:30 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 12:28:30 HTTP "POST" "/graphql" responded 200 in 4.3164 ms
+08/24/2022 12:28:31 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 12:28:31 HTTP "POST" "/graphql" responded 200 in 4.3330 ms
+08/24/2022 12:44:26 HTTP "GET" "/" responded 200 in 24.8644 ms
+08/24/2022 12:44:29 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 12:44:29 HTTP "POST" "/graphql" responded 200 in 1021.2759 ms
+08/24/2022 12:44:31 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 12:44:31 HTTP "POST" "/graphql" responded 200 in 8.1013 ms
+08/24/2022 12:44:32 HTTP "POST" "/graphql" responded 200 in 47.5288 ms
+08/24/2022 12:44:34 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 12:44:34 HTTP "POST" "/graphql" responded 200 in 26.8873 ms
+08/24/2022 12:44:40 HTTP "POST" "/graphql" responded 200 in 1.0679 ms
+08/24/2022 12:44:42 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 12:44:42 HTTP "POST" "/graphql" responded 200 in 4.3590 ms
+08/24/2022 12:44:43 HTTP "POST" "/graphql" responded 200 in 0.7794 ms
+08/24/2022 12:44:44 SQL: 
+"SELECT * 
+FROM product"
+08/24/2022 12:44:44 HTTP "POST" "/graphql" responded 200 in 8.1220 ms
+08/24/2022 12:44:45 HTTP "POST" "/graphql" responded 200 in 0.8424 ms
+08/24/2022 12:44:48 HTTP "POST" "/graphql" responded 200 in 0.7891 ms
+08/25/2022 13:27:34 HTTP "GET" "/" responded 200 in 27.9066 ms
+08/25/2022 13:27:43 HTTP "POST" "/graphql" responded 200 in 596.8577 ms
+08/25/2022 13:27:43 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 13:27:47 HTTP "POST" "/graphql" responded 500 in 4548.8667 ms
+08/25/2022 13:27:49 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 13:27:53 HTTP "POST" "/graphql" responded 500 in 4134.5164 ms
+08/25/2022 13:29:47 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 13:29:48 HTTP "POST" "/graphql" responded 200 in 430.9617 ms
+08/25/2022 13:47:17 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 13:47:17 HTTP "POST" "/graphql" responded 200 in 1040.5982 ms
+08/25/2022 13:47:19 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 13:47:19 HTTP "POST" "/graphql" responded 200 in 7.6769 ms
+08/25/2022 13:47:23 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 13:47:23 HTTP "POST" "/graphql" responded 200 in 4.5361 ms
+08/25/2022 13:52:41 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 13:52:42 HTTP "POST" "/graphql" responded 200 in 982.1267 ms
+08/25/2022 13:52:45 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 13:52:45 HTTP "POST" "/graphql" responded 200 in 7.9882 ms

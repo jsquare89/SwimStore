@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7c+FYUkSmTX+cnFANTVSBTAjqh5NiiexWgJqOHCt8V6/SWqh6+kCmWsdE8MXNzKKAf51Ld+rURlXtRjmdi6eug==",
+  "dgSpecHash": "M0hN4M+OEVKKp7goMRNa5bqgTaZ9MV50OWVWNoit1PoDTJc2NYf6eigG5fVsXmwrRb/7O85p4eVMYedG3//meg==",
   "success": true,
   "projectFilePath": "C:\\CODE\\Personal Projects\\SwimStore\\SwimStoreApi\\SwimStoreApi.csproj",
   "expectedPackageFiles": [
@@ -45,7 +45,7 @@
     "C:\\Users\\Jarred\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\npgsql\\6.0.6\\npgsql.6.0.6.nupkg.sha512",
-    "C:\\Users\\Jarred\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\Jarred\\.nuget\\packages\\serilog\\2.11.0\\serilog.2.11.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\serilog.aspnetcore\\6.0.1\\serilog.aspnetcore.6.0.1.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\serilog.enrichers.environment\\2.2.0\\serilog.enrichers.environment.2.2.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\serilog.enrichers.process\\2.0.2\\serilog.enrichers.process.2.0.2.nupkg.sha512",

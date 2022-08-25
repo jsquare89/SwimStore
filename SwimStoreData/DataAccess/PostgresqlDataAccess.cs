@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -19,24 +20,43 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         _config = config;
     }
 
-    public async Task<IEnumerable<T>> LoadData<T, U>(
-        string storedProcedure,
+    public async Task<IEnumerable<T>> LoadDataWithFunction<T, U>(
+        string function,
         U parameters,
         string connectionId = "SwimStorePostgresDb")
     {
         using IDbConnection connection = new NpgsqlConnection(_config.GetConnectionString(connectionId));
 
-        return await connection.QueryAsync<T>(storedProcedure, parameters, commandType: CommandType.StoredProcedure);
+        return await connection.QueryAsync<T>(function, parameters, commandType: CommandType.StoredProcedure);
     }
 
-    public async Task SaveData<T>(
-        string storedProcedure,
+    public async Task<IEnumerable<T>> LoadDataWithSql<T, U>(
+        string sqlQuery,
+        U parameters,
+        string connectionId = "SwimStorePostgresDb")
+    {
+        using IDbConnection connection = new NpgsqlConnection(_config.GetConnectionString(connectionId));
+
+        return await connection.QueryAsync<T>(sqlQuery, parameters, commandType: CommandType.Text);
+    }
+
+    public async Task SaveDataWithProcedure<T>(
+        string procedure,
         T parameters,
         string connectionId = "SwimStorePostgresDb")
     {
         using IDbConnection connection = new NpgsqlConnection(connectionId);
 
-        await connection.ExecuteAsync(storedProcedure, parameters, commandType: CommandType.StoredProcedure);
+        await connection.ExecuteAsync(procedure, parameters, commandType: CommandType.StoredProcedure);
     }
 
+    public async Task SaveDataWithSql<T>(
+        string sqlQuery,
+        T parameters,
+        string connectionId = "SwimStorePostgresDb")
+    {
+        using IDbConnection connection = new NpgsqlConnection(connectionId);
+
+        await connection.ExecuteAsync(sqlQuery, parameters, commandType: CommandType.Text);
+    }
 }

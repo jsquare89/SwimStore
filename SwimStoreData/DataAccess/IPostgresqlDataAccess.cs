@@ -2,6 +2,8 @@
 
 public interface IPostgresqlDataAccess
 {
-    Task<IEnumerable<T>> LoadData<T, U>(string storedProcedure, U parameters, string connectionId = "SwimStorePostgresDb");
-    Task SaveData<T>(string storedProcedure, T parameters, string connectionId = "SwimStorePostgresDb");
+    Task<IEnumerable<T>> LoadDataWithFunction<T, U>(string function, U parameters, string connectionId = "SwimStorePostgresDb");
+    Task<IEnumerable<T>> LoadDataWithSql<T, U>(string sqlQuery, U parameters, string connectionId = "SwimStorePostgresDb");
+    Task SaveDataWithProcedure<T>(string procedure, T parameters, string connectionId = "SwimStorePostgresDb");
+    Task SaveDataWithSql<T>(string sqlQuery, T parameters, string connectionId = "SwimStorePostgresDb");
 }
