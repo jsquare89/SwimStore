@@ -262,3 +262,396 @@ FROM product"
 "SELECT * 
 FROM product"
 08/25/2022 13:52:45 HTTP "POST" "/graphql" responded 200 in 7.9882 ms
+08/25/2022 14:11:29 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:11:29 HTTP "POST" "/graphql" responded 200 in 964.9291 ms
+08/25/2022 14:11:34 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:11:34 HTTP "POST" "/graphql" responded 200 in 38.1608 ms
+08/25/2022 14:11:41 HTTP "POST" "/graphql" responded 200 in 52.8538 ms
+08/25/2022 14:11:42 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:11:42 HTTP "POST" "/graphql" responded 200 in 26.1659 ms
+08/25/2022 14:11:47 HTTP "POST" "/graphql" responded 200 in 1.0498 ms
+08/25/2022 14:11:48 HTTP "POST" "/graphql" responded 200 in 0.7449 ms
+08/25/2022 14:11:50 HTTP "POST" "/graphql" responded 200 in 1.0522 ms
+08/25/2022 14:15:40 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:15:40 HTTP "POST" "/graphql" responded 200 in 1066.9206 ms
+08/25/2022 14:15:45 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:15:45 HTTP "POST" "/graphql" responded 200 in 9.0637 ms
+08/25/2022 14:15:56 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:15:56 HTTP "POST" "/graphql" responded 200 in 5.2609 ms
+08/25/2022 14:15:57 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:15:57 HTTP "POST" "/graphql" responded 200 in 3.9194 ms
+08/25/2022 14:16:00 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:16:00 HTTP "POST" "/graphql" responded 200 in 4.6391 ms
+08/25/2022 14:16:01 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:16:01 HTTP "POST" "/graphql" responded 200 in 4.3101 ms
+08/25/2022 14:16:15 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:16:15 HTTP "POST" "/graphql" responded 200 in 971.5449 ms
+08/25/2022 14:16:17 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:16:17 HTTP "POST" "/graphql" responded 200 in 7.9383 ms
+08/25/2022 14:16:53 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:16:54 HTTP "POST" "/graphql" responded 200 in 1092.2367 ms
+08/25/2022 14:16:55 SQL: 
+"SELECT * 
+FROM product"
+08/25/2022 14:16:55 HTTP "POST" "/graphql" responded 200 in 8.2452 ms
+08/25/2022 14:33:10 HTTP "POST" "/graphql" responded 200 in 625.1890 ms
+08/25/2022 14:33:11 SQL: 
+"SELECT * 
+FROM product
+Where brand = {brand}"
+08/25/2022 14:33:12 HTTP "POST" "/graphql" responded 500 in 476.2578 ms
+08/25/2022 14:35:19 SQL: 
+"SELECT * 
+FROM product
+Where brand = @brand"
+08/25/2022 14:35:19 HTTP "POST" "/graphql" responded 200 in 75.6676 ms
+08/25/2022 14:35:21 SQL: 
+"SELECT * 
+FROM product
+Where brand = @brand"
+08/25/2022 14:35:21 HTTP "POST" "/graphql" responded 200 in 4.2832 ms
+08/25/2022 14:35:23 HTTP "POST" "/graphql" responded 200 in 1.2090 ms
+08/25/2022 14:35:24 SQL: 
+"SELECT * 
+FROM product
+Where brand = @brand"
+08/25/2022 14:35:24 HTTP "POST" "/graphql" responded 200 in 13.3846 ms
+08/25/2022 14:35:25 SQL: 
+"SELECT * 
+FROM product
+Where brand = @brand"
+08/25/2022 14:35:25 HTTP "POST" "/graphql" responded 200 in 3.7776 ms
+08/25/2022 14:35:26 SQL: 
+"SELECT * 
+FROM product
+Where brand = @brand"
+08/25/2022 14:35:26 HTTP "POST" "/graphql" responded 200 in 4.3138 ms
+08/25/2022 14:35:27 HTTP "POST" "/graphql" responded 200 in 0.8269 ms
+08/25/2022 14:50:57 HTTP "POST" "/graphql" responded 200 in 957.9485 ms
+08/25/2022 14:51:05 HTTP "POST" "/graphql" responded 200 in 7.2780 ms
+08/25/2022 14:51:06 HTTP "POST" "/graphql" responded 200 in 3.9968 ms
+08/25/2022 14:51:06 HTTP "POST" "/graphql" responded 200 in 3.3372 ms
+08/25/2022 14:51:06 HTTP "POST" "/graphql" responded 200 in 3.3412 ms
+08/25/2022 14:51:06 HTTP "POST" "/graphql" responded 200 in 3.2109 ms
+08/25/2022 14:51:06 HTTP "POST" "/graphql" responded 200 in 3.3238 ms
+08/25/2022 14:51:07 HTTP "POST" "/graphql" responded 200 in 3.5281 ms
+08/25/2022 14:51:07 HTTP "POST" "/graphql" responded 200 in 2.8210 ms
+08/25/2022 14:51:10 HTTP "POST" "/graphql" responded 200 in 48.5104 ms
+08/25/2022 14:51:11 HTTP "POST" "/graphql" responded 200 in 3.3945 ms
+08/25/2022 14:51:12 HTTP "POST" "/graphql" responded 200 in 2.7546 ms
+08/25/2022 14:51:12 HTTP "POST" "/graphql" responded 200 in 2.9713 ms
+08/25/2022 14:51:12 HTTP "POST" "/graphql" responded 200 in 3.1718 ms
+08/25/2022 14:51:13 HTTP "POST" "/graphql" responded 200 in 2.7712 ms
+08/25/2022 14:51:13 HTTP "POST" "/graphql" responded 200 in 2.9452 ms
+08/25/2022 14:51:15 HTTP "POST" "/graphql" responded 200 in 3.3103 ms
+08/25/2022 14:52:29 ====== Postgres Call -> Stored Function ======
+"sf_product_get_all"
+08/25/2022 14:52:29 HTTP "POST" "/graphql" responded 200 in 987.2373 ms
+08/25/2022 14:52:37 ====== Postgres Call -> Stored Function ======
+"sf_product_get_all"
+08/25/2022 14:52:37 HTTP "POST" "/graphql" responded 200 in 8.5888 ms
+08/25/2022 14:52:39 ====== Postgres Call -> Stored Function ======
+"sf_product_get_all"
+08/25/2022 14:52:39 HTTP "POST" "/graphql" responded 200 in 4.8238 ms
+08/25/2022 14:53:04 ====== Postgres Call -> Stored Function ======
+		"sf_product_get_all"
+08/25/2022 14:53:04 HTTP "POST" "/graphql" responded 200 in 991.1210 ms
+08/25/2022 14:53:26 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 14:53:27 HTTP "POST" "/graphql" responded 200 in 996.3529 ms
+08/25/2022 14:54:15 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 14:54:15 HTTP "POST" "/graphql" responded 200 in 1038.5308 ms
+08/25/2022 16:26:54 HTTP "POST" "/graphql" responded 200 in 625.6003 ms
+08/25/2022 16:26:54 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 16:26:55 HTTP "POST" "/graphql" responded 200 in 455.0724 ms
+08/25/2022 16:26:56 HTTP "POST" "/graphql" responded 200 in 1.9149 ms
+08/25/2022 16:26:57 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 16:26:57 HTTP "POST" "/graphql" responded 200 in 27.7118 ms
+08/25/2022 16:26:59 HTTP "POST" "/graphql" responded 200 in 0.8519 ms
+08/25/2022 16:27:14 HTTP "POST" "/graphql" responded 200 in 0.9752 ms
+08/25/2022 16:27:28 HTTP "POST" "/graphql" responded 200 in 0.7660 ms
+08/25/2022 16:27:32 HTTP "POST" "/graphql" responded 200 in 1.1854 ms
+08/25/2022 16:27:36 HTTP "POST" "/graphql" responded 200 in 0.9049 ms
+08/25/2022 16:28:58 HTTP "GET" "/graphql-voyager" responded 404 in 0.0309 ms
+08/25/2022 16:32:49 HTTP "POST" "/graphql" responded 200 in 619.5005 ms
+08/25/2022 16:32:52 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 16:32:52 HTTP "POST" "/graphql" responded 200 in 382.4042 ms
+08/25/2022 16:33:58 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 16:33:58 HTTP "POST" "/graphql" responded 200 in 7.9051 ms
+08/25/2022 16:34:01 HTTP "POST" "/graphql" responded 200 in 1.0318 ms
+08/25/2022 16:34:02 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 16:34:02 HTTP "POST" "/graphql" responded 200 in 3.9455 ms
+08/25/2022 16:34:04 HTTP "POST" "/graphql" responded 200 in 0.7846 ms
+08/25/2022 16:34:05 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 16:34:05 HTTP "POST" "/graphql" responded 200 in 22.2866 ms
+08/25/2022 16:34:08 HTTP "POST" "/graphql" responded 200 in 0.7596 ms
+08/25/2022 16:34:09 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 16:34:09 HTTP "POST" "/graphql" responded 200 in 4.0992 ms
+08/25/2022 16:37:30 HTTP "GET" "/graphql-voyager" responded 200 in 101.5100 ms
+08/25/2022 16:37:31 HTTP "POST" "/graphql" responded 200 in 648.2033 ms
+08/25/2022 16:39:05 HTTP "GET" "/graphql-voyager" responded 200 in 66.0717 ms
+08/25/2022 16:39:06 HTTP "POST" "/graphql" responded 200 in 648.3458 ms
+08/25/2022 16:39:45 HTTP "POST" "/graphql" responded 200 in 6.2942 ms
+08/25/2022 16:39:46 HTTP "POST" "/graphql" responded 200 in 2.8205 ms
+08/25/2022 18:08:04 HTTP "POST" "/graphql" responded 200 in 675.1871 ms
+08/25/2022 18:08:07 HTTP "POST" "/graphql" responded 200 in 1.6886 ms
+08/25/2022 18:08:08 HTTP "POST" "/graphql" responded 200 in 2.1443 ms
+08/25/2022 18:08:10 HTTP "POST" "/graphql" responded 200 in 0.8320 ms
+08/25/2022 18:08:11 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:08:15 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:08:16 HTTP "POST" "/graphql" responded 500 in 4586.2233 ms
+08/25/2022 18:08:19 HTTP "POST" "/graphql" responded 200 in 4080.6926 ms
+08/25/2022 18:08:57 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:08:58 HTTP "POST" "/graphql" responded 200 in 374.1224 ms
+08/25/2022 18:09:09 HTTP "POST" "/graphql" responded 200 in 1.0114 ms
+08/25/2022 18:09:11 HTTP "POST" "/graphql" responded 200 in 1.0633 ms
+08/25/2022 18:09:33 HTTP "GET" "/graphql-voyager" responded 200 in 77.2143 ms
+08/25/2022 18:09:33 HTTP "POST" "/graphql" responded 200 in 1.3252 ms
+08/25/2022 18:09:33 HTTP "GET" "/favicon.ico" responded 404 in 0.0618 ms
+08/25/2022 18:12:09 HTTP "GET" "/graphql-voyager" responded 200 in 130.4715 ms
+08/25/2022 18:12:10 HTTP "POST" "/graphql" responded 200 in 669.9622 ms
+08/25/2022 18:19:55 HTTP "POST" "/graphql" responded 500 in 148.3774 ms
+08/25/2022 18:22:33 HTTP "POST" "/graphql" responded 500 in 611.2510 ms
+08/25/2022 18:22:35 HTTP "POST" "/graphql" responded 500 in 1.7959 ms
+08/25/2022 18:22:37 HTTP "POST" "/graphql" responded 500 in 1.7800 ms
+08/25/2022 18:22:45 HTTP "POST" "/graphql" responded 500 in 0.7732 ms
+08/25/2022 18:23:44 HTTP "POST" "/graphql" responded 200 in 609.6548 ms
+08/25/2022 18:23:45 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:23:45 HTTP "POST" "/graphql" responded 200 in 556.6983 ms
+08/25/2022 18:23:46 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:23:46 HTTP "POST" "/graphql" responded 200 in 8.5113 ms
+08/25/2022 18:23:47 HTTP "POST" "/graphql" responded 200 in 1.1425 ms
+08/25/2022 18:23:48 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:23:48 HTTP "POST" "/graphql" responded 200 in 4.1988 ms
+08/25/2022 18:23:49 HTTP "POST" "/graphql" responded 200 in 0.8951 ms
+08/25/2022 18:23:50 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:23:50 HTTP "POST" "/graphql" responded 200 in 26.9644 ms
+08/25/2022 18:23:58 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:23:58 HTTP "POST" "/graphql" responded 200 in 4.8842 ms
+08/25/2022 18:24:34 HTTP "POST" "/graphql" responded 200 in 0.8100 ms
+08/25/2022 18:24:35 HTTP "POST" "/graphql" responded 500 in 30.1779 ms
+08/25/2022 18:25:50 HTTP "POST" "/graphql" responded 200 in 620.9402 ms
+08/25/2022 18:25:50 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:25:51 HTTP "POST" "/graphql" responded 200 in 380.8893 ms
+08/25/2022 18:25:53 HTTP "POST" "/graphql" responded 200 in 2.3020 ms
+08/25/2022 18:25:54 HTTP "POST" "/graphql" responded 200 in 0.9510 ms
+08/25/2022 18:25:59 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:25:59 HTTP "POST" "/graphql" responded 200 in 25.7345 ms
+08/25/2022 18:26:01 HTTP "POST" "/graphql" responded 200 in 1.2998 ms
+08/25/2022 18:26:08 ====== Postgres Call -> SQL ======
+	"INSERT INTO product(name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:26:08 HTTP "POST" "/graphql" responded 500 in 6549.9400 ms
+08/25/2022 18:27:47 ====== Postgres Call -> SQL ======
+	"INSERT INTO product(name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:27:48 HTTP "POST" "/graphql" responded 500 in 45.3235 ms
+08/25/2022 18:28:24 HTTP "POST" "/graphql" responded 200 in 611.9720 ms
+08/25/2022 18:28:24 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:28:24 HTTP "POST" "/graphql" responded 200 in 379.7459 ms
+08/25/2022 18:28:45 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:28:45 HTTP "POST" "/graphql" responded 200 in 8.2010 ms
+08/25/2022 18:28:46 HTTP "POST" "/graphql" responded 200 in 0.9536 ms
+08/25/2022 18:28:47 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:28:47 HTTP "POST" "/graphql" responded 500 in 116.1132 ms
+08/25/2022 18:29:06 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:29:20 HTTP "POST" "/graphql" responded 500 in 22740.9618 ms
+08/25/2022 18:29:34 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:45:40 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:45:41 HTTP "POST" "/graphql" responded 500 in 5331.6570 ms
+08/25/2022 18:46:33 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:46:33 HTTP "POST" "/graphql" responded 500 in 747.2145 ms
+08/25/2022 18:46:40 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:46:40 HTTP "POST" "/graphql" responded 500 in 52.8246 ms
+08/25/2022 18:47:05 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:47:16 HTTP "POST" "/graphql" responded 500 in 17012.8669 ms
+08/25/2022 18:47:20 HTTP "POST" "/graphql" responded 200 in 39.7964 ms
+08/25/2022 18:47:21 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:47:21 HTTP "POST" "/graphql" responded 200 in 347.9557 ms
+08/25/2022 18:47:23 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:47:23 HTTP "POST" "/graphql" responded 200 in 6.9458 ms
+08/25/2022 18:47:24 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:47:24 HTTP "POST" "/graphql" responded 200 in 3.4823 ms
+08/25/2022 18:47:34 HTTP "POST" "/graphql" responded 200 in 1.0256 ms
+08/25/2022 18:48:04 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:50:24 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:50:25 HTTP "POST" "/graphql" responded 200 in 954.0186 ms
+08/25/2022 18:50:30 HTTP "POST" "/graphql" responded 200 in 80.3832 ms
+08/25/2022 18:50:31 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:50:31 HTTP "POST" "/graphql" responded 200 in 25.3695 ms
+08/25/2022 18:50:35 HTTP "POST" "/graphql" responded 200 in 1.4703 ms
+08/25/2022 18:50:44 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:52:25 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:52:25 HTTP "POST" "/graphql" responded 200 in 639.5585 ms
+08/25/2022 18:52:25 HTTP "POST" "/graphql" responded 200 in 410.8815 ms
+08/25/2022 18:52:31 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:52:31 HTTP "POST" "/graphql" responded 200 in 8.0798 ms
+08/25/2022 18:52:34 HTTP "POST" "/graphql" responded 200 in 0.9985 ms
+08/25/2022 18:52:34 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:52:34 HTTP "POST" "/graphql" responded 200 in 3.9263 ms
+08/25/2022 18:52:40 HTTP "POST" "/graphql" responded 200 in 0.8912 ms
+08/25/2022 18:52:43 HTTP "POST" "/graphql" responded 200 in 0.8804 ms
+08/25/2022 18:52:46 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:52:46 HTTP "POST" "/graphql" responded 200 in 3.9800 ms
+08/25/2022 18:52:49 HTTP "POST" "/graphql" responded 200 in 0.8563 ms
+08/25/2022 18:52:53 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:53:42 Format of the initialization string does not conform to specification starting at index 0.
+08/25/2022 18:53:43 HTTP "POST" "/graphql" responded 500 in 52921.5026 ms
+08/25/2022 18:55:35 HTTP "POST" "/graphql" responded 200 in 622.6155 ms
+08/25/2022 18:55:35 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 18:55:35 HTTP "POST" "/graphql" responded 200 in 374.7051 ms
+08/25/2022 18:55:37 HTTP "POST" "/graphql" responded 200 in 2.0431 ms
+08/25/2022 18:55:42 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 18:56:20 23505: duplicate key value violates unique constraint "product_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+08/25/2022 18:56:20 HTTP "POST" "/graphql" responded 500 in 42302.0389 ms
+08/25/2022 19:05:02 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:05:23 HTTP "POST" "/graphql" responded 500 in 21300.4109 ms
+08/25/2022 19:05:47 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:05:47 HTTP "POST" "/graphql" responded 500 in 1079.4120 ms
+08/25/2022 19:06:24 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:06:24 HTTP "POST" "/graphql" responded 500 in 29.0458 ms
+08/25/2022 19:08:01 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:08:01 HTTP "POST" "/graphql" responded 500 in 20.7919 ms
+08/25/2022 19:09:34 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:09:35 HTTP "POST" "/graphql" responded 500 in 1040.1120 ms
+08/25/2022 19:11:23 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:11:23 HTTP "POST" "/graphql" responded 500 in 30.5118 ms
+08/25/2022 19:11:29 HTTP "POST" "/graphql" responded 200 in 39.8724 ms
+08/25/2022 19:11:30 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+08/25/2022 19:11:30 HTTP "POST" "/graphql" responded 200 in 31.2915 ms
+08/25/2022 19:11:46 HTTP "POST" "/graphql" responded 200 in 1.4716 ms
+08/25/2022 19:13:03 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:14:11 HTTP "POST" "/graphql" responded 500 in 84179.2029 ms
+08/25/2022 19:15:34 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:15:39 HTTP "POST" "/graphql" responded 500 in 12993.2738 ms
+08/25/2022 19:18:10 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:18:26 HTTP "POST" "/graphql" responded 500 in 24232.3318 ms
+08/25/2022 19:20:35 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:20:56 HTTP "POST" "/graphql" responded 500 in 20795.1529 ms
+08/25/2022 19:21:48 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)
+VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)
+RETURNING *"
+08/25/2022 19:21:56 HTTP "POST" "/graphql" responded 200 in 8344.6707 ms

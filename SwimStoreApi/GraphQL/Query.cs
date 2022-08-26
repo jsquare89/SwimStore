@@ -14,4 +14,10 @@ public class Query
     {
         return await productData.GetProducts();
     }
+
+    [UseFiltering]
+    public async Task<IEnumerable<ProductModel>> GetProductByBrand(string brand, [Service] IProductData productData)
+    {
+        return await productData.GetProductsByBrand(brand.ToLower());
+    }
 }

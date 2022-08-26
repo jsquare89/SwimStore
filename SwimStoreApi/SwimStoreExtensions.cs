@@ -27,13 +27,22 @@ public static class SwimStoreExtensions
         return builder;
     }
 
-    public static WebApplicationBuilder UseGraphQl(
+    public static WebApplicationBuilder ConfigureGraphQL(
         this WebApplicationBuilder builder)
     {
         builder.Services
             .AddGraphQLServer()
             .AddQueryType<Query>()
+            .AddMutationType<Mutation>()
             .AddFiltering();
         return builder;
+    }
+
+    public static WebApplication MapSwimStoreApi(
+        this WebApplication app)
+    {
+        app.MapGraphQL("/graphql");
+        app.MapGraphQLVoyager("/graphql-voyager");
+        return app;
     }
 }

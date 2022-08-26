@@ -5,14 +5,16 @@ using SwimStoreApi.DapperAttributeMapper;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.UseSwimStoreWebApi();
-builder.UseGraphQl();
+builder.ConfigureGraphQL();
 builder.ConfigureSerilog();
-
 DapperTypeMapper.Initialize("SwimStoreData.Models");
 
 var app = builder.Build();
 
-app.MapGraphQL("/graphql");
+app.UseGraphQLVoyager();
 app.UseSerilogRequestLogging();
 
+app.MapSwimStoreApi();
+
 app.Run();
+
