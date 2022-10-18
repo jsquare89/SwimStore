@@ -51,15 +51,15 @@
           "dependencies": {
             "GraphQL.Server.Ui.Voyager": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.1.1, )"
             },
             "HotChocolate.AspNetCore": {
               "target": "Package",
-              "version": "[12.12.1, )"
+              "version": "[12.15.0, )"
             },
             "HotChocolate.Data": {
               "target": "Package",
-              "version": "[12.12.1, )"
+              "version": "[12.15.0, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -183,7 +183,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

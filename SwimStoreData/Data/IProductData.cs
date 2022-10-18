@@ -7,4 +7,5 @@ public interface IProductData
     Task<IEnumerable<ProductModel>> GetProducts();
     Task<IEnumerable<ProductModel>> GetProductsByBrand(string brand);
     Task<dynamic> CreateProduct<T>(T parameters);
+    Task<dynamic> UpdateProduct<T>(T parameters);
 }

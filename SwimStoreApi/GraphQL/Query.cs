@@ -18,6 +18,6 @@ public class Query
     [UseFiltering]
     public async Task<IEnumerable<ProductModel>> GetProductByBrand(string brand, [Service] IProductData productData)
     {
-        return await productData.GetProductsByBrand(brand.ToLower());
+        return await productData.GetProductsByBrand(brand);
     }
 }

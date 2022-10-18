@@ -35,7 +35,7 @@ public class ProductData : IProductData
         string getAllProductsByBrandQuery =
            "SELECT * \n" +
            "FROM product\n" +
-           "Where brand = {brand}";
+           "Where brand = @brand";
         return _db.LoadDataWithSql<ProductModel, dynamic>(getAllProductsByBrandQuery, new { brand = brand });
     }
 
@@ -43,6 +43,16 @@ public class ProductData : IProductData
     {
         string insertProductQuery = "INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)\n" +
                                     "VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)\n" +
+                                    "RETURNING *";
+        var result = await _db.SaveDataWithSql<dynamic>(insertProductQuery, parameters);
+        return result;
+    }
+
+    public async Task<dynamic> UpdateProduct<T>(T parameters)
+    {
+        string insertProductQuery = "Update product\n" +
+                                    "SET name = @name, original_price = @original_price, current_price = @current_price, quantity_in_stock = @quantity_in_stock, brand = @brand, gender = @gender\n" +
+                                    "WHERE id = @id \n" +
                                     "RETURNING *";
         var result = await _db.SaveDataWithSql<dynamic>(insertProductQuery, parameters);
         return result;

@@ -31,7 +31,8 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         _logger.LogInformation("====== Postgres Call -> Stored Function ======\n" +
             "\t{function}", function);
 
-        using IDbConnection connection = new NpgsqlConnection(_config.GetConnectionString(connectionId));
+        using IDbConnection connection = new NpgsqlConnection(
+            _config.GetConnectionString(connectionId));
 
         return await connection.QueryAsync<T>(function, parameters, commandType: CommandType.StoredProcedure);
     }
@@ -44,7 +45,8 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         _logger.LogInformation("====== Postgres Call -> SQL ======\n" +
             "\t{sqlQuery}", sqlQuery);
 
-        using IDbConnection connection = new NpgsqlConnection(_config.GetConnectionString(connectionId));
+        using IDbConnection connection = new NpgsqlConnection(
+            _config.GetConnectionString(connectionId));
 
         return await connection.QueryAsync<T>(sqlQuery, parameters, commandType: CommandType.Text);
     }
@@ -54,7 +56,8 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         T parameters,
         string connectionId = "SwimStorePostgresDb")
     {
-        using IDbConnection connection = new NpgsqlConnection(connectionId);
+        using IDbConnection connection = new NpgsqlConnection(
+            _config.GetConnectionString(connectionId));
 
         await connection.ExecuteAsync(procedure, parameters, commandType: CommandType.StoredProcedure);
     }
@@ -67,18 +70,9 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         _logger.LogInformation("====== Postgres Call -> SQL ======\n" +
             "\t{sqlQuery}", sqlQuery);
 
-        using IDbConnection connection = new NpgsqlConnection(_config.GetConnectionString(connectionId));
-
-        try
-        {
-            var result = await connection.QuerySingleAsync(sqlQuery, parameters, commandType: CommandType.Text);
-            return result;
-        }
-        catch(Exception ex)
-        {
-            _logger.LogInformation(ex.Message);
-        }
-        return null;
-        //await connection.ExecuteAsync(sqlQuery, parameters, commandType: CommandType.Text);
+        using IDbConnection connection = new NpgsqlConnection(
+            _config.GetConnectionString(connectionId));
+       
+        return await connection.QuerySingleAsync(sqlQuery, parameters, commandType: CommandType.Text);
     }
 }
