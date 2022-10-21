@@ -1099,3 +1099,43 @@ Where brand = @brand"
 FROM product
 Where brand = @brand"
 10/18/2022 11:46:02 HTTP "POST" "/graphql" responded 200 in 7.6212 ms
+10/20/2022 13:37:18 HTTP "GET" "/graphql" responded 301 in 13.6226 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/index.html" responded 200 in 87.6271 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/polyfills.14223cd3.js" responded 200 in 36.7679 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/917.df80a314.js" responded 200 in 32.9193 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/main.7da7210f.js" responded 200 in 0.6833 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/568.71498544.chunk.js" responded 200 in 1.2851 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/927.0676b810.chunk.js" responded 200 in 61.2691 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/css/styles.d1755a82.chunk.css" responded 200 in 62.6187 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/7.ef194ce7.chunk.js" responded 200 in 10.3099 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/696.23e5e4e1.chunk.js" responded 200 in 61.5309 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/641.c7e5a908.chunk.js" responded 200 in 53.5481 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/243.082d6152.chunk.js" responded 200 in 14.1104 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/494.af2a9e30.chunk.js" responded 200 in 73.2668 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/693.b625e9eb.chunk.js" responded 200 in 91.2927 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/manifest.webmanifest" responded 200 in 0.1639 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/favicon.svg" responded 200 in 0.5962 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 17.8887 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/95.4f7bae42.chunk.js" responded 200 in 0.2513 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/619.d2a9edb4.chunk.js" responded 200 in 0.4156 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/json.50fb813a.js" responded 200 in 6.0982 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/document.8402b2ae.chunk.js" responded 200 in 0.4297 ms
+10/20/2022 13:37:19 HTTP "GET" "/graphql/static/js/schema.2a88d762.chunk.js" responded 200 in 0.5315 ms
+10/20/2022 13:37:20 HTTP "GET" "/graphql/static/js/160.5700f964.chunk.js" responded 200 in 0.2722 ms
+10/20/2022 13:37:20 HTTP "GET" "/graphql/static/js/13.6582dd74.chunk.js" responded 200 in 0.1945 ms
+10/20/2022 13:37:20 HTTP "GET" "/graphql/static/js/523.9581171d.chunk.js" responded 200 in 0.1969 ms
+10/20/2022 13:37:20 HTTP "GET" "/graphql/static/js/319.15add1dd.chunk.js" responded 200 in 0.3019 ms
+10/20/2022 13:37:20 HTTP "GET" "/graphql/static/js/97.cee6a1a5.chunk.js" responded 200 in 0.2298 ms
+10/20/2022 13:37:20 HTTP "GET" "/graphql/static/js/101.e5dcd65e.chunk.js" responded 200 in 0.1836 ms
+10/20/2022 13:37:20 HTTP "GET" "/graphql/static/media/FiraCode-Medium.1bc138a84f63b384c3f2.woff2" responded 200 in 2.5711 ms
+10/20/2022 13:37:20 HTTP "GET" "/graphql/static/js/editor.a85ce25e.js" responded 200 in 3.0297 ms
+10/20/2022 13:37:20 HTTP "GET" "/graphql/static/js/graphql.worker.1e36c99e.js" responded 200 in 10.8850 ms
+10/20/2022 13:37:20 HTTP "POST" "/graphql" responded 200 in 720.7100 ms
+10/20/2022 13:37:20 HTTP "POST" "/graphql" responded 200 in 32.6652 ms
+10/20/2022 13:37:21 HTTP "GET" "/graphql/static/media/codicon.b797181c93b3755f4fa1.ttf" responded 200 in 13.4983 ms
+10/20/2022 13:37:21 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+10/20/2022 13:37:22 HTTP "POST" "/graphql" responded 200 in 486.4968 ms
+10/20/2022 13:37:25 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+10/20/2022 13:37:25 HTTP "POST" "/graphql" responded 200 in 8.3426 ms
