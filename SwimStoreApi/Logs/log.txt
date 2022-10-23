@@ -1139,3 +1139,27 @@ Where brand = @brand"
 10/20/2022 13:37:25 ====== Postgres Call -> Stored Function ======
 	"sf_product_get_all"
 10/20/2022 13:37:25 HTTP "POST" "/graphql" responded 200 in 8.3426 ms
+10/23/2022 12:01:21 HTTP "POST" "/graphql" responded 200 in 655.6275 ms
+10/23/2022 12:01:24 HTTP "GET" "/voyagr" responded 404 in 0.0581 ms
+10/23/2022 12:01:28 HTTP "GET" "/voyager" responded 404 in 0.0032 ms
+10/23/2022 12:01:30 HTTP "GET" "/voyager" responded 404 in 0.0027 ms
+10/23/2022 12:01:34 ====== Postgres Call -> SQL ======
+	"SELECT * 
+FROM product
+Where brand = @brand"
+10/23/2022 12:01:35 HTTP "POST" "/graphql" responded 200 in 1124.9352 ms
+10/23/2022 12:01:41 HTTP "GET" "/graphql-voyager" responded 200 in 77.0673 ms
+10/23/2022 12:01:42 HTTP "POST" "/graphql" responded 200 in 3.0825 ms
+10/23/2022 12:01:43 HTTP "GET" "/favicon.ico" responded 404 in 0.0051 ms
+10/23/2022 12:02:06 HTTP "POST" "/graphql" responded 200 in 1.4359 ms
+10/23/2022 12:02:13 HTTP "POST" "/graphql" responded 200 in 1.0218 ms
+10/23/2022 12:02:14 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+10/23/2022 12:02:14 HTTP "POST" "/graphql" responded 200 in 7.9186 ms
+10/23/2022 12:02:19 HTTP "POST" "/graphql" responded 200 in 0.9784 ms
+10/23/2022 12:02:21 HTTP "POST" "/graphql" responded 200 in 0.9071 ms
+10/23/2022 12:02:33 HTTP "POST" "/graphql" responded 200 in 0.8830 ms
+10/23/2022 12:02:35 HTTP "POST" "/graphql" responded 200 in 1.0181 ms
+10/23/2022 12:02:36 HTTP "POST" "/graphql" responded 200 in 0.9109 ms
+10/23/2022 12:02:36 HTTP "POST" "/graphql" responded 200 in 1.0413 ms
+10/23/2022 12:02:37 HTTP "POST" "/graphql" responded 200 in 0.9343 ms

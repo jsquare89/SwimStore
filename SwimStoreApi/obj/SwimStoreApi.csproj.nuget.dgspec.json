@@ -49,6 +49,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
             "GraphQL.Server.Ui.Voyager": {
               "target": "Package",
               "version": "[7.1.1, )"

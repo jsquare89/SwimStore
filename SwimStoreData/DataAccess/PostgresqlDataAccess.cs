@@ -9,6 +9,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace SwimStoreData.DataAccess;
 
@@ -21,6 +22,22 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
     {
         _config = config;
         _logger = logger;
+    }
+
+    public void CreateDatabase(string connectionId = "MasterConnection", string dbName = "swim-store")
+    {
+        var query = "SELECT datname FROM pg_catalog.pg_database WHERE lower(datname) = lower(@name);";
+        var parameters = new DynamicParameters();
+        parameters.Add("name", dbName);
+
+        using IDbConnection connection = new NpgsqlConnection(
+            _config.GetConnectionString(connectionId));
+
+        var result = connection.Query(query, parameters);
+      
+        if (!result.Any())
+            connection.Execute($"CREATE DATABASE {dbName}");
+
     }
 
     public async Task<IEnumerable<T>> LoadDataWithFunction<T, U>(

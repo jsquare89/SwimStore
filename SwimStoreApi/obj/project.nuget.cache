@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kmy4HZdIHXlTsIgGrTEXSXRGJY+3Uov4KOzX7ziiIBEhKIgwX9LuhD5wqUvX8B7v2v+z5mO5jVp0ypbgh6EaHA==",
+  "dgSpecHash": "1axH/SB60hl/TrMQLHEz4Mj8JtZEvsrcfh+r45j9CFhs5prwyFpa9SShMdSQrB8e5OlvHsTXnK7FdWQdNnS9ww==",
   "success": true,
   "projectFilePath": "C:\\CODE\\Personal Projects\\SwimStore\\SwimStoreApi\\SwimStoreApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jarred\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\Jarred\\.nuget\\packages\\fluentmigrator\\3.3.2\\fluentmigrator.3.3.2.nupkg.sha512",
+    "C:\\Users\\Jarred\\.nuget\\packages\\fluentmigrator.abstractions\\3.3.2\\fluentmigrator.abstractions.3.3.2.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\graphql.server.ui.voyager\\7.1.1\\graphql.server.ui.voyager.7.1.1.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\greendonut\\12.15.0\\greendonut.12.15.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\hotchocolate\\12.15.0\\hotchocolate.12.15.0.nupkg.sha512",
@@ -64,7 +66,8 @@
     "C:\\Users\\Jarred\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\system.text.json\\4.7.0\\system.text.json.4.7.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\system.threading.channels\\4.7.0\\system.threading.channels.4.7.0.nupkg.sha512",
-    "C:\\Users\\Jarred\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\Jarred\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Jarred\\.nuget\\packages\\system.valuetuple\\4.4.0\\system.valuetuple.4.4.0.nupkg.sha512"
   ],
   "logs": []
 }

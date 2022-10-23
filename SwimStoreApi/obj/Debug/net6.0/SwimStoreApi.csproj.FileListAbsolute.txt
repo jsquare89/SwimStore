@@ -1,11 +1,14 @@
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\appsettings.Development.json
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\appsettings.json
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Logs\log.json
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreApi.exe
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreApi.deps.json
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreApi.runtimeconfig.json
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreApi.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreApi.pdb
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Dapper.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\FluentMigrator.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\FluentMigrator.Abstractions.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\GraphQL.Server.Ui.Voyager.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\GreenDonut.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.Abstractions.dll
@@ -44,6 +47,7 @@ C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Settin
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\de-DE\FluentMigrator.Abstractions.resources.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreData.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreData.pdb
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.csproj.AssemblyReference.cache
@@ -61,4 +65,3 @@ C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\refint\SwimSto
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.pdb
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.genruntimeconfig.cache
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\ref\SwimStoreApi.dll
-C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Logs\log.json
