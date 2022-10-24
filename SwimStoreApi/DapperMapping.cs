@@ -10,10 +10,10 @@ public static class DapperMapping
     public static void Map()
     {
         // custom mapping
-        var map = new CustomPropertyTypeMap(typeof(Product),
+        var map = new CustomPropertyTypeMap(typeof(ProductModel),
                                             (type, columnName) => type.GetProperties().FirstOrDefault(prop => GetDescriptionFromAttribute(prop) == columnName));
         
-        Dapper.SqlMapper.SetTypeMap(typeof(Product), map);
+        Dapper.SqlMapper.SetTypeMap(typeof(ProductModel), map);
     }
     private static string GetDescriptionFromAttribute(MemberInfo member)
     {

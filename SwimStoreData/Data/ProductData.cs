@@ -18,25 +18,25 @@ public class ProductData : IProductData
         _logger = logger;
     }
 
-    public Task<IEnumerable<Product>> GetProducts()
+    public Task<IEnumerable<ProductModel>> GetProducts()
     {
         string getAllProductsSF = "sf_product_get_all";
-        return _db.LoadDataWithFunction<Product, dynamic>(getAllProductsSF, new { });
+        return _db.LoadDataWithFunction<ProductModel, dynamic>(getAllProductsSF, new { });
     }
 
-    public async Task<Product> GetProductById(int id)
+    public async Task<ProductModel> GetProductById(int id)
     {
-        var products = await _db.LoadDataWithFunction<Product, dynamic>("sf_product_get_by_id", new { id });
+        var products = await _db.LoadDataWithFunction<ProductModel, dynamic>("sf_product_get_by_id", new { id });
         return products.FirstOrDefault();
     }
 
-    public Task<IEnumerable<Product>> GetProductsByBrand(string brand)
+    public Task<IEnumerable<ProductModel>> GetProductsByBrand(string brand)
     {
         string getAllProductsByBrandQuery =
            "SELECT * \n" +
            "FROM product\n" +
            "Where brand = @brand";
-        return _db.LoadDataWithSql<Product, dynamic>(getAllProductsByBrandQuery, new { brand = brand });
+        return _db.LoadDataWithSql<ProductModel, dynamic>(getAllProductsByBrandQuery, new { brand = brand });
     }
 
     public async Task<dynamic> CreateProduct<T>(T parameters)

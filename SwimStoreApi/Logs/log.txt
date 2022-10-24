@@ -2179,3 +2179,660 @@ DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error
 10/24/2022 14:01:10 Committing Transaction
 10/24/2022 14:01:10 20221024001: InitialSeed_20221024001 migrated
 10/24/2022 14:01:10 => 0.004683s
+10/24/2022 14:15:46 Migrations
+10/24/2022 14:15:46 20221023001: InitialTables_20221023001
+10/24/2022 14:15:46 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:18:56 Migrations
+10/24/2022 14:18:56 20221023001: InitialTables_20221023001
+10/24/2022 14:18:56 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:19:07 HTTP "GET" "/graphql-voyager" responded 200 in 102.3373 ms
+10/24/2022 14:19:08 HTTP "GET" "/favicon.ico" responded 404 in 0.0480 ms
+10/24/2022 14:19:08 HTTP "POST" "/graphql" responded 500 in 372.8273 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:19:08 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:19:16 HTTP "POST" "/graphql" responded 500 in 20.3817 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:19:16 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:19:17 HTTP "GET" "/graphql-voyager" responded 200 in 5.6345 ms
+10/24/2022 14:19:17 HTTP "POST" "/graphql" responded 500 in 12.9604 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:19:17 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:19:22 HTTP "POST" "/graphql" responded 500 in 12.8533 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:19:22 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:19:23 HTTP "POST" "/graphql" responded 500 in 12.1632 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:19:23 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:19:24 HTTP "POST" "/graphql" responded 500 in 11.9318 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:19:24 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:19:24 HTTP "POST" "/graphql" responded 500 in 13.0506 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:19:24 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:19:39 HTTP "POST" "/graphql" responded 500 in 12.2665 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:19:39 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:19:51 Migrations
+10/24/2022 14:19:51 20221023001: InitialTables_20221023001
+10/24/2022 14:19:51 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:19:53 HTTP "POST" "/graphql" responded 500 in 346.6259 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:19:53 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:20:52 Migrations
+10/24/2022 14:20:52 20221023001: InitialTables_20221023001
+10/24/2022 14:20:52 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:20:56 HTTP "POST" "/graphql" responded 500 in 344.3652 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:20:56 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:21:56 Migrations
+10/24/2022 14:21:56 20221023001: InitialTables_20221023001
+10/24/2022 14:21:56 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:23:03 Migrations
+10/24/2022 14:23:03 20221023001: InitialTables_20221023001
+10/24/2022 14:23:03 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:23:10 HTTP "POST" "/graphql" responded 500 in 327.1499 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:23:10 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:24:42 Migrations
+10/24/2022 14:24:42 20221023001: InitialTables_20221023001
+10/24/2022 14:24:42 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:24:43 HTTP "POST" "/graphql" responded 500 in 337.6885 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:24:43 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:24:44 HTTP "POST" "/graphql" responded 500 in 11.3554 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 14:24:44 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Product` was already registered by another type. (HotChocolate.Types.ObjectType<SwimStoreApi.Models.Product>)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 14:26:10 Migrations
+10/24/2022 14:26:10 20221023001: InitialTables_20221023001
+10/24/2022 14:26:10 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:26:12 HTTP "POST" "/graphql" responded 400 in 561.1933 ms
+10/24/2022 14:26:14 HTTP "POST" "/graphql" responded 400 in 0.5335 ms
+10/24/2022 14:26:15 HTTP "POST" "/graphql" responded 400 in 0.2791 ms
+10/24/2022 14:26:29 HTTP "POST" "/graphql" responded 400 in 0.2628 ms
+10/24/2022 14:26:30 HTTP "POST" "/graphql" responded 400 in 0.2963 ms
+10/24/2022 14:26:31 HTTP "POST" "/graphql" responded 400 in 0.2603 ms
+10/24/2022 14:26:31 HTTP "POST" "/graphql" responded 400 in 0.2625 ms
+10/24/2022 14:26:39 Migrations
+10/24/2022 14:26:39 20221023001: InitialTables_20221023001
+10/24/2022 14:26:39 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:26:40 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+10/24/2022 14:26:40 HTTP "POST" "/graphql" responded 200 in 718.1005 ms
+10/24/2022 14:26:43 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+10/24/2022 14:26:43 HTTP "POST" "/graphql" responded 200 in 6.8174 ms
+10/24/2022 14:26:44 ====== Postgres Call -> Stored Function ======
+	"sf_product_get_all"
+10/24/2022 14:26:44 HTTP "POST" "/graphql" responded 200 in 5.2839 ms

@@ -2,14 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Npgsql;
-using Serilog;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace SwimStoreData.DataAccess;
 
@@ -34,10 +27,8 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
             _config.GetConnectionString(connectionId));
 
         var result = connection.Query(query, parameters);
-      
         if (!result.Any())
             connection.Execute($"CREATE DATABASE {dbName}");
-
     }
 
     public async Task<IEnumerable<T>> LoadDataWithFunction<T, U>(
