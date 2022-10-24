@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jarre\\Documents\\GitHub\\SwimStore\\SwimStoreData\\SwimStoreData.csproj": {}
+    "C:\\CODE\\Personal Projects\\SwimStore\\SwimStoreData\\SwimStoreData.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jarre\\Documents\\GitHub\\SwimStore\\SwimStoreData\\SwimStoreData.csproj": {
+    "C:\\CODE\\Personal Projects\\SwimStore\\SwimStoreData\\SwimStoreData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jarre\\Documents\\GitHub\\SwimStore\\SwimStoreData\\SwimStoreData.csproj",
+        "projectUniqueName": "C:\\CODE\\Personal Projects\\SwimStore\\SwimStoreData\\SwimStoreData.csproj",
         "projectName": "SwimStoreData",
-        "projectPath": "C:\\Users\\jarre\\Documents\\GitHub\\SwimStore\\SwimStoreData\\SwimStoreData.csproj",
-        "packagesPath": "C:\\Users\\jarre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jarre\\Documents\\GitHub\\SwimStore\\SwimStoreData\\obj\\",
+        "projectPath": "C:\\CODE\\Personal Projects\\SwimStore\\SwimStoreData\\SwimStoreData.csproj",
+        "packagesPath": "C:\\Users\\Jarred\\.nuget\\packages\\",
+        "outputPath": "C:\\CODE\\Personal Projects\\SwimStore\\SwimStoreData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jarre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jarred\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

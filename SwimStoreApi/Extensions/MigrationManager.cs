@@ -1,4 +1,5 @@
 ﻿using FluentMigrator.Runner;
+using FluentMigrator.Runner.Initialization;
 using SwimStoreData.DataAccess;
 using System.Reflection;
 
@@ -15,7 +16,7 @@ public static class MigrationManager
 
             try
             {
-                databaseService.CreateDatabase();
+                databaseService.CreateDatabase( "swimstoretestdb");
                 migrationService.ListMigrations();
                 migrationService.MigrateUp();
             }
@@ -30,12 +31,11 @@ public static class MigrationManager
 
     public static WebApplicationBuilder AddFluentMigration(this WebApplicationBuilder builder)
     {
-        builder.Services.AddLogging(c => c.AddFluentMigratorConsole())
-        .AddFluentMigratorCore()
-        .ConfigureRunner(c => c.AddSqlServer2012()
-            .WithGlobalConnectionString(builder.Configuration.GetConnectionString("SwimStorePostgresDb"))
-            .ScanIn(Assembly.GetExecutingAssembly()).For.Migrations());
-
+        builder.Services.AddFluentMigratorCore()
+                        .AddLogging(c => c.AddFluentMigratorConsole())
+                        .ConfigureRunner(c => c.AddPostgres11_0()
+                            .WithGlobalConnectionString(builder.Configuration.GetConnectionString("SwimStoreTestDb"))
+                            .ScanIn(AppDomain.CurrentDomain.GetAssemblies()));
         return builder;
     }
 }

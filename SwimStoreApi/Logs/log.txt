@@ -1163,3 +1163,405 @@ Where brand = @brand"
 10/23/2022 12:02:36 HTTP "POST" "/graphql" responded 200 in 0.9109 ms
 10/23/2022 12:02:36 HTTP "POST" "/graphql" responded 200 in 1.0413 ms
 10/23/2022 12:02:37 HTTP "POST" "/graphql" responded 200 in 0.9343 ms
+10/24/2022 11:18:33 There was an exception checking if table "VersionInfo" in null exists
+System.ArgumentException: Keyword not supported: 'host'.
+   at Microsoft.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at Microsoft.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at Microsoft.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at Microsoft.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.<>c__DisplayClass6_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsOpen()
+   at FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessor.Exists(String template, Object[] args)
+   at FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessor.TableExists(String schemaName, String tableName)
+10/24/2022 11:18:33 VersionMigration migrating
+10/24/2022 11:25:51 There was an exception checking if table "VersionInfo" in null exists
+System.ArgumentException: Keyword not supported: 'host'.
+   at Microsoft.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at Microsoft.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms)
+   at Microsoft.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at Microsoft.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.<>c__DisplayClass6_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at FluentMigrator.Runner.Processors.GenericProcessorBase.EnsureConnectionIsOpen()
+   at FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessor.Exists(String template, Object[] args)
+   at FluentMigrator.Runner.Processors.SqlServer.SqlServerProcessor.TableExists(String schemaName, String tableName)
+10/24/2022 11:25:51 VersionMigration migrating
+10/24/2022 11:26:51 VersionMigration migrating
+10/24/2022 11:26:51 Beginning Transaction
+10/24/2022 11:26:51 CreateTable VersionInfo
+10/24/2022 11:26:51 CREATE TABLE "public"."VersionInfo" ("Version" bigint NOT NULL);
+10/24/2022 11:26:51 => 0.0198852s
+10/24/2022 11:26:51 Committing Transaction
+10/24/2022 11:26:51 VersionMigration migrated
+10/24/2022 11:26:51 => 0.0366419s
+10/24/2022 11:26:51 VersionUniqueMigration migrating
+10/24/2022 11:26:51 Beginning Transaction
+10/24/2022 11:26:51 CreateIndex VersionInfo (Version)
+10/24/2022 11:26:51 CREATE UNIQUE INDEX "UC_Version" ON "public"."VersionInfo" ("Version" ASC);
+10/24/2022 11:26:51 => 0.0122108s
+10/24/2022 11:26:51 AlterTable VersionInfo
+10/24/2022 11:26:51 
+10/24/2022 11:26:51 => 0.001106s
+10/24/2022 11:26:51 CreateColumn VersionInfo AppliedOn DateTime
+10/24/2022 11:26:51 ALTER TABLE "public"."VersionInfo" ADD "AppliedOn" timestamp;
+10/24/2022 11:26:51 => 0.0024643s
+10/24/2022 11:26:51 Committing Transaction
+10/24/2022 11:26:51 VersionUniqueMigration migrated
+10/24/2022 11:26:51 => 0.0058253s
+10/24/2022 11:26:51 VersionDescriptionMigration migrating
+10/24/2022 11:26:51 Beginning Transaction
+10/24/2022 11:26:51 AlterTable VersionInfo
+10/24/2022 11:26:51 
+10/24/2022 11:26:51 => 0.0003824s
+10/24/2022 11:26:51 CreateColumn VersionInfo Description String
+10/24/2022 11:26:51 ALTER TABLE "public"."VersionInfo" ADD "Description" varchar(1024);
+10/24/2022 11:26:51 => 0.0073897s
+10/24/2022 11:26:51 Committing Transaction
+10/24/2022 11:26:51 VersionDescriptionMigration migrated
+10/24/2022 11:26:51 => 0.0106878s
+10/24/2022 11:26:51 Migrations
+10/24/2022 12:05:04 Migrations
+10/24/2022 12:05:04 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 12:05:04 20221023001: InitialTables_20221023001 migrating
+10/24/2022 12:05:04 Beginning Transaction
+10/24/2022 12:05:04 CreateTable Product
+10/24/2022 12:05:04 CREATE TABLE "public"."Product" ();
+10/24/2022 12:05:04 => 0.0208623s
+10/24/2022 12:05:04 CreateTable Brand
+10/24/2022 12:05:04 CREATE TABLE "public"."Brand" ();
+10/24/2022 12:05:04 => 0.0030177s
+10/24/2022 12:05:04 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221023001,'2022-10-24T19:05:04','InitialTables_20221023001');
+10/24/2022 12:05:04 Committing Transaction
+10/24/2022 12:05:04 20221023001: InitialTables_20221023001 migrated
+10/24/2022 12:05:04 => 0.020565s
+10/24/2022 12:33:16 VersionMigration migrating
+10/24/2022 12:33:16 Beginning Transaction
+10/24/2022 12:33:16 CreateTable VersionInfo
+10/24/2022 12:33:16 CREATE TABLE "public"."VersionInfo" ("Version" bigint NOT NULL);
+10/24/2022 12:33:16 => 0.0206086s
+10/24/2022 12:33:16 Committing Transaction
+10/24/2022 12:33:16 VersionMigration migrated
+10/24/2022 12:33:16 => 0.0353379s
+10/24/2022 12:33:16 VersionUniqueMigration migrating
+10/24/2022 12:33:16 Beginning Transaction
+10/24/2022 12:33:16 CreateIndex VersionInfo (Version)
+10/24/2022 12:33:16 CREATE UNIQUE INDEX "UC_Version" ON "public"."VersionInfo" ("Version" ASC);
+10/24/2022 12:33:16 => 0.0128885s
+10/24/2022 12:33:16 AlterTable VersionInfo
+10/24/2022 12:33:16 
+10/24/2022 12:33:16 => 0.0008614s
+10/24/2022 12:33:16 CreateColumn VersionInfo AppliedOn DateTime
+10/24/2022 12:33:16 ALTER TABLE "public"."VersionInfo" ADD "AppliedOn" timestamp;
+10/24/2022 12:33:16 => 0.0027178s
+10/24/2022 12:33:16 Committing Transaction
+10/24/2022 12:33:16 VersionUniqueMigration migrated
+10/24/2022 12:33:16 => 0.005418s
+10/24/2022 12:33:16 VersionDescriptionMigration migrating
+10/24/2022 12:33:16 Beginning Transaction
+10/24/2022 12:33:16 AlterTable VersionInfo
+10/24/2022 12:33:16 
+10/24/2022 12:33:16 => 0.0003315s
+10/24/2022 12:33:16 CreateColumn VersionInfo Description String
+10/24/2022 12:33:16 ALTER TABLE "public"."VersionInfo" ADD "Description" varchar(1024);
+10/24/2022 12:33:16 => 0.0061083s
+10/24/2022 12:33:16 Committing Transaction
+10/24/2022 12:33:16 VersionDescriptionMigration migrated
+10/24/2022 12:33:16 => 0.0094639s
+10/24/2022 12:33:16 Migrations
+10/24/2022 12:33:16 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 12:33:16 20221023001: InitialTables_20221023001 migrating
+10/24/2022 12:33:16 Beginning Transaction
+10/24/2022 12:33:16 CreateTable product
+10/24/2022 12:33:16 CREATE TABLE "public"."product" ("id" uuid NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brandId" uuid NOT NULL, "typeId" uuid NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 12:33:16 An error occured executing the following sql:
+CREATE TABLE "public"."product" ("id" uuid NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brandId" uuid NOT NULL, "typeId" uuid NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+The error was 22023: identity column type must be smallint, integer, or bigint
+
+System.Exception: An error occured executing the following sql:
+CREATE TABLE "public"."product" ("id" uuid NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brandId" uuid NOT NULL, "typeId" uuid NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+The error was 22023: identity column type must be smallint, integer, or bigint
+
+ ---> Npgsql.PostgresException (0x80004005): 22023: identity column type must be smallint, integer, or bigint
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+  Exception data:
+    Severity: ERROR
+    SqlState: 22023
+    MessageText: identity column type must be smallint, integer, or bigint
+    File: sequence.c
+    Line: 1390
+    Routine: init_params
+   --- End of inner exception stack trace ---
+   at FluentMigrator.Runner.Processors.ProcessorBase.ReThrowWithSql(Exception ex, String sql)
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+   at FluentMigrator.Runner.StopWatch.Time(Action action)
+   at FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection`1 expressions)
+10/24/2022 12:33:16 Rolling back transaction
+10/24/2022 12:35:09 VersionMigration migrating
+10/24/2022 12:35:09 Beginning Transaction
+10/24/2022 12:35:09 CreateTable VersionInfo
+10/24/2022 12:35:09 CREATE TABLE "public"."VersionInfo" ("Version" bigint NOT NULL);
+10/24/2022 12:35:09 => 0.0184109s
+10/24/2022 12:35:09 Committing Transaction
+10/24/2022 12:35:09 VersionMigration migrated
+10/24/2022 12:35:09 => 0.0327407s
+10/24/2022 12:35:09 VersionUniqueMigration migrating
+10/24/2022 12:35:09 Beginning Transaction
+10/24/2022 12:35:09 CreateIndex VersionInfo (Version)
+10/24/2022 12:35:09 CREATE UNIQUE INDEX "UC_Version" ON "public"."VersionInfo" ("Version" ASC);
+10/24/2022 12:35:09 => 0.0106122s
+10/24/2022 12:35:09 AlterTable VersionInfo
+10/24/2022 12:35:09 
+10/24/2022 12:35:09 => 0.0007914s
+10/24/2022 12:35:09 CreateColumn VersionInfo AppliedOn DateTime
+10/24/2022 12:35:09 ALTER TABLE "public"."VersionInfo" ADD "AppliedOn" timestamp;
+10/24/2022 12:35:09 => 0.0024624s
+10/24/2022 12:35:09 Committing Transaction
+10/24/2022 12:35:09 VersionUniqueMigration migrated
+10/24/2022 12:35:09 => 0.0043216s
+10/24/2022 12:35:09 VersionDescriptionMigration migrating
+10/24/2022 12:35:09 Beginning Transaction
+10/24/2022 12:35:09 AlterTable VersionInfo
+10/24/2022 12:35:09 
+10/24/2022 12:35:09 => 0.000331s
+10/24/2022 12:35:09 CreateColumn VersionInfo Description String
+10/24/2022 12:35:09 ALTER TABLE "public"."VersionInfo" ADD "Description" varchar(1024);
+10/24/2022 12:35:09 => 0.006356s
+10/24/2022 12:35:09 Committing Transaction
+10/24/2022 12:35:09 VersionDescriptionMigration migrated
+10/24/2022 12:35:09 => 0.0086177s
+10/24/2022 12:35:09 Migrations
+10/24/2022 12:35:09 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 12:35:09 20221023001: InitialTables_20221023001 migrating
+10/24/2022 12:35:09 Beginning Transaction
+10/24/2022 12:35:09 CreateTable product
+10/24/2022 12:35:09 CREATE TABLE "public"."product" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brandId" integer NOT NULL, "typeId" integer NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 12:35:09 => 0.0224197s
+10/24/2022 12:35:09 CreateTable brand
+10/24/2022 12:35:09 CREATE TABLE "public"."brand" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_brand" PRIMARY KEY ("id"));
+10/24/2022 12:35:09 => 0.0113968s
+10/24/2022 12:35:09 CreateTable type
+10/24/2022 12:35:09 CREATE TABLE "public"."type" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_type" PRIMARY KEY ("id"));
+10/24/2022 12:35:09 => 0.0104565s
+10/24/2022 12:35:09 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221023001,'2022-10-24T19:35:09','InitialTables_20221023001');
+10/24/2022 12:35:09 Committing Transaction
+10/24/2022 12:35:09 20221023001: InitialTables_20221023001 migrated
+10/24/2022 12:35:09 => 0.0273113s
+10/24/2022 12:46:10 Migrations
+10/24/2022 12:46:10 20221023001: InitialTables_20221023001 (current)
+10/24/2022 12:47:42 Migrations
+10/24/2022 12:47:42 20221023001: InitialTables_20221023001 (current)
+10/24/2022 12:47:42 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 12:47:42 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 12:47:42 Beginning Transaction
+10/24/2022 12:47:42 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 12:47:42 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 12:47:42 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 12:47:42 -> 3 Insert operations completed in 00:00:00.0103818 taking an average of 00:00:00.0034606
+10/24/2022 12:47:42 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221024001,'2022-10-24T19:47:42','InitialSeed_20221024001');
+10/24/2022 12:47:42 Committing Transaction
+10/24/2022 12:47:42 20221024001: InitialSeed_20221024001 migrated
+10/24/2022 12:47:42 => 0.0177995s
+10/24/2022 12:56:24 VersionMigration migrating
+10/24/2022 12:56:24 Beginning Transaction
+10/24/2022 12:56:24 CreateTable VersionInfo
+10/24/2022 12:56:24 CREATE TABLE "public"."VersionInfo" ("Version" bigint NOT NULL);
+10/24/2022 12:56:24 => 0.0327488s
+10/24/2022 12:56:24 Committing Transaction
+10/24/2022 12:56:24 VersionMigration migrated
+10/24/2022 12:56:24 => 0.0524366s
+10/24/2022 12:56:24 VersionUniqueMigration migrating
+10/24/2022 12:56:24 Beginning Transaction
+10/24/2022 12:56:24 CreateIndex VersionInfo (Version)
+10/24/2022 12:56:24 CREATE UNIQUE INDEX "UC_Version" ON "public"."VersionInfo" ("Version" ASC);
+10/24/2022 12:56:24 => 0.0134318s
+10/24/2022 12:56:24 AlterTable VersionInfo
+10/24/2022 12:56:24 
+10/24/2022 12:56:24 => 0.0012617s
+10/24/2022 12:56:24 CreateColumn VersionInfo AppliedOn DateTime
+10/24/2022 12:56:24 ALTER TABLE "public"."VersionInfo" ADD "AppliedOn" timestamp;
+10/24/2022 12:56:24 => 0.0028454s
+10/24/2022 12:56:24 Committing Transaction
+10/24/2022 12:56:24 VersionUniqueMigration migrated
+10/24/2022 12:56:24 => 0.0062464s
+10/24/2022 12:56:24 VersionDescriptionMigration migrating
+10/24/2022 12:56:24 Beginning Transaction
+10/24/2022 12:56:24 AlterTable VersionInfo
+10/24/2022 12:56:24 
+10/24/2022 12:56:24 => 0.0003624s
+10/24/2022 12:56:24 CreateColumn VersionInfo Description String
+10/24/2022 12:56:24 ALTER TABLE "public"."VersionInfo" ADD "Description" varchar(1024);
+10/24/2022 12:56:24 => 0.0103403s
+10/24/2022 12:56:24 Committing Transaction
+10/24/2022 12:56:24 VersionDescriptionMigration migrated
+10/24/2022 12:56:24 => 0.014545s
+10/24/2022 12:56:24 Migrations
+10/24/2022 12:56:24 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 12:56:24 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 12:56:24 20221023001: InitialTables_20221023001 migrating
+10/24/2022 12:56:24 Beginning Transaction
+10/24/2022 12:56:24 CreateTable product
+10/24/2022 12:56:24 CREATE TABLE "public"."product" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brandId" integer NOT NULL, "typeId" integer NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 12:56:24 => 0.0230106s
+10/24/2022 12:56:24 CreateTable brand
+10/24/2022 12:56:24 CREATE TABLE "public"."brand" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_brand" PRIMARY KEY ("id"));
+10/24/2022 12:56:24 => 0.0123939s
+10/24/2022 12:56:24 CreateTable type
+10/24/2022 12:56:24 CREATE TABLE "public"."type" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_type" PRIMARY KEY ("id"));
+10/24/2022 12:56:24 => 0.0098126s
+10/24/2022 12:56:24 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221023001,'2022-10-24T19:56:24','InitialTables_20221023001');
+10/24/2022 12:56:24 Committing Transaction
+10/24/2022 12:56:24 20221023001: InitialTables_20221023001 migrated
+10/24/2022 12:56:24 => 0.0201557s
+10/24/2022 12:56:24 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 12:56:24 Beginning Transaction
+10/24/2022 12:56:24 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 12:56:24 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 12:56:24 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 12:56:24 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 12:56:24 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 12:56:24 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 12:56:24 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 12:56:24 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 12:56:24 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 12:56:24 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 12:56:24 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 12:56:24 INSERT INTO "public"."type" ("name") VALUES ('goggles');
+10/24/2022 12:56:24 -> 12 Insert operations completed in 00:00:00.0147528 taking an average of 00:00:00.0012294
+10/24/2022 12:56:24 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221024001,'2022-10-24T19:56:24','InitialSeed_20221024001');
+10/24/2022 12:56:24 Committing Transaction
+10/24/2022 12:56:24 20221024001: InitialSeed_20221024001 migrated
+10/24/2022 12:56:24 => 0.0054097s
+10/24/2022 13:11:58 Migrations
+10/24/2022 13:11:58 20221023001: InitialTables_20221023001
+10/24/2022 13:11:58 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 13:11:58 20221024001: InitialSeed_20221024001 reverting
+10/24/2022 13:11:58 Beginning Transaction
+10/24/2022 13:11:58 DELETE FROM "public"."VersionInfo" WHERE "Version" = 20221024001;
+10/24/2022 13:11:58 Committing Transaction
+10/24/2022 13:11:59 20221024001: InitialSeed_20221024001 reverted
+10/24/2022 13:11:59 => 0.0252701s
+10/24/2022 13:12:41 Migrations
+10/24/2022 13:12:41 20221023001: InitialTables_20221023001 (current)
+10/24/2022 13:12:41 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:12:41 20221023001: InitialTables_20221023001 reverting
+10/24/2022 13:12:41 Beginning Transaction
+10/24/2022 13:12:41 DeleteTable product
+10/24/2022 13:12:41 DROP TABLE "public"."product";
+10/24/2022 13:12:41 => 0.0081313s
+10/24/2022 13:12:41 DeleteTable brand
+10/24/2022 13:12:41 DROP TABLE "public"."brand";
+10/24/2022 13:12:41 => 0.0019414s
+10/24/2022 13:12:41 DeleteTable type
+10/24/2022 13:12:41 DROP TABLE "public"."type";
+10/24/2022 13:12:41 => 0.001963s
+10/24/2022 13:12:41 DELETE FROM "public"."VersionInfo" WHERE "Version" = 20221023001;
+10/24/2022 13:12:41 Committing Transaction
+10/24/2022 13:12:41 20221023001: InitialTables_20221023001 reverted
+10/24/2022 13:12:41 => 0.0298988s
+10/24/2022 13:13:23 Migrations
+10/24/2022 13:13:23 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 13:13:23 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:13:23 20221023001: InitialTables_20221023001 migrating
+10/24/2022 13:13:23 Beginning Transaction
+10/24/2022 13:13:23 CreateTable product
+10/24/2022 13:13:23 CREATE TABLE "public"."product" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brandId" integer NOT NULL, "typeId" integer NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 13:13:23 => 0.0288282s
+10/24/2022 13:13:23 CreateForeignKey FK_product_brandId_brand_id product(brandId) brand(id)
+10/24/2022 13:13:23 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_brandId_brand_id" FOREIGN KEY ("brandId") REFERENCES "public"."brand" ("id");
+10/24/2022 13:13:23 An error occured executing the following sql:
+ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_brandId_brand_id" FOREIGN KEY ("brandId") REFERENCES "public"."brand" ("id");
+The error was 42P01: relation "public.brand" does not exist
+
+System.Exception: An error occured executing the following sql:
+ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_brandId_brand_id" FOREIGN KEY ("brandId") REFERENCES "public"."brand" ("id");
+The error was 42P01: relation "public.brand" does not exist
+
+ ---> Npgsql.PostgresException (0x80004005): 42P01: relation "public.brand" does not exist
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "public.brand" does not exist
+    File: namespace.c
+    Line: 428
+    Routine: RangeVarGetRelidExtended
+   --- End of inner exception stack trace ---
+   at FluentMigrator.Runner.Processors.ProcessorBase.ReThrowWithSql(Exception ex, String sql)
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+   at FluentMigrator.Runner.StopWatch.Time(Action action)
+   at FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection`1 expressions)
+10/24/2022 13:13:23 Rolling back transaction
+10/24/2022 13:13:59 Migrations
+10/24/2022 13:13:59 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 13:13:59 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:13:59 20221023001: InitialTables_20221023001 migrating
+10/24/2022 13:13:59 Beginning Transaction
+10/24/2022 13:13:59 CreateTable brand
+10/24/2022 13:13:59 CREATE TABLE "public"."brand" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_brand" PRIMARY KEY ("id"));
+10/24/2022 13:13:59 => 0.0411977s
+10/24/2022 13:13:59 CreateTable type
+10/24/2022 13:13:59 CREATE TABLE "public"."type" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_type" PRIMARY KEY ("id"));
+10/24/2022 13:13:59 => 0.0108904s
+10/24/2022 13:13:59 CreateTable product
+10/24/2022 13:13:59 CREATE TABLE "public"."product" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brandId" integer NOT NULL, "typeId" integer NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 13:13:59 => 0.016864s
+10/24/2022 13:13:59 CreateForeignKey FK_product_brandId_brand_id product(brandId) brand(id)
+10/24/2022 13:13:59 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_brandId_brand_id" FOREIGN KEY ("brandId") REFERENCES "public"."brand" ("id");
+10/24/2022 13:13:59 => 0.009025s
+10/24/2022 13:13:59 CreateForeignKey FK_product_typeId_type_id product(typeId) type(id)
+10/24/2022 13:13:59 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_typeId_type_id" FOREIGN KEY ("typeId") REFERENCES "public"."type" ("id");
+10/24/2022 13:13:59 => 0.0030817s
+10/24/2022 13:13:59 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221023001,'2022-10-24T20:13:59','InitialTables_20221023001');
+10/24/2022 13:13:59 Committing Transaction
+10/24/2022 13:13:59 20221023001: InitialTables_20221023001 migrated
+10/24/2022 13:13:59 => 0.0207363s
+10/24/2022 13:13:59 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 13:13:59 Beginning Transaction
+10/24/2022 13:14:07 Rolling back transaction
+10/24/2022 13:15:01 Migrations
+10/24/2022 13:15:01 20221023001: InitialTables_20221023001 (current)
+10/24/2022 13:15:01 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:15:01 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 13:15:01 Beginning Transaction
+10/24/2022 13:15:01 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 13:15:01 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 13:15:01 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 13:15:01 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 13:15:01 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 13:15:01 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 13:15:01 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 13:15:01 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 13:15:01 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 13:15:01 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 13:15:01 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 13:15:01 INSERT INTO "public"."type" ("name") VALUES ('goggles');
+10/24/2022 13:15:01 -> 12 Insert operations completed in 00:00:00.0186800 taking an average of 00:00:00.0015566
+10/24/2022 13:15:01 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221024001,'2022-10-24T20:15:01','InitialSeed_20221024001');
+10/24/2022 13:15:01 Committing Transaction
+10/24/2022 13:15:01 20221024001: InitialSeed_20221024001 migrated
+10/24/2022 13:15:01 => 0.0134119s

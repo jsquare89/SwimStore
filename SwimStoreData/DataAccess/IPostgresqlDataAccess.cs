@@ -2,7 +2,7 @@
 
 public interface IPostgresqlDataAccess
 {
-    void CreateDatabase(string connectionId = "MasterConnection", string dbName = "swim-store");
+    void CreateDatabase(string dbName = "swim-store", string connectionId = "DbConnection");
     Task<IEnumerable<T>> LoadDataWithFunction<T, U>(string function, U parameters, string connectionId = "SwimStorePostgresDb");
     Task<IEnumerable<T>> LoadDataWithSql<T, U>(string sqlQuery, U parameters, string connectionId = "SwimStorePostgresDb");
     Task SaveDataWithProcedure<T>(string procedure, T parameters, string connectionId = "SwimStorePostgresDb");
