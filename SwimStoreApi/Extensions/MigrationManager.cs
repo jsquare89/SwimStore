@@ -19,6 +19,8 @@ public static class MigrationManager
                 databaseService.CreateDatabase( "swimstoretestdb");
                 migrationService.ListMigrations();
                 migrationService.MigrateUp();
+                // run down to version.
+                //migrationService.MigrateDown(0);
             }
             catch
             {

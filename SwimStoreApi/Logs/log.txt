@@ -1565,3 +1565,617 @@ The error was 42P01: relation "public.brand" does not exist
 10/24/2022 13:15:01 Committing Transaction
 10/24/2022 13:15:01 20221024001: InitialSeed_20221024001 migrated
 10/24/2022 13:15:01 => 0.0134119s
+10/24/2022 13:26:07 Migrations
+10/24/2022 13:26:07 20221023001: InitialTables_20221023001
+10/24/2022 13:26:07 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 13:26:07 20221024001: InitialSeed_20221024001 reverting
+10/24/2022 13:26:07 Beginning Transaction
+10/24/2022 13:26:07 DELETE FROM "public"."VersionInfo" WHERE "Version" = 20221024001;
+10/24/2022 13:26:07 Committing Transaction
+10/24/2022 13:26:07 20221024001: InitialSeed_20221024001 reverted
+10/24/2022 13:26:07 => 0.022628s
+10/24/2022 13:26:07 20221023001: InitialTables_20221023001 reverting
+10/24/2022 13:26:07 Beginning Transaction
+10/24/2022 13:26:07 DeleteTable product
+10/24/2022 13:26:07 DROP TABLE "public"."product";
+10/24/2022 13:26:07 => 0.0039193s
+10/24/2022 13:26:07 DeleteTable brand
+10/24/2022 13:26:07 DROP TABLE "public"."brand";
+10/24/2022 13:26:07 => 0.0012841s
+10/24/2022 13:26:07 DeleteTable type
+10/24/2022 13:26:07 DROP TABLE "public"."type";
+10/24/2022 13:26:07 => 0.0013738s
+10/24/2022 13:26:07 DELETE FROM "public"."VersionInfo" WHERE "Version" = 20221023001;
+10/24/2022 13:26:07 Committing Transaction
+10/24/2022 13:26:07 20221023001: InitialTables_20221023001 reverted
+10/24/2022 13:26:07 => 0.0168213s
+10/24/2022 13:26:26 Migrations
+10/24/2022 13:26:26 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 13:26:26 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:26:26 20221023001: InitialTables_20221023001 migrating
+10/24/2022 13:26:26 Beginning Transaction
+10/24/2022 13:26:26 CreateTable brand
+10/24/2022 13:26:26 CREATE TABLE "public"."brand" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_brand" PRIMARY KEY ("id"));
+10/24/2022 13:26:26 => 0.0335107s
+10/24/2022 13:26:26 CreateTable type
+10/24/2022 13:26:26 CREATE TABLE "public"."type" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, "accessory" boolean NOT NULL DEFAULT false, CONSTRAINT "PK_type" PRIMARY KEY ("id"));
+10/24/2022 13:26:26 => 0.0267051s
+10/24/2022 13:26:26 CreateTable product
+10/24/2022 13:26:26 CREATE TABLE "public"."product" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brandId" integer NOT NULL, "typeId" integer NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 13:26:26 => 0.0145098s
+10/24/2022 13:26:26 CreateForeignKey FK_product_brandId_brand_id product(brandId) brand(id)
+10/24/2022 13:26:26 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_brandId_brand_id" FOREIGN KEY ("brandId") REFERENCES "public"."brand" ("id");
+10/24/2022 13:26:26 => 0.0046468s
+10/24/2022 13:26:26 CreateForeignKey FK_product_typeId_type_id product(typeId) type(id)
+10/24/2022 13:26:26 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_typeId_type_id" FOREIGN KEY ("typeId") REFERENCES "public"."type" ("id");
+10/24/2022 13:26:26 => 0.0026408s
+10/24/2022 13:26:26 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221023001,'2022-10-24T20:26:26','InitialTables_20221023001');
+10/24/2022 13:26:26 Committing Transaction
+10/24/2022 13:26:26 20221023001: InitialTables_20221023001 migrated
+10/24/2022 13:26:26 => 0.0201861s
+10/24/2022 13:26:26 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 13:26:26 Beginning Transaction
+10/24/2022 13:26:26 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 13:26:26 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 13:26:26 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 13:26:26 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 13:26:26 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 13:26:26 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 13:26:26 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 13:26:26 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 13:26:26 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 13:26:26 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 13:26:26 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 13:26:26 INSERT INTO "public"."type" ("name","accessory") VALUES ('goggles',true);
+10/24/2022 13:26:26 -> 12 Insert operations completed in 00:00:00.0167659 taking an average of 00:00:00.0013971
+10/24/2022 13:26:26 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221024001,'2022-10-24T20:26:26','InitialSeed_20221024001');
+10/24/2022 13:26:26 Committing Transaction
+10/24/2022 13:26:26 20221024001: InitialSeed_20221024001 migrated
+10/24/2022 13:26:26 => 0.0058736s
+10/24/2022 13:45:52 Migrations
+10/24/2022 13:45:52 20221023001: InitialTables_20221023001
+10/24/2022 13:45:52 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 13:45:52 20221024001: InitialSeed_20221024001 reverting
+10/24/2022 13:45:52 Beginning Transaction
+10/24/2022 13:45:52 DELETE FROM "public"."VersionInfo" WHERE "Version" = 20221024001;
+10/24/2022 13:45:52 Committing Transaction
+10/24/2022 13:45:52 20221024001: InitialSeed_20221024001 reverted
+10/24/2022 13:45:52 => 0.02532s
+10/24/2022 13:45:52 20221023001: InitialTables_20221023001 reverting
+10/24/2022 13:45:52 Beginning Transaction
+10/24/2022 13:45:52 DeleteTable product
+10/24/2022 13:45:52 DROP TABLE "public"."product";
+10/24/2022 13:45:52 => 0.0048194s
+10/24/2022 13:45:52 DeleteTable brand
+10/24/2022 13:45:52 DROP TABLE "public"."brand";
+10/24/2022 13:45:52 => 0.0013803s
+10/24/2022 13:45:52 DeleteTable type
+10/24/2022 13:45:52 DROP TABLE "public"."type";
+10/24/2022 13:45:52 => 0.0015585s
+10/24/2022 13:45:52 DELETE FROM "public"."VersionInfo" WHERE "Version" = 20221023001;
+10/24/2022 13:45:52 Committing Transaction
+10/24/2022 13:45:52 20221023001: InitialTables_20221023001 reverted
+10/24/2022 13:45:52 => 0.0251036s
+10/24/2022 13:46:18 Migrations
+10/24/2022 13:46:18 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 13:46:18 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:46:18 20221023001: InitialTables_20221023001 migrating
+10/24/2022 13:46:18 Beginning Transaction
+10/24/2022 13:46:18 CreateTable brand
+10/24/2022 13:46:18 CREATE TABLE "public"."brand" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_brand" PRIMARY KEY ("id"));
+10/24/2022 13:46:18 => 0.0269408s
+10/24/2022 13:46:18 CreateTable type
+10/24/2022 13:46:18 CREATE TABLE "public"."type" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, "accessory" boolean NOT NULL DEFAULT false, CONSTRAINT "PK_type" PRIMARY KEY ("id"));
+10/24/2022 13:46:18 => 0.0135083s
+10/24/2022 13:46:18 CreateTable product
+10/24/2022 13:46:18 CREATE TABLE "public"."product" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brandId" integer NOT NULL, "typeId" integer NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 13:46:18 => 0.0154011s
+10/24/2022 13:46:18 CreateForeignKey FK_product_brandId_brand_id product(brandId) brand(id)
+10/24/2022 13:46:18 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_brandId_brand_id" FOREIGN KEY ("brandId") REFERENCES "public"."brand" ("id");
+10/24/2022 13:46:18 => 0.0048814s
+10/24/2022 13:46:18 CreateForeignKey FK_product_typeId_type_id product(typeId) type(id)
+10/24/2022 13:46:18 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_typeId_type_id" FOREIGN KEY ("typeId") REFERENCES "public"."type" ("id");
+10/24/2022 13:46:18 => 0.0028637s
+10/24/2022 13:46:18 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221023001,'2022-10-24T20:46:18','InitialTables_20221023001');
+10/24/2022 13:46:18 Committing Transaction
+10/24/2022 13:46:18 20221023001: InitialTables_20221023001 migrated
+10/24/2022 13:46:18 => 0.0214017s
+10/24/2022 13:46:18 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 13:46:18 Beginning Transaction
+10/24/2022 13:46:18 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 13:46:18 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 13:46:18 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 13:46:18 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 13:46:18 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 13:46:18 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 13:46:18 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 13:46:18 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 13:46:18 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 13:46:18 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 13:46:18 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 13:46:18 INSERT INTO "public"."type" ("name","accessory") VALUES ('goggles',true);
+10/24/2022 13:46:18 INSERT INTO "public"."product" ("Id","Name","RetailPrice","CurrentPrice","Description","Features","Sku","BrandId","TypeId","Gender") VALUES (0,'Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+10/24/2022 13:46:18 An error occured executing the following sql:
+INSERT INTO "public"."product" ("Id","Name","RetailPrice","CurrentPrice","Description","Features","Sku","BrandId","TypeId","Gender") VALUES (0,'Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+The error was 42703: column "Id" of relation "product" does not exist
+
+POSITION: 33
+
+System.Exception: An error occured executing the following sql:
+INSERT INTO "public"."product" ("Id","Name","RetailPrice","CurrentPrice","Description","Features","Sku","BrandId","TypeId","Gender") VALUES (0,'Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+The error was 42703: column "Id" of relation "product" does not exist
+
+POSITION: 33
+
+ ---> Npgsql.PostgresException (0x80004005): 42703: column "Id" of relation "product" does not exist
+
+POSITION: 33
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "Id" of relation "product" does not exist
+    Position: 33
+    File: parse_target.c
+    Line: 1061
+    Routine: checkInsertTargets
+   --- End of inner exception stack trace ---
+   at FluentMigrator.Runner.Processors.ProcessorBase.ReThrowWithSql(Exception ex, String sql)
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+   at FluentMigrator.Runner.StopWatch.Time(Action action)
+   at FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection`1 expressions)
+10/24/2022 13:46:18 Rolling back transaction
+10/24/2022 13:47:50 Migrations
+10/24/2022 13:47:50 20221023001: InitialTables_20221023001 (current)
+10/24/2022 13:47:50 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:47:50 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 13:47:50 Beginning Transaction
+10/24/2022 13:47:50 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 13:47:50 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 13:47:50 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 13:47:50 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 13:47:50 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 13:47:50 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 13:47:50 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 13:47:50 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 13:47:50 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 13:47:50 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 13:47:50 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 13:47:50 INSERT INTO "public"."type" ("name","accessory") VALUES ('goggles',true);
+10/24/2022 13:47:50 INSERT INTO "public"."product" ("Name","RetailPrice","CurrentPrice","Description","Features","Sku","BrandId","TypeId","Gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+10/24/2022 13:47:50 An error occured executing the following sql:
+INSERT INTO "public"."product" ("Name","RetailPrice","CurrentPrice","Description","Features","Sku","BrandId","TypeId","Gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+The error was 42703: column "Name" of relation "product" does not exist
+
+POSITION: 33
+
+System.Exception: An error occured executing the following sql:
+INSERT INTO "public"."product" ("Name","RetailPrice","CurrentPrice","Description","Features","Sku","BrandId","TypeId","Gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+The error was 42703: column "Name" of relation "product" does not exist
+
+POSITION: 33
+
+ ---> Npgsql.PostgresException (0x80004005): 42703: column "Name" of relation "product" does not exist
+
+POSITION: 33
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "Name" of relation "product" does not exist
+    Position: 33
+    File: parse_target.c
+    Line: 1061
+    Routine: checkInsertTargets
+   --- End of inner exception stack trace ---
+   at FluentMigrator.Runner.Processors.ProcessorBase.ReThrowWithSql(Exception ex, String sql)
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+   at FluentMigrator.Runner.StopWatch.Time(Action action)
+   at FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection`1 expressions)
+10/24/2022 13:47:50 Rolling back transaction
+10/24/2022 13:55:09 Migrations
+10/24/2022 13:55:09 20221023001: InitialTables_20221023001 (current)
+10/24/2022 13:55:09 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:55:09 20221023001: InitialTables_20221023001 reverting
+10/24/2022 13:55:09 Beginning Transaction
+10/24/2022 13:55:09 DeleteTable product
+10/24/2022 13:55:09 DROP TABLE "public"."product";
+10/24/2022 13:55:09 => 0.0074402s
+10/24/2022 13:55:09 DeleteTable brand
+10/24/2022 13:55:09 DROP TABLE "public"."brand";
+10/24/2022 13:55:09 => 0.0014885s
+10/24/2022 13:55:09 DeleteTable type
+10/24/2022 13:55:09 DROP TABLE "public"."type";
+10/24/2022 13:55:09 => 0.0014085s
+10/24/2022 13:55:09 DELETE FROM "public"."VersionInfo" WHERE "Version" = 20221023001;
+10/24/2022 13:55:09 Committing Transaction
+10/24/2022 13:55:09 20221023001: InitialTables_20221023001 reverted
+10/24/2022 13:55:09 => 0.0269204s
+10/24/2022 13:55:25 Migrations
+10/24/2022 13:55:25 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 13:55:25 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:55:25 20221023001: InitialTables_20221023001 migrating
+10/24/2022 13:55:25 Beginning Transaction
+10/24/2022 13:55:25 CreateTable brand
+10/24/2022 13:55:25 CREATE TABLE "public"."brand" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_brand" PRIMARY KEY ("id"));
+10/24/2022 13:55:25 => 0.024759s
+10/24/2022 13:55:25 CreateTable type
+10/24/2022 13:55:25 CREATE TABLE "public"."type" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, "accessory" boolean NOT NULL DEFAULT false, CONSTRAINT "PK_type" PRIMARY KEY ("id"));
+10/24/2022 13:55:26 => 0.0156208s
+10/24/2022 13:55:26 CreateTable product
+10/24/2022 13:55:26 CREATE TABLE "public"."product" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brand_id" integer NOT NULL, "type_id" integer NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 13:55:26 => 0.01535s
+10/24/2022 13:55:26 CreateForeignKey FK_product_brand_id_brand_id product(brand_id) brand(id)
+10/24/2022 13:55:26 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_brand_id_brand_id" FOREIGN KEY ("brand_id") REFERENCES "public"."brand" ("id");
+10/24/2022 13:55:26 => 0.0057028s
+10/24/2022 13:55:26 CreateForeignKey FK_product_type_id_type_id product(type_id) type(id)
+10/24/2022 13:55:26 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_type_id_type_id" FOREIGN KEY ("type_id") REFERENCES "public"."type" ("id");
+10/24/2022 13:55:26 => 0.0032447s
+10/24/2022 13:55:26 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221023001,'2022-10-24T20:55:26','InitialTables_20221023001');
+10/24/2022 13:55:26 Committing Transaction
+10/24/2022 13:55:26 20221023001: InitialTables_20221023001 migrated
+10/24/2022 13:55:26 => 0.0196977s
+10/24/2022 13:55:26 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 13:55:26 Beginning Transaction
+10/24/2022 13:55:26 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 13:55:26 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 13:55:26 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 13:55:26 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 13:55:26 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 13:55:26 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 13:55:26 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 13:55:26 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 13:55:26 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 13:55:26 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 13:55:26 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 13:55:26 INSERT INTO "public"."type" ("name","accessory") VALUES ('goggles',true);
+10/24/2022 13:55:26 INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+10/24/2022 13:55:26 INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Pro LT',4999,3999,'description','features','sku here',1,1,'m');
+10/24/2022 13:55:26 INSERT INTO "public"."product" ("name","retail_price","CurrentPricurrent_pricece","description","features","sku","brand_id","type_id","gender") VALUES ('Crossback Racer',4999,3999,'description','features','sku here',1,4,'f');
+10/24/2022 13:55:26 An error occured executing the following sql:
+INSERT INTO "public"."product" ("name","retail_price","CurrentPricurrent_pricece","description","features","sku","brand_id","type_id","gender") VALUES ('Crossback Racer',4999,3999,'description','features','sku here',1,4,'f');
+The error was 42703: column "CurrentPricurrent_pricece" of relation "product" does not exist
+
+POSITION: 55
+
+System.Exception: An error occured executing the following sql:
+INSERT INTO "public"."product" ("name","retail_price","CurrentPricurrent_pricece","description","features","sku","brand_id","type_id","gender") VALUES ('Crossback Racer',4999,3999,'description','features','sku here',1,4,'f');
+The error was 42703: column "CurrentPricurrent_pricece" of relation "product" does not exist
+
+POSITION: 55
+
+ ---> Npgsql.PostgresException (0x80004005): 42703: column "CurrentPricurrent_pricece" of relation "product" does not exist
+
+POSITION: 55
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "CurrentPricurrent_pricece" of relation "product" does not exist
+    Position: 55
+    File: parse_target.c
+    Line: 1061
+    Routine: checkInsertTargets
+   --- End of inner exception stack trace ---
+   at FluentMigrator.Runner.Processors.ProcessorBase.ReThrowWithSql(Exception ex, String sql)
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+   at FluentMigrator.Runner.StopWatch.Time(Action action)
+   at FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection`1 expressions)
+10/24/2022 13:55:26 Rolling back transaction
+10/24/2022 13:56:03 Migrations
+10/24/2022 13:56:03 20221023001: InitialTables_20221023001 (current)
+10/24/2022 13:56:03 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:56:03 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 13:56:03 Beginning Transaction
+10/24/2022 13:56:03 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 13:56:03 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 13:56:03 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 13:56:03 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 13:56:03 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 13:56:03 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 13:56:03 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 13:56:03 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 13:56:03 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 13:56:03 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 13:56:03 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 13:56:03 INSERT INTO "public"."type" ("name","accessory") VALUES ('goggles',true);
+10/24/2022 13:56:03 INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+10/24/2022 13:56:03 An error occured executing the following sql:
+INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+The error was 23503: insert or update on table "product" violates foreign key constraint "FK_product_brand_id_brand_id"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+
+System.Exception: An error occured executing the following sql:
+INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+The error was 23503: insert or update on table "product" violates foreign key constraint "FK_product_brand_id_brand_id"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "product" violates foreign key constraint "FK_product_brand_id_brand_id"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "product" violates foreign key constraint "FK_product_brand_id_brand_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: product
+    ConstraintName: FK_product_brand_id_brand_id
+    File: ri_triggers.c
+    Line: 2528
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at FluentMigrator.Runner.Processors.ProcessorBase.ReThrowWithSql(Exception ex, String sql)
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+   at FluentMigrator.Runner.StopWatch.Time(Action action)
+   at FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection`1 expressions)
+10/24/2022 13:56:03 Rolling back transaction
+10/24/2022 13:57:42 Migrations
+10/24/2022 13:57:42 20221023001: InitialTables_20221023001 (current)
+10/24/2022 13:57:42 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:57:42 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 13:57:42 Beginning Transaction
+10/24/2022 13:57:42 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 13:57:42 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 13:57:42 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 13:57:42 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 13:57:42 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 13:57:42 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 13:57:42 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 13:57:42 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 13:57:42 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 13:57:42 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 13:57:42 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 13:57:42 INSERT INTO "public"."type" ("name","accessory") VALUES ('goggles',true);
+10/24/2022 13:57:42 INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+10/24/2022 13:57:42 An error occured executing the following sql:
+INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+The error was 23503: insert or update on table "product" violates foreign key constraint "FK_product_brand_id_brand_id"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+
+System.Exception: An error occured executing the following sql:
+INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+The error was 23503: insert or update on table "product" violates foreign key constraint "FK_product_brand_id_brand_id"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "product" violates foreign key constraint "FK_product_brand_id_brand_id"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "product" violates foreign key constraint "FK_product_brand_id_brand_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: product
+    ConstraintName: FK_product_brand_id_brand_id
+    File: ri_triggers.c
+    Line: 2528
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at FluentMigrator.Runner.Processors.ProcessorBase.ReThrowWithSql(Exception ex, String sql)
+   at FluentMigrator.Runner.Processors.Postgres.PostgresProcessor.Process(String sql)
+   at FluentMigrator.Runner.StopWatch.Time(Action action)
+   at FluentMigrator.Runner.MigrationRunner.ExecuteExpressions(ICollection`1 expressions)
+10/24/2022 13:57:42 Rolling back transaction
+10/24/2022 13:59:08 Migrations
+10/24/2022 13:59:08 20221023001: InitialTables_20221023001 (current)
+10/24/2022 13:59:08 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 13:59:08 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 13:59:08 Beginning Transaction
+10/24/2022 13:59:08 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 13:59:08 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 13:59:08 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 13:59:08 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 13:59:08 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 13:59:08 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 13:59:08 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 13:59:08 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 13:59:08 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 13:59:08 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 13:59:08 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 13:59:08 INSERT INTO "public"."type" ("name","accessory") VALUES ('goggles',true);
+10/24/2022 13:59:08 -> 12 Insert operations completed in 00:00:00.0171811 taking an average of 00:00:00.0014317
+10/24/2022 13:59:08 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221024001,'2022-10-24T20:59:08','InitialSeed_20221024001');
+10/24/2022 13:59:08 Committing Transaction
+10/24/2022 13:59:08 20221024001: InitialSeed_20221024001 migrated
+10/24/2022 13:59:08 => 0.0172756s
+10/24/2022 14:00:11 VersionMigration migrating
+10/24/2022 14:00:11 Beginning Transaction
+10/24/2022 14:00:11 CreateTable VersionInfo
+10/24/2022 14:00:11 CREATE TABLE "public"."VersionInfo" ("Version" bigint NOT NULL);
+10/24/2022 14:00:11 => 0.019921s
+10/24/2022 14:00:11 Committing Transaction
+10/24/2022 14:00:11 VersionMigration migrated
+10/24/2022 14:00:11 => 0.0350856s
+10/24/2022 14:00:11 VersionUniqueMigration migrating
+10/24/2022 14:00:11 Beginning Transaction
+10/24/2022 14:00:11 CreateIndex VersionInfo (Version)
+10/24/2022 14:00:11 CREATE UNIQUE INDEX "UC_Version" ON "public"."VersionInfo" ("Version" ASC);
+10/24/2022 14:00:11 => 0.0108161s
+10/24/2022 14:00:11 AlterTable VersionInfo
+10/24/2022 14:00:11 
+10/24/2022 14:00:11 => 0.0009273s
+10/24/2022 14:00:11 CreateColumn VersionInfo AppliedOn DateTime
+10/24/2022 14:00:11 ALTER TABLE "public"."VersionInfo" ADD "AppliedOn" timestamp;
+10/24/2022 14:00:11 => 0.0025425s
+10/24/2022 14:00:11 Committing Transaction
+10/24/2022 14:00:11 VersionUniqueMigration migrated
+10/24/2022 14:00:11 => 0.0044829s
+10/24/2022 14:00:11 VersionDescriptionMigration migrating
+10/24/2022 14:00:11 Beginning Transaction
+10/24/2022 14:00:11 AlterTable VersionInfo
+10/24/2022 14:00:11 
+10/24/2022 14:00:11 => 0.0003313s
+10/24/2022 14:00:11 CreateColumn VersionInfo Description String
+10/24/2022 14:00:11 ALTER TABLE "public"."VersionInfo" ADD "Description" varchar(1024);
+10/24/2022 14:00:11 => 0.0067056s
+10/24/2022 14:00:11 Committing Transaction
+10/24/2022 14:00:11 VersionDescriptionMigration migrated
+10/24/2022 14:00:11 => 0.0088862s
+10/24/2022 14:00:11 Migrations
+10/24/2022 14:00:11 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 14:00:11 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 14:00:11 20221023001: InitialTables_20221023001 migrating
+10/24/2022 14:00:11 Beginning Transaction
+10/24/2022 14:00:11 CreateTable brand
+10/24/2022 14:00:11 CREATE TABLE "public"."brand" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_brand" PRIMARY KEY ("id"));
+10/24/2022 14:00:11 => 0.0142696s
+10/24/2022 14:00:11 CreateTable type
+10/24/2022 14:00:11 CREATE TABLE "public"."type" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, "accessory" boolean NOT NULL DEFAULT false, CONSTRAINT "PK_type" PRIMARY KEY ("id"));
+10/24/2022 14:00:11 => 0.0099297s
+10/24/2022 14:00:11 CreateTable product
+10/24/2022 14:00:11 CREATE TABLE "public"."product" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brand_id" integer NOT NULL, "type_id" integer NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 14:00:11 => 0.0137711s
+10/24/2022 14:00:11 CreateForeignKey FK_product_brand_id_brand_id product(brand_id) brand(id)
+10/24/2022 14:00:11 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_brand_id_brand_id" FOREIGN KEY ("brand_id") REFERENCES "public"."brand" ("id");
+10/24/2022 14:00:11 => 0.0080502s
+10/24/2022 14:00:11 CreateForeignKey FK_product_type_id_type_id product(type_id) type(id)
+10/24/2022 14:00:11 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_type_id_type_id" FOREIGN KEY ("type_id") REFERENCES "public"."type" ("id");
+10/24/2022 14:00:11 => 0.003104s
+10/24/2022 14:00:11 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221023001,'2022-10-24T21:00:11','InitialTables_20221023001');
+10/24/2022 14:00:11 Committing Transaction
+10/24/2022 14:00:11 20221023001: InitialTables_20221023001 migrated
+10/24/2022 14:00:11 => 0.0103362s
+10/24/2022 14:00:11 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 14:00:11 Beginning Transaction
+10/24/2022 14:00:11 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 14:00:11 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 14:00:11 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 14:00:11 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 14:00:11 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 14:00:11 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 14:00:11 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 14:00:11 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 14:00:11 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 14:00:11 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 14:00:11 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 14:00:11 INSERT INTO "public"."type" ("name","accessory") VALUES ('goggles',true);
+10/24/2022 14:00:11 -> 12 Insert operations completed in 00:00:00.0149303 taking an average of 00:00:00.0012441
+10/24/2022 14:00:11 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221024001,'2022-10-24T21:00:11','InitialSeed_20221024001');
+10/24/2022 14:00:11 Committing Transaction
+10/24/2022 14:00:11 20221024001: InitialSeed_20221024001 migrated
+10/24/2022 14:00:11 => 0.0041234s
+10/24/2022 14:00:29 Migrations
+10/24/2022 14:00:29 20221023001: InitialTables_20221023001
+10/24/2022 14:00:29 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 14:01:10 VersionMigration migrating
+10/24/2022 14:01:10 Beginning Transaction
+10/24/2022 14:01:10 CreateTable VersionInfo
+10/24/2022 14:01:10 CREATE TABLE "public"."VersionInfo" ("Version" bigint NOT NULL);
+10/24/2022 14:01:10 => 0.0197624s
+10/24/2022 14:01:10 Committing Transaction
+10/24/2022 14:01:10 VersionMigration migrated
+10/24/2022 14:01:10 => 0.035066s
+10/24/2022 14:01:10 VersionUniqueMigration migrating
+10/24/2022 14:01:10 Beginning Transaction
+10/24/2022 14:01:10 CreateIndex VersionInfo (Version)
+10/24/2022 14:01:10 CREATE UNIQUE INDEX "UC_Version" ON "public"."VersionInfo" ("Version" ASC);
+10/24/2022 14:01:10 => 0.0128856s
+10/24/2022 14:01:10 AlterTable VersionInfo
+10/24/2022 14:01:10 
+10/24/2022 14:01:10 => 0.0013309s
+10/24/2022 14:01:10 CreateColumn VersionInfo AppliedOn DateTime
+10/24/2022 14:01:10 ALTER TABLE "public"."VersionInfo" ADD "AppliedOn" timestamp;
+10/24/2022 14:01:10 => 0.003411s
+10/24/2022 14:01:10 Committing Transaction
+10/24/2022 14:01:10 VersionUniqueMigration migrated
+10/24/2022 14:01:10 => 0.005906s
+10/24/2022 14:01:10 VersionDescriptionMigration migrating
+10/24/2022 14:01:10 Beginning Transaction
+10/24/2022 14:01:10 AlterTable VersionInfo
+10/24/2022 14:01:10 
+10/24/2022 14:01:10 => 0.0004251s
+10/24/2022 14:01:10 CreateColumn VersionInfo Description String
+10/24/2022 14:01:10 ALTER TABLE "public"."VersionInfo" ADD "Description" varchar(1024);
+10/24/2022 14:01:10 => 0.0078545s
+10/24/2022 14:01:10 Committing Transaction
+10/24/2022 14:01:10 VersionDescriptionMigration migrated
+10/24/2022 14:01:10 => 0.0104471s
+10/24/2022 14:01:10 Migrations
+10/24/2022 14:01:10 20221023001: InitialTables_20221023001 (not applied)
+10/24/2022 14:01:10 20221024001: InitialSeed_20221024001 (not applied)
+10/24/2022 14:01:10 20221023001: InitialTables_20221023001 migrating
+10/24/2022 14:01:10 Beginning Transaction
+10/24/2022 14:01:10 CreateTable brand
+10/24/2022 14:01:10 CREATE TABLE "public"."brand" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, CONSTRAINT "PK_brand" PRIMARY KEY ("id"));
+10/24/2022 14:01:10 => 0.0131342s
+10/24/2022 14:01:10 CreateTable type
+10/24/2022 14:01:10 CREATE TABLE "public"."type" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(50) NOT NULL, "accessory" boolean NOT NULL DEFAULT false, CONSTRAINT "PK_type" PRIMARY KEY ("id"));
+10/24/2022 14:01:10 => 0.0097104s
+10/24/2022 14:01:10 CreateTable product
+10/24/2022 14:01:10 CREATE TABLE "public"."product" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(70) NOT NULL, "retail_price" integer NOT NULL, "current_price" integer NOT NULL, "description" varchar(2000) NOT NULL, "features" varchar(2000) NOT NULL, "sku" varchar(20) NOT NULL, "brand_id" integer NOT NULL, "type_id" integer NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_product" PRIMARY KEY ("id"));
+10/24/2022 14:01:10 => 0.0124829s
+10/24/2022 14:01:10 CreateForeignKey FK_product_brand_id_brand_id product(brand_id) brand(id)
+10/24/2022 14:01:10 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_brand_id_brand_id" FOREIGN KEY ("brand_id") REFERENCES "public"."brand" ("id");
+10/24/2022 14:01:10 => 0.0153237s
+10/24/2022 14:01:10 CreateForeignKey FK_product_type_id_type_id product(type_id) type(id)
+10/24/2022 14:01:10 ALTER TABLE "public"."product" ADD CONSTRAINT "FK_product_type_id_type_id" FOREIGN KEY ("type_id") REFERENCES "public"."type" ("id");
+10/24/2022 14:01:10 => 0.0030949s
+10/24/2022 14:01:10 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221023001,'2022-10-24T21:01:10','InitialTables_20221023001');
+10/24/2022 14:01:10 Committing Transaction
+10/24/2022 14:01:10 20221023001: InitialTables_20221023001 migrated
+10/24/2022 14:01:10 => 0.0109534s
+10/24/2022 14:01:10 20221024001: InitialSeed_20221024001 migrating
+10/24/2022 14:01:10 Beginning Transaction
+10/24/2022 14:01:10 INSERT INTO "public"."brand" ("name") VALUES ('speedo');
+10/24/2022 14:01:10 INSERT INTO "public"."brand" ("name") VALUES ('arena');
+10/24/2022 14:01:10 INSERT INTO "public"."brand" ("name") VALUES ('tyr');
+10/24/2022 14:01:10 INSERT INTO "public"."brand" ("name") VALUES ('nike');
+10/24/2022 14:01:10 INSERT INTO "public"."brand" ("name") VALUES ('phelps');
+10/24/2022 14:01:10 INSERT INTO "public"."type" ("name") VALUES ('briefs');
+10/24/2022 14:01:10 INSERT INTO "public"."type" ("name") VALUES ('jammer');
+10/24/2022 14:01:10 INSERT INTO "public"."type" ("name") VALUES ('wetsuits');
+10/24/2022 14:01:10 INSERT INTO "public"."type" ("name") VALUES ('racing suits');
+10/24/2022 14:01:10 INSERT INTO "public"."type" ("name") VALUES ('training suits');
+10/24/2022 14:01:10 INSERT INTO "public"."type" ("name") VALUES ('lesuire');
+10/24/2022 14:01:10 INSERT INTO "public"."type" ("name","accessory") VALUES ('goggles',true);
+10/24/2022 14:01:10 INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Solid Jammer',4999,3999,'description','features','sku here',1,2,'m');
+10/24/2022 14:01:10 INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Pro LT',4999,3999,'description','features','sku here',1,1,'m');
+10/24/2022 14:01:10 INSERT INTO "public"."product" ("name","retail_price","current_price","description","features","sku","brand_id","type_id","gender") VALUES ('Crossback Racer',4999,3999,'description','features','sku here',1,4,'f');
+10/24/2022 14:01:10 -> 15 Insert operations completed in 00:00:00.0220774 taking an average of 00:00:00.0014718
+10/24/2022 14:01:10 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221024001,'2022-10-24T21:01:10','InitialSeed_20221024001');
+10/24/2022 14:01:10 Committing Transaction
+10/24/2022 14:01:10 20221024001: InitialSeed_20221024001 migrated
+10/24/2022 14:01:10 => 0.004683s

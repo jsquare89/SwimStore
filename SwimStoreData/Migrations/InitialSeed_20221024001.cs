@@ -59,7 +59,8 @@ public class InitialSeed_20221024001 : Migration
             "")
             .Row(new
             {
-                name = "goggles"
+                name = "goggles",
+                accessory = true
             });
     }
     private void InsertIntoBrandTable()
@@ -93,6 +94,44 @@ public class InitialSeed_20221024001 : Migration
     }
     private void InsertIntoProductTable()
     {
-        
+        Insert.IntoTable("product")
+            .Row(new
+            {
+                name = "Solid Jammer",
+                retail_price = 4999,
+                current_price = 3999,
+                description = "description",
+                features = "features",
+                sku = "sku here",
+                brand_id = 1,
+                type_id = 2,
+                gender = "m"
+            });
+        Insert.IntoTable("product")
+            .Row(new 
+            {
+                name = "Pro LT",
+                retail_price = 4999,
+                current_price = 3999,
+                description = "description",
+                features = "features",
+                sku = "sku here",
+                brand_id = 1,
+                type_id = 1,
+                gender = "m"
+            });
+        Insert.IntoTable("product")
+            .Row(new
+            {
+                name = "Crossback Racer",
+                retail_price = 4999,
+                current_price = 3999,
+                description = "description",
+                features = "features",
+                sku = "sku here",
+                brand_id = 1,
+                type_id = 4,
+                gender = "f"
+            });
     }
 }

@@ -25,7 +25,9 @@ public class InitialTables_20221023001 : Migration
 
         Create.Table("type")
             .WithColumn("id").AsInt32().NotNullable().Identity().PrimaryKey()
-            .WithColumn("name").AsString(50).NotNullable();
+            .WithColumn("name").AsString(50).NotNullable()
+            .WithColumn("accessory").AsBoolean().WithDefaultValue(false).NotNullable();
+
 
         Create.Table("product")
             .WithColumn("id").AsInt32().NotNullable().Identity().PrimaryKey()
@@ -35,8 +37,8 @@ public class InitialTables_20221023001 : Migration
             .WithColumn("description").AsString(2000).NotNullable()
             .WithColumn("features").AsString(2000).NotNullable()
             .WithColumn("sku").AsString(20).NotNullable()
-            .WithColumn("brandId").AsInt32().NotNullable().ForeignKey("brand", "id")
-            .WithColumn("typeId").AsInt32().NotNullable().ForeignKey("type", "id")
+            .WithColumn("brand_id").AsInt32().NotNullable().ForeignKey("brand", "id")
+            .WithColumn("type_id").AsInt32().NotNullable().ForeignKey("type", "id")
             .WithColumn("gender").AsString(1).NotNullable();
 
         
