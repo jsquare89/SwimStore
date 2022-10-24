@@ -13,6 +13,7 @@ public static class ConfigurationExtensions
     {
         builder.Services.AddSingleton<IPostgresqlDataAccess, PostgresqlDataAccess>();
         builder.Services.AddSingleton<IProductData, ProductData>();
+        builder.Services.AddSingleton<IBrandData, BrandData>();
         DapperTypeMapper.Initialize("SwimStoreData.Models");
         return builder;
     }

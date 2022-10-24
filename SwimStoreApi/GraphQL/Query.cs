@@ -26,4 +26,16 @@ public class Query
     {
         return await productData.GetProductsByBrand(brand);
     }
+
+    [UseFiltering]
+    public async Task<IEnumerable<BrandModel>> GetBrands([Service] IBrandData brandData)
+    {
+        return await brandData.GetBrands(); ;
+    }
+
+    [UseFiltering]
+    public async Task<BrandModel?> GetBrandById(Int32 id, [Service] IBrandData brandData)
+    {
+        return await brandData.GetBrandById(id); ;
+    }
 }
