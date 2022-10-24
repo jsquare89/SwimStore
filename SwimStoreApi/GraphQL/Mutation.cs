@@ -21,7 +21,7 @@ public class Mutation
         };
 
         var obj = await productData.CreateProduct(parameters);
-        var product = new Product
+        var product = new Models.Product
         {
             Id = obj.id,
             Name = obj.name,
@@ -49,7 +49,7 @@ public class Mutation
         };
 
         var obj = await productData.UpdateProduct(parameters);
-        var product = new Product
+        var product = new Models.Product
         {
             Id = obj.id,
             Name = obj.name,

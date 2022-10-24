@@ -4,10 +4,11 @@ using SwimStoreApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.UseSwimStoreWebApi();
+builder.ConfigureSwimStoreData();
 builder.ConfigureGraphQL();
 builder.ConfigureSerilog();
-DapperTypeMapper.Initialize("SwimStoreData.Models");
+builder.AddFluentMigration();
+
 
 var app = builder.Build();
 
