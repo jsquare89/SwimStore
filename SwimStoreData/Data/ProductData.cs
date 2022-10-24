@@ -20,13 +20,14 @@ public class ProductData : IProductData
 
     public Task<IEnumerable<ProductModel>> GetProducts()
     {
-        string getAllProductsSF = "sf_product_get_all";
-        return _db.LoadDataWithFunction<ProductModel, dynamic>(getAllProductsSF, new { });
+        string getAllProductsQuery = "SELECT * FROM public.product ORDER BY id ASC ";
+        return _db.LoadDataWithSql<ProductModel, dynamic>(getAllProductsQuery,null);
     }
 
-    public async Task<ProductModel> GetProductById(int id)
+    public async Task<ProductModel?> GetProductById(int id)
     {
-        var products = await _db.LoadDataWithFunction<ProductModel, dynamic>("sf_product_get_by_id", new { id });
+        string getProductByIdQuery = "SELECT * FROM public.product WHERE product.id = @id";
+        var products = await _db.LoadDataWithSql<ProductModel, dynamic>(getProductByIdQuery, new { id  = id});
         return products.FirstOrDefault();
     }
 

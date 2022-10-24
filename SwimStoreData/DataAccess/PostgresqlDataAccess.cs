@@ -17,7 +17,7 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         _logger = logger;
     }
 
-    public void CreateDatabase(string dbName = "swim-store", string connectionId = "DbConnection")
+    public void CreateDatabase(string dbName = "swimstoredb", string connectionId = "DbConnection")
     {
         var query = "SELECT datname FROM pg_catalog.pg_database WHERE lower(datname) = lower(@name);";
         var parameters = new DynamicParameters();

@@ -16,7 +16,7 @@ public static class MigrationManager
 
             try
             {
-                databaseService.CreateDatabase( "swimstoretestdb");
+                databaseService.CreateDatabase();
                 migrationService.ListMigrations();
                 migrationService.MigrateUp();
                 // run down to version.
@@ -36,7 +36,7 @@ public static class MigrationManager
         builder.Services.AddFluentMigratorCore()
                         .AddLogging(c => c.AddFluentMigratorConsole())
                         .ConfigureRunner(c => c.AddPostgres11_0()
-                            .WithGlobalConnectionString(builder.Configuration.GetConnectionString("SwimStoreTestDb"))
+                            .WithGlobalConnectionString(builder.Configuration.GetConnectionString("SwimStorePostgresDb"))
                             .ScanIn(AppDomain.CurrentDomain.GetAssemblies()));
         return builder;
     }

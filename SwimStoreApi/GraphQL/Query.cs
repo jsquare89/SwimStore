@@ -16,6 +16,12 @@ public class Query
     }
 
     [UseFiltering]
+    public async Task<ProductModel?> GetProductById(Int32 id, [Service] IProductData productData)
+    {
+        return await productData.GetProductById(id);
+    }
+
+    [UseFiltering]
     public async Task<IEnumerable<ProductModel>> GetProductByBrand(string brand, [Service] IProductData productData)
     {
         return await productData.GetProductsByBrand(brand);
