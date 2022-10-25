@@ -19,43 +19,43 @@ public class InitialSeed_20221024001 : Migration
 
     private void InsertIntoTypeTable()
     {
-        Insert.IntoTable("type")
+        Insert.IntoTable("category")
             .Row(new
             {
                 name = "briefs"
             });
-        Insert.IntoTable("type" +
+        Insert.IntoTable("category" +
             "")
             .Row(new
             {
                 name = "jammer"
 
             });
-        Insert.IntoTable("type" +
+        Insert.IntoTable("category" +
             "")
             .Row(new
             {
                 name = "wetsuits"
             });
-        Insert.IntoTable("type" +
+        Insert.IntoTable("category" +
             "")
             .Row(new
             {
                 name = "racing suits"
             });
-        Insert.IntoTable("type" +
+        Insert.IntoTable("category" +
             "")
             .Row(new
             {
                 name = "training suits"
             });
-        Insert.IntoTable("type" +
+        Insert.IntoTable("category" +
             "")
             .Row(new
             {
                 name = "lesuire"
             });
-        Insert.IntoTable("type" +
+        Insert.IntoTable("category" +
             "")
             .Row(new
             {
@@ -104,7 +104,7 @@ public class InitialSeed_20221024001 : Migration
                 features = "features",
                 sku = "sku here",
                 brand_id = 1,
-                type_id = 2,
+                category_id = 2,
                 gender = "m"
             });
         Insert.IntoTable("product")
@@ -117,7 +117,7 @@ public class InitialSeed_20221024001 : Migration
                 features = "features",
                 sku = "sku here",
                 brand_id = 1,
-                type_id = 1,
+                category_id = 1,
                 gender = "m"
             });
         Insert.IntoTable("product")
@@ -130,7 +130,7 @@ public class InitialSeed_20221024001 : Migration
                 features = "features",
                 sku = "sku here",
                 brand_id = 1,
-                type_id = 4,
+                category_id = 4,
                 gender = "f"
             });
     }

@@ -31,17 +31,29 @@ public class ProductType: ObjectType<Product>
             .Type<NonNullType<IntType>>();
         descriptor.Field(p => p.Description)
             .Type<NonNullType<StringType>>();
-        //descriptor.Field("brand")
-        //    .Type<BrandType>
+        descriptor.Field(p => p.Features)
+            .Type<NonNullType<StringType>>();
+        descriptor.Field(p => p.Sku)
+            .Type<NonNullType<StringType>>();
+        descriptor.Field(p => p.Gender)
+            .Type<NonNullType<StringType>>();
         descriptor.Field<ProductType>(p => ResolveBrand(default, default))
             .Name("brand")
             .Type<BrandType>();
+        //descriptor.Field<ProductType>(p => ResolveCategory(default, default))
+        //    .Name("brand")
+        //    .Type<CategoryType>();
 
     }
-
     public async Task<Brand?> ResolveBrand([Service] IBrandData brandData, [Parent] Product product)
     {
         var brand = await brandData.GetBrandById(product.BrandId);
         return _mapper.Map<Brand>(brand);
     }
+    //public async Task<Category?> ResolveCategory(object value1, object value2)
+    //{
+    //    throw new NotImplementedException();
+    //}
+
+
 }

@@ -14,7 +14,7 @@ public class InitialTables_20221023001 : Migration
     {
         Delete.Table("product");
         Delete.Table("brand");
-        Delete.Table("type");
+        Delete.Table("category");
     }
 
     public override void Up()
@@ -23,7 +23,7 @@ public class InitialTables_20221023001 : Migration
             .WithColumn("id").AsInt32().NotNullable().Identity().PrimaryKey()
             .WithColumn("name").AsString(50).NotNullable();
 
-        Create.Table("type")
+        Create.Table("category")
             .WithColumn("id").AsInt32().NotNullable().Identity().PrimaryKey()
             .WithColumn("name").AsString(50).NotNullable()
             .WithColumn("accessory").AsBoolean().WithDefaultValue(false).NotNullable();
@@ -37,7 +37,7 @@ public class InitialTables_20221023001 : Migration
             .WithColumn("features").AsString(2000).NotNullable()
             .WithColumn("sku").AsString(20).NotNullable()
             .WithColumn("brand_id").AsInt32().NotNullable().ForeignKey("brand", "id")
-            .WithColumn("type_id").AsInt32().NotNullable().ForeignKey("type", "id")
+            .WithColumn("category_id").AsInt32().NotNullable().ForeignKey("category", "id")
             .WithColumn("gender").AsString(1).NotNullable();
 
         //Create.Table("Color")
