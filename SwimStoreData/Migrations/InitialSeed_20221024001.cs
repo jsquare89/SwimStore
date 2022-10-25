@@ -1,5 +1,5 @@
 ﻿using FluentMigrator;
-using SwimStoreData.Models;
+using SwimStoreData.Dtos;
 
 namespace SwimStoreData.Migrations;
 [Migration(20221024001)]

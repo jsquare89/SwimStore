@@ -14,7 +14,8 @@ public static class ConfigurationExtensions
         builder.Services.AddSingleton<IPostgresqlDataAccess, PostgresqlDataAccess>();
         builder.Services.AddSingleton<IProductData, ProductData>();
         builder.Services.AddSingleton<IBrandData, BrandData>();
-        DapperTypeMapper.Initialize("SwimStoreData.Models");
+        DapperTypeMapper.Initialize("SwimStoreData.Dtos");
+        builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         return builder;
     }
 
@@ -34,7 +35,7 @@ public static class ConfigurationExtensions
     {
         builder.Services
             .AddGraphQLServer()
-            .AddQueryType<Query>()
+            .AddQueryType<QueryType>()
             .AddMutationType<Mutation>()
             .AddFiltering();
         return builder;

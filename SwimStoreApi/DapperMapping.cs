@@ -1,5 +1,5 @@
 ﻿using Dapper;
-using SwimStoreData.Models;
+using SwimStoreData.Dtos;
 using System.ComponentModel;
 using System.Reflection;
 
@@ -10,10 +10,10 @@ public static class DapperMapping
     public static void Map()
     {
         // custom mapping
-        var map = new CustomPropertyTypeMap(typeof(ProductModel),
+        var map = new CustomPropertyTypeMap(typeof(ProductDto),
                                             (type, columnName) => type.GetProperties().FirstOrDefault(prop => GetDescriptionFromAttribute(prop) == columnName));
         
-        Dapper.SqlMapper.SetTypeMap(typeof(ProductModel), map);
+        Dapper.SqlMapper.SetTypeMap(typeof(ProductDto), map);
     }
     private static string GetDescriptionFromAttribute(MemberInfo member)
     {

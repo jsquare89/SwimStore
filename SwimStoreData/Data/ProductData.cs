@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Serilog;
 using SwimStoreData.DataAccess;
-using SwimStoreData.Models;
+using SwimStoreData.Dtos;
 using System.Reflection;
 using System.Xml.Linq;
 
@@ -16,26 +16,44 @@ public class ProductData : IProductData
         _db = db;
     }
 
-    public Task<IEnumerable<ProductModel>> GetProducts()
+    public Task<IEnumerable<ProductDto>> GetProducts()
     {
         string getAllProductsQuery = "SELECT * FROM public.product ORDER BY id ASC ";
-        return _db.LoadDataWithSql<ProductModel, dynamic>(getAllProductsQuery,null);
+        return _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsQuery,null);
     }
 
-    public async Task<ProductModel?> GetProductById(int id)
+    public async Task<IEnumerable<ProductDto>> GetProductsBrands()
+    {
+        string getAllProductsQuery = "SELECT * FROM public.product ";
+        string getAllBrandsQuery = "SELECT * from public.brand";
+
+        var products = await _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsQuery, null);
+        var brands = await _db.LoadDataWithSql<BrandDto, dynamic>(getAllBrandsQuery, null);
+        foreach(var product in products)
+        {
+            product.Brand = new BrandDto()
+            {
+                id = product.BrandId,
+                Name = brands.Where(b => b.id == product.BrandId).FirstOrDefault().Name
+            };
+        }
+        return products;
+    }
+
+    public async Task<ProductDto?> GetProductById(int id)
     {
         string getProductByIdQuery = "SELECT * FROM public.product WHERE product.id = @id";
-        var products = await _db.LoadDataWithSql<ProductModel, dynamic>(getProductByIdQuery, new { id  = id});
+        var products = await _db.LoadDataWithSql<ProductDto, dynamic>(getProductByIdQuery, new { id  = id});
         return products.FirstOrDefault();
     }
 
-    public Task<IEnumerable<ProductModel>> GetProductsByBrand(string brand)
+    public Task<IEnumerable<ProductDto>> GetProductsByBrand(string brand)
     {
         string getAllProductsByBrandQuery =
            "SELECT * \n" +
            "FROM product\n" +
            "Where brand = @brand";
-        return _db.LoadDataWithSql<ProductModel, dynamic>(getAllProductsByBrandQuery, new { brand = brand });
+        return _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsByBrandQuery, new { brand = brand });
     }
 
     public async Task<dynamic> CreateProduct<T>(T parameters)

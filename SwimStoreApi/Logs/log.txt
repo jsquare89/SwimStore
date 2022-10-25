@@ -3550,3 +3550,1702 @@ The error was 42P07: relation "product" already exists
 10/24/2022 15:44:30 ====== Postgres Call -> SQL ======
 	"SELECT * FROM public.brand WHERE brand.id = @id"
 10/24/2022 15:44:30 HTTP "POST" "/graphql" responded 200 in 4.7306 ms
+10/24/2022 15:45:36 Migrations
+10/24/2022 15:45:36 20221023001: InitialTables_20221023001
+10/24/2022 15:45:36 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 16:13:33 Migrations
+10/24/2022 16:13:33 20221023001: InitialTables_20221023001
+10/24/2022 16:13:33 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 16:13:34 HTTP "POST" "/graphql" responded 400 in 525.6855 ms
+10/24/2022 16:14:07 HTTP "POST" "/graphql" responded 400 in 0.6939 ms
+10/24/2022 16:14:09 HTTP "POST" "/graphql" responded 400 in 0.1981 ms
+10/24/2022 16:14:10 HTTP "POST" "/graphql" responded 400 in 0.2679 ms
+10/24/2022 16:14:38 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 16:14:38 HTTP "POST" "/graphql" responded 200 in 137.7191 ms
+10/24/2022 16:21:11 Migrations
+10/24/2022 16:21:11 20221023001: InitialTables_20221023001
+10/24/2022 16:21:11 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 16:21:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 16:21:27 HTTP "POST" "/graphql" responded 200 in 639.9551 ms
+10/24/2022 16:25:12 Migrations
+10/24/2022 16:25:12 20221023001: InitialTables_20221023001
+10/24/2022 16:25:12 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 16:25:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 16:25:13 HTTP "POST" "/graphql" responded 200 in 670.6977 ms
+10/24/2022 16:25:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 16:25:13 HTTP "POST" "/graphql" responded 200 in 7.0507 ms
+10/24/2022 16:25:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 16:25:14 HTTP "POST" "/graphql" responded 200 in 4.1156 ms
+10/24/2022 16:25:15 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 16:25:15 HTTP "POST" "/graphql" responded 200 in 3.6921 ms
+10/24/2022 16:25:18 HTTP "POST" "/graphql" responded 200 in 45.9006 ms
+10/24/2022 16:25:19 HTTP "POST" "/graphql" responded 200 in 1.6537 ms
+10/24/2022 16:25:39 HTTP "POST" "/graphql" responded 200 in 1.0053 ms
+10/24/2022 16:25:41 HTTP "POST" "/graphql" responded 200 in 0.9945 ms
+10/24/2022 16:26:35 Migrations
+10/24/2022 16:26:35 20221023001: InitialTables_20221023001
+10/24/2022 16:26:35 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 16:26:36 HTTP "GET" "/graphql-voyager" responded 200 in 62.2155 ms
+10/24/2022 16:26:37 HTTP "POST" "/graphql" responded 200 in 644.6859 ms
+10/24/2022 17:06:48 Migrations
+10/24/2022 17:06:48 20221023001: InitialTables_20221023001
+10/24/2022 17:06:48 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:06:51 HTTP "GET" "/graphql-voyager" responded 200 in 61.9434 ms
+10/24/2022 17:06:52 HTTP "POST" "/graphql" responded 200 in 667.0775 ms
+10/24/2022 17:08:37 Migrations
+10/24/2022 17:08:37 20221023001: InitialTables_20221023001
+10/24/2022 17:08:37 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:08:37 HTTP "GET" "/graphql-voyager" responded 200 in 62.4957 ms
+10/24/2022 17:08:38 HTTP "POST" "/graphql" responded 200 in 674.5857 ms
+10/24/2022 17:09:13 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 15.1072 ms
+10/24/2022 17:09:14 HTTP "POST" "/graphql" responded 200 in 7.2408 ms
+10/24/2022 17:09:14 HTTP "POST" "/graphql" responded 200 in 2.2205 ms
+10/24/2022 17:09:14 HTTP "GET" "/graphql/index.html" responded 200 in 17.6394 ms
+10/24/2022 17:09:14 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 0.1052 ms
+10/24/2022 17:09:15 HTTP "POST" "/graphql" responded 200 in 0.7436 ms
+10/24/2022 17:09:15 HTTP "POST" "/graphql" responded 200 in 0.9678 ms
+10/24/2022 17:09:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:09:32 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:25:19 Migrations
+10/24/2022 17:25:19 20221023001: InitialTables_20221023001
+10/24/2022 17:25:19 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:25:26 HTTP "GET" "/graphql-voyager" responded 200 in 60.1536 ms
+10/24/2022 17:25:27 HTTP "POST" "/graphql" responded 200 in 638.5284 ms
+10/24/2022 17:25:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:25:41 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:26:10 Migrations
+10/24/2022 17:26:10 20221023001: InitialTables_20221023001
+10/24/2022 17:26:10 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:26:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:26:11 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:28:41 Migrations
+10/24/2022 17:28:41 20221023001: InitialTables_20221023001
+10/24/2022 17:28:41 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:28:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:28:42 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:29:03 Migrations
+10/24/2022 17:29:03 20221023001: InitialTables_20221023001
+10/24/2022 17:29:03 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:29:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:29:04 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:31:14 Migrations
+10/24/2022 17:31:14 20221023001: InitialTables_20221023001
+10/24/2022 17:31:14 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:31:16 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:31:16 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:32:37 Migrations
+10/24/2022 17:32:37 20221023001: InitialTables_20221023001
+10/24/2022 17:32:37 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:32:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:32:58 Migrations
+10/24/2022 17:32:58 20221023001: InitialTables_20221023001
+10/24/2022 17:32:58 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:33:06 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:33:07 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:34:24 Migrations
+10/24/2022 17:34:24 20221023001: InitialTables_20221023001
+10/24/2022 17:34:24 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:34:29 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:34:29 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:34:34 HTTP "POST" "/graphql" responded 200 in 5614.0565 ms
+10/24/2022 17:34:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:34:41 HTTP "POST" "/graphql" responded 200 in 5.8475 ms
+10/24/2022 17:34:43 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:34:43 HTTP "POST" "/graphql" responded 200 in 4.9332 ms
+10/24/2022 17:35:04 HTTP "POST" "/graphql" responded 200 in 47.1173 ms
+10/24/2022 17:35:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:35:26 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:35:26 HTTP "POST" "/graphql" responded 200 in 5.3071 ms
+10/24/2022 17:38:42 Migrations
+10/24/2022 17:38:42 20221023001: InitialTables_20221023001
+10/24/2022 17:38:42 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:38:44 HTTP "POST" "/graphql" responded 200 in 742.2665 ms
+10/24/2022 17:38:44 HTTP "POST" "/graphql" responded 200 in 21.2769 ms
+10/24/2022 17:38:53 HTTP "POST" "/graphql" responded 200 in 2.1618 ms
+10/24/2022 17:38:53 HTTP "POST" "/graphql" responded 200 in 1.3924 ms
+10/24/2022 17:38:53 HTTP "POST" "/graphql" responded 200 in 1.1756 ms
+10/24/2022 17:38:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:38:59 HTTP "POST" "/graphql" responded 200 in 76.5650 ms
+10/24/2022 17:39:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:39:00 HTTP "POST" "/graphql" responded 200 in 5.2750 ms
+10/24/2022 17:39:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:39:01 HTTP "POST" "/graphql" responded 200 in 3.7394 ms
+10/24/2022 17:39:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:39:02 HTTP "POST" "/graphql" responded 200 in 3.6028 ms
+10/24/2022 17:39:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:39:24 HTTP "POST" "/graphql" responded 200 in 4.0965 ms
+10/24/2022 17:39:27 HTTP "POST" "/graphql" responded 200 in 1.1116 ms
+10/24/2022 17:39:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+10/24/2022 17:39:27 HTTP "POST" "/graphql" responded 200 in 6.4903 ms
+10/24/2022 17:39:33 HTTP "POST" "/graphql" responded 200 in 1.1568 ms
+10/24/2022 17:39:37 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+10/24/2022 17:39:37 HTTP "POST" "/graphql" responded 200 in 38.5150 ms
+10/24/2022 17:39:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+10/24/2022 17:39:39 HTTP "POST" "/graphql" responded 200 in 4.6886 ms
+10/24/2022 17:39:45 HTTP "POST" "/graphql" responded 400 in 10.6561 ms
+10/24/2022 17:39:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+10/24/2022 17:39:52 HTTP "POST" "/graphql" responded 200 in 3.7284 ms
+10/24/2022 17:39:53 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+10/24/2022 17:39:53 HTTP "POST" "/graphql" responded 200 in 14.1503 ms
+10/24/2022 17:39:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+10/24/2022 17:39:54 HTTP "POST" "/graphql" responded 200 in 3.7057 ms
+10/24/2022 17:40:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+10/24/2022 17:40:00 HTTP "POST" "/graphql" responded 200 in 5.1074 ms
+10/24/2022 17:42:20 Migrations
+10/24/2022 17:42:20 20221023001: InitialTables_20221023001
+10/24/2022 17:42:20 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:42:21 HTTP "GET" "/graphql-voyager" responded 200 in 64.2970 ms
+10/24/2022 17:42:22 HTTP "POST" "/graphql" responded 200 in 747.8702 ms
+10/24/2022 17:42:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+10/24/2022 17:42:32 HTTP "POST" "/graphql" responded 200 in 84.6927 ms
+10/24/2022 17:42:34 HTTP "POST" "/graphql" responded 200 in 4.1995 ms
+10/24/2022 17:42:35 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:42:35 HTTP "POST" "/graphql" responded 200 in 17.0733 ms
+10/24/2022 17:42:36 HTTP "POST" "/graphql" responded 200 in 1.3872 ms
+10/24/2022 17:42:37 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:42:37 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:42:37 HTTP "POST" "/graphql" responded 200 in 7.9220 ms
+10/24/2022 17:42:39 HTTP "POST" "/graphql" responded 200 in 0.9470 ms
+10/24/2022 17:42:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+10/24/2022 17:42:40 HTTP "POST" "/graphql" responded 200 in 4.7540 ms
+10/24/2022 17:42:41 HTTP "POST" "/graphql" responded 200 in 1.1829 ms
+10/24/2022 17:42:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+10/24/2022 17:42:42 HTTP "POST" "/graphql" responded 200 in 4.2922 ms
+10/24/2022 17:42:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+10/24/2022 17:42:44 HTTP "POST" "/graphql" responded 200 in 4.0221 ms
+10/24/2022 17:42:45 HTTP "POST" "/graphql" responded 200 in 0.9850 ms
+10/24/2022 17:42:46 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/24/2022 17:42:46 HTTP "POST" "/graphql" responded 200 in 5.7672 ms
+10/24/2022 17:42:49 HTTP "POST" "/graphql" responded 200 in 0.9631 ms
+10/24/2022 17:42:50 HTTP "POST" "/graphql" responded 400 in 10.8017 ms
+10/24/2022 17:42:56 ====== Postgres Call -> SQL ======
+	"SELECT * 
+FROM product
+Where brand = @brand"
+10/24/2022 17:42:57 HTTP "POST" "/graphql" responded 500 in 442.5064 ms
+10/24/2022 17:42:58 ====== Postgres Call -> SQL ======
+	"SELECT * 
+FROM product
+Where brand = @brand"
+10/24/2022 17:42:58 HTTP "POST" "/graphql" responded 500 in 70.9765 ms
+10/24/2022 17:43:21 ====== Postgres Call -> SQL ======
+	"SELECT * 
+FROM product
+Where brand = @brand"
+10/24/2022 17:43:21 HTTP "POST" "/graphql" responded 500 in 35.4035 ms
+10/24/2022 17:43:28 ====== Postgres Call -> SQL ======
+	"SELECT * 
+FROM product
+Where brand = @brand"
+10/24/2022 17:43:28 HTTP "POST" "/graphql" responded 500 in 35.8684 ms
+10/24/2022 17:46:22 HTTP "POST" "/graphql" responded 200 in 1.0175 ms
+10/24/2022 17:46:23 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:46:23 HTTP "POST" "/graphql" responded 200 in 4.3527 ms
+10/24/2022 17:46:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:46:24 HTTP "POST" "/graphql" responded 200 in 6.6486 ms
+10/24/2022 17:46:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:46:24 HTTP "POST" "/graphql" responded 200 in 4.2879 ms
+10/24/2022 17:46:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:46:25 HTTP "POST" "/graphql" responded 200 in 7.5792 ms
+10/24/2022 17:46:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:46:25 HTTP "POST" "/graphql" responded 200 in 4.9935 ms
+10/24/2022 17:46:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:46:25 HTTP "POST" "/graphql" responded 200 in 5.9498 ms
+10/24/2022 17:46:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 17:46:25 HTTP "POST" "/graphql" responded 200 in 4.3267 ms
+10/24/2022 17:46:26 HTTP "POST" "/graphql" responded 200 in 0.9706 ms
+10/24/2022 17:46:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:46:27 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:46:27 HTTP "POST" "/graphql" responded 200 in 10.1366 ms
+10/24/2022 17:46:28 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:46:28 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:46:28 HTTP "POST" "/graphql" responded 200 in 7.2375 ms
+10/24/2022 17:46:28 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 17:46:28 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 17:46:28 HTTP "POST" "/graphql" responded 200 in 5.9928 ms
+10/24/2022 17:46:29 HTTP "POST" "/graphql" responded 200 in 1.0529 ms
+10/24/2022 17:57:39 Migrations
+10/24/2022 17:57:39 20221023001: InitialTables_20221023001
+10/24/2022 17:57:39 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:58:20 HTTP "GET" "/graphql-voyager" responded 200 in 62.9030 ms
+10/24/2022 17:58:21 HTTP "POST" "/graphql" responded 200 in 735.9541 ms
+10/24/2022 17:58:43 Migrations
+10/24/2022 17:58:43 20221023001: InitialTables_20221023001
+10/24/2022 17:58:43 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 17:58:44 HTTP "GET" "/graphql-voyager" responded 200 in 60.7566 ms
+10/24/2022 17:58:45 HTTP "POST" "/graphql" responded 200 in 802.3852 ms
+10/24/2022 18:02:06 HTTP "GET" "/graphql-voyager" responded 200 in 5.5218 ms
+10/24/2022 18:02:07 HTTP "POST" "/graphql" responded 200 in 2.9554 ms
+10/24/2022 19:19:04 Migrations
+10/24/2022 19:19:04 20221023001: InitialTables_20221023001
+10/24/2022 19:19:04 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:19:09 HTTP "GET" "/graphql-voyager" responded 200 in 70.7371 ms
+10/24/2022 19:19:10 HTTP "POST" "/graphql" responded 200 in 740.1479 ms
+10/24/2022 19:19:55 Migrations
+10/24/2022 19:19:56 20221023001: InitialTables_20221023001
+10/24/2022 19:19:56 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:20:58 Migrations
+10/24/2022 19:20:58 20221023001: InitialTables_20221023001
+10/24/2022 19:20:58 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:21:02 HTTP "GET" "/graphql-voyager" responded 200 in 59.8381 ms
+10/24/2022 19:21:03 HTTP "POST" "/graphql" responded 200 in 742.3740 ms
+10/24/2022 19:28:21 Migrations
+10/24/2022 19:28:21 20221023001: InitialTables_20221023001
+10/24/2022 19:28:21 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:28:29 HTTP "GET" "/graphql-voyager" responded 200 in 59.2123 ms
+10/24/2022 19:28:30 HTTP "POST" "/graphql" responded 200 in 711.2452 ms
+10/24/2022 19:28:50 Migrations
+10/24/2022 19:28:50 20221023001: InitialTables_20221023001
+10/24/2022 19:28:50 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:28:54 HTTP "GET" "/graphql-voyager" responded 200 in 60.0415 ms
+10/24/2022 19:28:55 HTTP "POST" "/graphql" responded 500 in 484.5426 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:28:55 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:29:00 HTTP "GET" "/graphql-voyager" responded 200 in 4.0290 ms
+10/24/2022 19:29:00 HTTP "POST" "/graphql" responded 500 in 40.7145 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:29:00 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:30:04 Migrations
+10/24/2022 19:30:04 20221023001: InitialTables_20221023001
+10/24/2022 19:30:04 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:30:14 HTTP "GET" "/graphql-voyager" responded 200 in 60.2992 ms
+10/24/2022 19:30:14 HTTP "POST" "/graphql" responded 500 in 477.5657 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:30:14 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:36:21 Migrations
+10/24/2022 19:36:21 20221023001: InitialTables_20221023001
+10/24/2022 19:36:21 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:36:26 HTTP "GET" "/graphql-voyager" responded 200 in 66.1426 ms
+10/24/2022 19:36:26 HTTP "POST" "/graphql" responded 500 in 512.0651 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:36:26 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:36:35 Migrations
+10/24/2022 19:36:35 20221023001: InitialTables_20221023001
+10/24/2022 19:36:35 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:36:35 HTTP "GET" "/graphql-voyager" responded 200 in 67.5958 ms
+10/24/2022 19:36:36 HTTP "POST" "/graphql" responded 500 in 499.4820 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:36:36 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:41:48 Migrations
+10/24/2022 19:41:49 20221023001: InitialTables_20221023001
+10/24/2022 19:41:49 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:41:56 Migrations
+10/24/2022 19:41:56 20221023001: InitialTables_20221023001
+10/24/2022 19:41:56 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:42:10 HTTP "GET" "/graphql-voyager" responded 200 in 81.0936 ms
+10/24/2022 19:42:11 HTTP "POST" "/graphql" responded 500 in 504.7061 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:42:11 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:43:13 Migrations
+10/24/2022 19:43:13 20221023001: InitialTables_20221023001
+10/24/2022 19:43:13 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:43:15 HTTP "GET" "/graphql-voyager" responded 200 in 90.4755 ms
+10/24/2022 19:43:16 HTTP "POST" "/graphql" responded 500 in 553.3158 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:43:16 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:43:43 Migrations
+10/24/2022 19:43:43 20221023001: InitialTables_20221023001
+10/24/2022 19:43:43 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:43:45 HTTP "GET" "/graphql-voyager" responded 200 in 62.6726 ms
+10/24/2022 19:43:46 HTTP "POST" "/graphql" responded 200 in 778.7738 ms
+10/24/2022 19:44:08 Migrations
+10/24/2022 19:44:08 20221023001: InitialTables_20221023001
+10/24/2022 19:44:08 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:44:11 HTTP "GET" "/graphql-voyager" responded 200 in 62.3186 ms
+10/24/2022 19:44:13 HTTP "POST" "/graphql" responded 200 in 2124.8722 ms
+10/24/2022 19:44:42 Migrations
+10/24/2022 19:44:42 20221023001: InitialTables_20221023001
+10/24/2022 19:44:42 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:44:47 HTTP "GET" "/graphql-voyager" responded 200 in 60.5056 ms
+10/24/2022 19:44:48 HTTP "POST" "/graphql" responded 200 in 944.9767 ms
+10/24/2022 19:44:57 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 19:44:57 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 19:44:57 HTTP "POST" "/graphql" responded 200 in 89.6299 ms
+10/24/2022 19:44:57 HTTP "POST" "/graphql" responded 200 in 98.9229 ms
+10/24/2022 19:45:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 19:45:01 HTTP "POST" "/graphql" responded 200 in 6.6853 ms
+10/24/2022 19:45:18 Migrations
+10/24/2022 19:45:18 20221023001: InitialTables_20221023001
+10/24/2022 19:45:18 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:45:22 HTTP "POST" "/graphql" responded 500 in 472.3783 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:45:22 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:46:04 Migrations
+10/24/2022 19:46:04 20221023001: InitialTables_20221023001
+10/24/2022 19:46:04 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:46:08 HTTP "GET" "/graphql-voyager" responded 200 in 112.2224 ms
+10/24/2022 19:46:09 HTTP "POST" "/graphql" responded 500 in 477.1729 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:46:09 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:46:19 Migrations
+10/24/2022 19:46:20 20221023001: InitialTables_20221023001
+10/24/2022 19:46:20 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:46:21 HTTP "POST" "/graphql" responded 500 in 494.4891 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:46:21 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:46:28 HTTP "POST" "/graphql" responded 500 in 48.7108 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:46:28 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:46:29 HTTP "POST" "/graphql" responded 500 in 44.2702 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:46:29 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:46:33 HTTP "POST" "/graphql" responded 500 in 47.6123 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:46:33 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:46:34 HTTP "POST" "/graphql" responded 500 in 40.8886 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:46:34 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:46:55 Migrations
+10/24/2022 19:46:55 20221023001: InitialTables_20221023001
+10/24/2022 19:46:55 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:47:00 HTTP "GET" "/graphql-voyager" responded 200 in 104.8851 ms
+10/24/2022 19:47:19 HTTP "POST" "/graphql" responded 500 in 19227.2457 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:47:19 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:47:33 Migrations
+10/24/2022 19:47:33 20221023001: InitialTables_20221023001
+10/24/2022 19:47:33 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:47:34 HTTP "GET" "/graphql-voyager" responded 200 in 62.5430 ms
+10/24/2022 19:47:41 HTTP "POST" "/graphql" responded 500 in 7362.0948 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:47:41 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:47:56 Migrations
+10/24/2022 19:47:56 20221023001: InitialTables_20221023001
+10/24/2022 19:47:56 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:48:00 HTTP "GET" "/graphql-voyager" responded 200 in 62.8369 ms
+10/24/2022 19:48:08 HTTP "POST" "/graphql" responded 500 in 8276.6188 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:48:08 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:48:28 Migrations
+10/24/2022 19:48:28 20221023001: InitialTables_20221023001
+10/24/2022 19:48:28 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:48:34 HTTP "GET" "/graphql-voyager" responded 200 in 61.8441 ms
+10/24/2022 19:48:35 HTTP "POST" "/graphql" responded 200 in 757.4832 ms
+10/24/2022 19:49:53 Migrations
+10/24/2022 19:49:53 20221023001: InitialTables_20221023001
+10/24/2022 19:49:53 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:50:16 HTTP "GET" "/graphql-voyager" responded 200 in 60.6169 ms
+10/24/2022 19:50:17 HTTP "POST" "/graphql" responded 500 in 468.7547 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:50:17 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:50:41 Migrations
+10/24/2022 19:50:41 20221023001: InitialTables_20221023001
+10/24/2022 19:50:41 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:50:44 HTTP "GET" "/graphql-voyager" responded 200 in 61.6336 ms
+10/24/2022 19:50:44 HTTP "POST" "/graphql" responded 500 in 470.1252 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:50:44 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:54:29 Migrations
+10/24/2022 19:54:29 20221023001: InitialTables_20221023001
+10/24/2022 19:54:29 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:54:37 HTTP "GET" "/graphql-voyager" responded 200 in 59.0985 ms
+10/24/2022 19:54:37 HTTP "POST" "/graphql" responded 500 in 480.4576 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:54:37 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:54:56 Migrations
+10/24/2022 19:54:56 20221023001: InitialTables_20221023001
+10/24/2022 19:54:56 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:55:02 HTTP "GET" "/graphql-voyager" responded 200 in 59.8974 ms
+10/24/2022 19:55:03 HTTP "POST" "/graphql" responded 500 in 492.3024 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:55:03 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:55:26 Migrations
+10/24/2022 19:55:26 20221023001: InitialTables_20221023001
+10/24/2022 19:55:26 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:55:29 HTTP "GET" "/graphql-voyager" responded 200 in 62.6257 ms
+10/24/2022 19:55:30 HTTP "POST" "/graphql" responded 500 in 500.9578 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:55:30 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:58:01 Migrations
+10/24/2022 19:58:01 20221023001: InitialTables_20221023001
+10/24/2022 19:58:01 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:58:05 HTTP "GET" "/graphql-voyager" responded 200 in 69.1516 ms
+10/24/2022 19:58:06 HTTP "POST" "/graphql" responded 500 in 483.5523 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:58:06 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 19:59:22 Migrations
+10/24/2022 19:59:22 20221023001: InitialTables_20221023001
+10/24/2022 19:59:22 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 19:59:25 HTTP "GET" "/graphql-voyager" responded 200 in 61.8215 ms
+10/24/2022 19:59:25 HTTP "POST" "/graphql" responded 500 in 503.9208 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 19:59:25 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 20:04:10 Migrations
+10/24/2022 20:04:10 20221023001: InitialTables_20221023001
+10/24/2022 20:04:10 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:04:14 HTTP "GET" "/graphql-voyager" responded 200 in 61.5335 ms
+10/24/2022 20:04:15 HTTP "POST" "/graphql" responded 500 in 467.3636 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 20:04:15 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 20:05:07 Migrations
+10/24/2022 20:05:07 20221023001: InitialTables_20221023001
+10/24/2022 20:05:07 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:05:07 HTTP "GET" "/graphql/index.html" responded 200 in 74.5392 ms
+10/24/2022 20:05:08 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 13.7921 ms
+10/24/2022 20:05:09 HTTP "POST" "/graphql" responded 200 in 698.4576 ms
+10/24/2022 20:05:09 HTTP "POST" "/graphql" responded 200 in 32.7080 ms
+10/24/2022 20:05:11 HTTP "POST" "/graphql" responded 400 in 26.5419 ms
+10/24/2022 20:05:27 HTTP "POST" "/graphql" responded 400 in 0.6231 ms
+10/24/2022 20:05:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+10/24/2022 20:05:32 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+10/24/2022 20:05:32 HTTP "POST" "/graphql" responded 200 in 94.5504 ms
+10/24/2022 20:05:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:05:44 HTTP "POST" "/graphql" responded 200 in 7.5947 ms
+10/24/2022 20:06:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:06:04 HTTP "POST" "/graphql" responded 200 in 3.9229 ms
+10/24/2022 20:06:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:06:05 HTTP "POST" "/graphql" responded 200 in 4.4846 ms
+10/24/2022 20:06:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:06:05 HTTP "POST" "/graphql" responded 200 in 3.8654 ms
+10/24/2022 20:06:06 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:06:06 HTTP "POST" "/graphql" responded 200 in 5.5846 ms
+10/24/2022 20:06:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:06:14 HTTP "POST" "/graphql" responded 200 in 3.9536 ms
+10/24/2022 20:06:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:06:26 HTTP "POST" "/graphql" responded 200 in 4.0314 ms
+10/24/2022 20:09:45 Migrations
+10/24/2022 20:09:45 20221023001: InitialTables_20221023001
+10/24/2022 20:09:45 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:09:53 HTTP "GET" "/graphql-voyager" responded 200 in 63.5211 ms
+10/24/2022 20:09:54 HTTP "POST" "/graphql" responded 500 in 453.0226 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 20:09:54 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 20:10:02 Migrations
+10/24/2022 20:10:02 20221023001: InitialTables_20221023001
+10/24/2022 20:10:02 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:10:04 HTTP "GET" "/graphql-voyager" responded 200 in 62.9981 ms
+10/24/2022 20:10:05 HTTP "POST" "/graphql" responded 500 in 466.2888 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 20:10:05 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 20:10:55 Migrations
+10/24/2022 20:10:55 20221023001: InitialTables_20221023001
+10/24/2022 20:10:55 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:11:07 Migrations
+10/24/2022 20:11:07 20221023001: InitialTables_20221023001
+10/24/2022 20:11:07 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:11:12 HTTP "GET" "/graphql-voyager" responded 200 in 70.1857 ms
+10/24/2022 20:11:13 HTTP "POST" "/graphql" responded 200 in 746.3129 ms
+10/24/2022 20:12:56 Migrations
+10/24/2022 20:12:56 20221023001: InitialTables_20221023001
+10/24/2022 20:12:56 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:12:57 HTTP "GET" "/graphql-voyager" responded 200 in 60.6603 ms
+10/24/2022 20:12:58 HTTP "POST" "/graphql" responded 500 in 496.4819 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 20:12:58 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 20:12:59 HTTP "GET" "/graphql-voyager" responded 200 in 4.6351 ms
+10/24/2022 20:12:59 HTTP "POST" "/graphql" responded 500 in 66.5137 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/24/2022 20:12:59 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/24/2022 20:13:28 Migrations
+10/24/2022 20:13:28 20221023001: InitialTables_20221023001
+10/24/2022 20:13:28 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:13:29 HTTP "GET" "/graphql-voyager" responded 200 in 60.8725 ms
+10/24/2022 20:13:29 HTTP "POST" "/graphql" responded 200 in 753.2935 ms
+10/24/2022 20:14:35 Migrations
+10/24/2022 20:14:35 20221023001: InitialTables_20221023001
+10/24/2022 20:14:35 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:14:55 HTTP "POST" "/graphql" responded 200 in 719.9233 ms
+10/24/2022 20:15:01 HTTP "GET" "/graphql-voyager" responded 200 in 30.8815 ms
+10/24/2022 20:15:01 HTTP "POST" "/graphql" responded 200 in 2.1767 ms
+10/24/2022 20:15:36 Migrations
+10/24/2022 20:15:36 20221023001: InitialTables_20221023001
+10/24/2022 20:15:36 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:15:37 HTTP "GET" "/graphql-voyager" responded 200 in 60.7060 ms
+10/24/2022 20:15:38 HTTP "POST" "/graphql" responded 200 in 751.3086 ms
+10/24/2022 20:15:52 Migrations
+10/24/2022 20:15:52 20221023001: InitialTables_20221023001
+10/24/2022 20:15:52 20221024001: InitialSeed_20221024001 (current)
+10/24/2022 20:15:57 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:15:57 HTTP "POST" "/graphql" responded 200 in 759.3996 ms
+10/24/2022 20:16:01 HTTP "GET" "/graphql/index.html" responded 200 in 63.3134 ms
+10/24/2022 20:16:01 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 11.6304 ms
+10/24/2022 20:16:02 HTTP "POST" "/graphql" responded 200 in 17.9852 ms
+10/24/2022 20:16:02 HTTP "POST" "/graphql" responded 200 in 35.1240 ms
+10/24/2022 20:16:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:16:04 HTTP "POST" "/graphql" responded 200 in 5.9380 ms
+10/24/2022 20:16:09 HTTP "POST" "/graphql" responded 400 in 9.5733 ms
+10/24/2022 20:16:15 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/24/2022 20:16:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/24/2022 20:16:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/24/2022 20:16:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/24/2022 20:16:20 HTTP "POST" "/graphql" responded 200 in 5317.0090 ms

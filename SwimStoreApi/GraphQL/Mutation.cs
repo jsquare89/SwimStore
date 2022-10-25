@@ -1,7 +1,7 @@
 ﻿using SwimStoreApi.GraphQL.Products;
 using SwimStoreApi.Models;
 using SwimStoreData.Data;
-using SwimStoreData.Models;
+using SwimStoreData.Dtos;
 
 namespace SwimStoreApi.GraphQL;
 
@@ -25,10 +25,9 @@ public class Mutation
         {
             Id = obj.id,
             Name = obj.name,
-            OriginalPrice = obj.original_price,
+            RetailPrice = obj.original_price,
             CurrentPrice = obj.current_price,
-            QuantityInStock = obj.quantity_in_stock,
-            Brand = obj.brand,
+            //Brand = obj.brand,
             Gender = obj.gender
         };
         
@@ -44,7 +43,7 @@ public class Mutation
             original_price = input.OriginalPrice,
             current_price = input.CurrentPrice,
             quantity_in_stock = input.QuantityInStock,
-            brand = input.Brand,
+            //brand = input.Brand,
             gender = input.Gender
         };
 
@@ -53,10 +52,9 @@ public class Mutation
         {
             Id = obj.id,
             Name = obj.name,
-            OriginalPrice = obj.original_price,
+            RetailPrice = obj.original_price,
             CurrentPrice = obj.current_price,
-            QuantityInStock = obj.quantity_in_stock,
-            Brand = obj.brand,
+            //Brand = obj.brand,
             Gender = obj.gender
         };
 

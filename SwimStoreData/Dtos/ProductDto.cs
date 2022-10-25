@@ -2,8 +2,8 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace SwimStoreData.Models;
-public class ProductModel
+namespace SwimStoreData.Dtos;
+public class ProductDto
 {
     public Int32 Id { get; set; }
     public string? Name { get; set; }
@@ -23,4 +23,6 @@ public class ProductModel
     public Int32 TypeId { get; set; }
     [MaxLength(1)]
     public string? Gender { get; set; }
+
+    public BrandDto? Brand { get; set; }
 }

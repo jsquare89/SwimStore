@@ -1,41 +1,63 @@
-﻿using SwimStoreData.Data;
-using SwimStoreData.Models;
+﻿using AutoMapper;
+using SwimStoreApi.Models;
+using SwimStoreData.Data;
+using SwimStoreData.Dtos;
 
 namespace SwimStoreApi.GraphQL;
 
 public class Query
 {
-    public Query()
+    private readonly IMapper _mapper;
+
+    public Query(IMapper mapper)
     {
+        _mapper = mapper;
     }
 
     [UseFiltering]
-    public async Task<IEnumerable<ProductModel>> GetProduct([Service]IProductData productData)
+    public async Task<IEnumerable<Product>> GetProduct([Service]IProductData productData)
     {
-        return await productData.GetProducts();
+        var products = await productData.GetProducts();
+        return _mapper.Map<IEnumerable<Product>>(products);
+    }
+
+
+    [UseFiltering]
+    public async Task<IEnumerable<Product>> GetProductBrands([Service] IProductData productData)
+    {
+        var products = await productData.GetProductsBrands();
+        return _mapper.Map<IEnumerable<Product>>(products );
     }
 
     [UseFiltering]
-    public async Task<ProductModel?> GetProductById(Int32 id, [Service] IProductData productData)
+    public async Task<Product?> GetProductById(Int32 id, [Service] IProductData productData)
     {
-        return await productData.GetProductById(id);
+        var product = await productData.GetProductById(id);
+        return _mapper.Map<Product>(product);
     }
 
     [UseFiltering]
-    public async Task<IEnumerable<ProductModel>> GetProductByBrand(string brand, [Service] IProductData productData)
+    public async Task<IEnumerable<Product>> GetProductByBrand(string brand, [Service] IProductData productData)
     {
-        return await productData.GetProductsByBrand(brand);
+        if (brand == null)
+        {
+            return Enumerable.Empty<Product>();
+        }
+        var products = await productData.GetProductsByBrand(brand);
+        return _mapper.Map<IEnumerable<Product>>(products);
     }
 
     [UseFiltering]
-    public async Task<IEnumerable<BrandModel>> GetBrands([Service] IBrandData brandData)
+    public async Task<IEnumerable<Brand>> GetBrands([Service] IBrandData brandData)
     {
-        return await brandData.GetBrands(); ;
+        var brands = await brandData.GetBrands();
+        return _mapper.Map<IEnumerable<Brand>>(brands);
     }
 
     [UseFiltering]
-    public async Task<BrandModel?> GetBrandById(Int32 id, [Service] IBrandData brandData)
+    public async Task<Brand?> GetBrandById(Int32 id, [Service] IBrandData brandData)
     {
-        return await brandData.GetBrandById(id); ;
+        var brand = await brandData.GetBrandById(id);
+        return _mapper.Map<Brand>(brand);
     }
 }

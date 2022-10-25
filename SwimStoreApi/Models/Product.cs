@@ -1,12 +1,24 @@
-﻿namespace SwimStoreApi.Models;
+﻿using SwimStoreData.Dtos;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace SwimStoreApi.Models;
 
 public class Product
 {
-    public int Id { get; set; }
+    public Int32 Id { get; set; }
     public string? Name { get; set; }
-    public int OriginalPrice { get; set; }
-    public int CurrentPrice { get; set; }
-    public int QuantityInStock { get; set; }
-    public string? Brand { get; set; }
+    [Column("retail_price")]
+    public Int32 RetailPrice { get; set; }
+    [Column("current_price")]
+    public Int32 CurrentPrice { get; set; }
+    [MaxLength(2000)]
+    public string? Description { get; set; }
+    [MaxLength(2000)]
+    public string? Features { get; set; }
+    [MaxLength(20)]
+    public string? Sku { get; set; }
+    [MaxLength(1)]
     public string? Gender { get; set; }
+    public Int32 BrandId { get; set; }
 }
