@@ -43,19 +43,18 @@ public class ProductType: ObjectType<Product>
             .Type<BrandType>();
         descriptor.Field(p => p.CategoryId)
             .Ignore();
-        descriptor.Field<ProductType>(p => ResolveCategory(default, default))
+        descriptor.Field<ProductType>(p => ResolveCategory(default,default, default))
             .Name("category")
             .Type<CategoryType>();
     }
     public async Task<Brand?> ResolveBrand([Service] IBrandData brandData, BrandBatchDataLoader dataLoader, [Parent] Product product)
     {
-        return await dataLoader.LoadAsync(product.BrandId);
-        //var brand = await brandData.GetBrandById(product.BrandId);
-        //return _mapper.Map<Brand>(brand);
+        var results = await dataLoader.LoadAsync(product.BrandId);
+        return results;
     }
-    public async Task<Category?> ResolveCategory([Service] ICategoryData categoryData, [Parent] Product product)
+    public async Task<Category?> ResolveCategory([Service] ICategoryData categoryData, CategoryBatchDataLoader dataLoader, [Parent] Product product)
     {
-        var category = await categoryData.GetCategoryById(product.CategoryId);
-        return _mapper.Map<Category>(category);
+        var results = await dataLoader.LoadAsync(product.CategoryId);
+        return results;
     }
 }
