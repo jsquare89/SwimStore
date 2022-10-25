@@ -19,9 +19,7 @@ public class ProductType: ObjectType<Product>
     protected override void Configure(IObjectTypeDescriptor<Product> descriptor)
     {
         base.Configure(descriptor);
-
         descriptor.Description("Represents a product in the store.");
-
         descriptor.Field(p => p.Id)
             .Type<NonNullType<IdType>>();
         descriptor.Field(p => p.Name)
@@ -38,13 +36,16 @@ public class ProductType: ObjectType<Product>
             .Type<NonNullType<StringType>>();
         descriptor.Field(p => p.Gender)
             .Type<NonNullType<StringType>>();
+        descriptor.Field(p => p.BrandId)
+            .Ignore();
         descriptor.Field<ProductType>(p => ResolveBrand(default, default))
             .Name("brand")
             .Type<BrandType>();
+        descriptor.Field(p => p.CategoryId)
+            .Ignore();
         descriptor.Field<ProductType>(p => ResolveCategory(default, default))
             .Name("category")
             .Type<CategoryType>();
-
     }
     public async Task<Brand?> ResolveBrand([Service] IBrandData brandData, [Parent] Product product)
     {
@@ -56,6 +57,4 @@ public class ProductType: ObjectType<Product>
         var category = await categoryData.GetCategoryById(product.CategoryId);
         return _mapper.Map<Category>(category);
     }
-
-
 }
