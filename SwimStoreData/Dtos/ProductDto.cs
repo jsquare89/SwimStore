@@ -19,8 +19,8 @@ public class ProductDto
     public string? Sku { get; set; }
     [Column("brand_id")]
     public Int32 BrandId { get; set; }
-    [Column("type_id")]
-    public Int32 TypeId { get; set; }
+    [Column("category_id")]
+    public Int32 CategoryId { get; set; }
     [MaxLength(1)]
     public string? Gender { get; set; }
 

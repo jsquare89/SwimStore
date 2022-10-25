@@ -19,7 +19,7 @@ public class ProductData : IProductData
     public Task<IEnumerable<ProductDto>> GetProducts()
     {
         string getAllProductsQuery = "SELECT * FROM public.product ORDER BY id ASC ";
-        return _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsQuery,null);
+        return _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsQuery,new { });
     }
 
     public async Task<IEnumerable<ProductDto>> GetProductsBrands()
@@ -27,8 +27,8 @@ public class ProductData : IProductData
         string getAllProductsQuery = "SELECT * FROM public.product ";
         string getAllBrandsQuery = "SELECT * from public.brand";
 
-        var products = await _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsQuery, null);
-        var brands = await _db.LoadDataWithSql<BrandDto, dynamic>(getAllBrandsQuery, null);
+        var products = await _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsQuery, new {});
+        var brands = await _db.LoadDataWithSql<BrandDto, dynamic>(getAllBrandsQuery, new {});
         foreach(var product in products)
         {
             product.Brand = new BrandDto()
@@ -43,7 +43,7 @@ public class ProductData : IProductData
     public async Task<ProductDto?> GetProductById(int id)
     {
         string getProductByIdQuery = "SELECT * FROM public.product WHERE product.id = @id";
-        var products = await _db.LoadDataWithSql<ProductDto, dynamic>(getProductByIdQuery, new { id  = id});
+        var products = await _db.LoadDataWithSql<ProductDto, dynamic>(getProductByIdQuery, new { id });
         return products.FirstOrDefault();
     }
 

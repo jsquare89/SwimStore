@@ -60,4 +60,18 @@ public class Query
         var brand = await brandData.GetBrandById(id);
         return _mapper.Map<Brand>(brand);
     }
+
+    [UseFiltering]
+    public async Task<IEnumerable<Category>> GetCategories([Service] ICategoryData categoryData)
+    {
+        var categories = await categoryData.GetCategories();
+        return _mapper.Map<IEnumerable<Category>>(categories);
+    }
+
+    [UseFiltering]
+    public async Task<Category?> GetCategoryById(Int32 id, [Service] ICategoryData categoryData)
+    {
+        var category = await categoryData.GetCategoryById(id);
+        return _mapper.Map<Category>(category);
+    }
 }

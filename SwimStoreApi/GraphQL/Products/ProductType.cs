@@ -2,6 +2,7 @@
 using HotChocolate.Resolvers;
 using HotChocolate.Types;
 using SwimStoreApi.GraphQL.Brands;
+using SwimStoreApi.GraphQL.Categories;
 using SwimStoreApi.Models;
 using SwimStoreData.Data;
 
@@ -40,9 +41,9 @@ public class ProductType: ObjectType<Product>
         descriptor.Field<ProductType>(p => ResolveBrand(default, default))
             .Name("brand")
             .Type<BrandType>();
-        //descriptor.Field<ProductType>(p => ResolveCategory(default, default))
-        //    .Name("brand")
-        //    .Type<CategoryType>();
+        descriptor.Field<ProductType>(p => ResolveCategory(default, default))
+            .Name("category")
+            .Type<CategoryType>();
 
     }
     public async Task<Brand?> ResolveBrand([Service] IBrandData brandData, [Parent] Product product)
@@ -50,10 +51,11 @@ public class ProductType: ObjectType<Product>
         var brand = await brandData.GetBrandById(product.BrandId);
         return _mapper.Map<Brand>(brand);
     }
-    //public async Task<Category?> ResolveCategory(object value1, object value2)
-    //{
-    //    throw new NotImplementedException();
-    //}
+    public async Task<Category?> ResolveCategory([Service] ICategoryData categoryData, [Parent] Product product)
+    {
+        var category = await categoryData.GetCategoryById(product.CategoryId);
+        return _mapper.Map<Category>(category);
+    }
 
 
 }

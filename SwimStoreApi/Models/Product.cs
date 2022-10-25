@@ -21,4 +21,5 @@ public class Product
     [MaxLength(1)]
     public string? Gender { get; set; }
     public Int32 BrandId { get; set; }
+    public Int32 CategoryId { get; set; }
 }

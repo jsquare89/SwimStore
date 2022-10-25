@@ -30,7 +30,7 @@ public class BrandData : IBrandData
     public Task<IEnumerable<BrandDto>> GetBrands()
     {
         string getAllBrandsQuery = "SELECT * FROM public.brand ORDER BY id ASC ";
-        return _db.LoadDataWithSql<BrandDto, dynamic>(getAllBrandsQuery, null);
+        return _db.LoadDataWithSql<BrandDto, dynamic>(getAllBrandsQuery, new { });
     }
 
     public Task<dynamic> UpdateBrand<T>(T parameters)
