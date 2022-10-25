@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using SwimStoreApi.GraphQL.Brands;
+using SwimStoreApi.GraphQL.Categories;
 using SwimStoreApi.GraphQL.Products;
 using SwimStoreApi.Models;
 using SwimStoreData.Data;
@@ -74,5 +75,28 @@ public class Mutation
         };
         var createBrandDto = await brandData.UpdateBrand<dynamic>(parameters);
         return new UpdateBrandPayload(_mapper.Map<Brand>(createBrandDto));
+    }
+
+    public async Task<AddCategoryPayload> AddCategory([Service] ICategoryData categoryData, AddCategoryInput input)
+    {
+        var parameters = new
+        {
+            name = input.Name,
+            accessory = input.Accessory
+        };
+        var createCategoryDto = await categoryData.CreateCategory<dynamic>(parameters);
+        return new AddCategoryPayload(_mapper.Map<Category>(createCategoryDto));
+    }
+
+    public async Task<UpdateCategoryPayload> UpdateCategory([Service] ICategoryData categoryData, UpdateCategoryInput input)
+    {
+        var parameters = new
+        {
+            id = input.Id,
+            name = input.Name,
+            accessory = input.Accessory
+        };
+        var updateCategoryDto = await categoryData.UpdateCategory<dynamic>(parameters);
+        return new UpdateCategoryPayload(_mapper.Map<Category>(updateCategoryDto));
     }
 }

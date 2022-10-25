@@ -19,7 +19,8 @@ public class CategoryData : ICategoryData
     public async Task<IEnumerable<CategoryDto>> GetCategories()
     {
         string getAllCategoriesQuery = "SELECT * FROM public.category ORDER BY id ASC ";
-        return await _db.LoadDataWithSqlAsync<CategoryDto, dynamic>(getAllCategoriesQuery, new { });
+        var categories = await _db.LoadDataWithSqlAsync<CategoryDto, dynamic>(getAllCategoriesQuery, new { });
+        return categories;
     }
     public async Task<CategoryDto?> GetCategoryById(int id)
     {
@@ -31,14 +32,21 @@ public class CategoryData : ICategoryData
     {
         string commaSeperatedIds = string.Join(",", ids);
         string getCategoriesByIdsQuery = $"SELECT id, name FROM public.category where id in ({commaSeperatedIds})";
-        return _db.LoadDataWithSqlAsync<CategoryDto, dynamic>(getCategoriesByIdsQuery, new { });
+        var categories =  _db.LoadDataWithSqlAsync<CategoryDto, dynamic>(getCategoriesByIdsQuery, new { });
+        return categories;
     }
-    public Task<dynamic> CreateCategory<T>(T parameters)
+    public async Task<CategoryDto> CreateCategory<T>(T parameters)
     {
-        throw new NotImplementedException();
+        var insertCategoryQuery = "INSERT INTO category(name, accessory) VALUES (@name, @accessory)\n" +
+                               "RETURNING *";
+        var category = await _db.SaveDataWithSqlAsync<CategoryDto, T>(insertCategoryQuery, parameters);
+        return category;
     }
-    public Task<dynamic> UpdateCategory<T>(T parameters)
+    public async Task<CategoryDto> UpdateCategory<T>(T parameters)
     {
-        throw new NotImplementedException();
+        var updateCategoryQuery = "UPDATE category SET name=@name, accessory=@accessory WHERE id = @id \n" +
+                              "RETURNING *";
+        var brand = await _db.SaveDataWithSqlAsync<CategoryDto, T>(updateCategoryQuery, parameters);
+        return brand;
     }
 }

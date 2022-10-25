@@ -1,4 +1,4 @@
 ﻿namespace SwimStoreApi.GraphQL.Brands;
 
-public record UpdateBrandInput(Int32 Id, 
+public record UpdateBrandInput(int Id, 
                                string Name);
