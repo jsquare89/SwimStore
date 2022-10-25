@@ -70,17 +70,17 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         await connection.ExecuteAsync(procedure, parameters, commandType: CommandType.StoredProcedure);
     }
 
-    public async Task<dynamic> SaveDataWithSql<T>(
+    public async Task<T> SaveDataWithSql<T, U>(
         string sqlQuery,
-        T parameters,
+        U parameters,
         string connectionId = "SwimStorePostgresDb")
     {
         _logger.LogInformation("====== Postgres Call -> SQL ======\n" +
-            "\t{sqlQuery}", sqlQuery);
+                                      "\t{sqlQuery}", sqlQuery);
 
-        using IDbConnection connection = new NpgsqlConnection(
-            _config.GetConnectionString(connectionId));
+        using IDbConnection connection = new NpgsqlConnection(_config.GetConnectionString(connectionId));
        
-        return await connection.QuerySingleAsync(sqlQuery, parameters, commandType: CommandType.Text);
+        var result = await connection.QuerySingleAsync<T>(sqlQuery, parameters, commandType: CommandType.Text);
+        return result;
     }
 }

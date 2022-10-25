@@ -1,9 +1,12 @@
 ﻿namespace SwimStoreApi.GraphQL.Products;
 
-public record UpdateProductInput(int id,
+public record UpdateProductInput(int Id,
                                  string Name,
-                                 int OriginalPrice,
-                                 int CurrentPrice,
-                                 int QuantityInStock,
-                                 string Brand,
-                                 string Gender);
+                                 Int32 RetailPrice,
+                                 Int32 CurrentPrice,
+                                 string Description,
+                                 string Features,
+                                 string Sku,
+                                 string Gender,
+                                 Int32 BrandId,
+                                 Int32 CategoryId);

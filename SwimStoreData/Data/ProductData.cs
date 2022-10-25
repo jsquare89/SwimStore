@@ -53,27 +53,28 @@ public class ProductData : IProductData
            "SELECT * \n" +
            "FROM product\n" +
            "Where brand = @brand";
-        return _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsByBrandQuery, new { brand = brand });
+        var results = _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsByBrandQuery, new { brand = brand });
+        return results;
     }
 
-    public async Task<dynamic> CreateProduct<T>(T parameters)
+    public async Task<ProductDto> CreateProduct<T>(T parameters)
     {
         string insertProductQuery = 
-            "INSERT INTO product (name, original_price, current_price, quantity_in_stock, brand, gender)\n" +
-            "VALUES (@name, @original_price, @current_price, @quantity_in_stock, @brand, @gender)\n" +
+            "INSERT INTO product (name, retail_price, current_price, description, features, sku, brand_id, category_id, gender)\n" +
+            "VALUES (@name, @retail_price, @current_price, @description, @features, @sku, @brand_id, @category_id, @gender)\n" +
             "RETURNING *";
-        var result = await _db.SaveDataWithSql<dynamic>(insertProductQuery, parameters);
+        var result = await _db.SaveDataWithSql<ProductDto, T>(insertProductQuery, parameters);
         return result;
     }
 
-    public async Task<dynamic> UpdateProduct<T>(T parameters)
+    public async Task<ProductDto> UpdateProduct<T>(T parameters)
     {
-        string insertProductQuery = 
+        string updateProductQuery = 
             "Update product\n" +
-            "SET name = @name, original_price = @original_price, current_price = @current_price, quantity_in_stock = @quantity_in_stock, brand = @brand, gender = @gender\n" +
+            "SET name = @name, retail_price = @retail_price, current_price = @current_price, description = @description, features = @features, sku = @sku, brand_id = @brand_id, category_id = @category_id, gender = @gender\n" +
             "WHERE id = @id \n" +
             "RETURNING *";
-        var result = await _db.SaveDataWithSql<dynamic>(insertProductQuery, parameters);
+        var result = await _db.SaveDataWithSql<ProductDto, T>(updateProductQuery, parameters);
         return result;
     }
 }

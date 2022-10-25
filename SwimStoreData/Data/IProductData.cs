@@ -6,7 +6,7 @@ public interface IProductData
     Task<ProductDto?> GetProductById(int id);
     Task<IEnumerable<ProductDto>> GetProducts();
     Task<IEnumerable<ProductDto>> GetProductsByBrand(string brand);
-    Task<dynamic> CreateProduct<T>(T parameters);
-    Task<dynamic> UpdateProduct<T>(T parameters);
+    Task<ProductDto> CreateProduct<T>(T parameters);
+    Task<ProductDto> UpdateProduct<T>(T parameters);
     Task<IEnumerable<ProductDto>> GetProductsBrands();
 }

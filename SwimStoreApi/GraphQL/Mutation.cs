@@ -1,4 +1,5 @@
-﻿using SwimStoreApi.GraphQL.Products;
+﻿using AutoMapper;
+using SwimStoreApi.GraphQL.Products;
 using SwimStoreApi.Models;
 using SwimStoreData.Data;
 using SwimStoreData.Dtos;
@@ -7,58 +8,50 @@ namespace SwimStoreApi.GraphQL;
 
 public class Mutation
 {
+    private readonly IMapper _mapper;
+
+    public Mutation(IMapper mapper)
+    {
+        _mapper = mapper;
+    }
     public async Task<AddProductPayload> AddProductAsync(AddProductInput input,
         [Service] IProductData productData)
     {
         var parameters = new
         {
             name = input.Name,
-            original_price = input.OriginalPrice,
+            retail_price = input.RetailPrice,
             current_price = input.CurrentPrice,
-            quantity_in_stock = input.QuantityInStock,
-            brand = input.Brand,
+            description = input.Description,
+            features = input.Features,
+            sku = input.Sku,
+            brand_Id = input.BrandId,
+            category_Id = input.CategoryId,
             gender = input.Gender
         };
 
-        var obj = await productData.CreateProduct(parameters);
-        var product = new Models.Product
-        {
-            Id = obj.id,
-            Name = obj.name,
-            RetailPrice = obj.original_price,
-            CurrentPrice = obj.current_price,
-            //Brand = obj.brand,
-            Gender = obj.gender
-        };
-        
-        return new AddProductPayload(product);
+        var createdProductDto = await productData.CreateProduct<dynamic>(parameters);
+        return new AddProductPayload(_mapper.Map<Product>(createdProductDto));
     }
+
     public async Task<UpdateProductPayload> UpdateProductAsync(UpdateProductInput input,
         [Service] IProductData productData)
     {
         var parameters = new
         {
-            id = input.id,
+            id = input.Id,
             name = input.Name,
-            original_price = input.OriginalPrice,
+            retail_price = input.RetailPrice,
             current_price = input.CurrentPrice,
-            quantity_in_stock = input.QuantityInStock,
-            //brand = input.Brand,
+            description = input.Description,
+            features = input.Features,
+            sku = input.Sku,
+            brand_Id = input.BrandId,
+            category_Id = input.CategoryId,
             gender = input.Gender
         };
 
-        var obj = await productData.UpdateProduct(parameters);
-        var product = new Models.Product
-        {
-            Id = obj.id,
-            Name = obj.name,
-            RetailPrice = obj.original_price,
-            CurrentPrice = obj.current_price,
-            //Brand = obj.brand,
-            Gender = obj.gender
-        };
-
-        return new UpdateProductPayload(product);
+        var updatedProductDto = await productData.UpdateProduct<dynamic>(parameters);
+        return new UpdateProductPayload(_mapper.Map<Product>(updatedProductDto));
     }
-
 }
