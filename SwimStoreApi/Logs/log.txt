@@ -6159,3 +6159,54 @@ RETURNING *"
 10/25/2022 11:34:14 ====== Postgres Call -> SQL ======
 	"SELECT * FROM public.category WHERE category.id = @id"
 10/25/2022 11:34:14 HTTP "POST" "/graphql" responded 200 in 14216.4424 ms
+10/25/2022 11:47:31 Migrations
+10/25/2022 11:47:31 20221023001: InitialTables_20221023001
+10/25/2022 11:47:31 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 11:47:31 HTTP "GET" "/graphql-voyager" responded 200 in 62.0424 ms
+10/25/2022 11:47:32 HTTP "POST" "/graphql" responded 200 in 742.8533 ms
+10/25/2022 12:15:00 Migrations
+10/25/2022 12:15:00 20221023001: InitialTables_20221023001
+10/25/2022 12:15:00 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 12:15:16 Migrations
+10/25/2022 12:15:16 20221023001: InitialTables_20221023001
+10/25/2022 12:15:16 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 12:16:12 HTTP "POST" "/graphql" responded 200 in 726.1587 ms
+10/25/2022 12:16:12 HTTP "POST" "/graphql" responded 200 in 6.9441 ms
+10/25/2022 12:16:33 HTTP "POST" "/graphql" responded 200 in 2.0241 ms
+10/25/2022 12:16:34 HTTP "POST" "/graphql" responded 200 in 1.1019 ms
+10/25/2022 12:16:56 HTTP "POST" "/graphql" responded 200 in 1.1185 ms
+10/25/2022 12:16:58 HTTP "POST" "/graphql" responded 200 in 1.0916 ms
+10/25/2022 12:17:13 HTTP "POST" "/graphql" responded 200 in 1.1162 ms
+10/25/2022 12:17:14 HTTP "POST" "/graphql" responded 200 in 1.1204 ms
+10/25/2022 12:17:24 HTTP "POST" "/graphql" responded 200 in 1.5716 ms
+10/25/2022 12:17:25 HTTP "POST" "/graphql" responded 200 in 1.2403 ms
+10/25/2022 12:18:32 HTTP "POST" "/graphql" responded 200 in 1.4211 ms
+10/25/2022 12:18:36 HTTP "POST" "/graphql" responded 200 in 1.2263 ms
+10/25/2022 12:18:45 HTTP "POST" "/graphql" responded 200 in 1.0416 ms
+10/25/2022 12:18:45 HTTP "POST" "/graphql" responded 200 in 1.5842 ms
+10/25/2022 12:18:46 HTTP "POST" "/graphql" responded 200 in 1.8901 ms
+10/25/2022 12:19:04 HTTP "POST" "/graphql" responded 200 in 1.1524 ms
+10/25/2022 12:19:23 HTTP "POST" "/graphql" responded 200 in 1.1050 ms
+10/25/2022 12:19:29 HTTP "POST" "/graphql" responded 200 in 1.2009 ms
+10/25/2022 12:20:03 HTTP "POST" "/graphql" responded 500 in 130.6800 ms
+10/25/2022 12:38:26 Migrations
+10/25/2022 12:38:26 20221023001: InitialTables_20221023001
+10/25/2022 12:38:26 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 12:38:29 ====== Postgres Call -> SQL ======
+	"INSERT INTO brand(name) VALUES (@name)"
+10/25/2022 12:38:29 HTTP "POST" "/graphql" responded 500 in 875.1614 ms
+10/25/2022 12:39:08 ====== Postgres Call -> SQL ======
+	"INSERT INTO brand(name) VALUES (@name)"
+10/25/2022 12:39:20 HTTP "POST" "/graphql" responded 500 in 30955.8743 ms
+10/25/2022 12:43:01 Migrations
+10/25/2022 12:43:01 20221023001: InitialTables_20221023001
+10/25/2022 12:43:01 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 12:44:04 ====== Postgres Call -> SQL ======
+	"INSERT INTO brand(name) VALUES (@name)
+RETURNING *"
+10/25/2022 12:44:11 HTTP "POST" "/graphql" responded 200 in 12073.8057 ms
+10/25/2022 12:44:15 HTTP "POST" "/graphql" responded 200 in 40.8532 ms
+10/25/2022 12:45:15 ====== Postgres Call -> SQL ======
+	"UPDATE brand SET name=@name WHERE id = @id 
+RETURNING *"
+10/25/2022 12:45:19 HTTP "POST" "/graphql" responded 200 in 4796.2650 ms

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using SwimStoreApi.GraphQL.Brands;
 using SwimStoreApi.GraphQL.Products;
 using SwimStoreApi.Models;
 using SwimStoreData.Data;
@@ -14,7 +15,7 @@ public class Mutation
     {
         _mapper = mapper;
     }
-    public async Task<AddProductPayload> AddProductAsync(AddProductInput input,
+    public async Task<AddProductPayload> AddProduct(AddProductInput input,
         [Service] IProductData productData)
     {
         var parameters = new
@@ -34,7 +35,7 @@ public class Mutation
         return new AddProductPayload(_mapper.Map<Product>(createdProductDto));
     }
 
-    public async Task<UpdateProductPayload> UpdateProductAsync(UpdateProductInput input,
+    public async Task<UpdateProductPayload> UpdateProduct(UpdateProductInput input,
         [Service] IProductData productData)
     {
         var parameters = new
@@ -53,5 +54,25 @@ public class Mutation
 
         var updatedProductDto = await productData.UpdateProduct<dynamic>(parameters);
         return new UpdateProductPayload(_mapper.Map<Product>(updatedProductDto));
+    }
+
+    public async Task<AddBrandPayload> AddBrand([Service] IBrandData brandData ,AddBrandInput input)
+    {
+        var parameters = new
+        {
+            name = input.Name
+        };
+        var createBrandDto = await brandData.CreateBrand<dynamic>(parameters);
+        return new AddBrandPayload(_mapper.Map<Brand>(createBrandDto));
+    }
+    public async Task<UpdateBrandPayload> UpdateBrand([Service] IBrandData brandData, UpdateBrandInput input)
+    {
+        var parameters = new
+        {
+            id = input.Id,
+            name = input.Name
+        };
+        var createBrandDto = await brandData.UpdateBrand<dynamic>(parameters);
+        return new UpdateBrandPayload(_mapper.Map<Brand>(createBrandDto));
     }
 }

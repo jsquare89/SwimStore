@@ -2,6 +2,7 @@
 using SwimStoreData.Dtos;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,26 +16,34 @@ public class BrandData : IBrandData
     {
         _db = db;
     }
-    public Task<dynamic> CreateBrand<T>(T parameters)
+    public async Task<BrandDto> CreateBrand<T>(T parameters)
     {
-        throw new NotImplementedException();
+        var insertBrandQuery = "INSERT INTO brand(name) VALUES (@name)\n" +
+                               "RETURNING *";
+        var brand = await _db.SaveDataWithSqlAsync<BrandDto, T>(insertBrandQuery, parameters);
+        return brand;
+    }
+
+    public async Task<BrandDto> UpdateBrand<T>(T parameters)
+    {
+        var updateBrandQuery = "UPDATE brand SET name=@name WHERE id = @id \n" +
+                               "RETURNING *";
+        var brand = await _db.SaveDataWithSqlAsync<BrandDto, T>(updateBrandQuery, parameters);
+        return brand;
     }
 
     public async Task<BrandDto?> GetBrandById(int id)
     {
         string getBrandByIdQuery = "SELECT * FROM public.brand WHERE brand.id = @id";
-        var brand = await _db.LoadDataWithSql<BrandDto, dynamic>(getBrandByIdQuery, new { id = id });
+        var brand = await _db.LoadDataWithSqlAsync<BrandDto, dynamic>(getBrandByIdQuery, new { id = id });
         return brand.FirstOrDefault();
     }
 
     public Task<IEnumerable<BrandDto>> GetBrands()
     {
         string getAllBrandsQuery = "SELECT * FROM public.brand ORDER BY id ASC ";
-        return _db.LoadDataWithSql<BrandDto, dynamic>(getAllBrandsQuery, new { });
+        return _db.LoadDataWithSqlAsync<BrandDto, dynamic>(getAllBrandsQuery, new { });
     }
 
-    public Task<dynamic> UpdateBrand<T>(T parameters)
-    {
-        throw new NotImplementedException();
-    }
+
 }

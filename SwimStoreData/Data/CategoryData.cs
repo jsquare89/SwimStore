@@ -23,13 +23,13 @@ public class CategoryData : ICategoryData
     public async Task<IEnumerable<CategoryDto>> GetCategories()
     {
         string getAllCategoriesQuery = "SELECT * FROM public.category ORDER BY id ASC ";
-        return await _db.LoadDataWithSql<CategoryDto, dynamic>(getAllCategoriesQuery, new { });
+        return await _db.LoadDataWithSqlAsync<CategoryDto, dynamic>(getAllCategoriesQuery, new { });
     }
 
     public async Task<CategoryDto?> GetCategoryById(int id)
     {
         string getCategoryByIdQuery = "SELECT * FROM public.category WHERE category.id = @id";
-        var category = await _db.LoadDataWithSql<CategoryDto, dynamic>(getCategoryByIdQuery, new { id = id });
+        var category = await _db.LoadDataWithSqlAsync<CategoryDto, dynamic>(getCategoryByIdQuery, new { id = id });
         return category.FirstOrDefault();
     }
 

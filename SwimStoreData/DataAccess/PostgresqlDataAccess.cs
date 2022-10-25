@@ -45,7 +45,7 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         return await connection.QueryAsync<T>(function, parameters, commandType: CommandType.StoredProcedure);
     }
 
-    public async Task<IEnumerable<T>> LoadDataWithSql<T, U>(
+    public async Task<IEnumerable<T>> LoadDataWithSqlAsync<T, U>(
         string sqlQuery,
         U parameters,
         string connectionId = "SwimStorePostgresDb")
@@ -70,7 +70,7 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         await connection.ExecuteAsync(procedure, parameters, commandType: CommandType.StoredProcedure);
     }
 
-    public async Task<T> SaveDataWithSql<T, U>(
+    public async Task<T> SaveDataWithSqlAsync<T, U>(
         string sqlQuery,
         U parameters,
         string connectionId = "SwimStorePostgresDb")

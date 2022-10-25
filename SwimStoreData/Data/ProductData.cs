@@ -19,7 +19,7 @@ public class ProductData : IProductData
     public Task<IEnumerable<ProductDto>> GetProducts()
     {
         string getAllProductsQuery = "SELECT * FROM public.product ORDER BY id ASC ";
-        return _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsQuery,new { });
+        return _db.LoadDataWithSqlAsync<ProductDto, dynamic>(getAllProductsQuery,new { });
     }
 
     public async Task<IEnumerable<ProductDto>> GetProductsBrands()
@@ -27,8 +27,8 @@ public class ProductData : IProductData
         string getAllProductsQuery = "SELECT * FROM public.product ";
         string getAllBrandsQuery = "SELECT * from public.brand";
 
-        var products = await _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsQuery, new {});
-        var brands = await _db.LoadDataWithSql<BrandDto, dynamic>(getAllBrandsQuery, new {});
+        var products = await _db.LoadDataWithSqlAsync<ProductDto, dynamic>(getAllProductsQuery, new {});
+        var brands = await _db.LoadDataWithSqlAsync<BrandDto, dynamic>(getAllBrandsQuery, new {});
         foreach(var product in products)
         {
             product.Brand = new BrandDto()
@@ -43,7 +43,7 @@ public class ProductData : IProductData
     public async Task<ProductDto?> GetProductById(int id)
     {
         string getProductByIdQuery = "SELECT * FROM public.product WHERE product.id = @id";
-        var products = await _db.LoadDataWithSql<ProductDto, dynamic>(getProductByIdQuery, new { id });
+        var products = await _db.LoadDataWithSqlAsync<ProductDto, dynamic>(getProductByIdQuery, new { id });
         return products.FirstOrDefault();
     }
 
@@ -53,7 +53,7 @@ public class ProductData : IProductData
            "SELECT * \n" +
            "FROM product\n" +
            "Where brand = @brand";
-        var results = _db.LoadDataWithSql<ProductDto, dynamic>(getAllProductsByBrandQuery, new { brand = brand });
+        var results = _db.LoadDataWithSqlAsync<ProductDto, dynamic>(getAllProductsByBrandQuery, new { brand = brand });
         return results;
     }
 
@@ -63,7 +63,7 @@ public class ProductData : IProductData
             "INSERT INTO product (name, retail_price, current_price, description, features, sku, brand_id, category_id, gender)\n" +
             "VALUES (@name, @retail_price, @current_price, @description, @features, @sku, @brand_id, @category_id, @gender)\n" +
             "RETURNING *";
-        var result = await _db.SaveDataWithSql<ProductDto, T>(insertProductQuery, parameters);
+        var result = await _db.SaveDataWithSqlAsync<ProductDto, T>(insertProductQuery, parameters);
         return result;
     }
 
@@ -74,7 +74,7 @@ public class ProductData : IProductData
             "SET name = @name, retail_price = @retail_price, current_price = @current_price, description = @description, features = @features, sku = @sku, brand_id = @brand_id, category_id = @category_id, gender = @gender\n" +
             "WHERE id = @id \n" +
             "RETURNING *";
-        var result = await _db.SaveDataWithSql<ProductDto, T>(updateProductQuery, parameters);
+        var result = await _db.SaveDataWithSqlAsync<ProductDto, T>(updateProductQuery, parameters);
         return result;
     }
 }
