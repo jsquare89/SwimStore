@@ -1,5 +1,4 @@
 using Serilog;
-using SwimStoreApi.DapperAttributeMapper;
 using SwimStoreApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);

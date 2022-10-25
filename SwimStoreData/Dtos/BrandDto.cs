@@ -4,7 +4,7 @@
 namespace SwimStoreData.Dtos;
 public class BrandDto
 {
-    public Int32 id { get; set; }
+    public int Id { get; set; }
     public string? Name { get; set; }
     //public string? LogoUrl { get; set; }
 }

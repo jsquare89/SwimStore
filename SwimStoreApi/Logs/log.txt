@@ -6210,3 +6210,1107 @@ RETURNING *"
 	"UPDATE brand SET name=@name WHERE id = @id 
 RETURNING *"
 10/25/2022 12:45:19 HTTP "POST" "/graphql" responded 200 in 4796.2650 ms
+10/25/2022 13:37:16 Migrations
+10/25/2022 13:37:16 20221023001: InitialTables_20221023001
+10/25/2022 13:37:16 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 13:37:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:37:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:37:42 HTTP "POST" "/graphql" responded 200 in 887.4914 ms
+10/25/2022 13:45:24 Migrations
+10/25/2022 13:45:24 20221023001: InitialTables_20221023001
+10/25/2022 13:45:24 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:30 HTTP "POST" "/graphql" responded 200 in 913.9961 ms
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:32 HTTP "POST" "/graphql" responded 200 in 46.4490 ms
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:34 HTTP "POST" "/graphql" responded 200 in 44.8976 ms
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+10/25/2022 13:45:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+10/25/2022 13:45:44 HTTP "POST" "/graphql" responded 200 in 45.6102 ms
+10/25/2022 14:34:05 Migrations
+10/25/2022 14:34:06 20221023001: InitialTables_20221023001
+10/25/2022 14:34:06 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:34:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (@ids)"
+"{ ids = System.Collections.Generic.List`1[System.Int32] }"
+10/25/2022 14:34:12 HTTP "POST" "/graphql" responded 200 in 1512.6841 ms
+10/25/2022 14:34:30 Migrations
+10/25/2022 14:34:30 20221023001: InitialTables_20221023001
+10/25/2022 14:34:30 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:34:34 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (@ids)"
+"{ ids = System.Collections.Generic.List`1[System.Int32] }"
+10/25/2022 14:34:34 HTTP "POST" "/graphql" responded 200 in 998.9080 ms
+10/25/2022 14:37:06 Migrations
+10/25/2022 14:37:06 20221023001: InitialTables_20221023001
+10/25/2022 14:37:06 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:37:08 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (@ids)"
+"{ ids = System.Int32[] }"
+10/25/2022 14:37:08 HTTP "POST" "/graphql" responded 200 in 1047.5607 ms
+10/25/2022 14:40:45 Migrations
+10/25/2022 14:40:45 20221023001: InitialTables_20221023001
+10/25/2022 14:40:45 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:41:01 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,)"
+"{ }"
+10/25/2022 14:41:01 HTTP "POST" "/graphql" responded 200 in 1041.9799 ms
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:41:34 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,)"
+"{ }"
+10/25/2022 14:41:34 HTTP "POST" "/graphql" responded 200 in 156.0598 ms
+10/25/2022 14:42:06 Migrations
+10/25/2022 14:42:06 20221023001: InitialTables_20221023001
+10/25/2022 14:42:06 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:42:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:42:35 Migrations
+10/25/2022 14:42:35 20221023001: InitialTables_20221023001
+10/25/2022 14:42:35 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:42:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1)"
+"{ }"
+10/25/2022 14:42:36 HTTP "POST" "/graphql" responded 200 in 861.7734 ms
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:42:39 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1)"
+"{ }"
+10/25/2022 14:42:39 HTTP "POST" "/graphql" responded 200 in 40.6474 ms
+10/25/2022 14:43:25 HTTP "POST" "/graphql" responded 200 in 49.9465 ms
+10/25/2022 14:45:42 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, retail_price, current_price, description, features, sku, brand_id, category_id, gender)
+VALUES (@name, @retail_price, @current_price, @description, @features, @sku, @brand_id, @category_id, @gender)
+RETURNING *"
+10/25/2022 14:45:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:45:42 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2)"
+"{ }"
+10/25/2022 14:45:42 HTTP "POST" "/graphql" responded 200 in 131.5661 ms
+10/25/2022 14:45:53 HTTP "POST" "/graphql" responded 200 in 1.4089 ms
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:45:54 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (21)"
+"{ }"
+10/25/2022 14:45:54 HTTP "POST" "/graphql" responded 200 in 55.6242 ms
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:46:18 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1,)"
+"{ }"
+10/25/2022 14:46:19 HTTP "POST" "/graphql" responded 200 in 257.8761 ms
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:47:56 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1,)"
+"{ }"
+10/25/2022 14:47:56 HTTP "POST" "/graphql" responded 200 in 219.8528 ms
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:47:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1,)"
+"{ }"
+10/25/2022 14:47:58 HTTP "POST" "/graphql" responded 200 in 164.2253 ms
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:00 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1,)"
+"{ }"
+10/25/2022 14:48:00 HTTP "POST" "/graphql" responded 200 in 142.7430 ms
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:01 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1,)"
+"{ }"
+10/25/2022 14:48:01 HTTP "POST" "/graphql" responded 200 in 135.4134 ms
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1,)"
+"{ }"
+10/25/2022 14:48:11 HTTP "POST" "/graphql" responded 200 in 125.4468 ms
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1,)"
+"{ }"
+10/25/2022 14:48:13 HTTP "POST" "/graphql" responded 200 in 161.0800 ms
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:48:13 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1,)"
+"{ }"
+10/25/2022 14:48:13 HTTP "POST" "/graphql" responded 200 in 153.3718 ms
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:49:04 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 14:49:04 HTTP "POST" "/graphql" responded 200 in 72.5616 ms
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:50:19 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 14:50:19 HTTP "POST" "/graphql" responded 200 in 88.4556 ms
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:50:21 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 14:50:21 HTTP "POST" "/graphql" responded 200 in 62.4809 ms
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:50:27 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 14:50:27 HTTP "POST" "/graphql" responded 200 in 45.6829 ms
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 5 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 4 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 1 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/25/2022 14:50:39 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 14:50:39 HTTP "POST" "/graphql" responded 200 in 46.0931 ms

@@ -38,7 +38,7 @@ public class ProductType: ObjectType<Product>
             .Type<NonNullType<StringType>>();
         descriptor.Field(p => p.BrandId)
             .Ignore();
-        descriptor.Field<ProductType>(p => ResolveBrand(default, default))
+        descriptor.Field<ProductType>(p => ResolveBrand(default, default, default))
             .Name("brand")
             .Type<BrandType>();
         descriptor.Field(p => p.CategoryId)
@@ -47,10 +47,11 @@ public class ProductType: ObjectType<Product>
             .Name("category")
             .Type<CategoryType>();
     }
-    public async Task<Brand?> ResolveBrand([Service] IBrandData brandData, [Parent] Product product)
+    public async Task<Brand?> ResolveBrand([Service] IBrandData brandData, BrandBatchDataLoader dataLoader, [Parent] Product product)
     {
-        var brand = await brandData.GetBrandById(product.BrandId);
-        return _mapper.Map<Brand>(brand);
+        return await dataLoader.LoadAsync(product.BrandId);
+        //var brand = await brandData.GetBrandById(product.BrandId);
+        //return _mapper.Map<Brand>(brand);
     }
     public async Task<Category?> ResolveCategory([Service] ICategoryData categoryData, [Parent] Product product)
     {

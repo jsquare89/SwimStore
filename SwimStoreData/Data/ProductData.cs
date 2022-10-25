@@ -33,8 +33,8 @@ public class ProductData : IProductData
         {
             product.Brand = new BrandDto()
             {
-                id = product.BrandId,
-                Name = brands.Where(b => b.id == product.BrandId).FirstOrDefault().Name
+                Id = product.BrandId,
+                Name = brands.Where(b => b.Id == product.BrandId).FirstOrDefault().Name
             };
         }
         return products;

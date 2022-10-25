@@ -4,6 +4,7 @@ using SwimStoreApi.GraphQL;
 using SwimStoreData.Data;
 using SwimStoreData.DataAccess;
 
+
 namespace SwimStoreApi.Extensions;
 
 public static class ConfigurationExtensions
@@ -35,6 +36,7 @@ public static class ConfigurationExtensions
         this WebApplicationBuilder builder)
     {
         builder.Services
+            
             .AddGraphQLServer()
             .AddQueryType<QueryType>()
             .AddMutationType<Mutation>()

@@ -45,5 +45,10 @@ public class BrandData : IBrandData
         return _db.LoadDataWithSqlAsync<BrandDto, dynamic>(getAllBrandsQuery, new { });
     }
 
-
+    public Task<IEnumerable<BrandDto>> GetBrandsByIds(IReadOnlyList<int> ids)
+    {
+        string commaSeperatedIds = string.Join(",",ids);
+        string getBrandsByIds = $"SELECT id, name FROM public.brand where id in ({commaSeperatedIds})";
+        return _db.LoadDataWithSqlAsync<BrandDto, dynamic>(getBrandsByIds, new { });
+    }
 }

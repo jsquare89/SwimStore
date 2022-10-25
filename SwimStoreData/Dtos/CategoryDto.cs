@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SwimStoreData.Dtos;
 public class CategoryDto
 {
-    public Int32 id { get; set; }
+    public int id { get; set; }
     public string? Name { get; set; }
     public bool Accessory { get; set; }
 }
