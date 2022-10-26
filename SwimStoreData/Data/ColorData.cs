@@ -11,6 +11,22 @@ public class ColorData : IColorData
         _db = db;
     }
 
+    public async Task<ColorDto> CreateColor<T>(T parameters)
+    {
+        var insertColorQuery = "INSERT INTO color(name) VALUES (@name)\n" +
+                               "RETURNING *";
+        var color = await _db.SaveDataWithSqlAsync<ColorDto, T>(insertColorQuery, parameters);
+        return color;
+    }
+
+    public async Task<ColorDto> UpdateColor<T>(T parameters)
+    {
+        var updateColorQuery = "UPDATE color SET name=@name WHERE id = @id \n" +
+                               "RETURNING *";
+        var color = await _db.SaveDataWithSqlAsync<ColorDto, T>(updateColorQuery, parameters);
+        return color;
+    }
+
     public async Task<ColorDto?> GetColorById(int id)
     {
         string getColorByIdQuery = "SELECT * FROM public.color WHERE color.id = @id";

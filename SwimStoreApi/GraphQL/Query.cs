@@ -22,21 +22,6 @@ public class Query
     }
 
     [UseFiltering]
-    public async Task<IEnumerable<ProductStock>> GetProductStocks([Service] IProductStockData productStockData)
-    {
-        var productStocks = await productStockData.GetAllProductsStock();
-        return _mapper.Map<IEnumerable<ProductStock>>(productStocks);
-    }
-
-
-    [UseFiltering]
-    public async Task<IEnumerable<Product>> GetProductBrands([Service] IProductData productData)
-    {
-        var products = await productData.GetProductsBrands();
-        return _mapper.Map<IEnumerable<Product>>(products );
-    }
-
-    [UseFiltering]
     public async Task<Product?> GetProductById(int id, [Service] IProductData productData)
     {
         var product = await productData.GetProductById(id);
@@ -52,6 +37,20 @@ public class Query
         }
         var products = await productData.GetProductsByBrand(brand);
         return _mapper.Map<IEnumerable<Product>>(products);
+    }
+
+    [UseFiltering]
+    public async Task<IEnumerable<ProductStock>> GetProductStocks([Service] IProductStockData productStockData)
+    {
+        var productStocks = await productStockData.GetAllProductsStock();
+        return _mapper.Map<IEnumerable<ProductStock>>(productStocks);
+    }
+
+    [UseFiltering]
+    public async Task<IEnumerable<Product>> GetProductBrands([Service] IProductData productData)
+    {
+        var products = await productData.GetProductsBrands();
+        return _mapper.Map<IEnumerable<Product>>(products );
     }
 
     [UseFiltering]
@@ -82,5 +81,17 @@ public class Query
         return _mapper.Map<Category>(category);
     }
 
+    [UseFiltering]
+    public async Task<IEnumerable<Color>> GetColors([Service] IColorData colorData)
+    {
+        var colors = await colorData.GetColors();
+        return _mapper.Map<IEnumerable<Color>>(colors);
+    }
 
+    [UseFiltering]
+    public async Task<Color?> GetColorById(int id, [Service] IColorData colorData)
+    {
+        var color = await colorData.GetColorById(id);
+        return _mapper.Map<Color>(color);
+    }
 }

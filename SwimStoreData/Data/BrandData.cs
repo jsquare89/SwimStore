@@ -39,16 +39,18 @@ public class BrandData : IBrandData
         return brand.FirstOrDefault();
     }
 
-    public Task<IEnumerable<BrandDto>> GetBrands()
+    public async Task<IEnumerable<BrandDto>> GetBrands()
     {
         string getAllBrandsQuery = "SELECT * FROM public.brand ORDER BY id ASC ";
-        return _db.LoadDataWithSqlAsync<BrandDto, dynamic>(getAllBrandsQuery, new { });
+        var brands =  await _db.LoadDataWithSqlAsync<BrandDto, dynamic>(getAllBrandsQuery, new { });
+        return brands;
     }
 
-    public Task<IEnumerable<BrandDto>> GetBrandsByIds(IReadOnlyList<int> ids)
+    public async Task<IEnumerable<BrandDto>> GetBrandsByIds(IReadOnlyList<int> ids)
     {
         string commaSeperatedIds = string.Join(",",ids);
         string getBrandsByIds = $"SELECT id, name FROM public.brand where id in ({commaSeperatedIds})";
-        return _db.LoadDataWithSqlAsync<BrandDto, dynamic>(getBrandsByIds, new { });
+        var brands = await _db.LoadDataWithSqlAsync<BrandDto, dynamic>(getBrandsByIds, new { });
+        return brands;
     }
 }

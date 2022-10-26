@@ -16,6 +16,7 @@ public class QueryType : ObjectType<Query>
         descriptor.Field(q => q.GetProductStocks(default))
             .Type<ListType<ProductStockType>>();
 
+
         //descriptor.Field(q => q.GetBrands(default))
         //    .Type<ListType<BrandType>>();
     }

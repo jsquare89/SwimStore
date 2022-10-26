@@ -10284,3 +10284,70 @@ RETURNING *"
 	"SELECT id, name FROM public.brand where id in (1,2)"
 "{ }"
 10/26/2022 11:10:14 HTTP "POST" "/graphql" responded 200 in 32.6828 ms
+10/26/2022 12:13:52 Migrations
+10/26/2022 12:13:52 20221023001: InitialTables_20221023001
+10/26/2022 12:13:52 20221024001: InitialSeed_20221024001
+10/26/2022 12:13:52 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 12:14:12 HTTP "POST" "/graphql" responded 200 in 778.0826 ms
+10/26/2022 12:14:58 HTTP "POST" "/graphql" responded 200 in 41.4044 ms
+10/26/2022 12:14:58 HTTP "POST" "/graphql" responded 200 in 42.5356 ms
+10/26/2022 12:15:11 HTTP "POST" "/graphql" responded 200 in 2.1041 ms
+10/26/2022 12:17:17 Migrations
+10/26/2022 12:17:17 20221023001: InitialTables_20221023001
+10/26/2022 12:17:17 20221024001: InitialSeed_20221024001
+10/26/2022 12:17:17 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 12:17:20 HTTP "POST" "/graphql" responded 200 in 732.2201 ms
+10/26/2022 12:17:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/26/2022 12:17:32 HTTP "POST" "/graphql" responded 200 in 89.8902 ms
+10/26/2022 12:17:41 HTTP "POST" "/graphql" responded 200 in 2.6334 ms
+10/26/2022 12:17:41 HTTP "POST" "/graphql" responded 200 in 1.3248 ms
+10/26/2022 12:18:47 Migrations
+10/26/2022 12:18:47 20221023001: InitialTables_20221023001
+10/26/2022 12:18:47 20221024001: InitialSeed_20221024001
+10/26/2022 12:18:47 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 12:18:52 HTTP "POST" "/graphql" responded 200 in 742.7726 ms
+10/26/2022 12:18:53 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color WHERE color.id = @id"
+"{ id = 3 }"
+10/26/2022 12:18:53 HTTP "POST" "/graphql" responded 200 in 87.6839 ms
+10/26/2022 12:18:57 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color WHERE color.id = @id"
+"{ id = 4 }"
+10/26/2022 12:18:57 HTTP "POST" "/graphql" responded 200 in 11.6181 ms
+10/26/2022 12:19:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color WHERE color.id = @id"
+"{ id = 1 }"
+10/26/2022 12:19:01 HTTP "POST" "/graphql" responded 200 in 3.6761 ms
+10/26/2022 12:19:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color WHERE color.id = @id"
+"{ id = 2 }"
+10/26/2022 12:19:05 HTTP "POST" "/graphql" responded 200 in 3.6513 ms
+10/26/2022 12:23:59 Migrations
+10/26/2022 12:23:59 20221023001: InitialTables_20221023001
+10/26/2022 12:23:59 20221024001: InitialSeed_20221024001
+10/26/2022 12:23:59 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 12:24:12 HTTP "POST" "/graphql" responded 200 in 736.7402 ms
+10/26/2022 12:24:12 HTTP "POST" "/graphql" responded 200 in 738.7946 ms
+10/26/2022 12:24:17 HTTP "POST" "/graphql" responded 200 in 2.8506 ms
+10/26/2022 12:24:34 ====== Postgres Call -> SQL ======
+	"INSERT INTO color(name) VALUES (@name)
+RETURNING *"
+10/26/2022 12:24:34 HTTP "POST" "/graphql" responded 200 in 85.8906 ms
+10/26/2022 12:27:34 Migrations
+10/26/2022 12:27:34 20221023001: InitialTables_20221023001
+10/26/2022 12:27:34 20221024001: InitialSeed_20221024001
+10/26/2022 12:27:34 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 12:27:49 HTTP "POST" "/graphql" responded 200 in 746.9154 ms
+10/26/2022 12:27:49 HTTP "POST" "/graphql" responded 200 in 745.0521 ms
+10/26/2022 12:27:53 HTTP "POST" "/graphql" responded 200 in 3.0842 ms
+10/26/2022 12:28:20 ====== Postgres Call -> SQL ======
+	"UPDATE color SET name=@name WHERE id = @id 
+RETURNING *"
+10/26/2022 12:28:20 HTTP "POST" "/graphql" responded 200 in 94.6976 ms
+10/26/2022 12:28:54 HTTP "POST" "/graphql" responded 200 in 1.4512 ms
+10/26/2022 12:28:55 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/26/2022 12:28:55 HTTP "POST" "/graphql" responded 200 in 33.1602 ms
