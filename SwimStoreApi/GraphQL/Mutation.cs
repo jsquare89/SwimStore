@@ -3,6 +3,7 @@ using SwimStoreApi.GraphQL.Brands;
 using SwimStoreApi.GraphQL.Categories;
 using SwimStoreApi.GraphQL.Colors;
 using SwimStoreApi.GraphQL.Products;
+using SwimStoreApi.GraphQL.ProductStocks;
 using SwimStoreApi.GraphQL.Sizes;
 using SwimStoreApi.Models;
 using SwimStoreData.Data;
@@ -21,31 +22,29 @@ public class Mutation
     public async Task<AddProductPayload> AddProduct(AddProductInput input,
         [Service] IProductData productData)
     {
-        var createdProductDto = await productData.CreateProduct(input.Name,
-                                                           input.RetailPrice,
-                                                          input.CurrentPrice,
-                                                           input.Description,
-                                                             input.Features,
-                                                                 input.Sku,
-                                                              input.BrandId,
-                                                           input.CategoryId,
-                                                             input.Gender);
+        var createdProductDto = await productData.CreateProduct(input.Name, input.RetailPrice,
+            input.CurrentPrice,input.Description,input.Features,input.Sku,
+            input.BrandId,input.CategoryId,input.Gender);
+
         return new AddProductPayload(_mapper.Map<Product>(createdProductDto));
+    }
+
+    public async Task<AddProductStockPayload> AddProductStock(AddProductStockInput input,
+        [Service] IProductStockData productStockData)
+    {
+        var productStockDto = await productStockData.AddToProductStock(input.ProductId,
+            input.SizeId, input.ColorId, input.Quantity);
+
+        return new AddProductStockPayload(_mapper.Map<ProductStock>(productStockDto));
     }
 
     public async Task<UpdateProductPayload> UpdateProduct(UpdateProductInput input,
         [Service] IProductData productData)
     {
-        var updatedProductDto = await productData.UpdateProduct(input.Id,
-                                                               input.Name,
-                                                           input.RetailPrice,
-                                                          input.CurrentPrice,
-                                                           input.Description,
-                                                             input.Features,
-                                                                 input.Sku,
-                                                              input.BrandId,
-                                                           input.CategoryId,
-                                                             input.Gender);
+        var updatedProductDto = await productData.UpdateProduct(input.Id,input.Name, input.RetailPrice,
+            input.CurrentPrice, input.Description, input.Features, input.Sku,
+            input.BrandId, input.CategoryId, input.Gender);
+
         return new UpdateProductPayload(_mapper.Map<Product>(updatedProductDto));
     }
 

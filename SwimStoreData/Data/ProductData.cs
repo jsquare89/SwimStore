@@ -65,8 +65,8 @@ public class ProductData : IProductData
         return results;
     }
 
-    public async Task<ProductDto> CreateProduct(string name, int retailPrice, int currentPrice,
-        string desctiption, string features, string sku, int brandId, int categoryId, string gender)
+    public async Task<ProductDto> CreateProduct(string name, int retail_price, int current_price,
+        string desctiption, string features, string sku, int brand_id, int category_id, string gender)
     {
         string insertProductQuery = 
             "INSERT INTO product (name, retail_price, current_price, description, features, sku, brand_id, category_id, gender)\n" +
@@ -76,21 +76,21 @@ public class ProductData : IProductData
         var parameters = new
         {
             name = name,
-            retail_price = retailPrice,
-            current_price = currentPrice,
+            retail_price = retail_price,
+            current_price = current_price,
             description = desctiption,
             features = features,
             sku = sku,
-            brand_id = brandId,
-            category_id = categoryId,
+            brand_id = brand_id,
+            category_id = category_id,
             gender = gender
         };
         var result = await _db.SaveDataWithSqlAsync<ProductDto, dynamic>(insertProductQuery, parameters);
         return result;
     }
 
-    public async Task<ProductDto> UpdateProduct(int id, string name, int retailPrice, int currentPrice,
-        string desctiption, string features, string sku, int brandId, int categoryId, string gender)
+    public async Task<ProductDto> UpdateProduct(int id, string name, int retail_price, int current_price,
+        string desctiption, string features, string sku, int brand_id, int category_id, string gender)
     {
         string updateProductQuery = 
             "Update product\n" +
@@ -101,13 +101,13 @@ public class ProductData : IProductData
         {
             id = id,
             name = name,
-            retail_price = retailPrice,
-            current_price = currentPrice,
+            retail_price = retail_price,
+            current_price = current_price,
             description = desctiption,
             features = features,
             sku = sku,
-            brand_id = brandId,
-            category_id = categoryId,
+            brand_id = brand_id,
+            category_id = category_id,
             gender = gender
         };
         var result = await _db.SaveDataWithSqlAsync<ProductDto, dynamic>(updateProductQuery, parameters);

@@ -16,17 +16,25 @@ public class ProductStockData : IProductStockData
         _db = db;
     }
 
-    public async Task<ProductStockDto> CreateProductStock()
+    public async Task<ProductStockDto> AddToProductStock(int product_id, int size_id, int color_id, int quantity)
     {
-        var parameters = new { };
-        string createProductStockQuery = "";
-        var productStockDto = await _db.SaveDataWithSqlAsync<ProductStockDto, dynamic>(createProductStockQuery, parameters);
+        var parameters = new 
+        { 
+            product_id = product_id,
+            size_id = size_id,
+            color_id = color_id,
+            quantity = quantity
+        };
+        string insertProductStockQuery = "INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)" +
+            "\nVALUES (@product_id, @size_id, @color_id, @quantity);";
+        var productStockDto = await _db.SaveDataWithSqlAsync<ProductStockDto, dynamic>(insertProductStockQuery, parameters);
         return productStockDto;
     }
+
     public async Task<IEnumerable<ProductStockDto>> GetAllProductsStock()
     {
-        string getAllProductStockQuery = "SELECT * FROM public.product_stock ORDER BY product_id ASC ";
-        var productStockDtos = await _db.LoadDataWithSqlAsync<ProductStockDto, dynamic>(getAllProductStockQuery, new { });
+        string selectProductStockQuery = "SELECT * FROM public.product_stock ORDER BY product_id ASC ";
+        var productStockDtos = await _db.LoadDataWithSqlAsync<ProductStockDto, dynamic>(selectProductStockQuery, new { });
         return productStockDtos;
     }
 
