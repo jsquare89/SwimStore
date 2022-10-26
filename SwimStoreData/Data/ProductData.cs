@@ -65,24 +65,52 @@ public class ProductData : IProductData
         return results;
     }
 
-    public async Task<ProductDto> CreateProduct<T>(T parameters)
+    public async Task<ProductDto> CreateProduct(string name, int retailPrice, int currentPrice,
+        string desctiption, string features, string sku, int brandId, int categoryId, string gender)
     {
         string insertProductQuery = 
             "INSERT INTO product (name, retail_price, current_price, description, features, sku, brand_id, category_id, gender)\n" +
             "VALUES (@name, @retail_price, @current_price, @description, @features, @sku, @brand_id, @category_id, @gender)\n" +
             "RETURNING *";
-        var result = await _db.SaveDataWithSqlAsync<ProductDto, T>(insertProductQuery, parameters);
+
+        var parameters = new
+        {
+            name = name,
+            retail_price = retailPrice,
+            current_price = currentPrice,
+            description = desctiption,
+            features = features,
+            sku = sku,
+            brand_id = brandId,
+            category_id = categoryId,
+            gender = gender
+        };
+        var result = await _db.SaveDataWithSqlAsync<ProductDto, dynamic>(insertProductQuery, parameters);
         return result;
     }
 
-    public async Task<ProductDto> UpdateProduct<T>(T parameters)
+    public async Task<ProductDto> UpdateProduct(int id, string name, int retailPrice, int currentPrice,
+        string desctiption, string features, string sku, int brandId, int categoryId, string gender)
     {
         string updateProductQuery = 
             "Update product\n" +
             "SET name = @name, retail_price = @retail_price, current_price = @current_price, description = @description, features = @features, sku = @sku, brand_id = @brand_id, category_id = @category_id, gender = @gender\n" +
             "WHERE id = @id \n" +
             "RETURNING *";
-        var result = await _db.SaveDataWithSqlAsync<ProductDto, T>(updateProductQuery, parameters);
+        var parameters = new
+        {
+            id = id,
+            name = name,
+            retail_price = retailPrice,
+            current_price = currentPrice,
+            description = desctiption,
+            features = features,
+            sku = sku,
+            brand_id = brandId,
+            category_id = categoryId,
+            gender = gender
+        };
+        var result = await _db.SaveDataWithSqlAsync<ProductDto, dynamic>(updateProductQuery, parameters);
         return result;
     }
 }

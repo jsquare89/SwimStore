@@ -7,7 +7,24 @@ public interface IProductData
     Task<ProductDto?> GetProductById(int id);
     Task<IEnumerable<ProductDto>> GetProductsByIds(IReadOnlyList<int> ids);
     Task<IEnumerable<ProductDto>> GetProductsByBrand(string brand);
-    Task<ProductDto> CreateProduct<T>(T parameters);
-    Task<ProductDto> UpdateProduct<T>(T parameters);
     Task<IEnumerable<ProductDto>> GetProductsBrands();
+    Task<ProductDto> CreateProduct(string name, 
+                                   int retailPrice, 
+                                   int currentPrice, 
+                                   string desctiption, 
+                                   string features, 
+                                   string sku, 
+                                   int brandId, 
+                                   int categoryId, 
+                                   string gender);
+    Task<ProductDto> UpdateProduct(int id, 
+                                   string name, 
+                                   int retailPrice, 
+                                   int currentPrice, 
+                                   string desctiption, 
+                                   string features, 
+                                   string sku, 
+                                   int brandId, 
+                                   int categoryId, 
+                                   string gender);
 }

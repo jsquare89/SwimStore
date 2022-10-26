@@ -15,6 +15,14 @@ public class ProductStockData : IProductStockData
     {
         _db = db;
     }
+
+    public async Task<ProductStockDto> CreateProductStock()
+    {
+        var parameters = new { };
+        string createProductStockQuery = "";
+        var productStockDto = await _db.SaveDataWithSqlAsync<ProductStockDto, dynamic>(createProductStockQuery, parameters);
+        return productStockDto;
+    }
     public async Task<IEnumerable<ProductStockDto>> GetAllProductsStock()
     {
         string getAllProductStockQuery = "SELECT * FROM public.product_stock ORDER BY product_id ASC ";

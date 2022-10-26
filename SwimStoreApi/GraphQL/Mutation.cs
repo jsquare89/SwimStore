@@ -21,128 +21,78 @@ public class Mutation
     public async Task<AddProductPayload> AddProduct(AddProductInput input,
         [Service] IProductData productData)
     {
-        var parameters = new
-        {
-            name = input.Name,
-            retail_price = input.RetailPrice,
-            current_price = input.CurrentPrice,
-            description = input.Description,
-            features = input.Features,
-            sku = input.Sku,
-            brand_Id = input.BrandId,
-            category_Id = input.CategoryId,
-            gender = input.Gender
-        };
-
-        var createdProductDto = await productData.CreateProduct<dynamic>(parameters);
+        var createdProductDto = await productData.CreateProduct(input.Name,
+                                                           input.RetailPrice,
+                                                          input.CurrentPrice,
+                                                           input.Description,
+                                                             input.Features,
+                                                                 input.Sku,
+                                                              input.BrandId,
+                                                           input.CategoryId,
+                                                             input.Gender);
         return new AddProductPayload(_mapper.Map<Product>(createdProductDto));
     }
 
     public async Task<UpdateProductPayload> UpdateProduct(UpdateProductInput input,
         [Service] IProductData productData)
     {
-        var parameters = new
-        {
-            id = input.Id,
-            name = input.Name,
-            retail_price = input.RetailPrice,
-            current_price = input.CurrentPrice,
-            description = input.Description,
-            features = input.Features,
-            sku = input.Sku,
-            brand_Id = input.BrandId,
-            category_Id = input.CategoryId,
-            gender = input.Gender
-        };
-
-        var updatedProductDto = await productData.UpdateProduct<dynamic>(parameters);
+        var updatedProductDto = await productData.UpdateProduct(input.Id,
+                                                               input.Name,
+                                                           input.RetailPrice,
+                                                          input.CurrentPrice,
+                                                           input.Description,
+                                                             input.Features,
+                                                                 input.Sku,
+                                                              input.BrandId,
+                                                           input.CategoryId,
+                                                             input.Gender);
         return new UpdateProductPayload(_mapper.Map<Product>(updatedProductDto));
     }
 
     public async Task<AddBrandPayload> AddBrand([Service] IBrandData brandData ,AddBrandInput input)
     {
-        var parameters = new
-        {
-            name = input.Name
-        };
-        var createBrandDto = await brandData.CreateBrand<dynamic>(parameters);
+        var createBrandDto = await brandData.CreateBrand(input.Name);
         return new AddBrandPayload(_mapper.Map<Brand>(createBrandDto));
     }
     public async Task<UpdateBrandPayload> UpdateBrand([Service] IBrandData brandData, UpdateBrandInput input)
     {
-        var parameters = new
-        {
-            id = input.Id,
-            name = input.Name
-        };
-        var createBrandDto = await brandData.UpdateBrand<dynamic>(parameters);
+        var createBrandDto = await brandData.UpdateBrand(input.Id, input.Name);
         return new UpdateBrandPayload(_mapper.Map<Brand>(createBrandDto));
     }
 
     public async Task<AddCategoryPayload> AddCategory([Service] ICategoryData categoryData, AddCategoryInput input)
     {
-        var parameters = new
-        {
-            name = input.Name,
-            accessory = input.Accessory
-        };
-        var createCategoryDto = await categoryData.CreateCategory<dynamic>(parameters);
+        var createCategoryDto = await categoryData.CreateCategory(input.Name,input.Accessory);
         return new AddCategoryPayload(_mapper.Map<Category>(createCategoryDto));
     }
 
     public async Task<UpdateCategoryPayload> UpdateCategory([Service] ICategoryData categoryData, UpdateCategoryInput input)
     {
-        var parameters = new
-        {
-            id = input.Id,
-            name = input.Name,
-            accessory = input.Accessory
-        };
-        var updateCategoryDto = await categoryData.UpdateCategory<dynamic>(parameters);
+        var updateCategoryDto = await categoryData.UpdateCategory(input.Id, input.Name, input.Accessory);
         return new UpdateCategoryPayload(_mapper.Map<Category>(updateCategoryDto));
     }
 
     public async Task<AddColorPayload> AddColor([Service] IColorData colorData, AddColorInput input)
     {
-        var parameters = new
-        {
-            name = input.Name
-        };
-        var createColorDto = await colorData.CreateColor<dynamic>(parameters);
+        var createColorDto = await colorData.CreateColor(input.Name);
         return new AddColorPayload(_mapper.Map<Color>(createColorDto));
     }
 
     public async Task<UpdateColorPayload> UpdateColor([Service] IColorData colorData, UpdateColorInput input)
     {
-        var parameters = new
-        {
-            id = input.Id,
-            name = input.Name
-        };
-        var createColorDto = await colorData.UpdateColor<dynamic>(parameters);
-        return new UpdateColorPayload(_mapper.Map<Color>(createColorDto));
+        var updateColorDto = await colorData.UpdateColor(input.Id, input.Name);
+        return new UpdateColorPayload(_mapper.Map<Color>(updateColorDto));
     }
 
     public async Task<AddSizePayload> AddSize([Service] ISizeData sizeData, AddSizeInput input)
     {
-        var parameters = new
-        {
-            name = input.Name,
-            gender = input.Gender
-        };
-        var createSizeDto = await sizeData.CreateSize<dynamic>(parameters);
+        var createSizeDto = await sizeData.CreateSize(input.Name,input.Gender);
         return new AddSizePayload(_mapper.Map<Size>(createSizeDto));
     }
 
     public async Task<UpdateSizePayload> UpdateSize([Service] ISizeData sizeData, UpdateSizeInput input)
     {
-        var parameters = new
-        {
-            id = input.Id,
-            name = input.Name,
-            gender = input.Gender
-        };
-        var createSizeDtos = await sizeData.UpdateSize<dynamic>(parameters);
+        var createSizeDtos = await sizeData.UpdateSize(input.Id, input.Name, input.Gender);
         return new UpdateSizePayload(_mapper.Map<Size>(createSizeDtos));
     }
 }

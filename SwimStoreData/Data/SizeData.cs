@@ -16,19 +16,34 @@ public class SizeData : ISizeData
         _db = db;
     }
 
-    public async Task<SizeDto> CreateSize<T>(T parameters)
+    public async Task<SizeDto> CreateSize(string name, string gender)
     {
         var insertSizeQuery = "INSERT INTO size(name, gender) VALUES (@name, @gender)\n" +
                                "RETURNING *";
-        var size = await _db.SaveDataWithSqlAsync<SizeDto, T>(insertSizeQuery, parameters);
+
+        var parameters = new
+        {
+            name = name,
+            gender = gender,
+        };
+
+        var size = await _db.SaveDataWithSqlAsync<SizeDto, dynamic>(insertSizeQuery, parameters);
         return size;
     }
 
-    public async Task<SizeDto> UpdateSize<T>(T parameters)
+    public async Task<SizeDto> UpdateSize(int id, string name, string gender)
     {
         var updateSizeQuery = "UPDATE size SET name=@name, gender=@gender WHERE id = @id \n" +
                                "RETURNING *";
-        var size = await _db.SaveDataWithSqlAsync<SizeDto, T>(updateSizeQuery, parameters);
+
+        var parameters = new
+        {
+            id = id,
+            name = name,
+            gender = gender,
+        };
+
+        var size = await _db.SaveDataWithSqlAsync<SizeDto, dynamic>(updateSizeQuery, parameters);
         return size;
     }
 

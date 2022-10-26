@@ -16,19 +16,28 @@ public class BrandData : IBrandData
     {
         _db = db;
     }
-    public async Task<BrandDto> CreateBrand<T>(T parameters)
+    public async Task<BrandDto> CreateBrand(string name)
     {
         var insertBrandQuery = "INSERT INTO brand(name) VALUES (@name)\n" +
                                "RETURNING *";
-        var brand = await _db.SaveDataWithSqlAsync<BrandDto, T>(insertBrandQuery, parameters);
+        var parameters = new
+        {
+            name = name
+        };
+        var brand = await _db.SaveDataWithSqlAsync<BrandDto, dynamic>(insertBrandQuery, parameters);
         return brand;
     }
 
-    public async Task<BrandDto> UpdateBrand<T>(T parameters)
+    public async Task<BrandDto> UpdateBrand(int id, string name)
     {
         var updateBrandQuery = "UPDATE brand SET name=@name WHERE id = @id \n" +
                                "RETURNING *";
-        var brand = await _db.SaveDataWithSqlAsync<BrandDto, T>(updateBrandQuery, parameters);
+        var parameters = new
+        {
+            id = id,
+            name = name
+        };
+        var brand = await _db.SaveDataWithSqlAsync<BrandDto, dynamic>(updateBrandQuery, parameters);
         return brand;
     }
 
