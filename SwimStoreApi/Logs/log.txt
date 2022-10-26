@@ -7856,3 +7856,919 @@ RETURNING *"
 	"SELECT id, name FROM public.brand where id in (1,2)"
 "{ }"
 10/25/2022 19:39:14 HTTP "POST" "/graphql" responded 200 in 24.3250 ms
+10/25/2022 19:48:14 Migrations
+10/25/2022 19:48:14 20221023001: InitialTables_20221023001
+10/25/2022 19:48:14 20221024001: InitialSeed_20221024001
+10/25/2022 19:48:14 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:48:14 HTTP "GET" "/graphql/index.html" responded 200 in 71.2161 ms
+10/25/2022 19:48:15 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 11.3416 ms
+10/25/2022 19:48:16 HTTP "POST" "/graphql" responded 200 in 702.4086 ms
+10/25/2022 19:48:16 HTTP "POST" "/graphql" responded 200 in 31.8566 ms
+10/25/2022 19:48:17 HTTP "GET" "/graphql/static/js/session.4f9b3271.chunk.js" responded 200 in 0.3109 ms
+10/25/2022 19:48:17 HTTP "GET" "/graphql/static/js/887.de231e18.chunk.js" responded 200 in 0.1326 ms
+10/25/2022 19:51:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 19:51:05 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/25/2022 19:51:05 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 19:51:05 HTTP "POST" "/graphql" responded 200 in 162.6038 ms
+10/25/2022 20:07:16 Migrations
+10/25/2022 20:07:16 20221023001: InitialTables_20221023001
+10/25/2022 20:07:16 20221024001: InitialSeed_20221024001
+10/25/2022 20:07:16 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 20:08:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:08:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:08:42 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:08:42 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:08:42 HTTP "POST" "/graphql" responded 200 in 859.7576 ms
+10/25/2022 20:09:11 HTTP "GET" "/graphql/index.html" responded 200 in 63.6434 ms
+10/25/2022 20:09:11 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 10.8749 ms
+10/25/2022 20:09:12 HTTP "POST" "/graphql" responded 200 in 20.0039 ms
+10/25/2022 20:09:12 HTTP "POST" "/graphql" responded 200 in 36.2493 ms
+10/25/2022 20:09:31 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:09:31 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (2,11,3,4,1)"
+"{ }"
+10/25/2022 20:09:31 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:09:31 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:09:31 HTTP "POST" "/graphql" responded 200 in 61.9603 ms
+10/25/2022 20:12:09 Migrations
+10/25/2022 20:12:09 20221023001: InitialTables_20221023001
+10/25/2022 20:12:09 20221024001: InitialSeed_20221024001
+10/25/2022 20:12:09 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 20:12:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:12:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (2,11,3,4,1)"
+"{ }"
+10/25/2022 20:12:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:12:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:12:10 HTTP "POST" "/graphql" responded 200 in 872.3355 ms
+10/25/2022 20:12:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:12:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (2,11,3,4,1)"
+"{ }"
+10/25/2022 20:12:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:12:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:12:11 HTTP "POST" "/graphql" responded 200 in 27.4535 ms
+10/25/2022 20:12:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:12:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (2,11,3,4,1)"
+"{ }"
+10/25/2022 20:12:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:12:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:12:11 HTTP "POST" "/graphql" responded 200 in 23.9940 ms
+10/25/2022 20:12:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:12:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (2,11,3,4,1)"
+"{ }"
+10/25/2022 20:12:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:12:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:12:12 HTTP "POST" "/graphql" responded 200 in 23.5392 ms
+10/25/2022 20:14:28 Migrations
+10/25/2022 20:14:28 20221023001: InitialTables_20221023001
+10/25/2022 20:14:28 20221024001: InitialSeed_20221024001
+10/25/2022 20:14:28 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 20:14:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:14:31 ====== Postgres Call -> SQL ======
+	"SELECT id, value FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:14:31 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:14:31 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:14:31 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:14:31 HTTP "POST" "/graphql" responded 200 in 1041.2442 ms
+10/25/2022 20:14:33 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:14:33 ====== Postgres Call -> SQL ======
+	"SELECT id, value FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:14:33 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:14:33 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:14:33 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:14:33 HTTP "POST" "/graphql" responded 200 in 98.4864 ms
+10/25/2022 20:15:03 HTTP "GET" "/graphql/index.html" responded 200 in 59.6348 ms
+10/25/2022 20:15:04 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 11.3845 ms
+10/25/2022 20:15:04 HTTP "POST" "/graphql" responded 200 in 20.8888 ms
+10/25/2022 20:15:04 HTTP "POST" "/graphql" responded 200 in 37.5696 ms
+10/25/2022 20:15:06 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:06 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:06 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:06 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:15:06 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:15:07 HTTP "POST" "/graphql" responded 200 in 118.5594 ms
+10/25/2022 20:15:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:15:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:15:10 HTTP "POST" "/graphql" responded 200 in 104.8918 ms
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:15:11 HTTP "POST" "/graphql" responded 200 in 82.9266 ms
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:15:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:15:11 HTTP "POST" "/graphql" responded 200 in 110.0579 ms
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:15:13 HTTP "POST" "/graphql" responded 200 in 86.2851 ms
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:15:13 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:15:13 HTTP "POST" "/graphql" responded 200 in 81.3899 ms
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:15:14 HTTP "POST" "/graphql" responded 200 in 83.8832 ms
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:15:14 HTTP "POST" "/graphql" responded 200 in 85.5069 ms
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:15:14 HTTP "POST" "/graphql" responded 200 in 83.0002 ms
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:15:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:15:14 HTTP "POST" "/graphql" responded 200 in 69.8901 ms
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:15:15 HTTP "POST" "/graphql" responded 200 in 74.4072 ms
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:15:15 HTTP "POST" "/graphql" responded 200 in 76.3627 ms
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:15:15 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:15:15 HTTP "POST" "/graphql" responded 200 in 75.0511 ms
+10/25/2022 20:15:16 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:15:16 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:15:16 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:15:16 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:15:16 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:15:16 HTTP "POST" "/graphql" responded 200 in 87.0697 ms
+10/25/2022 20:16:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:16:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:16:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:16:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:16:11 HTTP "POST" "/graphql" responded 200 in 51.8598 ms
+10/25/2022 20:17:08 Migrations
+10/25/2022 20:17:08 20221023001: InitialTables_20221023001
+10/25/2022 20:17:08 20221024001: InitialSeed_20221024001
+10/25/2022 20:17:08 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 20:17:09 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:17:09 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:17:09 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:17:09 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:17:09 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:17:09 HTTP "POST" "/graphql" responded 200 in 972.2052 ms
+10/25/2022 20:17:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:17:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:17:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:17:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:17:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:17:11 HTTP "POST" "/graphql" responded 200 in 84.9224 ms
+10/25/2022 20:17:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:17:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:17:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:17:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:17:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:17:12 HTTP "POST" "/graphql" responded 200 in 78.7838 ms
+10/25/2022 20:17:40 Migrations
+10/25/2022 20:17:40 20221023001: InitialTables_20221023001
+10/25/2022 20:17:40 20221024001: InitialSeed_20221024001
+10/25/2022 20:17:40 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 20:17:43 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:17:43 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:17:43 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:17:43 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:17:43 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:17:43 HTTP "POST" "/graphql" responded 200 in 933.5962 ms
+10/25/2022 20:17:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:17:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:17:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:17:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:17:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:17:45 HTTP "POST" "/graphql" responded 200 in 77.6584 ms
+10/25/2022 20:17:46 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:17:46 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:17:46 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:17:46 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:17:46 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:17:46 HTTP "POST" "/graphql" responded 200 in 71.1404 ms
+10/25/2022 20:19:55 Migrations
+10/25/2022 20:19:55 20221023001: InitialTables_20221023001
+10/25/2022 20:19:55 20221024001: InitialSeed_20221024001
+10/25/2022 20:19:55 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 20:19:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:19:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:19:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:19:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:19:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:19:59 HTTP "POST" "/graphql" responded 200 in 947.6221 ms
+10/25/2022 20:19:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:19:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:19:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:20:00 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:20:00 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:20:00 HTTP "POST" "/graphql" responded 200 in 81.2602 ms
+10/25/2022 20:20:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:20:01 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:20:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:20:01 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:20:01 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:20:01 HTTP "POST" "/graphql" responded 200 in 79.6974 ms
+10/25/2022 20:22:34 Migrations
+10/25/2022 20:22:34 20221023001: InitialTables_20221023001
+10/25/2022 20:22:34 20221024001: InitialSeed_20221024001
+10/25/2022 20:22:34 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 20:22:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:22:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:22:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:22:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:22:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:22:36 HTTP "POST" "/graphql" responded 200 in 930.1681 ms
+10/25/2022 20:22:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:22:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:22:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:22:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:22:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:22:40 HTTP "POST" "/graphql" responded 200 in 74.7604 ms
+10/25/2022 20:23:01 HTTP "POST" "/graphql" responded 400 in 2.7535 ms
+10/25/2022 20:23:02 HTTP "POST" "/graphql" responded 400 in 0.2792 ms
+10/25/2022 20:23:03 HTTP "POST" "/graphql" responded 400 in 0.2425 ms
+10/25/2022 20:23:03 HTTP "POST" "/graphql" responded 400 in 0.2158 ms
+10/25/2022 20:23:04 HTTP "POST" "/graphql" responded 400 in 0.2375 ms
+10/25/2022 20:23:46 Migrations
+10/25/2022 20:23:46 20221023001: InitialTables_20221023001
+10/25/2022 20:23:46 20221024001: InitialSeed_20221024001
+10/25/2022 20:23:46 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 20:23:50 HTTP "GET" "/graphql/index.html" responded 200 in 69.7439 ms
+10/25/2022 20:23:50 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 10.9902 ms
+10/25/2022 20:23:52 HTTP "POST" "/graphql" responded 200 in 685.8862 ms
+10/25/2022 20:23:52 HTTP "POST" "/graphql" responded 200 in 32.6116 ms
+10/25/2022 20:23:55 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:23:55 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:23:55 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:23:55 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:23:55 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:23:56 HTTP "POST" "/graphql" responded 200 in 250.3414 ms
+10/25/2022 20:24:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:24:04 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:24:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:24:05 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:24:05 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:24:05 HTTP "POST" "/graphql" responded 200 in 80.6715 ms
+10/25/2022 20:24:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:24:05 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:24:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:24:05 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:24:05 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:24:05 HTTP "POST" "/graphql" responded 200 in 82.1298 ms
+10/25/2022 20:24:44 Migrations
+10/25/2022 20:24:44 20221023001: InitialTables_20221023001
+10/25/2022 20:24:44 20221024001: InitialSeed_20221024001
+10/25/2022 20:24:44 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 20:24:46 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:24:46 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:24:46 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:24:46 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:24:46 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:24:46 HTTP "POST" "/graphql" responded 200 in 878.9018 ms
+10/25/2022 20:24:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:24:52 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:24:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:24:52 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:24:52 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:24:52 HTTP "POST" "/graphql" responded 200 in 28.0358 ms
+10/25/2022 20:25:17 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:17 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:17 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:17 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:17 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:17 HTTP "POST" "/graphql" responded 200 in 56.5952 ms
+10/25/2022 20:25:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:21 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:21 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:21 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:21 HTTP "POST" "/graphql" responded 200 in 26.7876 ms
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:22 HTTP "POST" "/graphql" responded 200 in 24.7247 ms
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:22 HTTP "POST" "/graphql" responded 200 in 27.2812 ms
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:23 HTTP "POST" "/graphql" responded 200 in 26.4190 ms
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:23 HTTP "POST" "/graphql" responded 200 in 25.7010 ms
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:23 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:23 HTTP "POST" "/graphql" responded 200 in 26.6724 ms
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:24 HTTP "POST" "/graphql" responded 200 in 27.2121 ms
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:24 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:24 HTTP "POST" "/graphql" responded 200 in 25.9442 ms
+10/25/2022 20:25:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:25 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:25 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:25:25 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 20:25:25 HTTP "POST" "/graphql" responded 200 in 25.2401 ms
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:26 HTTP "POST" "/graphql" responded 200 in 27.5597 ms
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:26 HTTP "POST" "/graphql" responded 200 in 25.1658 ms
+10/25/2022 20:25:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:40 HTTP "POST" "/graphql" responded 200 in 26.1988 ms
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:41 HTTP "POST" "/graphql" responded 200 in 25.4915 ms
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/25/2022 20:25:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 20:25:41 HTTP "POST" "/graphql" responded 200 in 24.9841 ms

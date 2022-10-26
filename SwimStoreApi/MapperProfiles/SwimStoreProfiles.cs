@@ -12,5 +12,6 @@ public class SwimStoreProfiles : Profile
 		CreateMap<SwimStoreData.Dtos.BrandDto, Brand>();
 		CreateMap<SwimStoreData.Dtos.CategoryDto, Category>();
 		CreateMap<SwimStoreData.Dtos.ProductStockDto, ProductStock>();
+		CreateMap<SwimStoreData.Dtos.ColorDto, Color>();
 	}
 }

@@ -4,7 +4,7 @@ using SwimStoreData.Data;
 
 namespace SwimStoreApi.GraphQL.Brands;
 
-public class BrandBatchDataLoader : BatchDataLoader<Int32, Brand>
+public class BrandBatchDataLoader : BatchDataLoader<int, Brand>
 {
     private readonly IBrandData _brandData;
     private readonly IMapper _mapper;

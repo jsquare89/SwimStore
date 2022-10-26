@@ -17,6 +17,7 @@ public static class ConfigurationExtensions
         builder.Services.AddSingleton<IBrandData, BrandData>();
         builder.Services.AddSingleton<ICategoryData, CategoryData>();
         builder.Services.AddSingleton<IProductStockData, ProductStockData>();
+        builder.Services.AddSingleton<IColorData, ColorData>();
         DapperTypeMapper.Initialize("SwimStoreData.Dtos");
         builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         return builder;
