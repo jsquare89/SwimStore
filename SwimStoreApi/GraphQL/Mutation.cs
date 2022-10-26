@@ -3,6 +3,7 @@ using SwimStoreApi.GraphQL.Brands;
 using SwimStoreApi.GraphQL.Categories;
 using SwimStoreApi.GraphQL.Colors;
 using SwimStoreApi.GraphQL.Products;
+using SwimStoreApi.GraphQL.Sizes;
 using SwimStoreApi.Models;
 using SwimStoreData.Data;
 using SwimStoreData.Dtos;
@@ -120,5 +121,28 @@ public class Mutation
         };
         var createColorDto = await colorData.UpdateColor<dynamic>(parameters);
         return new UpdateColorPayload(_mapper.Map<Color>(createColorDto));
+    }
+
+    public async Task<AddSizePayload> AddSize([Service] ISizeData sizeData, AddSizeInput input)
+    {
+        var parameters = new
+        {
+            name = input.Name,
+            gender = input.Gender
+        };
+        var createSizeDto = await sizeData.CreateSize<dynamic>(parameters);
+        return new AddSizePayload(_mapper.Map<Size>(createSizeDto));
+    }
+
+    public async Task<UpdateSizePayload> UpdateSize([Service] ISizeData sizeData, UpdateSizeInput input)
+    {
+        var parameters = new
+        {
+            id = input.Id,
+            name = input.Name,
+            gender = input.Gender
+        };
+        var createSizeDtos = await sizeData.UpdateSize<dynamic>(parameters);
+        return new UpdateSizePayload(_mapper.Map<Size>(createSizeDtos));
     }
 }

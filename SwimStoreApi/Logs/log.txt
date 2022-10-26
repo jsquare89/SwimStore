@@ -10351,3 +10351,124 @@ RETURNING *"
 	"SELECT * FROM public.color ORDER BY id ASC "
 "{ }"
 10/26/2022 12:28:55 HTTP "POST" "/graphql" responded 200 in 33.1602 ms
+10/26/2022 12:54:43 Migrations
+10/26/2022 12:54:43 20221023001: InitialTables_20221023001
+10/26/2022 12:54:43 20221024001: InitialSeed_20221024001
+10/26/2022 12:54:43 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 12:54:50 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/26/2022 12:54:50 HTTP "POST" "/graphql" responded 200 in 839.3045 ms
+10/26/2022 12:55:01 HTTP "POST" "/graphql" responded 200 in 51.1091 ms
+10/26/2022 12:55:01 HTTP "POST" "/graphql" responded 200 in 55.4352 ms
+10/26/2022 12:55:14 HTTP "POST" "/graphql" responded 200 in 2.5626 ms
+10/26/2022 12:55:16 HTTP "POST" "/graphql" responded 200 in 1.4624 ms
+10/26/2022 12:55:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/26/2022 12:55:20 HTTP "POST" "/graphql" responded 200 in 9.2335 ms
+10/26/2022 12:55:32 HTTP "POST" "/graphql" responded 200 in 1.6160 ms
+10/26/2022 12:55:32 HTTP "POST" "/graphql" responded 200 in 1.4937 ms
+10/26/2022 12:55:48 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/26/2022 12:55:48 HTTP "POST" "/graphql" responded 200 in 19.2139 ms
+10/26/2022 12:55:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/26/2022 12:55:52 HTTP "POST" "/graphql" responded 200 in 3.7485 ms
+10/26/2022 12:55:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/26/2022 12:55:52 HTTP "POST" "/graphql" responded 200 in 5.6196 ms
+10/26/2022 12:55:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/26/2022 12:55:52 HTTP "POST" "/graphql" responded 200 in 3.8333 ms
+10/26/2022 12:55:53 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/26/2022 12:55:53 HTTP "POST" "/graphql" responded 200 in 4.1937 ms
+10/26/2022 12:55:53 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/26/2022 12:55:53 HTTP "POST" "/graphql" responded 200 in 3.6122 ms
+10/26/2022 12:55:53 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/26/2022 12:55:53 HTTP "POST" "/graphql" responded 200 in 4.5622 ms
+10/26/2022 12:55:53 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/26/2022 12:55:53 HTTP "POST" "/graphql" responded 200 in 4.1264 ms
+10/26/2022 12:56:02 HTTP "POST" "/graphql" responded 200 in 1.6351 ms
+10/26/2022 12:56:02 HTTP "POST" "/graphql" responded 200 in 2.2433 ms
+10/26/2022 12:56:42 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+10/26/2022 12:56:43 HTTP "POST" "/graphql" responded 500 in 509.7033 ms
+10/26/2022 13:00:21 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+10/26/2022 13:00:21 HTTP "POST" "/graphql" responded 500 in 132.0509 ms
+10/26/2022 13:00:24 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+10/26/2022 13:00:24 HTTP "POST" "/graphql" responded 500 in 58.4995 ms
+10/26/2022 13:00:40 Migrations
+10/26/2022 13:00:40 20221023001: InitialTables_20221023001
+10/26/2022 13:00:40 20221024001: InitialSeed_20221024001
+10/26/2022 13:00:40 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 13:00:44 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+10/26/2022 13:00:44 HTTP "POST" "/graphql" responded 200 in 860.1008 ms
+10/26/2022 13:00:47 HTTP "POST" "/graphql" responded 200 in 44.9575 ms
+10/26/2022 13:00:48 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/26/2022 13:00:48 HTTP "POST" "/graphql" responded 200 in 35.3504 ms
+10/26/2022 13:00:54 HTTP "POST" "/graphql" responded 200 in 2.0325 ms
+10/26/2022 13:01:01 HTTP "POST" "/graphql" responded 200 in 1.7119 ms
+10/26/2022 13:01:01 HTTP "POST" "/graphql" responded 200 in 2.5909 ms
+10/26/2022 13:03:32 Migrations
+10/26/2022 13:03:32 20221023001: InitialTables_20221023001
+10/26/2022 13:03:32 20221024001: InitialSeed_20221024001
+10/26/2022 13:03:32 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 13:03:56 HTTP "POST" "/graphql" responded 200 in 740.9985 ms
+10/26/2022 13:03:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/26/2022 13:03:56 HTTP "POST" "/graphql" responded 200 in 93.0519 ms
+10/26/2022 13:03:58 HTTP "POST" "/graphql" responded 200 in 2.8615 ms
+10/26/2022 13:03:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/26/2022 13:03:59 HTTP "POST" "/graphql" responded 200 in 18.8424 ms
+10/26/2022 13:04:00 HTTP "POST" "/graphql" responded 200 in 1.5691 ms
+10/26/2022 13:04:02 HTTP "POST" "/graphql" responded 400 in 25.1068 ms
+10/26/2022 13:04:22 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+10/26/2022 13:04:22 HTTP "POST" "/graphql" responded 200 in 21.7433 ms
+10/26/2022 13:04:28 HTTP "POST" "/graphql" responded 200 in 1.8632 ms
+10/26/2022 13:04:29 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/26/2022 13:04:29 HTTP "POST" "/graphql" responded 200 in 3.8740 ms
+10/26/2022 13:04:29 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/26/2022 13:04:29 HTTP "POST" "/graphql" responded 200 in 5.5188 ms
+10/26/2022 13:04:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/26/2022 13:04:30 HTTP "POST" "/graphql" responded 200 in 3.8838 ms
+10/26/2022 13:04:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/26/2022 13:04:30 HTTP "POST" "/graphql" responded 200 in 4.4255 ms
+10/26/2022 13:04:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/26/2022 13:04:30 HTTP "POST" "/graphql" responded 200 in 4.1062 ms
