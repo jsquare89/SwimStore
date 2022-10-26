@@ -45,7 +45,7 @@ public class InitialTables_20221023001 : Migration
         //   .WithColumn("name").AsString(50).NotNullable();
 
         // TODO: Tables to create
-        // Stock -> product_id, size_id, color_id, qty_in_stock (compound primary key)
+        // ProductStock -> product_id, size_id, color_id, qty_in_stock (compound primary key)
         // Size -> id, size, gender
         // Color -> id, color
         // ProductImages -> product_id, image_id

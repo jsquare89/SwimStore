@@ -21,6 +21,13 @@ public class Query
         return _mapper.Map<IEnumerable<Product>>(products);
     }
 
+    [UseFiltering]
+    public async Task<IEnumerable<ProductStock>> GetProductStocks([Service] IProductStockData productStockData)
+    {
+        var productStocks = await productStockData.GetAllProductsStock();
+        return _mapper.Map<IEnumerable<ProductStock>>(productStocks);
+    }
+
 
     [UseFiltering]
     public async Task<IEnumerable<Product>> GetProductBrands([Service] IProductData productData)
@@ -30,7 +37,7 @@ public class Query
     }
 
     [UseFiltering]
-    public async Task<Product?> GetProductById(Int32 id, [Service] IProductData productData)
+    public async Task<Product?> GetProductById(int id, [Service] IProductData productData)
     {
         var product = await productData.GetProductById(id);
         return _mapper.Map<Product>(product);
@@ -55,7 +62,7 @@ public class Query
     }
 
     [UseFiltering]
-    public async Task<Brand?> GetBrandById(Int32 id, [Service] IBrandData brandData)
+    public async Task<Brand?> GetBrandById(int id, [Service] IBrandData brandData)
     {
         var brand = await brandData.GetBrandById(id);
         return _mapper.Map<Brand>(brand);
@@ -69,9 +76,11 @@ public class Query
     }
 
     [UseFiltering]
-    public async Task<Category?> GetCategoryById(Int32 id, [Service] ICategoryData categoryData)
+    public async Task<Category?> GetCategoryById(int id, [Service] ICategoryData categoryData)
     {
         var category = await categoryData.GetCategoryById(id);
         return _mapper.Map<Category>(category);
     }
+
+
 }

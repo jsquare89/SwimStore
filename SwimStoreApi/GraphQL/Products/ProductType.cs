@@ -10,12 +10,6 @@ namespace SwimStoreApi.GraphQL.Products;
 
 public class ProductType: ObjectType<Product>
 {
-    private readonly IMapper _mapper;
-
-    public ProductType(IMapper mapper)
-    {
-        _mapper = mapper;
-    }
     protected override void Configure(IObjectTypeDescriptor<Product> descriptor)
     {
         base.Configure(descriptor);
@@ -49,12 +43,12 @@ public class ProductType: ObjectType<Product>
     }
     public async Task<Brand?> ResolveBrand([Service] IBrandData brandData, BrandBatchDataLoader dataLoader, [Parent] Product product)
     {
-        var results = await dataLoader.LoadAsync(product.BrandId);
-        return results;
+        var brand = await dataLoader.LoadAsync(product.BrandId);
+        return brand;
     }
     public async Task<Category?> ResolveCategory([Service] ICategoryData categoryData, CategoryBatchDataLoader dataLoader, [Parent] Product product)
     {
-        var results = await dataLoader.LoadAsync(product.CategoryId);
-        return results;
+        var category = await dataLoader.LoadAsync(product.CategoryId);
+        return category;
     }
 }

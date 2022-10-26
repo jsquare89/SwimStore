@@ -47,6 +47,14 @@ public class ProductData : IProductData
         return products.FirstOrDefault();
     }
 
+    public async Task<IEnumerable<ProductDto>> GetProductsByIds(IReadOnlyList<int> ids)
+    {
+        var parameters = string.Join(",", ids);
+        string getProductByIdQuery = $"SELECT * FROM public.product WHERE product.id in ({parameters})";
+        var products = await _db.LoadDataWithSqlAsync<ProductDto, dynamic>(getProductByIdQuery, new { });
+        return products;
+    }
+
     public Task<IEnumerable<ProductDto>> GetProductsByBrand(string brand)
     {
         string getAllProductsByBrandQuery =

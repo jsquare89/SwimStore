@@ -19,8 +19,8 @@ public static class MigrationManager
                 databaseService.CreateDatabase();
                 migrationService.ListMigrations();
                 migrationService.MigrateUp();
-                // run down to version.
-                //migrationService.MigrateDown(0);
+                // run down to version #. 0 to undo all
+                //migrationService.MigrateDown(20221024001);
             }
             catch
             {

@@ -7535,3 +7535,324 @@ RETURNING *"
 	"UPDATE category SET name=@name, accessory=@accessory WHERE id = @id 
 RETURNING *"
 10/25/2022 15:36:47 HTTP "POST" "/graphql" responded 200 in 14.8513 ms
+10/25/2022 17:00:06 Migrations
+10/25/2022 17:00:06 20221023001: InitialTables_20221023001
+10/25/2022 17:00:06 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 17:00:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 17:00:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/25/2022 17:00:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 17:00:12 HTTP "POST" "/graphql" responded 200 in 837.7635 ms
+10/25/2022 17:55:12 Migrations
+10/25/2022 17:55:12 20221023001: InitialTables_20221023001
+10/25/2022 17:55:12 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 17:56:11 HTTP "POST" "/graphql" responded 200 in 799.3910 ms
+10/25/2022 18:01:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 18:01:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/25/2022 18:01:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 18:01:26 HTTP "POST" "/graphql" responded 200 in 244.6538 ms
+10/25/2022 18:01:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 18:01:36 HTTP "POST" "/graphql" responded 200 in 7.8109 ms
+10/25/2022 18:01:38 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 18:01:38 HTTP "POST" "/graphql" responded 200 in 5.0419 ms
+10/25/2022 18:01:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 18:01:44 HTTP "POST" "/graphql" responded 200 in 4.9224 ms
+10/25/2022 18:01:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 18:01:52 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/25/2022 18:01:52 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 18:01:52 HTTP "POST" "/graphql" responded 200 in 27.6525 ms
+10/25/2022 18:02:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 18:02:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/25/2022 18:02:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 18:02:10 HTTP "POST" "/graphql" responded 200 in 21.8657 ms
+10/25/2022 18:02:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 18:02:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/25/2022 18:02:12 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 18:02:12 HTTP "POST" "/graphql" responded 200 in 20.9485 ms
+10/25/2022 18:24:40 Migrations
+10/25/2022 18:24:40 20221023001: InitialTables_20221023001
+10/25/2022 18:24:40 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 18:24:40 20221025001: ProductStockTables_20221025001 (not applied)
+10/25/2022 18:24:40 20221025001: ProductStockTables_20221025001 migrating
+10/25/2022 18:24:40 Beginning Transaction
+10/25/2022 18:24:40 CreateTable size
+10/25/2022 18:24:40 CREATE TABLE "public"."size" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(20) NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_size" PRIMARY KEY ("id"));
+10/25/2022 18:24:40 => 0.1011814s
+10/25/2022 18:24:40 CreateTable color
+10/25/2022 18:24:40 CREATE TABLE "public"."color" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(20) NOT NULL, CONSTRAINT "PK_color" PRIMARY KEY ("id"));
+10/25/2022 18:24:40 => 0.0095629s
+10/25/2022 18:24:40 CreateTable product_stock
+10/25/2022 18:24:40 CREATE TABLE "public"."product_stock" ("product_id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "size_id" integer NOT NULL, "color_id" integer NOT NULL, "quantity" integer NOT NULL, CONSTRAINT "PK_product_stock" PRIMARY KEY ("product_id","size_id","color_id"));
+10/25/2022 18:24:40 => 0.0096523s
+10/25/2022 18:24:40 CreateForeignKey FK_product_stock_product_id_product_id product_stock(product_id) product(id)
+10/25/2022 18:24:40 ALTER TABLE "public"."product_stock" ADD CONSTRAINT "FK_product_stock_product_id_product_id" FOREIGN KEY ("product_id") REFERENCES "public"."product" ("id");
+10/25/2022 18:24:40 => 0.0099022s
+10/25/2022 18:24:40 CreateForeignKey FK_product_stock_size_id_size_id product_stock(size_id) size(id)
+10/25/2022 18:24:40 ALTER TABLE "public"."product_stock" ADD CONSTRAINT "FK_product_stock_size_id_size_id" FOREIGN KEY ("size_id") REFERENCES "public"."size" ("id");
+10/25/2022 18:24:40 => 0.0038716s
+10/25/2022 18:24:40 CreateForeignKey FK_product_stock_color_id_color_id product_stock(color_id) color(id)
+10/25/2022 18:24:40 ALTER TABLE "public"."product_stock" ADD CONSTRAINT "FK_product_stock_color_id_color_id" FOREIGN KEY ("color_id") REFERENCES "public"."color" ("id");
+10/25/2022 18:24:40 => 0.0036147s
+10/25/2022 18:24:40 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221025001,'2022-10-26T01:24:40','ProductStockTables_20221025001');
+10/25/2022 18:24:40 Committing Transaction
+10/25/2022 18:24:40 20221025001: ProductStockTables_20221025001 migrated
+10/25/2022 18:24:40 => 0.0238758s
+10/25/2022 18:26:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/25/2022 18:26:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/25/2022 18:26:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/25/2022 18:26:11 HTTP "POST" "/graphql" responded 200 in 922.4039 ms
+10/25/2022 18:48:48 Migrations
+10/25/2022 18:48:48 20221023001: InitialTables_20221023001
+10/25/2022 18:48:48 20221024001: InitialSeed_20221024001
+10/25/2022 18:48:48 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 18:50:35 Migrations
+10/25/2022 18:50:35 20221023001: InitialTables_20221023001
+10/25/2022 18:50:35 20221024001: InitialSeed_20221024001
+10/25/2022 18:50:35 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:17:55 Migrations
+10/25/2022 19:17:55 20221023001: InitialTables_20221023001
+10/25/2022 19:17:55 20221024001: InitialSeed_20221024001
+10/25/2022 19:17:55 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:18:27 Migrations
+10/25/2022 19:18:27 20221023001: InitialTables_20221023001
+10/25/2022 19:18:27 20221024001: InitialSeed_20221024001
+10/25/2022 19:18:27 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:18:27 20221025001: ProductStockTables_20221025001 reverting
+10/25/2022 19:18:27 Beginning Transaction
+10/25/2022 19:18:27 DeleteTable product_stock
+10/25/2022 19:18:27 DROP TABLE "public"."product_stock";
+10/25/2022 19:18:27 => 0.0195434s
+10/25/2022 19:18:27 DeleteTable size
+10/25/2022 19:18:27 DROP TABLE "public"."size";
+10/25/2022 19:18:27 => 0.0019625s
+10/25/2022 19:18:27 DeleteTable color
+10/25/2022 19:18:27 DROP TABLE "public"."color";
+10/25/2022 19:18:27 => 0.0014094s
+10/25/2022 19:18:27 DELETE FROM "public"."VersionInfo" WHERE "Version" = 20221025001;
+10/25/2022 19:18:27 Committing Transaction
+10/25/2022 19:18:27 20221025001: ProductStockTables_20221025001 reverted
+10/25/2022 19:18:27 => 0.028935s
+10/25/2022 19:18:52 Migrations
+10/25/2022 19:18:52 20221023001: InitialTables_20221023001
+10/25/2022 19:18:52 20221024001: InitialSeed_20221024001 (current)
+10/25/2022 19:18:52 20221025001: ProductStockTables_20221025001 (not applied)
+10/25/2022 19:18:52 20221025001: ProductStockTables_20221025001 migrating
+10/25/2022 19:18:52 Beginning Transaction
+10/25/2022 19:18:52 CreateTable size
+10/25/2022 19:18:52 CREATE TABLE "public"."size" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(20) NOT NULL, "gender" varchar(1) NOT NULL, CONSTRAINT "PK_size" PRIMARY KEY ("id"));
+10/25/2022 19:18:52 => 0.0582019s
+10/25/2022 19:18:52 CreateTable color
+10/25/2022 19:18:52 CREATE TABLE "public"."color" ("id" integer NOT NULL GENERATED ALWAYS AS IDENTITY, "name" varchar(20) NOT NULL, CONSTRAINT "PK_color" PRIMARY KEY ("id"));
+10/25/2022 19:18:52 => 0.0078569s
+10/25/2022 19:18:52 CreateTable product_stock
+10/25/2022 19:18:52 CREATE TABLE "public"."product_stock" ("product_id" integer NOT NULL, "size_id" integer NOT NULL, "color_id" integer NOT NULL, "quantity" integer NOT NULL, CONSTRAINT "PK_product_stock" PRIMARY KEY ("product_id","size_id","color_id"));
+10/25/2022 19:18:52 => 0.0058574s
+10/25/2022 19:18:52 CreateForeignKey FK_product_stock_product_id_product_id product_stock(product_id) product(id)
+10/25/2022 19:18:52 ALTER TABLE "public"."product_stock" ADD CONSTRAINT "FK_product_stock_product_id_product_id" FOREIGN KEY ("product_id") REFERENCES "public"."product" ("id");
+10/25/2022 19:18:52 => 0.0082246s
+10/25/2022 19:18:52 CreateForeignKey FK_product_stock_size_id_size_id product_stock(size_id) size(id)
+10/25/2022 19:18:52 ALTER TABLE "public"."product_stock" ADD CONSTRAINT "FK_product_stock_size_id_size_id" FOREIGN KEY ("size_id") REFERENCES "public"."size" ("id");
+10/25/2022 19:18:52 => 0.0031753s
+10/25/2022 19:18:52 CreateForeignKey FK_product_stock_color_id_color_id product_stock(color_id) color(id)
+10/25/2022 19:18:52 ALTER TABLE "public"."product_stock" ADD CONSTRAINT "FK_product_stock_color_id_color_id" FOREIGN KEY ("color_id") REFERENCES "public"."color" ("id");
+10/25/2022 19:18:52 => 0.0030454s
+10/25/2022 19:18:52 INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (20221025001,'2022-10-26T02:18:52','ProductStockTables_20221025001');
+10/25/2022 19:18:52 Committing Transaction
+10/25/2022 19:18:52 20221025001: ProductStockTables_20221025001 migrated
+10/25/2022 19:18:52 => 0.0542961s
+10/25/2022 19:27:02 Migrations
+10/25/2022 19:27:02 20221023001: InitialTables_20221023001
+10/25/2022 19:27:02 20221024001: InitialSeed_20221024001
+10/25/2022 19:27:02 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:27:05 HTTP "GET" "/graphql-voyager" responded 200 in 85.6140 ms
+10/25/2022 19:27:05 HTTP "GET" "/favicon.ico" responded 404 in 0.0587 ms
+10/25/2022 19:27:06 HTTP "POST" "/graphql" responded 200 in 795.1112 ms
+10/25/2022 19:27:56 Migrations
+10/25/2022 19:27:56 20221023001: InitialTables_20221023001
+10/25/2022 19:27:56 20221024001: InitialSeed_20221024001
+10/25/2022 19:27:56 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:28:03 HTTP "GET" "/graphql" responded 301 in 13.0358 ms
+10/25/2022 19:28:03 HTTP "GET" "/graphql/index.html" responded 200 in 61.0135 ms
+10/25/2022 19:28:03 HTTP "GET" "/graphql/static/js/polyfills.14223cd3.js" responded 200 in 1.5291 ms
+10/25/2022 19:28:03 HTTP "GET" "/graphql/static/js/917.df80a314.js" responded 200 in 1.2935 ms
+10/25/2022 19:28:03 HTTP "GET" "/graphql/static/js/main.7da7210f.js" responded 200 in 0.4112 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/css/styles.d1755a82.chunk.css" responded 200 in 0.5056 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/927.0676b810.chunk.js" responded 200 in 9.3473 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/696.23e5e4e1.chunk.js" responded 200 in 10.2211 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/641.c7e5a908.chunk.js" responded 200 in 8.2206 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/7.ef194ce7.chunk.js" responded 200 in 5.6607 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/568.71498544.chunk.js" responded 200 in 5.5509 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/494.af2a9e30.chunk.js" responded 200 in 25.2339 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/243.082d6152.chunk.js" responded 200 in 19.3938 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/693.b625e9eb.chunk.js" responded 200 in 32.5424 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/manifest.webmanifest" responded 200 in 0.2278 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/favicon.svg" responded 200 in 0.1739 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 12.4656 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/95.4f7bae42.chunk.js" responded 200 in 0.1497 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/619.d2a9edb4.chunk.js" responded 200 in 0.1540 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/document.8402b2ae.chunk.js" responded 200 in 0.2701 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/json.50fb813a.js" responded 200 in 1.1048 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/160.5700f964.chunk.js" responded 200 in 0.1581 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/13.6582dd74.chunk.js" responded 200 in 0.1339 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/319.15add1dd.chunk.js" responded 200 in 0.1075 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/101.e5dcd65e.chunk.js" responded 200 in 0.0894 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/schema.2a88d762.chunk.js" responded 200 in 6.9480 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/media/FiraCode-Medium.1bc138a84f63b384c3f2.woff2" responded 200 in 9.2468 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/editor.a85ce25e.js" responded 200 in 1.8947 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/523.9581171d.chunk.js" responded 200 in 0.1614 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/97.cee6a1a5.chunk.js" responded 200 in 0.1643 ms
+10/25/2022 19:28:04 HTTP "GET" "/graphql/static/js/graphql.worker.1e36c99e.js" responded 200 in 3.8727 ms
+10/25/2022 19:28:05 HTTP "GET" "/graphql/static/media/codicon.b797181c93b3755f4fa1.ttf" responded 200 in 1.5999 ms
+10/25/2022 19:28:05 HTTP "POST" "/graphql" responded 200 in 695.6167 ms
+10/25/2022 19:28:05 HTTP "POST" "/graphql" responded 200 in 32.4850 ms
+10/25/2022 19:28:36 HTTP "POST" "/graphql" responded 500 in 64.7412 ms
+10/25/2022 19:28:37 HTTP "POST" "/graphql" responded 500 in 1.5818 ms
+10/25/2022 19:29:28 Migrations
+10/25/2022 19:29:28 20221023001: InitialTables_20221023001
+10/25/2022 19:29:28 20221024001: InitialSeed_20221024001
+10/25/2022 19:29:28 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:29:29 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY id ASC "
+"{ }"
+10/25/2022 19:29:29 HTTP "POST" "/graphql" responded 500 in 913.8860 ms
+10/25/2022 19:29:31 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY id ASC "
+"{ }"
+10/25/2022 19:29:32 HTTP "POST" "/graphql" responded 500 in 69.6789 ms
+10/25/2022 19:29:33 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY id ASC "
+"{ }"
+10/25/2022 19:29:33 HTTP "POST" "/graphql" responded 500 in 53.7351 ms
+10/25/2022 19:30:17 Migrations
+10/25/2022 19:30:17 20221023001: InitialTables_20221023001
+10/25/2022 19:30:17 20221024001: InitialSeed_20221024001
+10/25/2022 19:30:17 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:30:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 19:30:19 HTTP "POST" "/graphql" responded 200 in 822.0226 ms
+10/25/2022 19:30:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 19:30:22 HTTP "POST" "/graphql" responded 200 in 8.1788 ms
+10/25/2022 19:30:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 19:30:45 HTTP "POST" "/graphql" responded 200 in 4.5778 ms
+10/25/2022 19:30:46 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 19:30:46 HTTP "POST" "/graphql" responded 200 in 5.7575 ms
+10/25/2022 19:30:53 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 19:30:53 HTTP "POST" "/graphql" responded 200 in 3.7119 ms
+10/25/2022 19:31:43 Migrations
+10/25/2022 19:31:43 20221023001: InitialTables_20221023001
+10/25/2022 19:31:43 20221024001: InitialSeed_20221024001
+10/25/2022 19:31:43 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:31:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 19:31:44 HTTP "POST" "/graphql" responded 200 in 777.1077 ms
+10/25/2022 19:34:36 Migrations
+10/25/2022 19:34:36 20221023001: InitialTables_20221023001
+10/25/2022 19:34:36 20221024001: InitialSeed_20221024001
+10/25/2022 19:34:36 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:34:37 HTTP "POST" "/graphql" responded 400 in 553.0012 ms
+10/25/2022 19:34:39 HTTP "POST" "/graphql" responded 400 in 0.7279 ms
+10/25/2022 19:35:34 Migrations
+10/25/2022 19:35:34 20221023001: InitialTables_20221023001
+10/25/2022 19:35:34 20221024001: InitialSeed_20221024001
+10/25/2022 19:35:34 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:35:40 HTTP "POST" "/graphql" responded 400 in 534.9068 ms
+10/25/2022 19:37:03 Migrations
+10/25/2022 19:37:03 20221023001: InitialTables_20221023001
+10/25/2022 19:37:03 20221024001: InitialSeed_20221024001
+10/25/2022 19:37:03 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:37:04 HTTP "POST" "/graphql" responded 400 in 548.6772 ms
+10/25/2022 19:37:05 HTTP "POST" "/graphql" responded 400 in 0.7864 ms
+10/25/2022 19:37:06 HTTP "POST" "/graphql" responded 400 in 0.2051 ms
+10/25/2022 19:37:07 HTTP "POST" "/graphql" responded 400 in 0.2051 ms
+10/25/2022 19:37:34 Migrations
+10/25/2022 19:37:34 20221023001: InitialTables_20221023001
+10/25/2022 19:37:34 20221024001: InitialSeed_20221024001
+10/25/2022 19:37:34 20221025001: ProductStockTables_20221025001 (current)
+10/25/2022 19:37:42 HTTP "GET" "/graphql/index.html" responded 200 in 73.6080 ms
+10/25/2022 19:37:43 HTTP "GET" "/graphql/favicon.ico" responded 200 in 0.2163 ms
+10/25/2022 19:37:43 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 11.2210 ms
+10/25/2022 19:37:44 HTTP "POST" "/graphql" responded 200 in 718.3629 ms
+10/25/2022 19:37:44 HTTP "POST" "/graphql" responded 200 in 32.7140 ms
+10/25/2022 19:38:06 HTTP "GET" "/graphql/index.html" responded 200 in 4.5397 ms
+10/25/2022 19:38:06 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 0.1642 ms
+10/25/2022 19:38:07 HTTP "POST" "/graphql" responded 200 in 1.2861 ms
+10/25/2022 19:38:07 HTTP "POST" "/graphql" responded 200 in 1.5153 ms
+10/25/2022 19:38:12 HTTP "GET" "/graphql/static/js/767.d422d435.chunk.js" responded 200 in 0.1975 ms
+10/25/2022 19:38:13 HTTP "GET" "/graphql/static/js/625.6e2228cf.chunk.js" responded 200 in 0.2288 ms
+10/25/2022 19:38:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 19:38:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 19:38:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 19:38:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 19:38:58 HTTP "POST" "/graphql" responded 200 in 208.3958 ms
+10/25/2022 19:39:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/25/2022 19:39:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/25/2022 19:39:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/25/2022 19:39:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/25/2022 19:39:14 HTTP "POST" "/graphql" responded 200 in 24.3250 ms
