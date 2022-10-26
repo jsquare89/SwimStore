@@ -18,17 +18,17 @@ public class ColorData : IColorData
         return color.FirstOrDefault();
     }
 
-    public Task<IEnumerable<ColorDto>> GetColors()
+    public async Task<IEnumerable<ColorDto>> GetColors()
     {
         string getAllColorsQuery = "SELECT * FROM public.color ORDER BY id ASC ";
-        return _db.LoadDataWithSqlAsync<ColorDto, dynamic>(getAllColorsQuery, new { });
+        return await _db.LoadDataWithSqlAsync<ColorDto, dynamic>(getAllColorsQuery, new { });
     }
 
-    public Task<IEnumerable<ColorDto>> GetColorsByIds(IReadOnlyList<int> ids)
+    public async Task<IEnumerable<ColorDto>> GetColorsByIds(IReadOnlyList<int> ids)
     {
         string commaSeperatedIds = string.Join(",", ids);
         string getColorsByIds = $"SELECT id, name FROM public.color where id in ({commaSeperatedIds})";
-        return _db.LoadDataWithSqlAsync<ColorDto, dynamic>(getColorsByIds, new { });
+        return await _db.LoadDataWithSqlAsync<ColorDto, dynamic>(getColorsByIds, new { });
     }
 
 }

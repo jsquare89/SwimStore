@@ -1,6 +1,7 @@
 ﻿using SwimStoreApi.GraphQL.Brands;
 using SwimStoreApi.GraphQL.Colors;
 using SwimStoreApi.GraphQL.Products;
+using SwimStoreApi.GraphQL.Sizes;
 using SwimStoreApi.Models;
 
 namespace SwimStoreApi.GraphQL.ProductStocks;
@@ -22,7 +23,10 @@ public class ProductStockType : ObjectType<ProductStock>
             .Name("color")
             .Type<ColorType>();
         descriptor.Field(p => p.SizeId)
-            .Type<NonNullType<IntType>>();
+           .Ignore();
+        descriptor.Field<ProductStockType>(p => ResolveSize(default, default))
+            .Name("size")
+            .Type<SizeType>();
         descriptor.Field(p => p.Quantity)
             .Type<NonNullType<IntType>>();
     }
@@ -37,5 +41,11 @@ public class ProductStockType : ObjectType<ProductStock>
     {
         var color = await dataLoader.LoadAsync(productStock.ColorId);
         return color;
+    }
+
+    public async Task<Size?> ResolveSize(SizeBatchDataLoader dataLoader, [Parent] ProductStock productStock)
+    {
+        var size = await dataLoader.LoadAsync(productStock.SizeId);
+        return size;
     }
 }
