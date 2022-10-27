@@ -10907,3 +10907,217 @@ RETURNING *"
 	"SELECT id, name FROM public.brand where id in (1,2)"
 "{ }"
 10/26/2022 16:11:08 HTTP "POST" "/graphql" responded 200 in 972.0984 ms
+10/26/2022 16:20:24 Migrations
+10/26/2022 16:20:24 20221023001: InitialTables_20221023001
+10/26/2022 16:20:24 20221024001: InitialSeed_20221024001
+10/26/2022 16:20:24 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 16:22:16 HTTP "POST" "/graphql" responded 200 in 825.0797 ms
+10/26/2022 16:22:16 HTTP "POST" "/graphql" responded 200 in 823.0602 ms
+10/26/2022 16:22:32 HTTP "POST" "/graphql" responded 200 in 3.1732 ms
+10/26/2022 16:22:44 HTTP "POST" "/graphql" responded 200 in 1.5983 ms
+10/26/2022 16:23:31 Migrations
+10/26/2022 16:23:31 20221023001: InitialTables_20221023001
+10/26/2022 16:23:31 20221024001: InitialSeed_20221024001
+10/26/2022 16:23:31 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 16:23:32 HTTP "POST" "/graphql" responded 200 in 784.2461 ms
+10/26/2022 16:23:38 HTTP "POST" "/graphql" responded 200 in 2.4287 ms
+10/26/2022 16:25:14 HTTP "POST" "/graphql" responded 200 in 2.9620 ms
+10/26/2022 16:27:19 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity);"
+10/26/2022 16:27:19 HTTP "POST" "/graphql" responded 500 in 189.7668 ms
+10/26/2022 16:29:55 Migrations
+10/26/2022 16:29:55 20221023001: InitialTables_20221023001
+10/26/2022 16:29:55 20221024001: InitialSeed_20221024001
+10/26/2022 16:29:55 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 16:29:58 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity);"
+"{ product_id = 1, size_id = 1, color_id = 1, quantity = 5 }"
+10/26/2022 16:29:58 HTTP "POST" "/graphql" responded 500 in 913.2500 ms
+10/26/2022 16:31:20 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity);"
+"{ product_id = 1, size_id = 1, color_id = 3, quantity = 25 }"
+10/26/2022 16:31:20 HTTP "POST" "/graphql" responded 500 in 405.5711 ms
+10/26/2022 16:32:06 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity);"
+"{ product_id = 1, size_id = 1, color_id = 3, quantity = 25 }"
+10/26/2022 16:32:06 HTTP "POST" "/graphql" responded 500 in 50.7545 ms
+10/26/2022 16:32:16 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity);"
+"{ product_id = 1, size_id = 1, color_id = 3, quantity = 25 }"
+10/26/2022 16:32:16 HTTP "POST" "/graphql" responded 500 in 98.4865 ms
+10/26/2022 16:32:43 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity);"
+"{ product_id = 1, size_id = 1, color_id = 2, quantity = 25 }"
+10/26/2022 16:32:43 HTTP "POST" "/graphql" responded 500 in 47.2272 ms
+10/26/2022 16:33:34 HTTP "POST" "/graphql" responded 200 in 57.2991 ms
+10/26/2022 16:33:35 HTTP "POST" "/graphql" responded 200 in 2.1755 ms
+10/26/2022 16:34:06 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 1, size_id = 3, color_id = 2, quantity = 25 }"
+10/26/2022 16:34:06 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (1)"
+"{ }"
+10/26/2022 16:34:06 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/26/2022 16:34:06 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3)"
+"{ }"
+10/26/2022 16:34:06 HTTP "POST" "/graphql" responded 200 in 102.0695 ms
+10/26/2022 16:34:16 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 1, size_id = 2, color_id = 2, quantity = 25 }"
+10/26/2022 16:34:16 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (1)"
+"{ }"
+10/26/2022 16:34:16 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/26/2022 16:34:16 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (2)"
+"{ }"
+10/26/2022 16:34:16 HTTP "POST" "/graphql" responded 200 in 17.4070 ms
+10/26/2022 16:34:23 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 1, size_id = 1, color_id = 2, quantity = 25 }"
+10/26/2022 16:34:23 HTTP "POST" "/graphql" responded 500 in 68.7672 ms
+10/26/2022 16:34:28 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 1, size_id = 3, color_id = 2, quantity = 25 }"
+10/26/2022 16:34:29 HTTP "POST" "/graphql" responded 500 in 57.5286 ms
+10/26/2022 17:17:01 Migrations
+10/26/2022 17:17:02 20221023001: InitialTables_20221023001
+10/26/2022 17:17:02 20221024001: InitialSeed_20221024001
+10/26/2022 17:17:02 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 17:17:07 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE id = @id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:17:07 HTTP "POST" "/graphql" responded 500 in 994.5590 ms
+10/26/2022 17:18:22 Migrations
+10/26/2022 17:18:22 20221023001: InitialTables_20221023001
+10/26/2022 17:18:22 20221024001: InitialSeed_20221024001
+10/26/2022 17:18:22 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 17:18:32 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:18:32 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id, size_id = @size_id, color_id = @color_id)
+RETURNING *"
+"{ product_id = 1, size_id = 3, color_id = 2, quantity = 25 }"
+10/26/2022 17:18:32 HTTP "POST" "/graphql" responded 500 in 1014.2628 ms
+10/26/2022 17:19:24 Migrations
+10/26/2022 17:19:24 20221023001: InitialTables_20221023001
+10/26/2022 17:19:24 20221024001: InitialSeed_20221024001
+10/26/2022 17:19:24 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 17:19:28 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:19:28 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)
+RETURNING *"
+"{ product_id = 1, size_id = 3, color_id = 2, quantity = 25 }"
+10/26/2022 17:19:29 HTTP "POST" "/graphql" responded 500 in 995.4398 ms
+10/26/2022 17:20:32 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:20:32 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)
+RETURNING *"
+"{ product_id = 1, size_id = 3, color_id = 2, quantity = 26 }"
+10/26/2022 17:20:32 HTTP "POST" "/graphql" responded 500 in 77.4383 ms
+10/26/2022 17:20:41 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:20:41 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)
+RETURNING *"
+"{ product_id = 1, size_id = 3, color_id = 2, quantity = 26 }"
+10/26/2022 17:20:41 HTTP "POST" "/graphql" responded 500 in 73.3844 ms
+10/26/2022 17:20:50 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:20:50 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)
+RETURNING *"
+"{ product_id = 1, size_id = 3, color_id = 2, quantity = 26 }"
+10/26/2022 17:20:50 HTTP "POST" "/graphql" responded 500 in 74.0138 ms
+10/26/2022 17:21:58 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:21:58 HTTP "POST" "/graphql" responded 500 in 49.0251 ms
+10/26/2022 17:22:00 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:22:00 HTTP "POST" "/graphql" responded 500 in 34.9628 ms
+10/26/2022 17:22:03 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:22:03 HTTP "POST" "/graphql" responded 500 in 35.3159 ms
+10/26/2022 17:22:26 Migrations
+10/26/2022 17:22:26 20221023001: InitialTables_20221023001
+10/26/2022 17:22:26 20221024001: InitialSeed_20221024001
+10/26/2022 17:22:26 20221025001: ProductStockTables_20221025001 (current)
+10/26/2022 17:22:29 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:22:29 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id
+RETURNING *"
+"{ product_id = 1, size_id = 3, color_id = 2, quantity = 26 }"
+10/26/2022 17:22:29 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (1)"
+"{ }"
+10/26/2022 17:22:29 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/26/2022 17:22:29 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3)"
+"{ }"
+10/26/2022 17:22:29 HTTP "POST" "/graphql" responded 200 in 926.9719 ms
+10/26/2022 17:23:10 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 1, size_id = 3, color_id = 2 }"
+10/26/2022 17:23:10 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id
+RETURNING *"
+"{ product_id = 1, size_id = 3, color_id = 2, quantity = 27 }"
+10/26/2022 17:23:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (1)"
+"{ }"
+10/26/2022 17:23:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/26/2022 17:23:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3)"
+"{ }"
+10/26/2022 17:23:10 HTTP "POST" "/graphql" responded 200 in 30.4280 ms
+10/26/2022 17:23:18 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 65, size_id = 3, color_id = 2 }"
+10/26/2022 17:23:18 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 65, size_id = 3, color_id = 2, quantity = 27 }"
+10/26/2022 17:23:19 HTTP "POST" "/graphql" responded 500 in 132.6571 ms

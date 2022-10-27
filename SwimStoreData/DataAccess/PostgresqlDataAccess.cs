@@ -76,7 +76,7 @@ public class PostgresqlDataAccess : IPostgresqlDataAccess
         string connectionId = "SwimStorePostgresDb")
     {
         _logger.LogInformation("====== Postgres Call -> SQL ======\n" +
-                                      "\t{sqlQuery}", sqlQuery);
+                                      "\t{sqlQuery}\n{parameters}", sqlQuery, parameters);
 
         using IDbConnection connection = new NpgsqlConnection(_config.GetConnectionString(connectionId));
        

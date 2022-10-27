@@ -32,10 +32,19 @@ public class Mutation
     public async Task<AddProductStockPayload> AddProductStock(AddProductStockInput input,
         [Service] IProductStockData productStockData)
     {
-        var productStockDto = await productStockData.AddToProductStock(input.ProductId,
+        var productStockDto = await productStockData.UpdateProductStock(input.ProductId,
             input.SizeId, input.ColorId, input.Quantity);
 
         return new AddProductStockPayload(_mapper.Map<ProductStock>(productStockDto));
+    }
+
+    public async Task<UpdateProductStockPayload> UpdateProductStockQuantity(UpdateProductStockInput input,
+        [Service] IProductStockData productStockData)
+    {
+        var productStockDto = await productStockData.UpdateProductStockQuantity(input.ProductId,
+            input.SizeId, input.ColorId, input.Quantity);
+
+        return new UpdateProductStockPayload(_mapper.Map<ProductStock>(productStockDto));
     }
 
     public async Task<UpdateProductPayload> UpdateProduct(UpdateProductInput input,
