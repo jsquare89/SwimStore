@@ -1,6 +1,6 @@
 ﻿using Serilog;
 using SwimStoreApi.DapperAttributeMapper;
-using SwimStoreApi.GraphQL;
+using SwimStoreApi.GraphQL.Mutations;
 using SwimStoreApi.GraphQL.Queries;
 using SwimStoreData.Data;
 using SwimStoreData.DataAccess;
@@ -43,7 +43,8 @@ public static class ConfigurationExtensions
             .AddGraphQLServer()
             .AddSwimStoreApiTypes()
             .AddQueryType<QueryType>()
-            .AddMutationType<Mutation>()
+            .AddMutationType<MutationType>()
+            .AddMutationConventions(applyToAllMutations: true)
             .AddFiltering();
         return builder;
     }

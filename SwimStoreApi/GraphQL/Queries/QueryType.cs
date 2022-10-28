@@ -1,8 +1,4 @@
-﻿using SwimStoreApi.GraphQL.Brands;
-using SwimStoreApi.GraphQL.Products;
-using SwimStoreApi.GraphQL.ProductStocks;
-
-namespace SwimStoreApi.GraphQL.Queries;
+﻿namespace SwimStoreApi.GraphQL.Queries;
 
 public class QueryType : ObjectType<Query>
 {

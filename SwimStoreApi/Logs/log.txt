@@ -12507,3 +12507,1792 @@ HotChocolate.SchemaException: For more details look at the `Errors` property.
 	"SELECT * FROM public.size ORDER BY id ASC "
 "{ }"
 10/27/2022 17:34:48 HTTP "POST" "/graphql" responded 200 in 4.9675 ms
+10/27/2022 17:39:10 Migrations
+10/27/2022 17:39:10 20221023001: InitialTables_20221023001
+10/27/2022 17:39:10 20221024001: InitialSeed_20221024001
+10/27/2022 17:39:10 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:52:01 Migrations
+10/27/2022 17:52:01 20221023001: InitialTables_20221023001
+10/27/2022 17:52:01 20221024001: InitialSeed_20221024001
+10/27/2022 17:52:01 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:52:06 HTTP "POST" "/graphql" responded 500 in 341.6711 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Query` was already registered by another type. (HotChocolate.Types.ObjectType)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:52:06 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Query` was already registered by another type. (HotChocolate.Types.ObjectType)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:52:07 HTTP "POST" "/graphql" responded 500 in 18.2343 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Query` was already registered by another type. (HotChocolate.Types.ObjectType)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:52:07 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. The name `Query` was already registered by another type. (HotChocolate.Types.ObjectType)
+
+   at HotChocolate.Configuration.TypeRegistry.Register(NameString typeName, RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypeName(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteNames()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:52:20 Migrations
+10/27/2022 17:52:20 20221023001: InitialTables_20221023001
+10/27/2022 17:52:20 20221024001: InitialSeed_20221024001
+10/27/2022 17:52:20 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:52:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:52:21 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:52:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:52:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:52:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:52:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:52:22 HTTP "POST" "/graphql" responded 200 in 932.3702 ms
+10/27/2022 17:52:23 HTTP "POST" "/graphql" responded 200 in 49.6222 ms
+10/27/2022 17:52:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:52:24 HTTP "POST" "/graphql" responded 200 in 6.6545 ms
+10/27/2022 18:01:04 Migrations
+10/27/2022 18:01:04 20221023001: InitialTables_20221023001
+10/27/2022 18:01:04 20221024001: InitialSeed_20221024001
+10/27/2022 18:01:04 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:01:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:01:19 HTTP "POST" "/graphql" responded 200 in 814.8171 ms
+10/27/2022 18:01:23 HTTP "POST" "/graphql" responded 200 in 47.3072 ms
+10/27/2022 18:01:29 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+"{ name = XXL, gender = m }"
+10/27/2022 18:01:29 HTTP "POST" "/graphql" responded 200 in 42.1265 ms
+10/27/2022 18:01:32 HTTP "POST" "/graphql" responded 200 in 2.5514 ms
+10/27/2022 18:01:33 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:01:33 HTTP "POST" "/graphql" responded 200 in 4.2070 ms
+10/27/2022 18:01:38 HTTP "POST" "/graphql" responded 200 in 1.8516 ms
+10/27/2022 18:15:02 Migrations
+10/27/2022 18:15:02 20221023001: InitialTables_20221023001
+10/27/2022 18:15:02 20221024001: InitialSeed_20221024001
+10/27/2022 18:15:02 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:15:10 HTTP "POST" "/graphql" responded 500 in 402.7852 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:15:10 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:15:10 HTTP "POST" "/graphql" responded 500 in 32.3520 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:15:10 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:15:12 HTTP "POST" "/graphql" responded 500 in 28.6073 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:15:12 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:15:13 HTTP "POST" "/graphql" responded 500 in 32.0160 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:15:13 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:15:13 HTTP "POST" "/graphql" responded 500 in 31.4229 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:15:13 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:15:14 HTTP "POST" "/graphql" responded 500 in 31.2964 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:15:14 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:15:15 HTTP "POST" "/graphql" responded 500 in 28.6619 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:15:15 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:17:21 Migrations
+10/27/2022 18:17:21 20221023001: InitialTables_20221023001
+10/27/2022 18:17:21 20221024001: InitialSeed_20221024001
+10/27/2022 18:17:21 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:17:21 HTTP "POST" "/graphql" responded 500 in 471.9736 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:17:21 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:17:22 HTTP "POST" "/graphql" responded 500 in 39.4009 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:17:22 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:17:31 HTTP "POST" "/graphql" responded 500 in 37.0007 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:17:31 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:17:33 HTTP "POST" "/graphql" responded 500 in 41.6810 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:17:33 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:17:33 HTTP "POST" "/graphql" responded 500 in 38.0441 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:17:33 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:17:35 HTTP "POST" "/graphql" responded 500 in 38.7625 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:17:35 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:17:36 HTTP "POST" "/graphql" responded 500 in 37.2419 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:17:36 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to create instance of type ``.
+
+   at HotChocolate.Configuration.TypeInitializer.DiscoverTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:17:49 Migrations
+10/27/2022 18:17:49 20221023001: InitialTables_20221023001
+10/27/2022 18:17:49 20221024001: InitialSeed_20221024001
+10/27/2022 18:17:49 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:17:50 HTTP "POST" "/graphql" responded 500 in 391.9234 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:17:50 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:18:18 HTTP "POST" "/graphql" responded 500 in 29.7939 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 18:18:18 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. There are mutation annotations on non mutation fields. The mutation conventions can only be applied to fields of the mutation type.
+
+   at HotChocolate.Types.MutationConventionTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.AggregateTypeInterceptor.OnAfterMergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.MergeTypeExtensions()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 18:18:50 Migrations
+10/27/2022 18:18:50 20221023001: InitialTables_20221023001
+10/27/2022 18:18:50 20221024001: InitialSeed_20221024001
+10/27/2022 18:18:50 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:18:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:18:53 HTTP "POST" "/graphql" responded 200 in 815.2406 ms
+10/27/2022 18:18:54 HTTP "POST" "/graphql" responded 200 in 49.4808 ms
+10/27/2022 18:18:55 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 18:18:55 HTTP "POST" "/graphql" responded 200 in 10.5119 ms
+10/27/2022 18:21:16 Migrations
+10/27/2022 18:21:16 20221023001: InitialTables_20221023001
+10/27/2022 18:21:16 20221024001: InitialSeed_20221024001
+10/27/2022 18:21:16 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:21:23 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 18:21:23 HTTP "POST" "/graphql" responded 200 in 804.4603 ms
+10/27/2022 18:21:25 HTTP "POST" "/graphql" responded 200 in 49.3042 ms
+10/27/2022 18:21:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:21:25 HTTP "POST" "/graphql" responded 200 in 10.8335 ms
+10/27/2022 18:21:27 HTTP "POST" "/graphql" responded 200 in 2.5937 ms
+10/27/2022 18:21:33 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+"{ name = S, gender = f }"
+10/27/2022 18:21:33 HTTP "POST" "/graphql" responded 200 in 34.6395 ms
+10/27/2022 18:21:35 HTTP "POST" "/graphql" responded 200 in 1.5316 ms
+10/27/2022 18:21:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:21:36 HTTP "POST" "/graphql" responded 200 in 3.9162 ms
+10/27/2022 18:21:45 Migrations
+10/27/2022 18:21:45 20221023001: InitialTables_20221023001
+10/27/2022 18:21:45 20221024001: InitialSeed_20221024001
+10/27/2022 18:21:45 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:21:48 HTTP "GET" "/graphql-voyager" responded 200 in 88.4948 ms
+10/27/2022 18:21:49 HTTP "GET" "/favicon.ico" responded 404 in 0.0622 ms
+10/27/2022 18:21:50 HTTP "POST" "/graphql" responded 200 in 963.0373 ms
+10/27/2022 18:21:53 HTTP "GET" "/graphql" responded 301 in 7.0418 ms
+10/27/2022 18:21:53 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 8.6140 ms
+10/27/2022 18:21:54 HTTP "POST" "/graphql" responded 200 in 4.3005 ms
+10/27/2022 18:21:54 HTTP "POST" "/graphql" responded 200 in 2.8245 ms
+10/27/2022 18:21:57 HTTP "GET" "/graphql/index.html" responded 200 in 24.8076 ms
+10/27/2022 18:21:57 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 0.1430 ms
+10/27/2022 18:21:57 HTTP "POST" "/graphql" responded 200 in 0.6252 ms
+10/27/2022 18:21:57 HTTP "POST" "/graphql" responded 200 in 1.6732 ms
+10/27/2022 18:23:39 HTTP "GET" "/graphql-voyager" responded 200 in 4.3550 ms
+10/27/2022 18:23:39 HTTP "POST" "/graphql" responded 200 in 2.6104 ms
+10/27/2022 18:26:32 Migrations
+10/27/2022 18:26:32 20221023001: InitialTables_20221023001
+10/27/2022 18:26:32 20221024001: InitialSeed_20221024001
+10/27/2022 18:26:32 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:26:34 HTTP "GET" "/graphql-voyager" responded 200 in 59.6555 ms
+10/27/2022 18:26:35 HTTP "POST" "/graphql" responded 200 in 902.6709 ms
+10/27/2022 18:27:09 Migrations
+10/27/2022 18:27:09 20221023001: InitialTables_20221023001
+10/27/2022 18:27:09 20221024001: InitialSeed_20221024001
+10/27/2022 18:27:09 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:27:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:27:12 HTTP "POST" "/graphql" responded 200 in 820.0028 ms
+10/27/2022 18:27:14 HTTP "POST" "/graphql" responded 200 in 54.7984 ms
+10/27/2022 18:27:23 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+"{ name = M, gender = f }"
+10/27/2022 18:27:23 HTTP "POST" "/graphql" responded 200 in 38.5261 ms
+10/27/2022 18:27:24 HTTP "POST" "/graphql" responded 200 in 2.2050 ms
+10/27/2022 18:27:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:27:25 HTTP "POST" "/graphql" responded 200 in 3.9777 ms
+10/27/2022 18:27:32 HTTP "POST" "/graphql" responded 200 in 1.4947 ms
+10/27/2022 18:27:39 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+"{ id = 8, name = XL, gender = m }"
+10/27/2022 18:27:39 HTTP "POST" "/graphql" responded 200 in 24.6770 ms
+10/27/2022 18:27:48 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+"{ id = 8, name = M, gender = f }"
+10/27/2022 18:27:48 HTTP "POST" "/graphql" responded 200 in 4.0238 ms
+10/27/2022 18:27:50 HTTP "POST" "/graphql" responded 200 in 1.7014 ms
+10/27/2022 18:27:51 HTTP "POST" "/graphql" responded 200 in 1.5669 ms
+10/27/2022 18:27:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:27:52 HTTP "POST" "/graphql" responded 200 in 3.9013 ms
+10/27/2022 18:31:48 Migrations
+10/27/2022 18:31:48 20221023001: InitialTables_20221023001
+10/27/2022 18:31:48 20221024001: InitialSeed_20221024001
+10/27/2022 18:31:48 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:31:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:31:59 HTTP "POST" "/graphql" responded 200 in 820.2210 ms
+10/27/2022 18:32:01 HTTP "POST" "/graphql" responded 200 in 49.4919 ms
+10/27/2022 18:32:06 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+"{ name = L, gender = f }"
+10/27/2022 18:32:06 HTTP "POST" "/graphql" responded 200 in 45.5894 ms
+10/27/2022 18:32:09 HTTP "POST" "/graphql" responded 200 in 2.7171 ms
+10/27/2022 18:32:10 HTTP "POST" "/graphql" responded 200 in 1.6009 ms
+10/27/2022 18:33:22 Migrations
+10/27/2022 18:33:22 20221023001: InitialTables_20221023001
+10/27/2022 18:33:22 20221024001: InitialSeed_20221024001
+10/27/2022 18:33:22 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:33:26 HTTP "POST" "/graphql" responded 200 in 713.1743 ms
+10/27/2022 18:33:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:33:26 HTTP "POST" "/graphql" responded 200 in 264.6710 ms
+10/27/2022 18:33:28 HTTP "POST" "/graphql" responded 200 in 3.9108 ms
+10/27/2022 18:33:32 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+"{ name = XL, gender = f }"
+10/27/2022 18:33:32 HTTP "POST" "/graphql" responded 200 in 36.1324 ms
+10/27/2022 18:33:34 HTTP "POST" "/graphql" responded 200 in 1.5060 ms
+10/27/2022 18:33:35 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:33:35 HTTP "POST" "/graphql" responded 200 in 3.9111 ms
+10/27/2022 18:33:37 HTTP "POST" "/graphql" responded 200 in 1.4945 ms
+10/27/2022 18:33:41 HTTP "POST" "/graphql" responded 200 in 1.5413 ms
+10/27/2022 18:33:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:33:41 HTTP "POST" "/graphql" responded 200 in 3.5178 ms
+10/27/2022 18:33:43 HTTP "POST" "/graphql" responded 200 in 1.5566 ms
+10/27/2022 18:33:55 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+"{ id = 10, name = changed, gender = f }"
+10/27/2022 18:33:55 HTTP "POST" "/graphql" responded 200 in 21.4748 ms
+10/27/2022 18:33:57 HTTP "POST" "/graphql" responded 200 in 1.5478 ms
+10/27/2022 18:33:57 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:33:57 HTTP "POST" "/graphql" responded 200 in 3.7273 ms
+10/27/2022 18:33:59 HTTP "POST" "/graphql" responded 200 in 1.5743 ms
+10/27/2022 18:34:00 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+"{ id = 10, name = changed, gender = f }"
+10/27/2022 18:34:00 HTTP "POST" "/graphql" responded 200 in 5.9419 ms
+10/27/2022 18:34:59 Migrations
+10/27/2022 18:34:59 20221023001: InitialTables_20221023001
+10/27/2022 18:34:59 20221024001: InitialSeed_20221024001
+10/27/2022 18:34:59 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:35:01 HTTP "POST" "/graphql" responded 200 in 743.6784 ms
+10/27/2022 18:35:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:35:01 HTTP "POST" "/graphql" responded 200 in 290.9494 ms
+10/27/2022 18:35:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:35:02 HTTP "POST" "/graphql" responded 200 in 7.3793 ms
+10/27/2022 18:35:03 HTTP "POST" "/graphql" responded 200 in 4.9335 ms
+10/27/2022 18:35:09 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+"{ name = XXL, gender = f }"
+10/27/2022 18:35:09 HTTP "POST" "/graphql" responded 200 in 44.1906 ms
+10/27/2022 18:35:10 HTTP "POST" "/graphql" responded 200 in 1.4167 ms
+10/27/2022 18:35:16 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+"{ id = 10, name = XL, gender = f }"
+10/27/2022 18:35:16 HTTP "POST" "/graphql" responded 200 in 11.0843 ms
+10/27/2022 18:35:18 HTTP "POST" "/graphql" responded 200 in 1.5420 ms
+10/27/2022 18:35:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:35:19 HTTP "POST" "/graphql" responded 200 in 3.4359 ms
+10/27/2022 18:35:22 HTTP "POST" "/graphql" responded 200 in 2.0349 ms
+10/27/2022 18:35:29 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+"{ id = 10, name = changed, gender = f }"
+10/27/2022 18:35:29 HTTP "POST" "/graphql" responded 200 in 4.2522 ms
+10/27/2022 18:36:20 Migrations
+10/27/2022 18:36:20 20221023001: InitialTables_20221023001
+10/27/2022 18:36:20 20221024001: InitialSeed_20221024001
+10/27/2022 18:36:20 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:36:25 HTTP "GET" "/graphql/index.html" responded 200 in 81.1244 ms
+10/27/2022 18:36:26 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 16.6298 ms
+10/27/2022 18:36:27 HTTP "POST" "/graphql" responded 200 in 676.4996 ms
+10/27/2022 18:36:27 HTTP "POST" "/graphql" responded 200 in 32.4000 ms
+10/27/2022 18:36:38 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 0.1278 ms
+10/27/2022 18:36:38 HTTP "POST" "/graphql" responded 200 in 1.4608 ms
+10/27/2022 18:36:38 HTTP "POST" "/graphql" responded 200 in 1.9617 ms
+10/27/2022 18:37:00 Migrations
+10/27/2022 18:37:00 20221023001: InitialTables_20221023001
+10/27/2022 18:37:00 20221024001: InitialSeed_20221024001
+10/27/2022 18:37:00 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:37:05 HTTP "POST" "/graphql" responded 200 in 696.1510 ms
+10/27/2022 18:37:05 HTTP "POST" "/graphql" responded 200 in 2.3533 ms
+10/27/2022 18:37:06 HTTP "POST" "/graphql" responded 200 in 2.5248 ms
+10/27/2022 18:37:12 ====== Postgres Call -> SQL ======
+	"UPDATE color SET name=@name WHERE id = @id 
+RETURNING *"
+"{ id = 4, name = updated }"
+10/27/2022 18:37:12 HTTP "POST" "/graphql" responded 200 in 188.9660 ms
+10/27/2022 18:37:18 ====== Postgres Call -> SQL ======
+	"UPDATE color SET name=@name WHERE id = @id 
+RETURNING *"
+"{ id = 4, name = blue }"
+10/27/2022 18:37:18 HTTP "POST" "/graphql" responded 200 in 15.8405 ms
+10/27/2022 18:37:19 HTTP "POST" "/graphql" responded 200 in 1.9315 ms
+10/27/2022 18:37:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 18:37:20 HTTP "POST" "/graphql" responded 200 in 31.9029 ms
+10/27/2022 18:38:43 Migrations
+10/27/2022 18:38:43 20221023001: InitialTables_20221023001
+10/27/2022 18:38:43 20221024001: InitialSeed_20221024001
+10/27/2022 18:38:43 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:38:51 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 18:38:51 HTTP "POST" "/graphql" responded 200 in 807.6673 ms
+10/27/2022 18:38:54 HTTP "POST" "/graphql" responded 200 in 47.0645 ms
+10/27/2022 18:38:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:38:54 HTTP "POST" "/graphql" responded 200 in 9.3873 ms
+10/27/2022 18:38:56 HTTP "POST" "/graphql" responded 200 in 2.9150 ms
+10/27/2022 18:38:58 HTTP "POST" "/graphql" responded 200 in 1.5896 ms
+10/27/2022 18:39:00 HTTP "POST" "/graphql" responded 200 in 1.6751 ms
+10/27/2022 18:39:03 ====== Postgres Call -> SQL ======
+	"INSERT INTO size(name, gender) VALUES (@name, @gender)
+RETURNING *"
+"{ name = XXXL, gender = f }"
+10/27/2022 18:39:03 HTTP "POST" "/graphql" responded 200 in 35.3492 ms
+10/27/2022 18:39:04 HTTP "POST" "/graphql" responded 200 in 1.5734 ms
+10/27/2022 18:39:06 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+"{ id = 10, name = changed, gender = f }"
+10/27/2022 18:39:06 HTTP "POST" "/graphql" responded 200 in 13.5143 ms
+10/27/2022 18:39:09 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+"{ id = 10, name = changeddfasdf, gender = f }"
+10/27/2022 18:39:09 HTTP "POST" "/graphql" responded 200 in 15.2631 ms
+10/27/2022 18:39:14 ====== Postgres Call -> SQL ======
+	"UPDATE size SET name=@name, gender=@gender WHERE id = @id 
+RETURNING *"
+"{ id = 10, name = changed, gender = f }"
+10/27/2022 18:39:14 HTTP "POST" "/graphql" responded 200 in 14.6800 ms
+10/27/2022 18:42:28 Migrations
+10/27/2022 18:42:28 20221023001: InitialTables_20221023001
+10/27/2022 18:42:28 20221024001: InitialSeed_20221024001
+10/27/2022 18:42:28 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:42:31 HTTP "POST" "/graphql" responded 200 in 689.2144 ms
+10/27/2022 18:42:31 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:42:31 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:42:31 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:42:31 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:42:31 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 18:42:31 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 18:42:32 HTTP "POST" "/graphql" responded 200 in 442.5284 ms
+10/27/2022 18:42:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:42:32 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:42:32 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:42:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:42:32 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/27/2022 18:42:32 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 18:42:32 HTTP "POST" "/graphql" responded 200 in 41.9538 ms
+10/27/2022 18:42:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:42:34 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:42:34 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:42:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:42:34 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 18:42:34 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 18:42:34 HTTP "POST" "/graphql" responded 200 in 46.0354 ms
+10/27/2022 18:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:42:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:42:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:42:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:42:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/27/2022 18:42:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 18:42:36 HTTP "POST" "/graphql" responded 200 in 43.2701 ms
+10/27/2022 18:42:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:42:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:42:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:42:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:42:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 18:42:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 18:42:45 HTTP "POST" "/graphql" responded 200 in 52.5354 ms
+10/27/2022 18:45:30 Migrations
+10/27/2022 18:45:30 20221023001: InitialTables_20221023001
+10/27/2022 18:45:30 20221024001: InitialSeed_20221024001
+10/27/2022 18:45:30 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:45:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:45:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:45:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:45:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:45:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/27/2022 18:45:36 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 18:45:36 HTTP "POST" "/graphql" responded 200 in 920.2180 ms
+10/27/2022 18:45:37 HTTP "POST" "/graphql" responded 200 in 48.4125 ms
+10/27/2022 18:45:38 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:45:38 HTTP "POST" "/graphql" responded 200 in 8.4538 ms
+10/27/2022 18:45:39 HTTP "POST" "/graphql" responded 200 in 2.0717 ms
+10/27/2022 18:45:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:45:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:45:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:45:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:45:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 18:45:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 18:45:40 HTTP "POST" "/graphql" responded 200 in 39.1291 ms
+10/27/2022 18:45:42 HTTP "POST" "/graphql" responded 200 in 1.9344 ms
+10/27/2022 18:45:43 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 18:45:43 HTTP "POST" "/graphql" responded 200 in 6.9303 ms
+10/27/2022 18:45:44 HTTP "POST" "/graphql" responded 200 in 1.5484 ms
+10/27/2022 18:45:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:45:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:45:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:45:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:45:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 18:45:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/27/2022 18:45:45 HTTP "POST" "/graphql" responded 200 in 45.4148 ms
+10/27/2022 18:45:46 HTTP "POST" "/graphql" responded 200 in 1.7009 ms
+10/27/2022 18:45:47 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 18:45:47 HTTP "POST" "/graphql" responded 200 in 5.1015 ms
+10/27/2022 18:45:50 HTTP "POST" "/graphql" responded 200 in 2.5718 ms
+10/27/2022 18:45:50 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:45:50 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:45:50 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:45:50 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:45:50 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/27/2022 18:45:50 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 18:45:50 HTTP "POST" "/graphql" responded 200 in 41.2850 ms
+10/27/2022 18:45:53 HTTP "POST" "/graphql" responded 200 in 1.5445 ms
+10/27/2022 18:45:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:45:54 HTTP "POST" "/graphql" responded 200 in 5.1467 ms
+10/27/2022 18:45:56 HTTP "POST" "/graphql" responded 200 in 1.4964 ms
+10/27/2022 18:45:57 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 18:45:57 HTTP "POST" "/graphql" responded 200 in 4.6996 ms
+10/27/2022 18:51:42 Migrations
+10/27/2022 18:51:42 20221023001: InitialTables_20221023001
+10/27/2022 18:51:42 20221024001: InitialSeed_20221024001
+10/27/2022 18:51:42 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:51:45 HTTP "POST" "/graphql" responded 200 in 718.9075 ms
+10/27/2022 18:51:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/27/2022 18:51:46 HTTP "POST" "/graphql" responded 200 in 171.2923 ms
+10/27/2022 18:51:47 HTTP "POST" "/graphql" responded 200 in 3.8267 ms
+10/27/2022 18:51:48 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/27/2022 18:51:48 HTTP "POST" "/graphql" responded 200 in 17.9223 ms
+10/27/2022 18:51:49 HTTP "POST" "/graphql" responded 200 in 1.5943 ms
+10/27/2022 18:51:55 ====== Postgres Call -> SQL ======
+	"INSERT INTO brand(name) VALUES (@name)
+RETURNING *"
+"{ name = new brand }"
+10/27/2022 18:51:55 HTTP "POST" "/graphql" responded 200 in 40.9455 ms
+10/27/2022 18:51:57 HTTP "POST" "/graphql" responded 200 in 1.5498 ms
+10/27/2022 18:51:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/27/2022 18:51:58 HTTP "POST" "/graphql" responded 200 in 5.3402 ms
+10/27/2022 18:51:59 HTTP "POST" "/graphql" responded 200 in 1.7920 ms
+10/27/2022 18:52:06 HTTP "POST" "/graphql" responded 400 in 10.4772 ms
+10/27/2022 18:52:09 HTTP "POST" "/graphql" responded 400 in 0.3110 ms
+10/27/2022 18:52:38 Migrations
+10/27/2022 18:52:38 20221023001: InitialTables_20221023001
+10/27/2022 18:52:38 20221024001: InitialSeed_20221024001
+10/27/2022 18:52:38 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:52:40 ====== Postgres Call -> SQL ======
+	"UPDATE brand SET name=@name WHERE id = @id 
+RETURNING *"
+"{ id = 7, name = updated }"
+10/27/2022 18:52:40 HTTP "POST" "/graphql" responded 200 in 841.4264 ms
+10/27/2022 18:52:43 HTTP "POST" "/graphql" responded 200 in 35.5109 ms
+10/27/2022 18:52:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/27/2022 18:52:44 HTTP "POST" "/graphql" responded 200 in 32.7002 ms
+10/27/2022 18:52:46 HTTP "POST" "/graphql" responded 200 in 2.0488 ms
+10/27/2022 18:52:50 ====== Postgres Call -> SQL ======
+	"UPDATE brand SET name=@name WHERE id = @id 
+RETURNING *"
+"{ id = 7, name = finz }"
+10/27/2022 18:52:50 HTTP "POST" "/graphql" responded 200 in 14.3267 ms
+10/27/2022 18:52:57 HTTP "GET" "/graphql" responded 301 in 6.2396 ms
+10/27/2022 18:52:57 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 12.0245 ms
+10/27/2022 18:52:58 HTTP "POST" "/graphql" responded 200 in 1.6477 ms
+10/27/2022 18:52:58 HTTP "POST" "/graphql" responded 200 in 1.9680 ms
+10/27/2022 18:53:17 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 0.1505 ms
+10/27/2022 18:53:17 HTTP "POST" "/graphql" responded 200 in 0.2272 ms
+10/27/2022 18:53:17 HTTP "POST" "/graphql" responded 200 in 1.4561 ms
+10/27/2022 18:57:39 Migrations
+10/27/2022 18:57:39 20221023001: InitialTables_20221023001
+10/27/2022 18:57:39 20221024001: InitialSeed_20221024001
+10/27/2022 18:57:39 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:57:44 HTTP "POST" "/graphql" responded 200 in 709.8834 ms
+10/27/2022 18:57:44 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 18:57:44 HTTP "POST" "/graphql" responded 200 in 256.4369 ms
+10/27/2022 18:57:45 HTTP "POST" "/graphql" responded 200 in 3.9316 ms
+10/27/2022 18:57:46 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color WHERE color.id = @id"
+"{ id = 2 }"
+10/27/2022 18:57:46 HTTP "POST" "/graphql" responded 200 in 20.1230 ms
+10/27/2022 18:57:47 HTTP "POST" "/graphql" responded 200 in 1.6387 ms
+10/27/2022 18:57:48 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 18:57:48 HTTP "POST" "/graphql" responded 200 in 9.7874 ms
+10/27/2022 18:57:49 HTTP "POST" "/graphql" responded 200 in 1.5475 ms
+10/27/2022 18:57:49 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/27/2022 18:57:49 HTTP "POST" "/graphql" responded 200 in 6.4321 ms
+10/27/2022 18:57:51 HTTP "POST" "/graphql" responded 200 in 2.2539 ms
+10/27/2022 18:57:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 18:57:52 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 18:57:52 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 18:57:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 18:57:52 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/27/2022 18:57:52 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 18:57:52 HTTP "POST" "/graphql" responded 200 in 104.1642 ms
+10/27/2022 18:57:55 HTTP "POST" "/graphql" responded 200 in 1.7320 ms
+10/27/2022 18:57:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 18:57:56 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 18:57:56 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 18:57:56 HTTP "POST" "/graphql" responded 200 in 21.9522 ms
+10/27/2022 18:57:59 HTTP "POST" "/graphql" responded 200 in 1.5240 ms
+10/27/2022 18:58:01 HTTP "POST" "/graphql" responded 200 in 1.8154 ms
+10/27/2022 18:58:10 HTTP "POST" "/graphql" responded 200 in 1.5651 ms
+10/27/2022 18:58:11 HTTP "POST" "/graphql" responded 200 in 1.4744 ms
+10/27/2022 18:58:11 HTTP "POST" "/graphql" responded 200 in 1.6468 ms
+10/27/2022 18:59:21 Migrations
+10/27/2022 18:59:21 20221023001: InitialTables_20221023001
+10/27/2022 18:59:21 20221024001: InitialSeed_20221024001
+10/27/2022 18:59:21 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 18:59:30 HTTP "POST" "/graphql" responded 200 in 714.6743 ms
+10/27/2022 18:59:44 ====== Postgres Call -> SQL ======
+	"INSERT INTO color(name) VALUES (@name)
+RETURNING *"
+"{ name = green }"
+10/27/2022 18:59:44 HTTP "POST" "/graphql" responded 200 in 183.7466 ms
+10/27/2022 18:59:46 HTTP "POST" "/graphql" responded 200 in 2.9869 ms
+10/27/2022 18:59:57 ====== Postgres Call -> SQL ======
+	"UPDATE color SET name=@name WHERE id = @id 
+RETURNING *"
+"{ id = 6, name = updated }"
+10/27/2022 18:59:57 HTTP "POST" "/graphql" responded 200 in 11.5146 ms
+10/27/2022 18:59:59 HTTP "POST" "/graphql" responded 200 in 2.4559 ms
+10/27/2022 19:00:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 19:00:00 HTTP "POST" "/graphql" responded 200 in 30.7471 ms
+10/27/2022 19:04:46 Migrations
+10/27/2022 19:04:46 20221023001: InitialTables_20221023001
+10/27/2022 19:04:46 20221024001: InitialSeed_20221024001
+10/27/2022 19:04:46 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 19:04:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 19:04:54 HTTP "POST" "/graphql" responded 200 in 815.9131 ms
+10/27/2022 19:04:57 HTTP "POST" "/graphql" responded 200 in 49.6477 ms
+10/27/2022 19:04:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category ORDER BY id ASC "
+"{ }"
+10/27/2022 19:04:58 HTTP "POST" "/graphql" responded 200 in 16.2057 ms
+10/27/2022 19:05:00 HTTP "POST" "/graphql" responded 200 in 2.1779 ms
+10/27/2022 19:05:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/27/2022 19:05:01 HTTP "POST" "/graphql" responded 200 in 18.6328 ms
+10/27/2022 19:05:02 HTTP "POST" "/graphql" responded 200 in 2.0861 ms
+10/27/2022 19:05:13 ====== Postgres Call -> SQL ======
+	"INSERT INTO category(name, accessory) VALUES (@name, @accessory)
+RETURNING *"
+"{ name = snorkel, accessory = True }"
+10/27/2022 19:05:13 HTTP "POST" "/graphql" responded 200 in 34.0715 ms
+10/27/2022 19:05:14 HTTP "POST" "/graphql" responded 200 in 1.4330 ms
+10/27/2022 19:05:19 ====== Postgres Call -> SQL ======
+	"UPDATE category SET name=@name, accessory=@accessory WHERE id = @id 
+RETURNING *"
+"{ id = 9, name = updated, accessory = True }"
+10/27/2022 19:05:19 HTTP "POST" "/graphql" responded 200 in 16.7943 ms
+10/27/2022 19:05:26 ====== Postgres Call -> SQL ======
+	"UPDATE category SET name=@name, accessory=@accessory WHERE id = @id 
+RETURNING *"
+"{ id = 9, name = fins, accessory = True }"
+10/27/2022 19:05:26 HTTP "POST" "/graphql" responded 200 in 4.3689 ms
+10/27/2022 19:15:17 Migrations
+10/27/2022 19:15:17 20221023001: InitialTables_20221023001
+10/27/2022 19:15:17 20221024001: InitialSeed_20221024001
+10/27/2022 19:15:17 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 19:15:24 HTTP "POST" "/graphql" responded 200 in 692.1002 ms
+10/27/2022 19:15:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 19:15:24 HTTP "POST" "/graphql" responded 200 in 183.6252 ms
+10/27/2022 19:15:25 HTTP "POST" "/graphql" responded 200 in 4.3760 ms
+10/27/2022 19:15:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 19:15:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 19:15:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 19:15:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 19:15:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 19:15:26 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 19:15:26 HTTP "POST" "/graphql" responded 200 in 99.5006 ms
+10/27/2022 19:15:27 HTTP "POST" "/graphql" responded 200 in 1.5920 ms
+10/27/2022 19:15:29 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 19:15:29 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 19:15:29 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 19:15:29 HTTP "POST" "/graphql" responded 200 in 22.4638 ms
+10/27/2022 19:15:30 HTTP "POST" "/graphql" responded 200 in 1.7814 ms
+10/27/2022 19:15:39 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, retail_price, current_price, description, features, sku, brand_id, category_id, gender)
+VALUES (@name, @retail_price, @current_price, @description, @features, @sku, @brand_id, @category_id, @gender)
+RETURNING *"
+"{ name = Solid, retail_price = 5999, current_price = 4799, description = , features = , sku = n/a, brand_id = 57, category_id = 2, gender = m }"
+10/27/2022 19:15:39 HTTP "POST" "/graphql" responded 500 in 225.6628 ms
+10/27/2022 19:17:15 ====== Postgres Call -> SQL ======
+	"INSERT INTO product (name, retail_price, current_price, description, features, sku, brand_id, category_id, gender)
+VALUES (@name, @retail_price, @current_price, @description, @features, @sku, @brand_id, @category_id, @gender)
+RETURNING *"
+"{ name = Solid One Piece, retail_price = 6999, current_price = 5799, description = , features = , sku = n/a, brand_id = 7, category_id = 6, gender = f }"
+10/27/2022 19:17:16 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (6)"
+"{ }"
+10/27/2022 19:17:16 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (7)"
+"{ }"
+10/27/2022 19:17:16 HTTP "POST" "/graphql" responded 200 in 36.3511 ms
+10/27/2022 19:17:19 HTTP "POST" "/graphql" responded 200 in 1.5641 ms
+10/27/2022 19:17:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 19:17:20 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (6,2,5,1,4)"
+"{ }"
+10/27/2022 19:17:20 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (7,5,2,1)"
+"{ }"
+10/27/2022 19:17:20 HTTP "POST" "/graphql" responded 200 in 39.4184 ms
+10/27/2022 19:17:24 HTTP "POST" "/graphql" responded 200 in 2.2124 ms
+10/27/2022 19:17:33 ====== Postgres Call -> SQL ======
+	"Update product
+SET name = @name, retail_price = @retail_price, current_price = @current_price, description = @description, features = @features, sku = @sku, brand_id = @brand_id, category_id = @category_id, gender = @gender
+WHERE id = @id 
+RETURNING *"
+"{ id = 7, name = Vapor Flame Crossback, retail_price = 5999, current_price = 4999, description = update description, features = update features, sku = update sku, brand_id = 1, category_id = 5, gender = f }"
+10/27/2022 19:17:33 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1)"
+"{ }"
+10/27/2022 19:17:33 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (5)"
+"{ }"
+10/27/2022 19:17:33 HTTP "POST" "/graphql" responded 200 in 23.0061 ms
+10/27/2022 19:21:37 Migrations
+10/27/2022 19:21:37 20221023001: InitialTables_20221023001
+10/27/2022 19:21:37 20221024001: InitialSeed_20221024001
+10/27/2022 19:21:37 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 19:21:41 HTTP "POST" "/graphql" responded 200 in 708.7291 ms
+10/27/2022 19:21:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 19:21:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 19:21:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 19:21:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 19:21:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 19:21:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 19:21:41 HTTP "POST" "/graphql" responded 200 in 324.3874 ms
+10/27/2022 19:21:43 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 19:21:43 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 19:21:43 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 19:21:43 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 19:21:43 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 19:21:43 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 19:21:43 HTTP "POST" "/graphql" responded 200 in 43.8904 ms
+10/27/2022 19:21:44 HTTP "POST" "/graphql" responded 200 in 1.8557 ms
+10/27/2022 19:22:26 Migrations
+10/27/2022 19:22:26 20221023001: InitialTables_20221023001
+10/27/2022 19:22:26 20221024001: InitialSeed_20221024001
+10/27/2022 19:22:26 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 19:22:31 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 65, size_id = 3, color_id = 2 }"
+10/27/2022 19:22:31 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 65, size_id = 3, color_id = 2, quantity = 27 }"
+10/27/2022 19:22:32 HTTP "POST" "/graphql" responded 500 in 1003.0249 ms
+10/27/2022 19:22:41 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 6, size_id = 3, color_id = 2 }"
+10/27/2022 19:22:41 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 27 }"
+10/27/2022 19:22:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (6)"
+"{ }"
+10/27/2022 19:22:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/27/2022 19:22:41 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3)"
+"{ }"
+10/27/2022 19:22:41 HTTP "POST" "/graphql" responded 200 in 138.8836 ms
+10/27/2022 19:22:58 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 6, size_id = 3, color_id = 2 }"
+10/27/2022 19:22:58 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 27 }"
+10/27/2022 19:22:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (6)"
+"{ }"
+10/27/2022 19:22:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/27/2022 19:22:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3)"
+"{ }"
+10/27/2022 19:22:58 HTTP "POST" "/graphql" responded 200 in 20.9783 ms
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 6, size_id = 3, color_id = 2 }"
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 27 }"
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (6)"
+"{ }"
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3)"
+"{ }"
+10/27/2022 19:22:59 HTTP "POST" "/graphql" responded 200 in 17.3039 ms
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 6, size_id = 3, color_id = 2 }"
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 27 }"
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (6)"
+"{ }"
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/27/2022 19:22:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3)"
+"{ }"
+10/27/2022 19:22:59 HTTP "POST" "/graphql" responded 200 in 14.2054 ms
+10/27/2022 19:23:42 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 6, size_id = 3, color_id = 2 }"
+10/27/2022 19:23:42 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 24 }"
+10/27/2022 19:23:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (6)"
+"{ }"
+10/27/2022 19:23:42 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/27/2022 19:23:42 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3)"
+"{ }"
+10/27/2022 19:23:42 HTTP "POST" "/graphql" responded 200 in 20.2076 ms
+10/27/2022 19:23:44 HTTP "POST" "/graphql" responded 200 in 41.1390 ms
+10/27/2022 19:23:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 19:23:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 19:23:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 19:23:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,6,4,2,1)"
+"{ }"
+10/27/2022 19:23:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2,5)"
+"{ }"
+10/27/2022 19:23:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 19:23:45 HTTP "POST" "/graphql" responded 200 in 133.8155 ms
+10/27/2022 19:23:54 HTTP "POST" "/graphql" responded 200 in 1.5645 ms
+10/27/2022 19:25:15 Migrations
+10/27/2022 19:25:15 20221023001: InitialTables_20221023001
+10/27/2022 19:25:15 20221024001: InitialSeed_20221024001
+10/27/2022 19:25:15 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 19:25:24 ====== Postgres Call -> SQL ======
+	"SELECT EXISTS(SELECT 1 from product_stock WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id)"
+"{ product_id = 6, size_id = 3, color_id = 2 }"
+10/27/2022 19:25:24 ====== Postgres Call -> SQL ======
+	"UPDATE public.product_stock SET quantity = @quantity
+WHERE product_id = @product_id AND size_id = @size_id AND color_id = @color_id
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 2 }"
+10/27/2022 19:25:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (6)"
+"{ }"
+10/27/2022 19:25:24 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2)"
+"{ }"
+10/27/2022 19:25:24 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3)"
+"{ }"
+10/27/2022 19:25:24 HTTP "POST" "/graphql" responded 200 in 924.3941 ms
+10/27/2022 19:25:26 HTTP "POST" "/graphql" responded 200 in 39.3252 ms
+10/27/2022 19:25:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 19:25:27 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 19:25:27 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 19:25:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,6,4,2,1)"
+"{ }"
+10/27/2022 19:25:27 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1,5)"
+"{ }"
+10/27/2022 19:25:27 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 19:25:27 HTTP "POST" "/graphql" responded 200 in 79.8583 ms
+10/27/2022 19:25:40 HTTP "POST" "/graphql" responded 200 in 2.0898 ms
