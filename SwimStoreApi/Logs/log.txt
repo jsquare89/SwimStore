@@ -11121,3 +11121,1389 @@ VALUES (@product_id, @size_id, @color_id, @quantity)
 RETURNING *"
 "{ product_id = 65, size_id = 3, color_id = 2, quantity = 27 }"
 10/26/2022 17:23:19 HTTP "POST" "/graphql" responded 500 in 132.6571 ms
+10/27/2022 17:20:11 Migrations
+10/27/2022 17:20:11 20221023001: InitialTables_20221023001
+10/27/2022 17:20:11 20221024001: InitialSeed_20221024001
+10/27/2022 17:20:11 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:20:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:20:13 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:20:13 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:20:13 HTTP "POST" "/graphql" responded 200 in 1064.6548 ms
+10/27/2022 17:20:15 HTTP "POST" "/graphql" responded 200 in 59.0060 ms
+10/27/2022 17:20:16 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:20:16 HTTP "POST" "/graphql" responded 200 in 10.8950 ms
+10/27/2022 17:20:17 HTTP "POST" "/graphql" responded 200 in 2.3506 ms
+10/27/2022 17:20:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:20:18 HTTP "POST" "/graphql" responded 200 in 7.8359 ms
+10/27/2022 17:20:19 HTTP "POST" "/graphql" responded 200 in 3.5028 ms
+10/27/2022 17:20:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:20:19 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:20:19 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:20:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:20:19 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:20:19 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:20:19 HTTP "POST" "/graphql" responded 200 in 56.1273 ms
+10/27/2022 17:20:56 Migrations
+10/27/2022 17:20:56 20221023001: InitialTables_20221023001
+10/27/2022 17:20:56 20221024001: InitialSeed_20221024001
+10/27/2022 17:20:56 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:20:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:20:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:20:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:20:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:20:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:20:58 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:20:58 HTTP "POST" "/graphql" responded 200 in 998.1588 ms
+10/27/2022 17:20:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:20:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:20:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:20:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:20:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:20:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:20:59 HTTP "POST" "/graphql" responded 200 in 46.3838 ms
+10/27/2022 17:21:00 HTTP "POST" "/graphql" responded 200 in 56.1984 ms
+10/27/2022 17:21:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:21:00 HTTP "POST" "/graphql" responded 200 in 6.7069 ms
+10/27/2022 17:21:01 HTTP "POST" "/graphql" responded 200 in 2.0748 ms
+10/27/2022 17:21:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/27/2022 17:21:02 HTTP "POST" "/graphql" responded 200 in 19.9864 ms
+10/27/2022 17:21:44 Migrations
+10/27/2022 17:21:44 20221023001: InitialTables_20221023001
+10/27/2022 17:21:44 20221024001: InitialSeed_20221024001
+10/27/2022 17:21:44 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:21:47 HTTP "POST" "/graphql" responded 200 in 767.5222 ms
+10/27/2022 17:21:48 HTTP "POST" "/graphql" responded 400 in 8.7712 ms
+10/27/2022 17:21:49 HTTP "POST" "/graphql" responded 200 in 2.2855 ms
+10/27/2022 17:21:50 HTTP "POST" "/graphql" responded 400 in 0.5120 ms
+10/27/2022 17:21:54 HTTP "POST" "/graphql" responded 200 in 2.2786 ms
+10/27/2022 17:21:57 HTTP "POST" "/graphql" responded 400 in 0.1850 ms
+10/27/2022 17:22:55 Migrations
+10/27/2022 17:22:55 20221023001: InitialTables_20221023001
+10/27/2022 17:22:55 20221024001: InitialSeed_20221024001
+10/27/2022 17:22:55 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:22:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:22:59 HTTP "POST" "/graphql" responded 200 in 818.6056 ms
+10/27/2022 17:22:59 HTTP "POST" "/graphql" responded 200 in 104.0654 ms
+10/27/2022 17:23:01 HTTP "POST" "/graphql" responded 200 in 2.6238 ms
+10/27/2022 17:23:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:23:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:23:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:23:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:23:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:23:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:23:02 HTTP "POST" "/graphql" responded 200 in 105.5177 ms
+10/27/2022 17:23:05 HTTP "POST" "/graphql" responded 200 in 3.2679 ms
+10/27/2022 17:23:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:23:07 HTTP "POST" "/graphql" responded 200 in 6.8121 ms
+10/27/2022 17:23:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:23:08 HTTP "POST" "/graphql" responded 200 in 4.7534 ms
+10/27/2022 17:23:09 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:23:09 HTTP "POST" "/graphql" responded 200 in 4.9727 ms
+10/27/2022 17:23:11 HTTP "POST" "/graphql" responded 200 in 1.5090 ms
+10/27/2022 17:23:12 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:23:12 HTTP "POST" "/graphql" responded 200 in 5.1782 ms
+10/27/2022 17:23:14 HTTP "POST" "/graphql" responded 200 in 3.4587 ms
+10/27/2022 17:23:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:23:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:23:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:23:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:23:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:23:14 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:23:14 HTTP "POST" "/graphql" responded 200 in 42.6774 ms
+10/27/2022 17:23:16 HTTP "POST" "/graphql" responded 200 in 1.5926 ms
+10/27/2022 17:23:17 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:23:17 HTTP "POST" "/graphql" responded 200 in 5.1127 ms
+10/27/2022 17:23:38 Migrations
+10/27/2022 17:23:38 20221023001: InitialTables_20221023001
+10/27/2022 17:23:38 20221024001: InitialSeed_20221024001
+10/27/2022 17:23:38 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:23:42 HTTP "POST" "/graphql" responded 200 in 779.6634 ms
+10/27/2022 17:23:42 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:23:42 HTTP "POST" "/graphql" responded 200 in 90.2809 ms
+10/27/2022 17:23:43 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:23:43 HTTP "POST" "/graphql" responded 200 in 6.9620 ms
+10/27/2022 17:23:59 Migrations
+10/27/2022 17:23:59 20221023001: InitialTables_20221023001
+10/27/2022 17:23:59 20221024001: InitialSeed_20221024001
+10/27/2022 17:23:59 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:24:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:24:01 HTTP "POST" "/graphql" responded 200 in 809.1216 ms
+10/27/2022 17:24:01 HTTP "POST" "/graphql" responded 200 in 121.8423 ms
+10/27/2022 17:24:02 HTTP "POST" "/graphql" responded 200 in 2.9995 ms
+10/27/2022 17:24:03 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:24:03 HTTP "POST" "/graphql" responded 200 in 9.5037 ms
+10/27/2022 17:24:04 HTTP "POST" "/graphql" responded 200 in 1.5752 ms
+10/27/2022 17:24:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color WHERE color.id = @id"
+"{ id = 2 }"
+10/27/2022 17:24:05 HTTP "POST" "/graphql" responded 200 in 18.7910 ms
+10/27/2022 17:24:06 HTTP "POST" "/graphql" responded 200 in 1.4563 ms
+10/27/2022 17:24:06 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/27/2022 17:24:06 HTTP "POST" "/graphql" responded 200 in 6.0000 ms
+10/27/2022 17:24:08 HTTP "POST" "/graphql" responded 200 in 1.5290 ms
+10/27/2022 17:24:09 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:24:09 HTTP "POST" "/graphql" responded 200 in 4.2519 ms
+10/27/2022 17:24:10 HTTP "POST" "/graphql" responded 200 in 1.5823 ms
+10/27/2022 17:24:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:24:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:24:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:24:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:24:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:24:10 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:24:10 HTTP "POST" "/graphql" responded 200 in 97.8001 ms
+10/27/2022 17:24:41 Migrations
+10/27/2022 17:24:41 20221023001: InitialTables_20221023001
+10/27/2022 17:24:41 20221024001: InitialSeed_20221024001
+10/27/2022 17:24:41 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:24:55 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:24:55 HTTP "POST" "/graphql" responded 200 in 777.4093 ms
+10/27/2022 17:24:55 HTTP "POST" "/graphql" responded 200 in 207.6006 ms
+10/27/2022 17:24:56 HTTP "POST" "/graphql" responded 200 in 3.7584 ms
+10/27/2022 17:24:57 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:24:57 HTTP "POST" "/graphql" responded 200 in 8.3171 ms
+10/27/2022 17:24:58 HTTP "POST" "/graphql" responded 200 in 1.6931 ms
+10/27/2022 17:25:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:25:00 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:25:00 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:25:00 HTTP "POST" "/graphql" responded 200 in 72.7945 ms
+10/27/2022 17:25:01 HTTP "POST" "/graphql" responded 200 in 2.5220 ms
+10/27/2022 17:25:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:25:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:25:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:25:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:25:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:25:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:25:02 HTTP "POST" "/graphql" responded 200 in 53.4549 ms
+10/27/2022 17:25:04 HTTP "POST" "/graphql" responded 200 in 1.5073 ms
+10/27/2022 17:25:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category ORDER BY id ASC "
+"{ }"
+10/27/2022 17:25:05 HTTP "POST" "/graphql" responded 200 in 9.1068 ms
+10/27/2022 17:25:53 HTTP "POST" "/graphql" responded 200 in 1.6409 ms
+10/27/2022 17:25:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:25:54 HTTP "POST" "/graphql" responded 200 in 5.9979 ms
+10/27/2022 17:25:55 HTTP "POST" "/graphql" responded 200 in 1.6905 ms
+10/27/2022 17:25:55 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:25:56 HTTP "POST" "/graphql" responded 200 in 4.0986 ms
+10/27/2022 17:25:58 HTTP "POST" "/graphql" responded 200 in 1.4982 ms
+10/27/2022 17:26:00 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category ORDER BY id ASC "
+"{ }"
+10/27/2022 17:26:00 HTTP "POST" "/graphql" responded 200 in 4.2995 ms
+10/27/2022 17:26:01 HTTP "POST" "/graphql" responded 200 in 1.5649 ms
+10/27/2022 17:26:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/27/2022 17:26:02 HTTP "POST" "/graphql" responded 200 in 5.8590 ms
+10/27/2022 17:26:04 HTTP "POST" "/graphql" responded 200 in 1.8339 ms
+10/27/2022 17:26:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/27/2022 17:26:05 HTTP "POST" "/graphql" responded 200 in 20.4360 ms
+10/27/2022 17:26:06 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/27/2022 17:26:06 HTTP "POST" "/graphql" responded 200 in 4.1572 ms
+10/27/2022 17:26:09 HTTP "POST" "/graphql" responded 200 in 1.9012 ms
+10/27/2022 17:26:10 HTTP "POST" "/graphql" responded 200 in 1.8625 ms
+10/27/2022 17:26:45 Migrations
+10/27/2022 17:26:45 20221023001: InitialTables_20221023001
+10/27/2022 17:26:45 20221024001: InitialSeed_20221024001
+10/27/2022 17:26:45 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:26:48 HTTP "POST" "/graphql" responded 200 in 808.2692 ms
+10/27/2022 17:26:51 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/27/2022 17:26:51 HTTP "POST" "/graphql" responded 200 in 89.1022 ms
+10/27/2022 17:26:54 HTTP "POST" "/graphql" responded 200 in 2.6882 ms
+10/27/2022 17:26:55 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:26:55 HTTP "POST" "/graphql" responded 200 in 19.1791 ms
+10/27/2022 17:26:56 HTTP "POST" "/graphql" responded 200 in 1.5809 ms
+10/27/2022 17:26:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:26:56 HTTP "POST" "/graphql" responded 200 in 9.0782 ms
+10/27/2022 17:26:58 HTTP "POST" "/graphql" responded 200 in 1.5047 ms
+10/27/2022 17:26:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:26:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:26:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:26:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:26:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:26:59 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:26:59 HTTP "POST" "/graphql" responded 200 in 94.8573 ms
+10/27/2022 17:27:00 HTTP "POST" "/graphql" responded 200 in 1.4839 ms
+10/27/2022 17:27:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:27:01 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:27:01 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:27:01 HTTP "POST" "/graphql" responded 200 in 23.3478 ms
+10/27/2022 17:27:03 HTTP "POST" "/graphql" responded 200 in 1.7322 ms
+10/27/2022 17:27:03 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category ORDER BY id ASC "
+"{ }"
+10/27/2022 17:27:03 HTTP "POST" "/graphql" responded 200 in 9.5890 ms
+10/27/2022 17:27:05 HTTP "POST" "/graphql" responded 200 in 6.8005 ms
+10/27/2022 17:27:06 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category WHERE category.id = @id"
+"{ id = 2 }"
+10/27/2022 17:27:06 HTTP "POST" "/graphql" responded 200 in 6.9770 ms
+10/27/2022 17:28:00 Migrations
+10/27/2022 17:28:00 20221023001: InitialTables_20221023001
+10/27/2022 17:28:00 20221024001: InitialSeed_20221024001
+10/27/2022 17:28:00 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:28:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:28:04 HTTP "POST" "/graphql" responded 200 in 823.3609 ms
+10/27/2022 17:28:05 HTTP "POST" "/graphql" responded 200 in 156.2670 ms
+10/27/2022 17:28:06 HTTP "POST" "/graphql" responded 200 in 3.5608 ms
+10/27/2022 17:28:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:28:07 HTTP "POST" "/graphql" responded 200 in 10.7436 ms
+10/27/2022 17:28:07 HTTP "POST" "/graphql" responded 200 in 1.5662 ms
+10/27/2022 17:28:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size WHERE size.id = @id"
+"{ id = 2 }"
+10/27/2022 17:28:08 HTTP "POST" "/graphql" responded 200 in 18.5513 ms
+10/27/2022 17:28:09 HTTP "POST" "/graphql" responded 200 in 1.6075 ms
+10/27/2022 17:28:09 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color WHERE color.id = @id"
+"{ id = 2 }"
+10/27/2022 17:28:09 HTTP "POST" "/graphql" responded 200 in 6.2242 ms
+10/27/2022 17:28:10 HTTP "POST" "/graphql" responded 200 in 1.6031 ms
+10/27/2022 17:28:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:28:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:28:11 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:28:11 HTTP "POST" "/graphql" responded 200 in 76.6337 ms
+10/27/2022 17:28:16 HTTP "POST" "/graphql" responded 200 in 1.7019 ms
+10/27/2022 17:28:17 HTTP "POST" "/graphql" responded 200 in 1.5979 ms
+10/27/2022 17:28:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product "
+"{ }"
+10/27/2022 17:28:18 ====== Postgres Call -> SQL ======
+	"SELECT * from public.brand"
+"{ }"
+10/27/2022 17:28:18 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,1,2)"
+"{ }"
+10/27/2022 17:28:18 HTTP "POST" "/graphql" responded 200 in 20.2809 ms
+10/27/2022 17:28:19 HTTP "POST" "/graphql" responded 200 in 2.1570 ms
+10/27/2022 17:28:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+"{ id = 1 }"
+10/27/2022 17:28:20 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1)"
+"{ }"
+10/27/2022 17:28:20 HTTP "POST" "/graphql" responded 200 in 16.3602 ms
+10/27/2022 17:28:21 HTTP "POST" "/graphql" responded 200 in 1.5499 ms
+10/27/2022 17:28:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:28:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:28:22 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:28:22 HTTP "POST" "/graphql" responded 200 in 20.5562 ms
+10/27/2022 17:28:26 HTTP "POST" "/graphql" responded 200 in 1.4982 ms
+10/27/2022 17:28:27 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id = @id"
+"{ id = 1 }"
+10/27/2022 17:28:27 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1)"
+"{ }"
+10/27/2022 17:28:27 HTTP "POST" "/graphql" responded 200 in 7.7306 ms
+10/27/2022 17:29:10 Migrations
+10/27/2022 17:29:10 20221023001: InitialTables_20221023001
+10/27/2022 17:29:10 20221024001: InitialSeed_20221024001
+10/27/2022 17:29:10 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:29:15 HTTP "POST" "/graphql" responded 500 in 457.4733 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:29:15 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:29:17 HTTP "POST" "/graphql" responded 500 in 48.1376 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:29:17 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:29:18 HTTP "POST" "/graphql" responded 500 in 44.5607 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:29:18 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:29:42 Migrations
+10/27/2022 17:29:42 20221023001: InitialTables_20221023001
+10/27/2022 17:29:42 20221024001: InitialSeed_20221024001
+10/27/2022 17:29:42 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:29:43 HTTP "POST" "/graphql" responded 500 in 560.0452 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:29:43 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:29:44 HTTP "POST" "/graphql" responded 500 in 46.0110 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:29:44 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:29:46 HTTP "POST" "/graphql" responded 500 in 49.2717 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:29:46 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:29:46 HTTP "POST" "/graphql" responded 500 in 44.9082 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:29:46 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:29:48 HTTP "POST" "/graphql" responded 500 in 46.9336 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:29:48 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:29:48 HTTP "POST" "/graphql" responded 500 in 46.8161 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:29:48 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:30:27 Migrations
+10/27/2022 17:30:27 20221023001: InitialTables_20221023001
+10/27/2022 17:30:27 20221024001: InitialSeed_20221024001
+10/27/2022 17:30:27 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:30:33 HTTP "POST" "/graphql" responded 500 in 449.1223 ms
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/27/2022 17:30:33 An unhandled exception has occurred while executing the request.
+HotChocolate.SchemaException: For more details look at the `Errors` property.
+
+1. Unable to resolve type reference `Output: IEnumerable<ProductStockQuery!>!`. (SwimStoreApi.GraphQL.Queries.QueryType)
+
+   at HotChocolate.Configuration.RegisteredType.GetType[T](ITypeReference typeRef)
+   at HotChocolate.Types.OutputFieldBase`1.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, TDefinition definition)
+   at HotChocolate.Types.ObjectField.OnCompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember, ObjectFieldDefinition definition)
+   at HotChocolate.Types.FieldBase`1.CompleteField(ITypeCompletionContext context, ITypeSystemMember declaringMember)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, TField[] fields)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFieldsInternal[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IEnumerable`1 fieldDefinitions, Func`3 fieldFactory, Int32 fieldCount)
+   at HotChocolate.Internal.FieldInitHelper.CompleteFields[TFieldDefinition,TField](ITypeCompletionContext context, ITypeSystemMember declaringMember, IReadOnlyList`1 fieldDefs, Func`3 fieldFactory)
+   at HotChocolate.Types.ObjectType.OnCompleteFields(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.ObjectType.OnCompleteType(ITypeCompletionContext context, ObjectTypeDefinition definition)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>g__CompleteType|27_0(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyKind kind, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types, LazySchema lazySchema)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(NameString schemaName, RequestExecutorSetup options, RequestExecutorOptions executorOptions, IServiceProvider serviceProvider, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(NameString schemaName, RequestExecutorSetup options, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(NameString schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context, AllowedContentType contentType)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass13_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+10/27/2022 17:31:31 Migrations
+10/27/2022 17:31:31 20221023001: InitialTables_20221023001
+10/27/2022 17:31:31 20221024001: InitialSeed_20221024001
+10/27/2022 17:31:31 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:31:33 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:31:33 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:31:33 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:31:33 HTTP "POST" "/graphql" responded 200 in 908.4329 ms
+10/27/2022 17:31:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:31:34 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:31:34 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:31:34 HTTP "POST" "/graphql" responded 200 in 27.3947 ms
+10/27/2022 17:31:36 HTTP "POST" "/graphql" responded 200 in 54.7900 ms
+10/27/2022 17:31:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:31:36 HTTP "POST" "/graphql" responded 200 in 7.9847 ms
+10/27/2022 17:31:38 HTTP "POST" "/graphql" responded 200 in 1.5819 ms
+10/27/2022 17:31:38 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:31:38 HTTP "POST" "/graphql" responded 200 in 8.7503 ms
+10/27/2022 17:33:32 Migrations
+10/27/2022 17:33:32 20221023001: InitialTables_20221023001
+10/27/2022 17:33:32 20221024001: InitialSeed_20221024001
+10/27/2022 17:33:32 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:33:33 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:33:33 HTTP "POST" "/graphql" responded 200 in 833.7077 ms
+10/27/2022 17:33:34 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:33:34 HTTP "POST" "/graphql" responded 200 in 7.4881 ms
+10/27/2022 17:33:35 HTTP "POST" "/graphql" responded 200 in 50.5982 ms
+10/27/2022 17:33:36 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:33:36 HTTP "POST" "/graphql" responded 200 in 8.2843 ms
+10/27/2022 17:33:37 HTTP "POST" "/graphql" responded 200 in 2.6163 ms
+10/27/2022 17:33:37 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:33:37 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:33:37 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:33:38 HTTP "POST" "/graphql" responded 200 in 58.0379 ms
+10/27/2022 17:33:39 HTTP "POST" "/graphql" responded 200 in 1.7313 ms
+10/27/2022 17:33:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:33:39 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:33:39 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:33:39 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:33:39 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:33:40 HTTP "POST" "/graphql" responded 200 in 51.0285 ms
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:33:40 HTTP "POST" "/graphql" responded 200 in 46.4595 ms
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:33:40 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:33:40 HTTP "POST" "/graphql" responded 200 in 39.7236 ms
+10/27/2022 17:34:00 Migrations
+10/27/2022 17:34:00 20221023001: InitialTables_20221023001
+10/27/2022 17:34:00 20221024001: InitialSeed_20221024001
+10/27/2022 17:34:00 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:34:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:34:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:34:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:34:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:34:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:34:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:34:02 HTTP "POST" "/graphql" responded 200 in 937.9295 ms
+10/27/2022 17:34:03 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:34:03 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:34:03 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:34:03 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:34:03 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:34:03 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/27/2022 17:34:03 HTTP "POST" "/graphql" responded 200 in 47.0823 ms
+10/27/2022 17:34:04 HTTP "POST" "/graphql" responded 200 in 51.8424 ms
+10/27/2022 17:34:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:34:05 HTTP "POST" "/graphql" responded 200 in 6.8235 ms
+10/27/2022 17:34:07 HTTP "POST" "/graphql" responded 200 in 1.9988 ms
+10/27/2022 17:34:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:34:08 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:34:08 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:34:08 HTTP "POST" "/graphql" responded 200 in 25.0561 ms
+10/27/2022 17:34:09 HTTP "POST" "/graphql" responded 200 in 1.6470 ms
+10/27/2022 17:34:27 Migrations
+10/27/2022 17:34:27 20221023001: InitialTables_20221023001
+10/27/2022 17:34:27 20221024001: InitialSeed_20221024001
+10/27/2022 17:34:27 20221025001: ProductStockTables_20221025001 (current)
+10/27/2022 17:34:29 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:34:29 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:34:29 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:34:29 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:34:29 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (1,2)"
+"{ }"
+10/27/2022 17:34:29 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:34:29 HTTP "POST" "/graphql" responded 200 in 958.6685 ms
+10/27/2022 17:34:31 HTTP "POST" "/graphql" responded 200 in 48.8510 ms
+10/27/2022 17:34:31 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:34:31 HTTP "POST" "/graphql" responded 200 in 7.2537 ms
+10/27/2022 17:34:32 HTTP "POST" "/graphql" responded 200 in 2.0567 ms
+10/27/2022 17:34:33 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/27/2022 17:34:33 HTTP "POST" "/graphql" responded 200 in 6.4396 ms
+10/27/2022 17:34:35 HTTP "POST" "/graphql" responded 200 in 1.8077 ms
+10/27/2022 17:34:35 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:34:35 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:34:35 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:34:35 HTTP "POST" "/graphql" responded 200 in 22.6568 ms
+10/27/2022 17:34:37 HTTP "POST" "/graphql" responded 200 in 1.6335 ms
+10/27/2022 17:34:38 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category ORDER BY id ASC "
+"{ }"
+10/27/2022 17:34:38 HTTP "POST" "/graphql" responded 200 in 9.8594 ms
+10/27/2022 17:34:40 HTTP "POST" "/graphql" responded 200 in 1.5501 ms
+10/27/2022 17:34:41 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/27/2022 17:34:41 HTTP "POST" "/graphql" responded 200 in 6.5653 ms
+10/27/2022 17:34:42 HTTP "POST" "/graphql" responded 200 in 1.5913 ms
+10/27/2022 17:34:43 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product ORDER BY id ASC "
+"{ }"
+10/27/2022 17:34:43 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1,4)"
+"{ }"
+10/27/2022 17:34:43 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (5,2,1)"
+"{ }"
+10/27/2022 17:34:43 HTTP "POST" "/graphql" responded 200 in 22.9200 ms
+10/27/2022 17:34:44 HTTP "POST" "/graphql" responded 200 in 1.6182 ms
+10/27/2022 17:34:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/27/2022 17:34:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/27/2022 17:34:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/27/2022 17:34:45 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,4,2,1)"
+"{ }"
+10/27/2022 17:34:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1)"
+"{ }"
+10/27/2022 17:34:45 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/27/2022 17:34:45 HTTP "POST" "/graphql" responded 200 in 44.7366 ms
+10/27/2022 17:34:47 HTTP "POST" "/graphql" responded 200 in 1.8774 ms
+10/27/2022 17:34:48 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/27/2022 17:34:48 HTTP "POST" "/graphql" responded 200 in 4.9675 ms

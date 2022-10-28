@@ -660,6 +660,9 @@
           }
         }
       },
+      "HotChocolate.Types.Analyzers/12.15.0": {
+        "type": "package"
+      },
       "HotChocolate.Types.CursorPagination/12.15.0": {
         "type": "package",
         "dependencies": {
@@ -2567,6 +2570,22 @@
         "strawberryshake-signet.png"
       ]
     },
+    "HotChocolate.Types.Analyzers/12.15.0": {
+      "sha512": "qvxX4AGNsajbHB2GZ6xlsosOHajtFYecKmEBh6bixDiQ9XOZvW12hZADJ+7yxYoc6e9c4BCDAHRQILKzcsz/VA==",
+      "type": "package",
+      "path": "hotchocolate.types.analyzers/12.15.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "analyzers/dotnet/cs/HotChocolate.Types.Analyzers.dll",
+        "greendonut-signet.png",
+        "hotchocolate-signet.png",
+        "hotchocolate.types.analyzers.12.15.0.nupkg.sha512",
+        "hotchocolate.types.analyzers.nuspec",
+        "strawberryshake-signet.png"
+      ]
+    },
     "HotChocolate.Types.CursorPagination/12.15.0": {
       "sha512": "YP2vmdPSXvCytzuqbVO6SzLXCUs8Io2nRh4boHnRoOqz1YRw4RHTKgqSxczTTKLgyyFOwmckN6KkBvM+r3+2mw==",
       "type": "package",
@@ -4435,6 +4454,7 @@
       "GraphQL.Server.Ui.Voyager >= 7.1.1",
       "HotChocolate.AspNetCore >= 12.15.0",
       "HotChocolate.Data >= 12.15.0",
+      "HotChocolate.Types.Analyzers >= 12.15.0",
       "Serilog.AspNetCore >= 6.0.1",
       "Serilog.Enrichers.Environment >= 2.2.0",
       "Serilog.Enrichers.Process >= 2.0.2",
@@ -4520,6 +4540,10 @@
             "version": "[12.15.0, )"
           },
           "HotChocolate.Data": {
+            "target": "Package",
+            "version": "[12.15.0, )"
+          },
+          "HotChocolate.Types.Analyzers": {
             "target": "Package",
             "version": "[12.15.0, )"
           },

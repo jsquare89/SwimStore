@@ -2,7 +2,7 @@
 using SwimStoreApi.GraphQL.Products;
 using SwimStoreApi.GraphQL.ProductStocks;
 
-namespace SwimStoreApi.GraphQL;
+namespace SwimStoreApi.GraphQL.Queries;
 
 public class QueryType : ObjectType<Query>
 {
@@ -10,11 +10,11 @@ public class QueryType : ObjectType<Query>
     {
         base.Configure(descriptor);
 
-        descriptor.Field(q => q.GetProduct(default))
-            .Type <ListType<ProductType>>();
+        //descriptor.Field(q => q.GetProduct(default))
+        //    .Type<ListType<ProductType>>();
 
-        descriptor.Field(q => q.GetProductStocks(default))
-            .Type<ListType<ProductStockType>>();
+        //descriptor.Field(q => q.GetProductStocks(default))
+        //    .Type<ListType<ProductStockType>>();
 
 
         //descriptor.Field(q => q.GetBrands(default))

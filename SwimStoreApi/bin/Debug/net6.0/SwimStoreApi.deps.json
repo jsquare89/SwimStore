@@ -16,6 +16,7 @@
           "GraphQL.Server.Ui.Voyager": "7.1.1",
           "HotChocolate.AspNetCore": "12.15.0",
           "HotChocolate.Data": "12.15.0",
+          "HotChocolate.Types.Analyzers": "12.15.0",
           "Serilog.AspNetCore": "6.0.1",
           "Serilog.Enrichers.Environment": "2.2.0",
           "Serilog.Enrichers.Process": "2.0.2",
@@ -492,6 +493,7 @@
           }
         }
       },
+      "HotChocolate.Types.Analyzers/12.15.0": {},
       "HotChocolate.Types.CursorPagination/12.15.0": {
         "dependencies": {
           "HotChocolate.Execution": "12.15.0",
@@ -1401,6 +1403,13 @@
       "sha512": "sha512-1Bs0AbgvKVxnwwUOxpSQM2KgUHv9r7IYamN4SVz9LbCaDqJg1ErXz5jdvEUEwQieOwegBZds3EE0pUCCnqc2Ww==",
       "path": "hotchocolate.types/12.15.0",
       "hashPath": "hotchocolate.types.12.15.0.nupkg.sha512"
+    },
+    "HotChocolate.Types.Analyzers/12.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qvxX4AGNsajbHB2GZ6xlsosOHajtFYecKmEBh6bixDiQ9XOZvW12hZADJ+7yxYoc6e9c4BCDAHRQILKzcsz/VA==",
+      "path": "hotchocolate.types.analyzers/12.15.0",
+      "hashPath": "hotchocolate.types.analyzers.12.15.0.nupkg.sha512"
     },
     "HotChocolate.Types.CursorPagination/12.15.0": {
       "type": "package",

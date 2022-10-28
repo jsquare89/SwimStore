@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wm05ZnZzr+jGDWULWISULr3r93NjOIoiYxByodFBFZDAi2qZGqJA7v6PVjpx3jqeTye5xDlt4OO7brZj7yf1Uw==",
+  "dgSpecHash": "dQk2CplUJdnMctQXnQD48y/s0ap3tWSclD0E0yjrF7/6Kln3HW+ojepelvSVrs5cBiDV6p+JEO1hQ7rfSAl2UA==",
   "success": true,
   "projectFilePath": "C:\\CODE\\Personal Projects\\SwimStore\\SwimStoreApi\\SwimStoreApi.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\Jarred\\.nuget\\packages\\hotchocolate.subscriptions\\12.15.0\\hotchocolate.subscriptions.12.15.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\hotchocolate.subscriptions.inmemory\\12.15.0\\hotchocolate.subscriptions.inmemory.12.15.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\hotchocolate.types\\12.15.0\\hotchocolate.types.12.15.0.nupkg.sha512",
+    "C:\\Users\\Jarred\\.nuget\\packages\\hotchocolate.types.analyzers\\12.15.0\\hotchocolate.types.analyzers.12.15.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\hotchocolate.types.cursorpagination\\12.15.0\\hotchocolate.types.cursorpagination.12.15.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\hotchocolate.types.mutations\\12.15.0\\hotchocolate.types.mutations.12.15.0.nupkg.sha512",
     "C:\\Users\\Jarred\\.nuget\\packages\\hotchocolate.types.offsetpagination\\12.15.0\\hotchocolate.types.offsetpagination.12.15.0.nupkg.sha512",
