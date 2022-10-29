@@ -13,4 +13,5 @@ public interface IProductStockData
     Task<IEnumerable<ProductStockDto>> GetAllProductsStock();
     Task<ProductStockDto> UpdateProductStock(int product_id, int size_id, int color_id, int quantity);
     Task<ProductStockDto> UpdateProductStockQuantity(int product_id, int size_id, int color_id, int quantity);
+    Task<ProductStockDto> CreateProductStockAsync(int product_id, int size_id, int color_id, int quantity);
 }

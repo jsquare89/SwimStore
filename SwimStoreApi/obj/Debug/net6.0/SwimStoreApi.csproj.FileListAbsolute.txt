@@ -65,6 +65,12 @@ C:\Users\jarre\Documents\GitHub\SwimStore\SwimStoreApi\obj\Debug\net6.0\refint\S
 C:\Users\jarre\Documents\GitHub\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.pdb
 C:\Users\jarre\Documents\GitHub\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.genruntimeconfig.cache
 C:\Users\jarre\Documents\GitHub\SwimStore\SwimStoreApi\obj\Debug\net6.0\ref\SwimStoreApi.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.csproj.AssemblyReference.cache
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.AssemblyInfoInputs.cache
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.AssemblyInfo.cs
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.csproj.CoreCompileInputs.cache
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.MvcApplicationPartsAssemblyInfo.cache
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\appsettings.Development.json
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\appsettings.json
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Logs\log.json
@@ -164,12 +170,6 @@ C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\runtimes\win\l
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreData.dll
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\SwimStoreData.pdb
-C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.csproj.AssemblyReference.cache
-C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.AssemblyInfoInputs.cache
-C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.AssemblyInfo.cs
-C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.csproj.CoreCompileInputs.cache
-C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.MvcApplicationPartsAssemblyInfo.cache
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\staticwebassets.build.json
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\staticwebassets.development.json
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\scopedcss\bundle\SwimStoreApi.styles.css

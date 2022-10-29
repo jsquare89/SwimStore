@@ -14296,3 +14296,97 @@ RETURNING *"
 "{ }"
 10/27/2022 19:25:27 HTTP "POST" "/graphql" responded 200 in 79.8583 ms
 10/27/2022 19:25:40 HTTP "POST" "/graphql" responded 200 in 2.0898 ms
+10/28/2022 21:54:43 Migrations
+10/28/2022 21:54:43 20221023001: InitialTables_20221023001
+10/28/2022 21:54:43 20221024001: InitialSeed_20221024001
+10/28/2022 21:54:43 20221025001: ProductStockTables_20221025001 (current)
+10/28/2022 21:54:56 HTTP "GET" "/graphql" responded 301 in 12.3812 ms
+10/28/2022 21:54:56 HTTP "GET" "/graphql/bcp-config.json" responded 200 in 19.6080 ms
+10/28/2022 21:54:57 HTTP "POST" "/graphql" responded 200 in 643.3572 ms
+10/28/2022 21:54:57 HTTP "POST" "/graphql" responded 200 in 32.0032 ms
+10/28/2022 21:55:00 HTTP "GET" "/graphql/static/js/619.d2a9edb4.chunk.js" responded 200 in 72.4143 ms
+10/28/2022 21:55:00 HTTP "GET" "/graphql/static/media/FiraCode-Medium.1bc138a84f63b384c3f2.woff2" responded 200 in 1.2777 ms
+10/28/2022 21:55:00 HTTP "GET" "/graphql/static/js/editor.a85ce25e.js" responded 200 in 14.7627 ms
+10/28/2022 21:55:00 HTTP "GET" "/graphql/static/js/graphql.worker.1e36c99e.js" responded 200 in 5.5870 ms
+10/28/2022 21:55:01 HTTP "GET" "/graphql/static/media/codicon.b797181c93b3755f4fa1.ttf" responded 200 in 1.5361 ms
+10/28/2022 21:55:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/28/2022 21:55:01 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/28/2022 21:55:01 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/28/2022 21:55:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,6,4,2,1)"
+"{ }"
+10/28/2022 21:55:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,5,1)"
+"{ }"
+10/28/2022 21:55:02 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/28/2022 21:55:02 HTTP "POST" "/graphql" responded 200 in 326.4181 ms
+10/28/2022 22:05:17 Migrations
+10/28/2022 22:05:17 20221023001: InitialTables_20221023001
+10/28/2022 22:05:17 20221024001: InitialSeed_20221024001
+10/28/2022 22:05:17 20221025001: ProductStockTables_20221025001 (current)
+10/28/2022 22:05:28 HTTP "POST" "/graphql" responded 200 in 767.2784 ms
+10/28/2022 22:05:31 HTTP "POST" "/graphql" responded 200 in 2.2902 ms
+10/28/2022 22:05:31 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/28/2022 22:05:32 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/28/2022 22:05:32 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/28/2022 22:05:32 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,6,4,2,1)"
+"{ }"
+10/28/2022 22:05:32 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1,5)"
+"{ }"
+10/28/2022 22:05:32 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (2,1)"
+"{ }"
+10/28/2022 22:05:32 HTTP "POST" "/graphql" responded 200 in 269.4866 ms
+10/28/2022 22:05:34 HTTP "POST" "/graphql" responded 200 in 1.6150 ms
+10/28/2022 22:05:36 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 2 }"
+10/28/2022 22:05:36 HTTP "POST" "/graphql" responded 500 in 128.5270 ms
+10/28/2022 22:06:38 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 2 }"
+10/28/2022 22:08:35 Migrations
+10/28/2022 22:08:35 20221023001: InitialTables_20221023001
+10/28/2022 22:08:35 20221024001: InitialSeed_20221024001
+10/28/2022 22:08:35 20221025001: ProductStockTables_20221025001 (current)
+10/28/2022 22:08:36 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 2 }"
+10/28/2022 22:11:15 Migrations
+10/28/2022 22:11:15 20221023001: InitialTables_20221023001
+10/28/2022 22:11:15 20221024001: InitialSeed_20221024001
+10/28/2022 22:11:15 20221025001: ProductStockTables_20221025001 (current)
+10/28/2022 22:11:24 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 2 }"
+10/28/2022 22:11:25 HTTP "POST" "/graphql" responded 500 in 847.8351 ms
+10/28/2022 22:11:30 ====== Postgres Call -> SQL ======
+	"INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)
+VALUES (@product_id, @size_id, @color_id, @quantity)
+RETURNING *"
+"{ product_id = 6, size_id = 3, color_id = 2, quantity = 2 }"
+10/28/2022 22:11:30 HTTP "POST" "/graphql" responded 500 in 55.9181 ms

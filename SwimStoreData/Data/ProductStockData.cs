@@ -43,6 +43,22 @@ public class ProductStockData : IProductStockData
         return productStockDto;
     }
 
+    public async Task<ProductStockDto> CreateProductStockAsync(int product_id, int size_id, int color_id, int quantity)
+    {
+        var parameters = new
+        {
+            product_id,
+            size_id,
+            color_id,
+            quantity
+        };
+        string insertProductStockQuery = "INSERT INTO public.product_stock(product_id, size_id, color_id, quantity)" +
+            "\nVALUES (@product_id, @size_id, @color_id, @quantity)" +
+            "\nRETURNING *";
+        var productStockDto = await _db.SaveDataWithSqlAsync<ProductStockDto, dynamic>(insertProductStockQuery, parameters);
+        return productStockDto;
+    }
+
     private async Task<ProductStockDto> UpdateProductStock(dynamic parameters)
     {
         string insertProductStockQuery = "UPDATE public.product_stock SET quantity = @quantity" +

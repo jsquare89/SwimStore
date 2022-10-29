@@ -18,9 +18,17 @@ public class ProductStockMutation
 
     public async Task<ProductStock?> AddProductStockAsync(int productId, int sizeId, int colorId, int quantity)
     {
-        var productStockDto = await _productStockData.UpdateProductStock(productId, sizeId, colorId,quantity);
+        try
+        {
+            var productStockDto = await _productStockData.CreateProductStockAsync(productId, sizeId, colorId,quantity);
+            return _mapper.Map<ProductStock>(productStockDto);
 
-        return _mapper.Map<ProductStock>(productStockDto);
+        }
+        catch
+        {
+            throw new GraphQLException($"Could not add product stock. Ensure productId, sizeId, colorId are not in product stock already or use updateProductStock");
+        }
+
     }
 
     public async Task<ProductStock?> UpdateProductStockQuantityAsync(int productId, int sizeId, int colorId, int quantity)
