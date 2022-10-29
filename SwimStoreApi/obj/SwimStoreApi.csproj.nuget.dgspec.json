@@ -77,6 +77,10 @@
               "target": "Package",
               "version": "[12.15.0, )"
             },
+            "HotChocolate.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[12.15.0, )"
+            },
             "HotChocolate.Data": {
               "target": "Package",
               "version": "[12.15.0, )"
@@ -84,6 +88,10 @@
             "HotChocolate.Types.Analyzers": {
               "target": "Package",
               "version": "[12.15.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",

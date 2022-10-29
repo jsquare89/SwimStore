@@ -179,3 +179,5 @@ C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\refint\SwimSto
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.pdb
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\SwimStoreApi.genruntimeconfig.cache
 C:\CODE\Personal Projects\SwimStore\SwimStoreApi\obj\Debug\net6.0\ref\SwimStoreApi.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\CODE\Personal Projects\SwimStore\SwimStoreApi\bin\Debug\net6.0\HotChocolate.AspNetCore.Authorization.dll

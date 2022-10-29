@@ -1,10 +1,13 @@
-﻿using Serilog;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using SwimStoreApi.DapperAttributeMapper;
 using SwimStoreApi.GraphQL.Mutations;
 using SwimStoreApi.GraphQL.Queries;
 using SwimStoreData.Data;
 using SwimStoreData.DataAccess;
-
+using System.Text;
+using HotChocolate.AspNetCore.Authorization;
 
 namespace SwimStoreApi.Extensions;
 
@@ -41,11 +44,37 @@ public static class ConfigurationExtensions
     {
         builder.Services
             .AddGraphQLServer()
+            .AddAuthorization()
             .AddSwimStoreApiTypes()
             .AddQueryType<QueryType>()
             .AddMutationType<MutationType>()
             .AddMutationConventions(applyToAllMutations: true)
             .AddFiltering();
+        return builder;
+    }
+
+    public static WebApplicationBuilder ConfigureAuthentication(
+       this WebApplicationBuilder builder)
+    {
+        builder.Services
+            .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    //ValidateActor = true,
+                    //ValidateAudience = true,
+                    //ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                    ValidAudience = builder.Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                };
+            });
+        builder.Services.AddAuthorization();
+
         return builder;
     }
 

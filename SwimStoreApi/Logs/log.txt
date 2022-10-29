@@ -14390,3 +14390,469 @@ VALUES (@product_id, @size_id, @color_id, @quantity)
 RETURNING *"
 "{ product_id = 6, size_id = 3, color_id = 2, quantity = 2 }"
 10/28/2022 22:11:30 HTTP "POST" "/graphql" responded 500 in 55.9181 ms
+10/29/2022 15:22:51 Migrations
+10/29/2022 15:22:51 20221023001: InitialTables_20221023001
+10/29/2022 15:22:51 20221024001: InitialSeed_20221024001
+10/29/2022 15:22:51 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:23:03 HTTP "POST" "/graphql" responded 200 in 937.2945 ms
+10/29/2022 15:23:03 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product_stock ORDER BY product_id ASC "
+"{ }"
+10/29/2022 15:23:03 ====== Postgres Call -> SQL ======
+	"SELECT id, name, gender FROM public.size where id in (3,2,1)"
+"{ }"
+10/29/2022 15:23:03 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.color where id in (2,3,1)"
+"{ }"
+10/29/2022 15:23:03 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.product WHERE product.id in (11,6,4,2,1)"
+"{ }"
+10/29/2022 15:23:03 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.category where id in (2,1,5)"
+"{ }"
+10/29/2022 15:23:03 ====== Postgres Call -> SQL ======
+	"SELECT id, name FROM public.brand where id in (1,2)"
+"{ }"
+10/29/2022 15:23:03 HTTP "POST" "/graphql" responded 200 in 479.3535 ms
+10/29/2022 15:23:05 HTTP "POST" "/graphql" responded 200 in 3.5704 ms
+10/29/2022 15:23:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.color ORDER BY id ASC "
+"{ }"
+10/29/2022 15:23:05 HTTP "POST" "/graphql" responded 200 in 7.0771 ms
+10/29/2022 15:23:06 HTTP "POST" "/graphql" responded 200 in 1.5494 ms
+10/29/2022 15:23:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.size ORDER BY id ASC "
+"{ }"
+10/29/2022 15:23:07 HTTP "POST" "/graphql" responded 200 in 7.2069 ms
+10/29/2022 15:23:09 HTTP "POST" "/graphql" responded 200 in 2.0438 ms
+10/29/2022 15:23:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:23:10 HTTP "POST" "/graphql" responded 200 in 6.3851 ms
+10/29/2022 15:23:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:23:11 HTTP "POST" "/graphql" responded 200 in 5.4288 ms
+10/29/2022 15:23:14 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:23:14 HTTP "POST" "/graphql" responded 200 in 4.9690 ms
+10/29/2022 15:23:16 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:23:17 HTTP "POST" "/graphql" responded 200 in 4.9842 ms
+10/29/2022 15:23:18 HTTP "POST" "/graphql" responded 200 in 1.4473 ms
+10/29/2022 15:23:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:23:19 HTTP "POST" "/graphql" responded 200 in 5.2881 ms
+10/29/2022 15:23:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:23:20 HTTP "POST" "/graphql" responded 200 in 5.7508 ms
+10/29/2022 15:23:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:23:20 HTTP "POST" "/graphql" responded 200 in 5.0226 ms
+10/29/2022 15:30:40 Migrations
+10/29/2022 15:30:40 20221023001: InitialTables_20221023001
+10/29/2022 15:30:40 20221024001: InitialSeed_20221024001
+10/29/2022 15:30:40 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:30:52 HTTP "POST" "/graphql" responded 200 in 686.4741 ms
+10/29/2022 15:30:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category ORDER BY id ASC "
+"{ }"
+10/29/2022 15:30:52 HTTP "POST" "/graphql" responded 200 in 172.3749 ms
+10/29/2022 15:30:53 HTTP "POST" "/graphql" responded 200 in 4.0718 ms
+10/29/2022 15:30:54 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:30:54 HTTP "POST" "/graphql" responded 200 in 10.9915 ms
+10/29/2022 15:30:55 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:30:55 HTTP "POST" "/graphql" responded 200 in 4.0500 ms
+10/29/2022 15:30:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:30:56 HTTP "POST" "/graphql" responded 200 in 3.9930 ms
+10/29/2022 15:30:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:30:56 HTTP "POST" "/graphql" responded 200 in 4.1006 ms
+10/29/2022 15:30:57 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:30:57 HTTP "POST" "/graphql" responded 200 in 3.9328 ms
+10/29/2022 15:30:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:30:58 HTTP "POST" "/graphql" responded 200 in 4.1847 ms
+10/29/2022 15:30:59 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:30:59 HTTP "POST" "/graphql" responded 200 in 4.4057 ms
+10/29/2022 15:31:12 Migrations
+10/29/2022 15:31:12 20221023001: InitialTables_20221023001
+10/29/2022 15:31:12 20221024001: InitialSeed_20221024001
+10/29/2022 15:31:12 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:31:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:31:20 HTTP "POST" "/graphql" responded 200 in 820.6404 ms
+10/29/2022 15:31:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:31:21 HTTP "POST" "/graphql" responded 200 in 7.6564 ms
+10/29/2022 15:31:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:31:22 HTTP "POST" "/graphql" responded 200 in 7.4398 ms
+10/29/2022 15:38:25 Migrations
+10/29/2022 15:38:25 20221023001: InitialTables_20221023001
+10/29/2022 15:38:25 20221024001: InitialSeed_20221024001
+10/29/2022 15:38:25 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:39:05 Migrations
+10/29/2022 15:39:05 20221023001: InitialTables_20221023001
+10/29/2022 15:39:05 20221024001: InitialSeed_20221024001
+10/29/2022 15:39:05 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:39:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:08 HTTP "POST" "/graphql" responded 200 in 868.0446 ms
+10/29/2022 15:39:09 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:09 HTTP "POST" "/graphql" responded 200 in 5.7858 ms
+10/29/2022 15:39:10 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:10 HTTP "POST" "/graphql" responded 200 in 5.6276 ms
+10/29/2022 15:39:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:11 HTTP "POST" "/graphql" responded 200 in 3.6323 ms
+10/29/2022 15:39:12 HTTP "POST" "/graphql" responded 200 in 47.8275 ms
+10/29/2022 15:39:13 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.category ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:13 HTTP "POST" "/graphql" responded 200 in 15.7856 ms
+10/29/2022 15:39:14 HTTP "POST" "/graphql" responded 200 in 1.6883 ms
+10/29/2022 15:39:15 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:15 HTTP "POST" "/graphql" responded 200 in 4.0242 ms
+10/29/2022 15:39:16 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:16 HTTP "POST" "/graphql" responded 200 in 4.0419 ms
+10/29/2022 15:39:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:18 HTTP "POST" "/graphql" responded 200 in 4.1557 ms
+10/29/2022 15:39:18 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:18 HTTP "POST" "/graphql" responded 200 in 4.6216 ms
+10/29/2022 15:39:23 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:39:23 HTTP "POST" "/graphql" responded 200 in 3.9330 ms
+10/29/2022 15:39:25 HTTP "POST" "/graphql" responded 200 in 1.4963 ms
+10/29/2022 15:39:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:39:26 HTTP "POST" "/graphql" responded 200 in 20.8705 ms
+10/29/2022 15:41:12 Migrations
+10/29/2022 15:41:12 20221023001: InitialTables_20221023001
+10/29/2022 15:41:12 20221024001: InitialSeed_20221024001
+10/29/2022 15:41:12 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:41:14 HTTP "POST" "/graphql" responded 401 in 60.9408 ms
+10/29/2022 15:41:15 HTTP "POST" "/graphql" responded 401 in 1.2337 ms
+10/29/2022 15:41:18 HTTP "POST" "/graphql" responded 401 in 0.6491 ms
+10/29/2022 15:41:19 HTTP "POST" "/graphql" responded 401 in 0.0997 ms
+10/29/2022 15:41:19 HTTP "POST" "/graphql" responded 401 in 0.0979 ms
+10/29/2022 15:41:21 HTTP "POST" "/graphql" responded 401 in 0.0959 ms
+10/29/2022 15:41:22 HTTP "POST" "/graphql" responded 401 in 0.0892 ms
+10/29/2022 15:41:23 HTTP "POST" "/graphql" responded 401 in 0.0975 ms
+10/29/2022 15:41:24 HTTP "POST" "/graphql" responded 401 in 0.1089 ms
+10/29/2022 15:44:42 Migrations
+10/29/2022 15:44:42 20221023001: InitialTables_20221023001
+10/29/2022 15:44:42 20221024001: InitialSeed_20221024001
+10/29/2022 15:44:42 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:44:46 HTTP "POST" "/graphql" responded 200 in 760.1843 ms
+10/29/2022 15:44:46 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:44:47 HTTP "POST" "/graphql" responded 200 in 185.8814 ms
+10/29/2022 15:44:47 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:44:47 HTTP "POST" "/graphql" responded 200 in 5.7184 ms
+10/29/2022 15:44:48 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:44:48 HTTP "POST" "/graphql" responded 200 in 3.6529 ms
+10/29/2022 15:44:48 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:44:48 HTTP "POST" "/graphql" responded 200 in 4.3774 ms
+10/29/2022 15:44:50 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:44:50 HTTP "POST" "/graphql" responded 200 in 5.4560 ms
+10/29/2022 15:44:50 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:44:50 HTTP "POST" "/graphql" responded 200 in 4.5988 ms
+10/29/2022 15:44:50 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:44:50 HTTP "POST" "/graphql" responded 200 in 4.1350 ms
+10/29/2022 15:44:51 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:44:51 HTTP "POST" "/graphql" responded 200 in 4.0257 ms
+10/29/2022 15:44:52 HTTP "POST" "/graphql" responded 200 in 1.7775 ms
+10/29/2022 15:44:53 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:44:53 HTTP "POST" "/graphql" responded 200 in 19.3608 ms
+10/29/2022 15:44:55 HTTP "POST" "/graphql" responded 200 in 1.7441 ms
+10/29/2022 15:44:56 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:44:56 HTTP "POST" "/graphql" responded 200 in 4.1397 ms
+10/29/2022 15:45:53 Migrations
+10/29/2022 15:45:54 20221023001: InitialTables_20221023001
+10/29/2022 15:45:54 20221024001: InitialSeed_20221024001
+10/29/2022 15:45:54 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:46:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:46:01 HTTP "POST" "/graphql" responded 200 in 840.6300 ms
+10/29/2022 15:46:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:46:02 HTTP "POST" "/graphql" responded 200 in 7.9063 ms
+10/29/2022 15:46:03 HTTP "POST" "/graphql" responded 200 in 49.7742 ms
+10/29/2022 15:46:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:46:04 HTTP "POST" "/graphql" responded 200 in 18.0241 ms
+10/29/2022 15:46:06 HTTP "POST" "/graphql" responded 200 in 1.6776 ms
+10/29/2022 15:46:07 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:46:07 HTTP "POST" "/graphql" responded 200 in 4.2193 ms
+10/29/2022 15:46:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:46:08 HTTP "POST" "/graphql" responded 200 in 4.3700 ms
+10/29/2022 15:46:09 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:46:09 HTTP "POST" "/graphql" responded 200 in 4.0560 ms
+10/29/2022 15:48:14 Migrations
+10/29/2022 15:48:14 20221023001: InitialTables_20221023001
+10/29/2022 15:48:14 20221024001: InitialSeed_20221024001
+10/29/2022 15:48:14 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:48:19 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:48:19 HTTP "POST" "/graphql" responded 200 in 845.8931 ms
+10/29/2022 15:48:21 HTTP "POST" "/graphql" responded 200 in 47.4174 ms
+10/29/2022 15:48:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:48:22 HTTP "POST" "/graphql" responded 200 in 20.6872 ms
+10/29/2022 15:48:23 HTTP "POST" "/graphql" responded 200 in 2.1682 ms
+10/29/2022 15:48:24 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:48:24 HTTP "POST" "/graphql" responded 200 in 4.6931 ms
+10/29/2022 15:48:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:48:25 HTTP "POST" "/graphql" responded 200 in 4.3244 ms
+10/29/2022 15:48:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:48:25 HTTP "POST" "/graphql" responded 200 in 4.8128 ms
+10/29/2022 15:48:26 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:48:26 HTTP "POST" "/graphql" responded 200 in 4.7679 ms
+10/29/2022 15:49:02 Migrations
+10/29/2022 15:49:02 20221023001: InitialTables_20221023001
+10/29/2022 15:49:02 20221024001: InitialSeed_20221024001
+10/29/2022 15:49:02 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:49:03 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:49:03 HTTP "POST" "/graphql" responded 200 in 856.0501 ms
+10/29/2022 15:49:04 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:49:04 HTTP "POST" "/graphql" responded 200 in 7.6190 ms
+10/29/2022 15:49:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:49:05 HTTP "POST" "/graphql" responded 200 in 7.4687 ms
+10/29/2022 15:49:05 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:49:05 HTTP "POST" "/graphql" responded 200 in 4.1986 ms
+10/29/2022 15:49:07 HTTP "POST" "/graphql" responded 200 in 57.4853 ms
+10/29/2022 15:49:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:49:08 HTTP "POST" "/graphql" responded 200 in 17.9747 ms
+10/29/2022 15:49:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:49:08 HTTP "POST" "/graphql" responded 200 in 3.8890 ms
+10/29/2022 15:49:08 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:49:08 HTTP "POST" "/graphql" responded 200 in 5.1234 ms
+10/29/2022 15:49:09 HTTP "POST" "/graphql" responded 200 in 1.9555 ms
+10/29/2022 15:49:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:49:11 HTTP "POST" "/graphql" responded 200 in 4.3300 ms
+10/29/2022 15:49:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:49:11 HTTP "POST" "/graphql" responded 200 in 4.9800 ms
+10/29/2022 15:49:11 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:49:11 HTTP "POST" "/graphql" responded 200 in 4.3538 ms
+10/29/2022 15:56:23 Migrations
+10/29/2022 15:56:23 20221023001: InitialTables_20221023001
+10/29/2022 15:56:23 20221024001: InitialSeed_20221024001
+10/29/2022 15:56:23 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:56:30 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:56:30 HTTP "POST" "/graphql" responded 200 in 832.0900 ms
+10/29/2022 15:56:32 HTTP "POST" "/graphql" responded 200 in 49.3626 ms
+10/29/2022 15:56:33 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:56:33 HTTP "POST" "/graphql" responded 200 in 19.7686 ms
+10/29/2022 15:56:56 Migrations
+10/29/2022 15:56:56 20221023001: InitialTables_20221023001
+10/29/2022 15:56:56 20221024001: InitialSeed_20221024001
+10/29/2022 15:56:56 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 15:56:57 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:56:57 HTTP "POST" "/graphql" responded 200 in 861.7628 ms
+10/29/2022 15:56:58 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 15:56:58 HTTP "POST" "/graphql" responded 200 in 7.9851 ms
+10/29/2022 15:57:00 HTTP "POST" "/graphql" responded 200 in 36.8837 ms
+10/29/2022 15:57:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:57:01 HTTP "POST" "/graphql" responded 200 in 19.4160 ms
+10/29/2022 15:57:01 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:57:01 HTTP "POST" "/graphql" responded 200 in 3.9856 ms
+10/29/2022 15:57:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:57:02 HTTP "POST" "/graphql" responded 200 in 3.7572 ms
+10/29/2022 15:57:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:57:02 HTTP "POST" "/graphql" responded 200 in 4.1298 ms
+10/29/2022 15:57:02 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:57:02 HTTP "POST" "/graphql" responded 200 in 4.3967 ms
+10/29/2022 15:57:03 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:57:03 HTTP "POST" "/graphql" responded 200 in 4.6456 ms
+10/29/2022 15:57:03 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 15:57:03 HTTP "POST" "/graphql" responded 200 in 5.0795 ms
+10/29/2022 16:01:17 Migrations
+10/29/2022 16:01:17 20221023001: InitialTables_20221023001
+10/29/2022 16:01:17 20221024001: InitialSeed_20221024001
+10/29/2022 16:01:17 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 16:01:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:20 HTTP "POST" "/graphql" responded 200 in 841.5760 ms
+10/29/2022 16:01:20 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:20 HTTP "POST" "/graphql" responded 200 in 6.0338 ms
+10/29/2022 16:01:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:21 HTTP "POST" "/graphql" responded 200 in 7.0768 ms
+10/29/2022 16:01:21 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:21 HTTP "POST" "/graphql" responded 200 in 3.7746 ms
+10/29/2022 16:01:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:22 HTTP "POST" "/graphql" responded 200 in 3.9540 ms
+10/29/2022 16:01:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:22 HTTP "POST" "/graphql" responded 200 in 4.1469 ms
+10/29/2022 16:01:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:22 HTTP "POST" "/graphql" responded 200 in 4.2584 ms
+10/29/2022 16:01:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:22 HTTP "POST" "/graphql" responded 200 in 4.3845 ms
+10/29/2022 16:01:22 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:22 HTTP "POST" "/graphql" responded 200 in 5.6008 ms
+10/29/2022 16:01:23 HTTP "POST" "/graphql" responded 200 in 48.7117 ms
+10/29/2022 16:01:25 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand WHERE brand.id = @id"
+"{ id = 3 }"
+10/29/2022 16:01:25 HTTP "POST" "/graphql" responded 200 in 18.3881 ms
+10/29/2022 16:01:26 HTTP "POST" "/graphql" responded 200 in 2.1585 ms
+10/29/2022 16:01:28 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:28 HTTP "POST" "/graphql" responded 200 in 4.3935 ms
+10/29/2022 16:01:28 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:01:28 HTTP "POST" "/graphql" responded 200 in 4.0106 ms
+10/29/2022 16:03:40 Migrations
+10/29/2022 16:03:40 20221023001: InitialTables_20221023001
+10/29/2022 16:03:40 20221024001: InitialSeed_20221024001
+10/29/2022 16:03:40 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 16:03:47 HTTP "POST" "/graphql" responded 500 in 695.8343 ms
+10/29/2022 16:03:50 HTTP "POST" "/graphql" responded 500 in 1.1919 ms
+10/29/2022 16:03:52 HTTP "POST" "/graphql" responded 500 in 1.9211 ms
+10/29/2022 16:04:37 Migrations
+10/29/2022 16:04:37 20221023001: InitialTables_20221023001
+10/29/2022 16:04:37 20221024001: InitialSeed_20221024001
+10/29/2022 16:04:37 20221025001: ProductStockTables_20221025001 (current)
+10/29/2022 16:04:40 HTTP "POST" "/graphql" responded 200 in 725.9586 ms
+10/29/2022 16:04:51 HTTP "POST" "/graphql" responded 200 in 2.6769 ms
+10/29/2022 16:04:52 ====== Postgres Call -> SQL ======
+	"SELECT * FROM public.brand ORDER BY id ASC "
+"{ }"
+10/29/2022 16:04:52 HTTP "POST" "/graphql" responded 200 in 167.4789 ms
+10/29/2022 16:04:56 HTTP "POST" "/graphql" responded 200 in 1.8894 ms
+10/29/2022 16:04:58 HTTP "POST" "/graphql" responded 500 in 36.7614 ms

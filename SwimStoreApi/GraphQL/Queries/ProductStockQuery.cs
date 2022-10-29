@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using SwimStoreApi.Models;
 using SwimStoreData.Data;
+using HotChocolate.AspNetCore.Authorization;
 
 namespace SwimStoreApi.GraphQL.Queries;
 
@@ -14,6 +15,7 @@ public class ProductStockQuery
 		_mapper = mapper;
 	}
 
+    
     [UseFiltering]
     public async Task<IEnumerable<ProductStock>> GetProductStocks([Service] IProductStockData productStockData)
     {

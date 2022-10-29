@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using HotChocolate.AspNetCore.Authorization;
 using SwimStoreApi.Models;
 using SwimStoreData.Data;
 
